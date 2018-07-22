@@ -1,0 +1,34 @@
+
+.site-header{
+
+  .site-title{
+    text-transform: lowercase;
+    color: #FFF;
+
+    &:before,
+    &:after{
+      display: inline;
+      
+    }
+
+    &:before{
+      content: "<";
+    }
+    
+    &:after{
+      content: "/>";
+    }
+
+    &:visited {
+      color: #FFF;
+    }
+  }
+
+  .site-nav  {
+    .page-link{
+      text-transform: lowercase;
+      color: #FFF;
+    }
+  }
+    
+}

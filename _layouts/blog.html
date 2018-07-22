@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<!-- posts -->
+<section class="section section-blog">
+
+  <header class="section-header">
+    {%- if page.title -%}
+      <h1 class="page-heading wrapper">{{ page.title }}</h1>
+    {%- endif -%}
+  </header>
+
+  <div class="wrapper">
+    
+    {{ content }} 
+    
+    {%- if site.posts.size > 0 -%}
+      {%- for post in site.posts -%}
+      <article class="post-item">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>{{ post.title | escape }}</h3>
+          <p>{{ post.description | escape }}</p>
+          <div>
+            {%- for category in post.categories -%}
+            <a href="{{category.url}}">{{ category }}</a>
+            {%- endfor -%}
+          </div>
+          {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+        </a>
+      </article>
+      {%- endfor -%}
+
+    <p class="rss-subscribe" style="display: none;">subscribe
+      <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+    </p>
+    {%- endif -%}
+  </div>
+</section>
+<!-- /posts -->

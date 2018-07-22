@@ -1,0 +1,68 @@
+
+/* home gretings */
+
+.greetings{
+  display: flex;
+  background-color: #2fbc81;
+  align-items: center;
+  color: #FFF;
+
+  > .wrap {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .greetings__text{
+    width: 50%;
+
+    h2{
+      font-size: 4rem;
+    }
+
+    p{
+      font-size: 1.2rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  img{
+
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-filter: grayscale(1);
+    max-width: 420px;
+    
+    filter: grayscale(1);
+
+    &:hover{
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+  }
+}
+/* end: home gretings */
+
+/* home-posts */
+.home-posts{
+
+  display: flex;
+  align-items: center;
+
+  > .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
+  }
+  
+  .button-link{
+    display: table;
+    margin: 20px auto;
+    padding: 10px 30px;
+  }
+
+}
+/* end/ home-posts */
