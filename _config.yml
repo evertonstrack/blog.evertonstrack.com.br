@@ -24,9 +24,24 @@ github_username:  evertonstrack
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:title/
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: [jekyll-feed]
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Sobre
+    url: /sobre/
+  - title: Blog
+    url: /blog/
+  - title: Contato
+    url: /contato/
+  - title: Serviços
+    url: /servicos/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

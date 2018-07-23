@@ -39,46 +39,81 @@
 }
 /* end: listagem posts */
 
+.post-detail{
 
-.post-header{
-  height: 40vh;
-  display: flex;
-  padding-top: 30px;
-  margin-bottom: 50px;
-  align-items: center;
-
-  &[data-color=blue]{
-    background-color: map-get($pallete, blue );
-  }
-  &[data-color=yellow]{
-    background-color: map-get($pallete, yellow );
-  }
-  &[data-color=orange]{
-    background-color: map-get($pallete, orange );
-  }
-  &[data-color=green]{
-    background-color: map-get($pallete, green );
-  }
-  &[data-color=red]{
-    background-color: map-get($pallete, red );
-  }
-
-  .wrapper{
-    flex: 1;
-  }
-
-  .post-meta{
-    color: rgba(0, 0, 0, 0.7);
+  .post-header{
+    min-height: 40vh;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+  
+    &[data-color=blue]{
+      background-color: map-get($pallete, blue );
+    }
+    &[data-color=yellow]{
+      background-color: map-get($pallete, yellow );
+    }
+    &[data-color=orange]{
+      background-color: map-get($pallete, orange );
+    }
+    &[data-color=green]{
+      background-color: map-get($pallete, green );
+    }
+    &[data-color=red]{
+      background-color: map-get($pallete, red );
+    }
+  
+    .wrapper{
+      flex: 1;
+    }
+  
+    .post-meta{
+      color: rgba(0, 0, 0, 0.7);
+    }
   }
 }
 
+
+
 .post-content{
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure:not(.highlight){
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  p, blockquote, pre, ul, ol, dl{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  h2, h3, h4, h5, h6{
+    padding-top: 10px;
+  }
+
+  .highlight {
+    background-color: #282a36;
+
+    pre{
+      border: none;
+      background-color: #282a36;
+    }
+  }
+
+  ul, ol {
+    list-style-position: inside;
+  }
+
 }
 
 pre {
