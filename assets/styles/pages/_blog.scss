@@ -4,8 +4,9 @@
   .site-header{
     background-color: rgba(243, 223, 73, 1);
     
-    a,
-    .site-nav .page-link{
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
       color: #2e2e2e;
     }
 
