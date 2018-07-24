@@ -114,6 +114,24 @@
     list-style-position: inside;
   }
 
+  blockquote {
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > p {
+      border-left: 4px solid #282a36;
+      margin: 0;
+    }
+  }
+
+  p{
+    pre, code {
+      border: 1px solid #282a36;
+      color: #FFF;
+      background-color: #282a36;
+    }
+  }
 }
 
 pre {
