@@ -105,4 +105,4 @@ bodyClass: about-page full-section
 </section>
 <!-- /section sobre everton -->
 
-{%- include components/skills.html -%}
+{%- include skills.html -%}

@@ -9,22 +9,6 @@
     .site-title{
       color: #2e2e2e;
     }
-
-    .wrapper{
-      max-width: 1000px;
-    }
-  }
-  
-  .section-header{
-    > .wrapper{
-      max-width: -webkit-calc(1000px - (30px * 2));
-      max-width: calc(1000px - (30px * 2));
-    }
-  }
-
-  .wrapper-blog{
-    max-width: -webkit-calc(1000px - (30px * 2));
-    max-width: calc(1000px - (30px * 2));
   }
 }
 
