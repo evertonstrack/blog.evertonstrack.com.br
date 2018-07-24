@@ -40,6 +40,16 @@ bodyClass: contact-page
         <p>Não sou simplesmente um conversor de PSD em HTML; No mercado atualmente você encontra vários "profissionais" desse tipo, e eles são mais baratos sim, mas é isso que você procura?</p>
         <p>Cada trabalho possui sua singularidade, então é preciso sempre analisar as possibilidades antes de estipular custos e prazos. Cada projeto precisa de cuidados diferentes, trabalhando com um código customizado e adequado a cada necessidade. Sempre com o uso de novas tecnologias em HTML5 e CSS3.</p>
         <p>Em relação a compatibilidade, é sempre bom lembrar que navegadores atualizados resultam em melhor performance e que seu site vai funcionar em todos eles. Então não funcionará em navegadores antigos? Tudo é possível, desde que haja um bom motivo pra isso!</p>
+        <p>Criação de sites, portfolio, blogs, lojas virtuais, otimização para mecanismos de busca (SEO). São muitas possibilidades. Confira alguns dos serviços que ofereço.</p>
+        <ul>
+            <li>Construção de hotsites e sites institucionais</li>
+            <li>Blogs e sites em Wordpress</li>
+            <li>Customização de lojas virtuais na plataforma de ecommerce Iluria</li>
+            <li>Construção de lojas virtuais e eccommerce com Woocommerce</li>
+            <li>Análise e implementação de otimização para mecanismos de busca (SEO On-page)</li>
+            <li>Codificação de email marketing/newsletter</li>
+        </ul>
+
         <p>Contatos através do email <a href="mailto:everton.strack@gmail.com" target="_blank">everton.strack@gmail.com</a></p>
     </div>
 </section>
