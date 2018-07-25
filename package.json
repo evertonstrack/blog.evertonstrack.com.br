@@ -1,0 +1,27 @@
+{
+  "name": "evertonstrack.com.br",
+  "version": "1.0.0",
+  "description": "Desenvolvedor Front-end e estudante de Design. Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "test"
+  },
+  "keywords": [
+    "frontend",
+    "blog",
+    "css",
+    "stylus",
+    "gulp",
+    "jekyll",
+    "js"
+  ],
+  "author": "EvertonStrack",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}

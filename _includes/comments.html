@@ -14,7 +14,7 @@
                 this.page.identifier = '{{page.url | absolute_url}}';
             };
             var d = document, s = d.createElement('script');
-            s.src = '//evertonstrack.disqus.com/embed.js';
+            s.src = '//{{disqus_shortname}}.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
             disqus_loaded = true;

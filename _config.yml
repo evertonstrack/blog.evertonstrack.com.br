@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://evertonstrack.com.br" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: evertonstrack
 github_username:  evertonstrack
+disqus_shortname: evertonstrack
 
 # Build settings
 markdown: kramdown
@@ -55,3 +56,11 @@ links:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude: ["_app",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "package-lock.json",
+          "gulpfile.js"]
