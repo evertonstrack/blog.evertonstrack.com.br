@@ -1,0 +1,122 @@
+
+/* mobile */
+@media screen and (max-width: 640px) {
+
+  /* general */
+  .site-header {
+    .site-nav {
+      .page-link{
+        color: #25262a;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+      }
+    }
+  }
+  /* end: general */
+
+  /* home */
+  .greetings{
+    > .wrap{
+      flex-direction: column;
+    }
+
+    .greetings__text {
+      order: 2;
+      width: 100%;
+      padding-bottom: 30px;
+
+      h2{
+            font-size: 2.5rem;
+      }
+    }
+
+    .greetings__image{
+      order: 1;
+      img{
+        width: 70%;
+        margin: 30px auto 0;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+  /* end: home */
+
+  /* blog list */
+  .section-blog {
+    
+    .post-list{
+      .post-item {
+        max-width: 100%;
+      }
+    }
+  }
+  /* end: blog list */
+
+  /* blog details */
+  .post-detail{
+     .post-header{
+       padding-left: 30px;
+       padding-right: 30px;
+     }
+  }
+  /* end: blog details */
+
+  /* projects */
+  .projects-page{
+     .container-portfolio{
+        .item-portfolio{
+          max-width: 100%;
+        }
+     }
+  }
+  /* end: projects */
+
+  /* contact */
+  .section-contact{
+    > .wrap{
+      > p {
+        max-width: 100%;
+      }
+    }
+  }
+  /* end: contact */
+
+  /* about */
+  .content-sobre{
+
+    .section-header{
+      margin-bottom: 0;
+    }
+
+    .section-persona{
+      min-height: auto !important;
+      padding-bottom: 0 !important;
+     
+      .persona{
+        flex-direction: column;
+        height: auto;
+
+        .side{
+          width: 100%;
+          display: block;
+          padding: 70px 50px;
+
+          .text{
+            h2{
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sobre-everton{
+      img{
+        float: none;
+      }
+    }
+  }
+  /* end: about */
+}
