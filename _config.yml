@@ -29,6 +29,8 @@ google_analytics: UA-50129966-1
 permalink: /blog/:title/
 theme: minima
 plugins: [jekyll-feed]
+lang: pt-br
+locale: pt_BR
 
 # Links to include in menu navigation
 # For external links add external: true
