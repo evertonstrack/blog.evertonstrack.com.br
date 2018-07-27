@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Olá, meu nome é Everton!"
-description: "Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais."
+description: "Depois de muito tempo com essa ideia engavetada, finalmente vou colocar essa ideia/projeto em prática. Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais."
 date:   2018-07-07 13:44:09 -0300
 color: yellow
-color-code: #f3df49
+theme-color: "#f3df49"
+tags: 
 image: /assets/images/evertonstrack.jpg
 ---
 
