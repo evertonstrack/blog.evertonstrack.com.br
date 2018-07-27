@@ -258,10 +258,19 @@ pre {
 
 
 
-/* POST TYPES by TAGS */
+/* POST TYPES COLORS */
 
-/* CSS HEADER TAG */
+/* CSS HEADER */
 .post-css{
+  .site-header{
+    background-color: map-get($color-css, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
   .post-detail{
     .post-header{
       background-color: map-get($color-css, light );
@@ -272,10 +281,21 @@ pre {
     }
   }
 }
-/* end: CSS HEADER TAG */
+/* end: CSS HEADER */
 
-/* HTML HEADER TAG */
+
+
+/* HTML HEADER */
 .post-html{
+  .site-header{
+    background-color: map-get($color-html, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
   .post-detail{
     .post-header{
       background-color: map-get($color-html, light );
@@ -286,10 +306,19 @@ pre {
     }
   }
 }
-/* end: HTML HEADER TAG */
+/* end: HTML HEADER */
 
-/* Javascript HEADER TAG */
+/* Javascript HEADER */
 .post-javascript{
+  .site-header{
+    background-color: map-get($color-javascript, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: map-get($color-javascript, dark );
+    }
+  }
   .post-detail{
     .post-header{
       background-color: map-get($color-javascript, light );
@@ -300,10 +329,19 @@ pre {
     }
   }
 }
-/* end: Javascript HEADER TAG */
+/* end: Javascript HEADER */
 
-/* LIFE HEADER TAG */
+/* LIFE HEADER */
 .post-life{
+  .site-header{
+    background-color: map-get($pallete, green );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
   .post-detail{
     .post-header{
       background-color: map-get($pallete, green );
@@ -314,4 +352,27 @@ pre {
     }
   }
 }
-/* end: LIFE HEADER TAG */
+/* end: LIFE HEADER */
+
+/* POST DEFAULT */
+.post-default{
+  .site-header{
+    background-color: map-get($color-javascript, dark );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-javascript, dark );
+      color: #FFF;
+      .post-meta{
+        color: #FFF;
+      }
+    }
+  }
+}
+/* end: POST DEFAULT */
