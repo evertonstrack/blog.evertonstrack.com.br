@@ -75,6 +75,10 @@
 
   /* home */
   .greetings{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    min-height: auto;
+
     > .wrap{
       flex-direction: column;
     }
@@ -82,10 +86,14 @@
     .greetings__text {
       order: 2;
       width: 100%;
-      padding-bottom: 30px;
+      
 
       h2{
-            font-size: 2.5rem;
+        font-size: 2rem;
+      }
+
+      p{
+        font-size: 1rem;
       }
     }
 
@@ -101,6 +109,7 @@
     .post-list{
       .post-item {
         max-width: 100%;
+        padding: 0;
       }
     }
   }
@@ -167,6 +176,8 @@
     .section-sobre-everton{
       img{
         float: none;
+        margin: 0 0 30px 0;
+        width: 100%;
       }
     }
   }
@@ -193,20 +204,59 @@
         width: 100%;
         height: 54px;
         background-color: #25262a;
+        -webkit-box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
         color: #FFF;
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
 
         .page-link{
           color: #FFF;
           height: 100%;
           line-height: 50px;
-          padding: 0 10px;
-          margin: 0 5px;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          width: 25%;
           font-size: 18px;
         }
       }
     }
   }
+}
+
+@media screen and (max-width: 400px) {
+  /* about */
+  .content-sobre{
+    .section-persona{
+      .persona{
+        .side{
+          width: 100%;
+          display: block;
+          padding: 70px 30px;
+
+          .text{
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sobre-everton{
+      img{
+        float: none;
+        margin: 0 0 30px 0;
+        width: 100%;
+      }
+    }
+    .section-sobre-everton{
+      font-size: 1.1rem;
+    }
+  }
+  /* end: about */
 }
