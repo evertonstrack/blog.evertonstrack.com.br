@@ -4,6 +4,7 @@ title: Projetos
 description: Veja alguns projetos do desenvolvedor front-end Everton Strack, com projetos nos quais atuou como desenvolvedor front-end freelancer ou para agências.
 permalink: /projetos/
 bodyClass: projects-page
+theme-color: "#00bfff"
 ---
 
 <section class="section section-full clearfix">

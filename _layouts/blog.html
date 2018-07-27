@@ -6,9 +6,14 @@ layout: default
 <section class="section section-blog">
 
   <header class="section-header">
-    {%- if page.title -%}
-      <h1 class="page-heading wrap">{{ page.title }}</h1>
-    {%- endif -%}
+    <div class="wrap">
+      {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+      {%- if page.description -%}
+        <p>{{ page.description }}</p>
+      {%- endif -%}
+    </div>
   </header>
 
   <div class="wrap wrapper-blog">
@@ -25,13 +30,9 @@ layout: default
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>{{ post.title | escape }}</h3>
             <p>{{ post.description | escape }}</p>
-            <div>
-              {%- for category in post.categories -%}
-              <a href="{{category.url}}">{{ category }}</a>
-              {%- endfor -%}
-            </div>
             {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
           </a>
+          
         </article>
         {%- endfor -%}
       </div>

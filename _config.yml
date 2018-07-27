@@ -31,6 +31,7 @@ theme: minima
 plugins: [jekyll-feed]
 lang: pt-br
 locale: pt_BR
+show_excerpts: false
 
 # Links to include in menu navigation
 # For external links add external: true
