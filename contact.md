@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Contato
-description: Precisando de um novo site ou blog? Tem um projeto e precisa de um Desenvolvedor Front-end rápido, de qualidade e com um bom preço? Contate-me!
+description: Precisando de um novo site, blog ou uma loja virtual? Seu projeto precisa de um Desenvolvedor Front-end rápido, de qualidade e com um bom preço? Contate-me!
 permalink: /contato/
 bodyClass: contact-page
+image: /assets/images/code.jpg
 ---
 
 <!-- breadcrumb - rich snippts -->
@@ -14,7 +15,7 @@ bodyClass: contact-page
         </a> ›
     </div>
     <div id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
-        <a href="http://evertonstrack.com.br/contato" itemprop="url">
+        <a href="http://evertonstrack.com.br/contato/" itemprop="url">
             <span itemprop="title">Contato</span>
         </a> ›
     </div>

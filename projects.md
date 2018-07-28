@@ -7,6 +7,21 @@ bodyClass: projects-page
 theme-color: "#00bfff"
 ---
 
+<!-- breadcrumb - rich snippts -->
+<div class="breadcrumb hide">
+    <div id="a" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="b">
+        <a href="http://evertonstrack.com.br/" itemprop="url">
+            <span itemprop="title">evertonstrack.com.br</span>
+        </a> ›
+    </div>
+    <div id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+        <a href="http://evertonstrack.com.br/projetos/" itemprop="url">
+            <span itemprop="title">Projetos</span>
+        </a> ›
+    </div>
+</div>
+<!-- /breadcrumb - rich snippts -->
+
 <section class="section section-full clearfix">
   <header class="section-header title-section" role="heading">
       <div class="title-section-container wrap">

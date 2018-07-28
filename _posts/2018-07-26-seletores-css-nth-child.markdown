@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Seletores CSS que vão mudar sua vida (Parte 1) - :nth-child()"
-description: "Vamos conhecer um seletor CSS que é uma mão na roda. É um dos seletores mais versáteis, que facilitam muito nossa vida. Estou falando do pseudo seletor :nth-child()"
+description: "Conheça um seletor CSS que é uma mão na roda. É um dos seletores mais versáteis, que facilitam muito nossa vida. Estou falando do pseudo seletor :nth-child()"
 date:   2018-07-26 21:58:09 -0300
 bodyClass: post-css
 theme-color: "#369cd6"

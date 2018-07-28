@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Sobre
-description: Um pequeno apanhado sobre minha vida o universo e tudo mais. Como me tornei desenvolvedor front-end, onde estou e para onde vou.
+description: "Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!. Lógica, criatividade e muito café! Entre e pegue uma xícara."
 permalink: /sobre/
 bodyClass: about-page full-section
+image: /assets/images/evertonstrack.jpg
 ---
 
 <!-- breadcrumb - rich snippts -->
@@ -14,7 +15,7 @@ bodyClass: about-page full-section
         </a> ›
     </div>
     <div id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
-        <a href="http://evertonstrack.com.br/sobre" itemprop="url">
+        <a href="http://evertonstrack.com.br/sobre/" itemprop="url">
             <span itemprop="title">Sobre</span>
         </a> ›
     </div>

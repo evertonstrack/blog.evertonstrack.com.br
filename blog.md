@@ -15,7 +15,7 @@ theme-color: "#f3df49"
         </a> ›
     </div>
     <div id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
-        <a href="http://evertonstrack.com.br/blog" itemprop="url">
+        <a href="http://evertonstrack.com.br/blog/" itemprop="url">
             <span itemprop="title">Blog</span>
         </a> ›
     </div>
