@@ -6,7 +6,7 @@ date:   2018-07-26 21:58:09 -0300
 bodyClass: post-css
 theme-color: "#369cd6"
 tags: ['css']
-image: /assets/images/evertonstrack.jpg
+image: /assets/images/post/seletores-css-nth-child/pseudo-seletor-nth-child.jpg
 ---
 
 Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}. Como eu sempre digo, **CSS é magia negra**. 
