@@ -55,7 +55,8 @@ links:
     url: /projetos/
 
 # Include from processing.
-include: ['_redirects']
+include: ["_redirects",
+          "_headers"]
 
 
 # Exclude from processing.
