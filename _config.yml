@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Everton Strack - Desenvolvedor Front End"
+title: "Everton Strack - Desenvolvedor Front-End"
 email: everton.strack@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Desenvolvedor Front end e estudante de Design apaixonado por CSS e Javascript. Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais.
+  Desenvolvedor Front-end e estudante de Design apaixonado por CSS e Javascript. Um pequeno apanhado sobre o dia-a-dia de um front-end, vida, o universo e tudo mais.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://evertonstrack.com.br" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: evertonstrack
