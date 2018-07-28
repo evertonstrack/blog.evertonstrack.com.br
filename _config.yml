@@ -40,6 +40,16 @@ show_excerpts: false
 #   endings: []
 #   profile: false
 
+files_to_cache:
+- '/assets/all.css'
+
+pages_to_cache:
+  - '/'
+  - '/sobre/'
+  - '/blog/'
+  - '/contato/'
+  - '/projetos/'
+
 # Links to include in menu navigation
 # For external links add external: true
 links:
