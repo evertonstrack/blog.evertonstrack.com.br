@@ -50,8 +50,7 @@ image: /assets/images/code.jpg
             <li>Análise e implementação de otimização para mecanismos de busca (SEO On-page)</li>
             <li>Codificação de email marketing/newsletter</li>
         </ul>
-
-        <p>Contatos através do email <a href="mailto:everton.strack@gmail.com" target="_blank">everton.strack@gmail.com</a></p>
+        <p>Contatos através do email <a href="mailto:contato@evertonstrack.com.br" target="_blank">contato@evertonstrack.com.br</a></p>
     </div>
 </section>
 <!-- /section sobre everton -->
