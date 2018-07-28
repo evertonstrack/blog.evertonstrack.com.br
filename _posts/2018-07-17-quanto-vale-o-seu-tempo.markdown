@@ -6,15 +6,18 @@ date:   2018-07-26 21:58:09 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
 tags: ['life']
-image: /assets/images/evertonstrack.jpg
+image: /assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg
 ---
 
 A rotina de quem trabalha na área de tecnologia é, na maioria das vezes, muito estressante. Seja pelo trabalho em si, pelos problemas do dia-a-dia, ou por todo o entorno deste trabalho.
 
+Você já parou e se perguntou **Quanto vale o seu tempo?**
+
 Vamos refletir um pouco sobre isso e sobre o que podemos fazer para melhorar nosso dia-a-dia.
 
-
 ## **O problema**
+
+![Quanto vale o seu tempo?]( /assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg)
 
 Você já deve ter pensado muitas vezes que não aguenta mais o seu trabalho, essa rotina diária, que tudo isso te estressa muito, certo?
 

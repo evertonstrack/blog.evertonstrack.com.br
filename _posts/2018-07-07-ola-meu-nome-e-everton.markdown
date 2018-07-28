@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Olá, meu nome é Everton!"
-description: "Depois de muito tempo com esse projeto engavetado, finalmente colocando em prática. Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais."
+description: "Colocando em prática esse projeto depois de muito tempo engavetado. Um pequeno apanhado sobre o dia-a-dia de um front end, vida, o universo e tudo mais."
 date:   2018-07-07 13:44:09 -0300
 bodyClass: post-default
 theme-color: "#323330"
@@ -15,6 +15,8 @@ A ideia é escrever coisas diversas por aqui, sobre o dia-a-dia de um front-end,
 
 
 ## Mas quem diabos é você?
+
+![Everton Strack Desenvolvedor Front-end](/assets/images/posts/ola-meu-nome-e-everton/everton-strack.jpg)
 
 Bom, como diz no título, meu nome  é Everton Strack, já passei da síndrome dos 20 e poucos, moro em São Leopoldo, Rio Grande do Sul e trabalho como Desenvolvedor Front-end desde a época em que precisávamos fazer **mágica** para que as coisas funcionassem no IE6. 
 
@@ -31,7 +33,7 @@ Sou estudante de Design, e isso meu deu um novo olhar sobre tudo na tecnologia. 
 
 Minha noiva me definiria como o **Spock, com ódio**. Sou um cara meio quieto no geral, mas entre amigos sempre rola alguma piada sem graça. 
 
-![Spock - Star Trek](https://d2mxuefqeaa7sj.cloudfront.net/s_89D3F5CD7CFF94850BBB1D254D12B21BC6FA9C60C0D832D828A34269F39F660D_1532400757464_spock.jpg)
+![Spock - Star Trek](/assets/images/posts/ola-meu-nome-e-everton/spock.jpg)
 
 Para finalizar, algumas curiosidade que ao meu ver me descrevem bem:
 
