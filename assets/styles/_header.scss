@@ -4,25 +4,32 @@
   .site-title{
     text-transform: lowercase;
     color: #FFF;
-    text-decoration: none;
+    margin: 0;
 
-    &:before,
-    &:after{
-      display: inline;
+    .logo{
+      text-decoration: none;
+
+      &:before,
+      &:after{
+        display: inline;
+        
+      }
+
+      &:before{
+        content: "<";
+      }
       
-    }
+      &:after{
+        content: "/>";
+      }
 
-    &:before{
-      content: "<";
+      &:visited {
+        color: #FFF;
+      }
     }
     
-    &:after{
-      content: "/>";
-    }
 
-    &:visited {
-      color: #FFF;
-    }
+   
   }
 
   .site-nav  {

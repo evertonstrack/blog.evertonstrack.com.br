@@ -57,13 +57,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: auto;
     max-width: 800px;
+    width: auto;
   }
   
   .button-link{
     display: table;
-    margin: 20px auto;
     padding: 10px 30px;
   }
 
