@@ -1,4 +1,4 @@
-/serviceWorker.js
+/service-worker.js
   Cache-Control: "max-age=0, no-cache, no-store, must-revalidate"
 /*
   Access-Control-Allow-Origin: *
