@@ -50,6 +50,7 @@ gulp.task('browser-sync', ['jekyll-build'], function () {
   });
 });
 
+
 /**
  * Styles Task
  */
