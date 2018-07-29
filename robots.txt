@@ -4,3 +4,5 @@ User-agent: *
 
 Disallow: /T800
 Disallow: /T1000
+
+Sitemap: http://evertonstrack.com.br/sitemap.xml
