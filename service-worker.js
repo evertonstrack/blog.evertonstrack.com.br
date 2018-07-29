@@ -2,9 +2,7 @@
 layout: null
 ---
 
-const staticCacheName = 'everton-strack-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
-
-
+var staticCacheName = 'everton-strack-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 var filesToCache = [];
 
 
@@ -39,7 +37,6 @@ var filesToCache = [];
   {% endif %}
 {% endfor %}
 
-console.log('filesToCache', filesToCache);
 
 // Cache on install
 this.addEventListener("install", event => {
