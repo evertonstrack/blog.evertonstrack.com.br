@@ -1,29 +1,29 @@
 ---
 layout: post
-title:  "Progressive Web Apps (PWA): O que são? E como transformar seu site em uma hoje mesmo"
-description: "Como transformar seu site em uma Progressive Web App. Vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em uma PWA."
+title:  "Progressive Web Apps (PWA): O que são? E como transformar seu site em um hoje mesmo"
+description: "Como transformar seu site em um Progressive Web App. Vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em um PWA."
 date:   2018-07-31 19:00:00 -0300
 bodyClass: post-javascript
 theme-color: "#f0db4f"
 tags: ['javascript', 'pwa']
-image: /assets/images/posts/como-transformar-seu-site-em-uma-progressive-web-app/pwa-progressive-web-app.jpg
+image: /assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg
 ---
 
 Com a evolução da tecnologia dos navegadores, puxado principalmente pelo Google Chrome, que domina com muita folga a já vencida “guerra dos navegadores”, nos dias de hoje temos tecnologias que dão mais poder para as páginas na web. 
 
-As PWAs, ou Progressive Web Apps, usam essas tecnologias para levar uma experiência antes vista só em aplicativos para seu web site. 
+Os PWAs, ou Progressive Web Apps, usam essas tecnologias para levar uma experiência antes vista só em aplicativos para seu web site. 
 
-Transformar um site simples em um PWA não é tão difícil e os benefícios são bem visíveis. Então, vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em uma PWA.
-
-
-> **TL;DR;**  Neste post vamos abordar sobre o que são Progressive Web Apps e como transformar nosso site em uma.
+Transformar um site simples em um PWA não é tão difícil e os benefícios são bem visíveis. Então, vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em um PWA.
 
 
-## O que é uma Progressive Web App?
+> **TL;DR;**  Neste post vamos abordar sobre o que são Progressive Web Apps e como transformar nosso site em um.
+
+
+## O que é um Progressive Web App?
 
 PWA, ou Progressive Web App são sites que se comportam como apps, que se traduzem em experiências que combinam o melhor da Web e o melhor dos aplicativos. 
 
-Algumas das principais características das Progressive Web App são:
+Algumas das principais características dos Progressive Web App são:
 
 
 **Progressivo**: Funciona para qualquer usuário, independentemente do navegador escolhido, pois é criado com aprimoramento progressivo como princípio fundamental.
@@ -46,7 +46,7 @@ No geral, são 3 pilares bem simples. O manifest, o HTTPS e o service worker.
 
 ### 1. O manifest
 
-O manifest é um arquivo JSON, que descreve todos os dados da sua PWA: informações como nome, idioma, icones, etc. Todas as informações que os navegadores precisam, para que quando você salve ele como um atalho, ele saiba quais informações exibir.
+O manifest é um arquivo JSON, que descreve todos os dados do seu PWA: informações como nome, idioma, icones, etc. Todas as informações que os navegadores precisam, para que quando você salve ele como um atalho, ele saiba quais informações exibir.
 
 O seu `manifest.json` tem como padrão os itens abaixo:
 
@@ -110,7 +110,7 @@ Para mudar para HTTPS, você precisará de um certificado SSL. A forma para obt�
 
 ### 3. O Service Worker
 
-Basicamente,  o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM. 
+Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM. 
 
 Há várias coisas legais que podemos fazer com os service workers, como por exemplo armazenar conteúdo em cache localmente e disponibilizá-lo quando o usuário estiver offline.  Mesmo que o usuário esteja online, isso gera um impacto muito grande no tempo de carregamento da página, uma vez que as solicitações podem simplesmente ignorar completamente a rede e os recursos ficam disponíveis instantaneamente.
 
@@ -129,7 +129,7 @@ A melhor abordagem é configurar o seu servidor para sempre carregar de novo o a
 Agora que já sabemos o que são service workers e algumas das coisas que podemos fazer com eles, vamos ao que interessa.
 
 
-![Jerry Maguire (1996)](/assets/images/posts/como-transformar-seu-site-em-uma-progressive-web-app/jerry-maguire-show-me-the-code.jpg)
+![Jerry Maguire (1996)](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/jerry-maguire-show-me-the-code.jpg)
 
 
 **Detectando suporte do navegador**
@@ -265,21 +265,21 @@ this.addEventListener("fetch", event => {
 });
 {% endhighlight %}
 
-Com esses passos, temos nossa Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"} que construímos. 
+Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"} que construímos. 
 
-Abaixo podemos ver o banner de instalação da Progressive Web App e após instalada, parece um aplicativo nativo no app drawer (gaveta de aplicativos).
+Abaixo podemos ver o banner de instalação do Progressive Web App e após instalada, parece um aplicativo nativo no app drawer (gaveta de aplicativos).
 
 
-![Banner de instalação da Progressive Web App](/assets/images/posts/como-transformar-seu-site-em-uma-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.jpg)
+![Banner de instalação do Progressive Web App](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.jpg)
 
 
 ## Conclusão
 
-Se colocarmos na balança a dificuldade e o benefício que temos ao criar uma PWA, não temos motivos para não fazer. Claro, que cada site tem suas peculiaridades e complexidades, para um blog ou um site estático, é super simples fazer. 
+Se colocarmos na balança a dificuldade e o benefício que temos ao criar um PWA, não temos motivos para não fazer. Claro, que cada site tem suas peculiaridades e complexidades, para um blog ou um site estático, é super simples fazer. 
 
 Você também pode ir além, dependendo do que é importante para o seu projeto, caso você tenha um blog, talvez fosse interessante implementar notificações push sempre que sair um novo post. Caso seja uma loja virtual, poderia notificar o cliente quando o produto que ele visualizou está em promoção, são inúmeras possibilidades. 
 
-Vejo que as Progressive Web Apps vão crescer muito ainda, seja em adoção ou em funcionalidades. Muita novidade vai surgir. 
+Vejo que os Progressive Web Apps vão crescer muito ainda, seja em adoção ou em funcionalidades. Muita novidade vai surgir. 
 
 Pra quem se interessou, seguem alguns links que vão ajudar:
 
