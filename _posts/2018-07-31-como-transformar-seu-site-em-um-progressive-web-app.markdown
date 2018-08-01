@@ -116,7 +116,7 @@ Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5roc
 
 Há várias coisas legais que podemos fazer com os service workers, como por exemplo armazenar conteúdo em cache localmente e disponibilizá-lo quando o usuário estiver offline.  Mesmo que o usuário esteja online, isso gera um impacto muito grande no tempo de carregamento da página, uma vez que as solicitações podem simplesmente ignorar completamente a rede e os recursos ficam disponíveis instantaneamente.
 
-Diferente do cache do navegador, você define uma lista de recursos para armazenar em cache quando o o service worker é instalado, desta forma o usuário não precisa navegar para uma determinada página para que ela seja armazenada em cache.
+Diferente do cache do navegador, você define uma lista de recursos para armazenar em cache quando o service worker é instalado, desta forma o usuário não precisa navegar para uma determinada página para que ela seja armazenada em cache.
 
 
 > O Service Worker não pode ser cacheado.
