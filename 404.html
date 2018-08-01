@@ -14,11 +14,70 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  body{
+    background-color: #25262a;
+  }
+
+  .section-404{
+    background-color: #25262a;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+  }
+  .section-404 .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-404 img{ max-width: 50%; }
+  .section-404 .text{
+    float: right;
+    max-width: 45%;
+  }
+
+  .section-404 .text em{ font-size: 22px; }
+  .section-404 .text p{ 
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .section-404 .text a{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-404{
+      min-height: auto;
+      padding-top: 50px;
+    }
+    .section-404 .wrap{
+      flex-direction: column;
+      text-align: center;
+    }
+    .section-404 .text,
+    .section-404 img{
+      max-width: 90%;
+    }
+  }
+
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<section class="section section-full section-404 clearfix">
+  <div class="wrap">
+<!-- <div class="container"> -->
+  
+    <img src="/assets/images/404.jpg" alt="Página não encontrada" class="round left" />
 
-  <p><strong>Página não encontrada :(</strong></p>
-  <p>A página que você tentou acessar não existe.</p>
-</div>
+    <div class="text">
+      <h1>404</h1>
+      <h3>Página não encontrada</h3>
+      <p><em>"Se você não entrar na página errada, você encontra a página que quer" - Autor desconhecido</em></p>
+      <a href="/">Voltar para o site</a>
+    </div>
+      
+  </div>
+</section>
