@@ -21,6 +21,8 @@ Transformar um site simples em um PWA não é tão difícil e os benefícios sã
 
 ## O que é um Progressive Web App?
 
+![Progressive Web Apps (PWA): O que são? E como transformar seu site em um hoje mesmo](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app2.jpg)
+
 PWA, ou Progressive Web App são sites que se comportam como apps, que se traduzem em experiências que combinam o melhor da Web e o melhor dos aplicativos. 
 
 Algumas das principais características dos Progressive Web App são:
