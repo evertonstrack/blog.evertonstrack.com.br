@@ -83,15 +83,13 @@ image: /assets/images/evertonstrack.jpg
                 <strong>desenvolvedor front-end</strong> na <a href="http://www.accera.com.br/" target="_blank">Accera</a>. Já trabalhei em empresas como Brivia, E-Storage, W3Haus
                 e Huia, CWI Software, dentre outras. Desenvolvi e participei de vários projetos bem bacanas, alguns deles estão aqui no meu
                 <strong>
-                    <a href="portfolio" class="link-anchor">portfolio <span class="hihe">de desenvolvedor front-end</span></a>
+                    <a href="/portfolio" class="link-anchor">portfolio <span class="hihe">de desenvolvedor front-end</span></a>
                 </strong>.
                 <em>Confere lá!</em>
             </p>
             <p itemprop="description">
                 Sou estudante de
-                <strong>
-                    <a href="design" class="link-anchor">Design</a>
-                </strong> apaixonado por UI/UX, minimalisma, e sonho em mudar o mundo.
+                <strong>Design</strong> apaixonado por UI/UX, minimalisma, e sonho em mudar o mundo.
                 Estou sempre antenado à novas tendências tecnológicas e inovadoras. Os quase 10 anos de experiência na
                 área de
                 <strong>
