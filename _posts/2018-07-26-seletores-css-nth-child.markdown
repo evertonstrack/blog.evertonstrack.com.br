@@ -26,7 +26,7 @@ Mas sua utilidade pode ir muito além disso. Vamos ver alguns exemplos:
 
 **Selecionar um item da lista**
 
-Aplicar um background diferenciado ao 5 elemento de uma lista:
+Aplicar um background diferenciado ao 4 elemento de uma lista:
 
 {% highlight css %}
 li:nth-child(4) {
@@ -63,7 +63,7 @@ li:nth-child(3n+3){
 
 Pode ser muito útil quando precisamos remover a margin do último (ou primeiro) item de cada linha da lista.
 
-**Selecionar os primeiros 4 itens de uma lista**
+**Selecionar os primeiros 2 itens de uma lista**
 
 Esse é bem bacana para quando precisamos destacar alguns elementos da lista. Imagine o cenário onde temos uma listagem, e os 2 primeiros itens devem ser destaques, com  tamanhos e/ou cores diferenciadas.
 
@@ -78,7 +78,7 @@ li:nth-child(-n+2){
 }
 {% endhighlight %}
 
-Também podemos usar a lógica inversa, e selecionar todos os elementos, com exceção dos 4 primeiros.
+Também podemos usar a lógica inversa, e selecionar todos os elementos, com exceção dos 2 primeiros.
 
 {% highlight css %}
 li:nth-child(n+2){
