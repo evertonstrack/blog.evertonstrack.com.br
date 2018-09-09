@@ -73,11 +73,13 @@
   <!-- Chrome theme color -->
   <meta name="theme-color" content="{{ page.theme-color | default: '#25262a' }}">
 
-  <link rel="stylesheet" href="{{ "/assets/styles/all.css" | relative_url }}">
-  {%- feed_meta -%}
-
   <!-- Add manifest -->
   <link rel="manifest" href="/manifest.json" />
+
+  <!-- Fedd -->
+  {%- feed_meta -%}
+
+  {%- include styles.html -%}
 
   <!-- Add Service Worker -->
   <script type="text/javascript">

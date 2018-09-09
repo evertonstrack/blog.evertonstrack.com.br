@@ -92,3 +92,42 @@
 pre>code.language-cmd{
   color: #FFF;
 }
+
+
+/* listagem posts */
+.post-list {
+    margin-bottom: 30px;
+}
+
+.post-item{
+
+  .post-link {
+    display: block;
+    font-size: 24px;
+    background-color: #FFF;
+    border: 1px solid rgba(37, 38, 42, 0.1);
+    box-shadow: 0 2px 5px 0 #F0F0F0;
+    padding: 15px 30px;
+    color: map-get($colors, primary);
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+
+    &:visited {
+      color: map-get($colors, primary);
+    }
+
+    &:hover{
+      color: #FFF;
+      background-color: map-get($colors, primary);
+      text-decoration: none;
+    }
+
+    h3{
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

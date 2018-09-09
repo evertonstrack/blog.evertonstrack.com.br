@@ -1,3 +1,5 @@
+@import "../variables";
+
 /* blog */
 
 .blog-page{
@@ -35,6 +37,29 @@
       padding: 10px;
       display: flex;
       flex: 1 auto;
+    }
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .section-blog {
+    .post-list{
+      .post-item {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 640px) {
+  .section-blog {
+    .post-list{
+      .post-item {
+        max-width: 100%;
+        padding: 0;
+      }
     }
   }
 }

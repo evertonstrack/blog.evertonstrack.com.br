@@ -1,6 +1,6 @@
+@import "../variables";
 
 /* home gretings */
-
 .greetings{
   display: flex;
   background-color: #2fbc81;
@@ -68,3 +68,62 @@
   }
 }
 /* end/ home-posts */
+
+
+/* tablet */
+@media screen and (min-width: 641px) and (max-width: 900px) {
+
+  .greetings{
+    .greetings__text {
+      width: 65%;
+      padding-right: 30px;
+
+      h2{
+        font-size: 2.5rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
+    }
+
+    .greetings__image{
+      max-width: 300px;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 640px) {
+  .greetings{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    min-height: auto;
+
+    > .wrap{
+      flex-direction: column;
+    }
+
+    .greetings__text {
+      order: 2;
+      width: 100%;
+      
+
+      h2{
+        font-size: 2rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
+    }
+
+    .greetings__image{
+      display: none;
+    }
+  }
+}
