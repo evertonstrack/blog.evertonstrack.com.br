@@ -1,0 +1,49 @@
+.share{
+  padding: 30px 0;
+
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom:20px;
+  }
+  
+  .wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .share-button {
+    padding: 10px 20px;
+    border: 1px solid #25262a;
+    margin: 0 7px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #25262a;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    .icon{
+      fill:#25262a;
+      width: 30px;
+      height: 30px;
+      margin: 0 10px 0 0;
+    }
+
+    span{
+      display: block;
+      text-align: center;
+    }
+
+    &:hover{
+      background-color: #25262a;
+      color: #FFF;
+      text-decoration: none;
+
+      .icon{
+        fill: #FFF;
+      }
+    }
+  }
+}
