@@ -1,0 +1,24 @@
+// ---
+// # Only the main Sass file needs front matter (the dashes are enough)
+// ---
+
+@import "../../../_sass/minima";
+@import "general";
+@import "variables";
+@import "header";
+@import "page";
+@import "post";
+
+// Components
+@import "components/share";
+@import "components/autor";
+
+/* páginas */
+@import "pages/_home";
+@import "pages/_about";
+@import "pages/_contact";
+@import "pages/_projects";
+@import "pages/_blog";
+
+/* responsivo */
+@import "mobile";

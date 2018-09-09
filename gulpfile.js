@@ -55,14 +55,14 @@ gulp.task('browser-sync', ['jekyll-build'], function () {
  * Styles Task
  */
 gulp.task('styles', function () {
-  gulp.src(['./assets/main.scss'])
+  gulp.src(['./assets/styles/scss/main.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
     .pipe(concat('all.css'))
-    .pipe(gulp.dest('assets'))
+    .pipe(gulp.dest('assets/styles'))
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets'));
+    .pipe(gulp.dest('assets/styles'));
 });
 
 
@@ -82,7 +82,7 @@ gulp.task('js', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
+  gulp.watch('assets/styles/scss/**/*.scss', ['styles', 'jekyll-rebuild']);
   gulp.watch('src/js/**/*.js', ['js', 'styles']);
   gulp.watch(['**/*.html', 'index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });

@@ -73,7 +73,7 @@
   <!-- Chrome theme color -->
   <meta name="theme-color" content="{{ page.theme-color | default: '#25262a' }}">
 
-  <link rel="stylesheet" href="{{ "/assets/all.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/styles/all.css" | relative_url }}">
   {%- feed_meta -%}
 
   <!-- Add manifest -->
@@ -81,7 +81,7 @@
 
   <!-- Add Service Worker -->
   <script type="text/javascript">
-    if ("serviceWorker" in navigator) {
+    if ("serviceWorker" in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
       navigator.serviceWorker.register("/service-worker.js").then(function (registration) {
         console.info("Service Worker registration successful with scope: ", registration.scope);
       }).catch(function (err) {
