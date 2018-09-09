@@ -3,6 +3,7 @@ const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
+const rename = require('gulp-rename');
 const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const exec = require('child_process').exec ;
@@ -20,6 +21,16 @@ const sassOptions = {
   // outputStyle: 'expanded'
   outputStyle: 'compressed'
 };
+
+const pageStyles = [
+  './assets/styles/scss/main.scss',
+  './assets/styles/scss/pages/home.scss',
+  './assets/styles/scss/pages/about.scss',
+  './assets/styles/scss/pages/blog.scss',
+  './assets/styles/scss/pages/post.scss',
+  './assets/styles/scss/pages/projects.scss',
+  './assets/styles/scss/pages/contact.scss'
+];
 
 /**
  * Build the Jekyll Site
@@ -55,14 +66,13 @@ gulp.task('browser-sync', ['jekyll-build'], function () {
  * Styles Task
  */
 gulp.task('styles', function () {
-  gulp.src(['./assets/styles/scss/main.scss'])
+  gulp.src(pageStyles)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('assets/styles'))
+    .pipe(gulp.dest('_includes/styles'))
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/styles'));
+    .pipe(gulp.dest('_includes/styles'));
 });
 
 
@@ -82,7 +92,7 @@ gulp.task('js', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('assets/styles/scss/**/*.scss', ['styles', 'jekyll-rebuild']);
+  gulp.watch('assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
   gulp.watch('src/js/**/*.js', ['js', 'styles']);
   gulp.watch(['**/*.html', 'index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });

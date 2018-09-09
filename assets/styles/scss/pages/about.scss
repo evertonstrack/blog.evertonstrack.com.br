@@ -1,3 +1,5 @@
+@import "../variables";
+
 .content-sobre{
   background-color: #F0F0F0;
 
@@ -175,4 +177,85 @@
   0% {
     stroke-dasharray: 0 100;
   }
+}
+
+
+/* mobile */
+@media screen and (max-width: 640px) {
+  .content-sobre{
+
+    .section-header{
+      margin-bottom: 0;
+    }
+
+    .section-persona{
+      min-height: auto !important;
+      padding-bottom: 0 !important;
+     
+      .persona{
+        flex-direction: column;
+        height: auto;
+
+        .side{
+          width: 100%;
+          display: block;
+          padding: 70px 30px;
+
+          .text{
+            width: 100%;
+            h2{
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sobre-everton{
+      img{
+        float: none;
+        margin: 0 0 30px 0;
+        width: 100%;
+      }
+    }
+  }
+  .skills .skill{
+    max-width: 49%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* about */
+  .content-sobre{
+    .section-persona{
+      .persona{
+        .side{
+          width: 100%;
+          display: block;
+          padding: 70px 30px;
+          
+          .text{
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sobre-everton{
+      img{
+        float: none;
+        margin: 0 auto 30px;
+        width: 100%;
+      }
+    }
+    .section-sobre-everton{
+      font-size: 1.1rem;
+    }
+  }
+  /* end: about */
 }

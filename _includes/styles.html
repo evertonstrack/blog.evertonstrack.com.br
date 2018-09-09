@@ -1,0 +1,28 @@
+
+<!-- general -->
+<style type="text/css">{%- include styles/main.css -%}</style>
+
+
+{% if page.layout == 'home' %}
+<style type="text/css">{%- include styles/home.css -%}</style>
+{% endif %}
+
+{% if page.layout == 'post' %}
+  <style type="text/css">{%- include styles/post.css -%}</style>
+{% endif %}
+
+{% if page.url == "/blog/" %}
+<style type="text/css">{%- include styles/blog.css -%}</style>
+{% endif %}
+
+{% if page.url == "/sobre/" %}
+  <style type="text/css">{%- include styles/about.css -%}</style>
+{% endif %}
+
+{% if page.url == "/contato/" %}
+  <style type="text/css">{%- include styles/contact.css -%}</style>
+{% endif %}
+
+{% if page.url == "/projetos/" %}
+  <style type="text/css">{%- include styles/projects.css -%}</style>
+{% endif %}
