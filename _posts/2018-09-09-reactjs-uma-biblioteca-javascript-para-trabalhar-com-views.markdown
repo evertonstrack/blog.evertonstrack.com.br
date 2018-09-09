@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ReactJS: Uma biblioteca javascript para trabalhar com views."
-description: "O que é? De onde veio? Para que foi criado? E o que você precisa fazer para começar a brincar hoje mesmo  com ReactJS"
+description: "O que é? De onde veio? Para que foi criado? E o que você precisa fazer para começar a brincar hoje mesmo  com ReactJS."
 date:   2018-09-09 09:30:00 -0300
 bodyClass: post-javascript
 theme-color: "#f0db4f"
@@ -321,7 +321,7 @@ Até mais e obrigado pelos peixes.
 
 ---
 
-_Este post foi resultado de uma Tech Talk feita na [Accera](https://accera.com.br/){:target="_blank"} no dia 30/07_
+_Este post foi resultado de uma Tech Talk feita na [Accera](https://accera.com.br/){:target="_blank"} no dia 30/07._
 
 ![Tech Talk sobre React na Accera](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/tech-talk-react-aceera.jpg)
 
