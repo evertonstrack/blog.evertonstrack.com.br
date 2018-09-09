@@ -27,7 +27,7 @@ show_excerpts: false
 #   profile: false
 
 files_to_cache:
-- '/assets/all.css'
+- '/assets/styles/all.css'
 - '/assets/images/404.jpg'
 
 pages_to_cache:
@@ -36,7 +36,7 @@ pages_to_cache:
   - '/blog/'
   - '/contato/'
   - '/projetos/'
-  - /404/
+  - '/404/'
 
 # Include from processing.
 include: ["_redirects",
