@@ -38,7 +38,9 @@ const pageStyles = [
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return exec('jekyll build', function (err, stdout, stderr) {
+    console.log(err);
     console.log(stdout);
+    console.log(stderr);
   })
     .on('close', done);
 });
@@ -93,8 +95,8 @@ gulp.task('js', function () {
  */
 gulp.task('watch', function () {
   gulp.watch('assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  gulp.watch('src/js/**/*.js', ['js', 'styles']);
-  gulp.watch(['**/*.html', 'index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  // gulp.watch('src/js/**/*.js', ['js', 'styles']);
+  gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
