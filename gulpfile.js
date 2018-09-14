@@ -38,9 +38,7 @@ const pageStyles = [
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return exec('jekyll build', function (err, stdout, stderr) {
-    console.log(err);
     console.log(stdout);
-    console.log(stderr);
   })
     .on('close', done);
 });
