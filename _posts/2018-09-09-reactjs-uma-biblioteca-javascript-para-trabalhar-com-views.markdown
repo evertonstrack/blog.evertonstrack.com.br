@@ -289,7 +289,7 @@ Começe pelo basico:
 - Se familiarize com o Javascript Moderno.
 
 
-Após isso, o pessou do Faceboob criou o [create react app](https://github.com/facebook/create-react-app){:target="_blank"}, um boilerplate que deixa tudo pronto para você só se preocupar em desenvolver.
+Após isso, o pessoal do Facebook criou o [create react app](https://github.com/facebook/create-react-app){:target="_blank"}, um boilerplate que deixa tudo pronto para você só se preocupar em desenvolver.
 
 {% highlight cmd %}
 npm install -g create-react-app
