@@ -4,4 +4,5 @@
 
 layout: home
 bodyClass: home-page
+theme-color: "#FFFFFF"
 ---
