@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Usando Sass com ReactJS e Create React App (sem ejetar)"
+title:  "Usando Sass no React com Create React App (sem ejetar)"
 description: "Quem usar Sass em seus projetos com o Create React App? Vamos ver como fazer isso sem ejetar o projeto ou rodar uma task extra."
 date:   2018-09-15 18:30:00 -0300
 bodyClass: post-javascript
