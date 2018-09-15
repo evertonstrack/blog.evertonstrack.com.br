@@ -93,8 +93,8 @@ gulp.task('js', function () {
  */
 gulp.task('watch', function () {
   gulp.watch('assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  gulp.watch('src/js/**/*.js', ['js', 'styles']);
-  gulp.watch(['**/*.html', 'index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  // gulp.watch('src/js/**/*.js', ['js', 'styles']);
+  gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**

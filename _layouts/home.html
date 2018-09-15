@@ -7,7 +7,7 @@ layout: default
   <div class="wrap">
     <div class="greetings__text">
       <h2>Olá, tudo bem? </h2>
-      <p>Eu sou Everton Strack, Front-end developer em aplicações web com grande foco em Design, performance e SEO. Sólido conhecimento em: HTML5, CSS3, JS, AngularJS, ReactJS, Grunt, Gulp, design responsivo, web mobile;  Trabalhei em projetos com grande clientes como Tramontina, Boticário, Lacta, LG, Trakinas, Petrobrás.</p>
+      <p>Menu nome é Everton Strack, Front-end developer em aplicações web com grande foco em Design, performance e SEO. Sólido conhecimento em: HTML5, CSS3, JS, AngularJS, ReactJS, Grunt, Gulp, design responsivo, web mobile;  Trabalhei em projetos com grande clientes como Tramontina, Boticário, Lacta, LG, Trakinas, Petrobrás.</p>
 
       <p>Everton é entusiasta da tecnologia. Ele gosta de ler entre as linhas da indústria de tecnologia e tentar entender as
       motivações por trás de decisões que podem parecer incríveis, irracionais ou puramente idiotas. Ele também gosta de beleza,
@@ -16,7 +16,7 @@ layout: default
     </div>
     <figure class="greetings__image" role="img">
       <a href="/sobre" title="Saiba mais sobre Everton Strack">
-        <img src="/assets/images/evertonstrack-home.jpg" class="round" alt="Foto de Everton Strack" />
+        <img src="/assets/images/evertonstrack-small.jpg" class="round" alt="Foto de Everton Strack" />
       </a>
       <figcaption class="hide">
         <strong>Everton Strack</strong>
@@ -29,61 +29,68 @@ layout: default
 <!-- posts -->
 <section class="section section-full home-posts">
   <div class="wrap">
-    {%- if page.title -%}
+    <!-- {%- if page.title -%}
       <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+    {%- endif -%} -->
 
     {{ content }}
 
     {%- if site.posts.size > 0 -%}
-      <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
-      <div class="post-list">
-        {%- for post in site.posts limit:1 -%}
+    <div class="post-list-container">
+      <div class="last-post">
+        <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
+        <div class="post-list">
+          {%- for post in site.posts limit:1 -%}
+            <article class="post-item">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{ post.description | escape }}</p>
+                <div> 
+                  {%- for category in post.categories -%}
+                      <a href="{{category.url}}">{{ category }}</a>
+                    {%- endfor -%}
+                </div>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </a>
+            </article>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="latest-post">
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
+        <div class="post-list">
+          {%- for post in site.posts offset:1 limit:2 -%}
           <article class="post-item">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>{{ post.title | escape }}</h3>
               <p>{{ post.description | escape }}</p>
-              <div> 
+              <div>
                 {%- for category in post.categories -%}
-                    <a href="{{category.url}}">{{ category }}</a>
-                  {%- endfor -%}
+                <a href="{{category.url}}">{{ category }}</a>
+                {%- endfor -%}
               </div>
-              {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
-              {%- endif -%}
+              {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
             </a>
           </article>
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
       </div>
-
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
-      <div class="post-list">
-        {%- for post in site.posts offset:1 limit:2 -%}
-        <article class="post-item">
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>{{ post.title | escape }}</h3>
-            <p>{{ post.description | escape }}</p>
-            <div>
-              {%- for category in post.categories -%}
-              <a href="{{category.url}}">{{ category }}</a>
-              {%- endfor -%}
-            </div>
-            {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-          </a>
-        </article>
-        {%- endfor -%}
-      </div>
-
-      <p class="rss-subscribe" style="display: none;">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    </div>
     {%- endif -%}
 
-    <div>
+    <div calss="action-button">
       <a class="button-link link-gray" href="/blog" title="Ver todos os posts">Ver todos os posts</a>
     </div>
   </div>
+
+  <p class="rss-subscribe" style="display: none;">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
 </section>
 <!-- /posts -->

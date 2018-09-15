@@ -1,31 +1,63 @@
 @import "../variables";
 
+.home-page{
+  .site-header{
+    background-color: #FFF;
+    box-shadow: 0 4px 10px rgba(0,0,0,.4);
+    z-index: 2;
+
+    .site-title{
+      color: #25262a;
+  
+      .logo{
+        &:visited {
+          color: #25262a;
+        }
+      }
+    }
+    .site-nav  {
+      .page-link{
+        color: #25262a;
+      }
+    }
+  }
+}
+
 /* home gretings */
 .greetings{
   display: flex;
-  background-color: #2fbc81;
+  background: fixed url('./assets/images/tecnologias-frontend-1600w.jpg') repeat 50%;
+  box-shadow: inset 0 -4px 10px rgba(0,0,0,.4);
   align-items: center;
   color: #FFF;
+  min-height: 82vh;
+  padding: 50px 0;
 
   > .wrap {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .greetings__text{
     width: 50%;
 
     h2{
-      font-size: 4rem;
+      font-size: 2rem;
+      padding: 1% 5%;
+      background-color: #276ef1;
     }
 
     p{
       font-size: 1.2rem;
+      padding: 2% 5%;
+      background-color: #276ef1;
     }
 
     a {
       font-size: 1.2rem;
+      display: none;
     }
   }
 
@@ -33,7 +65,7 @@
 
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-filter: grayscale(1);
-    max-width: 420px;
+    max-width: 350px;
     
     filter: grayscale(1);
 
@@ -57,20 +89,67 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width: 800px;
+    // max-width: 800px;
     width: auto;
   }
   
   .button-link{
     display: table;
-    padding: 10px 30px;
-    margin: 0 auto;
+    padding: 20px 30px;
+    margin: 20px auto 30px;
+    background-color: #276ef1;
+    border-color: #276ef1;
+    color: #FFF;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    max-width: 50%;
+  }
+
+  .post-list-container{
+    display: flex;
+  }
+
+  .last-post{
+    width: 40%;
+    padding-right: 12.5px;
+    display: flex;
+    flex-direction: column;
+
+    .post-list{
+      flex: 1;
+
+      .post-item,
+      .post-link{
+        height: 100%;
+      }
+
+      .post-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          font-size: 2.5rem;
+          line-height: 125%;
+        }
+
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .latest-post{
+    width: 60%;
+    padding-left: 12.5px;
   }
 }
 /* end/ home-posts */
 
 
-/* tablet */
+/* tablet only */
 @media screen and (min-width: 641px) and (max-width: 900px) {
 
   .greetings{
@@ -97,12 +176,33 @@
   }
 }
 
+/* tablet */
+@media screen and (max-width: 767px) {
+  .home-posts{
+
+    .post-list-container{
+      flex-direction: column;
+    }
+
+    .last-post {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .latest-post {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+
 /* mobile */
 @media screen and (max-width: 640px) {
   .greetings{
     padding-bottom: 30px;
     padding-top: 30px;
     min-height: auto;
+    background: #276ef1;
 
     > .wrap{
       flex-direction: column;
@@ -112,9 +212,14 @@
       order: 2;
       width: 100%;
       
+      h2, p{
+        padding-left: 0; 
+        padding-right: 0;
+      }
 
       h2{
         font-size: 2rem;
+        text-align: center;
       }
 
       p{
@@ -123,7 +228,18 @@
     }
 
     .greetings__image{
-      display: none;
+      width: 70%;
+      margin: 0 auto 10px;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .home-posts{
+    .button-link{
+      max-width: 100%;
     }
   }
 }
