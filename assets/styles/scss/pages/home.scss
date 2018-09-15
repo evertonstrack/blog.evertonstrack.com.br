@@ -26,36 +26,38 @@
 /* home gretings */
 .greetings{
   display: flex;
-  background: fixed url('./assets/images/home-banner.jpg') repeat 50%;
+  background: fixed url('./assets/images/tecnologias-frontend-1600w.jpg') repeat 50%;
   box-shadow: inset 0 -4px 10px rgba(0,0,0,.4);
   align-items: center;
   color: #FFF;
+  min-height: 82vh;
+  padding: 50px 0;
 
   > .wrap {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .greetings__text{
     width: 50%;
 
     h2{
-      font-size: 4rem;
-      background-color: #25262a;
+      font-size: 2rem;
       padding: 1% 5%;
+      background-color: #276ef1;
     }
 
     p{
       font-size: 1.2rem;
-      background-color: #25262a;
       padding: 2% 5%;
+      background-color: #276ef1;
     }
 
     a {
       font-size: 1.2rem;
-      background-color: #25262a;
-      t
+      display: none;
     }
   }
 
@@ -63,7 +65,7 @@
 
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-filter: grayscale(1);
-    max-width: 420px;
+    max-width: 350px;
     
     filter: grayscale(1);
 
@@ -133,6 +135,7 @@
     padding-bottom: 30px;
     padding-top: 30px;
     min-height: auto;
+    background: #276ef1;
 
     > .wrap{
       flex-direction: column;
@@ -142,6 +145,10 @@
       order: 2;
       width: 100%;
       
+      h2, p{
+        padding-left: 0; 
+        padding-right: 0;
+      }
 
       h2{
         font-size: 2rem;
