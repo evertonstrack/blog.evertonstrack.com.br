@@ -29,61 +29,68 @@ layout: default
 <!-- posts -->
 <section class="section section-full home-posts">
   <div class="wrap">
-    {%- if page.title -%}
+    <!-- {%- if page.title -%}
       <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+    {%- endif -%} -->
 
     {{ content }}
 
     {%- if site.posts.size > 0 -%}
-      <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
-      <div class="post-list">
-        {%- for post in site.posts limit:1 -%}
+    <div class="post-list-container">
+      <div class="last-post">
+        <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
+        <div class="post-list">
+          {%- for post in site.posts limit:1 -%}
+            <article class="post-item">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{ post.description | escape }}</p>
+                <div> 
+                  {%- for category in post.categories -%}
+                      <a href="{{category.url}}">{{ category }}</a>
+                    {%- endfor -%}
+                </div>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </a>
+            </article>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="latest-post">
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
+        <div class="post-list">
+          {%- for post in site.posts offset:1 limit:2 -%}
           <article class="post-item">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>{{ post.title | escape }}</h3>
               <p>{{ post.description | escape }}</p>
-              <div> 
+              <div>
                 {%- for category in post.categories -%}
-                    <a href="{{category.url}}">{{ category }}</a>
-                  {%- endfor -%}
+                <a href="{{category.url}}">{{ category }}</a>
+                {%- endfor -%}
               </div>
-              {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
-              {%- endif -%}
+              {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
             </a>
           </article>
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
       </div>
-
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
-      <div class="post-list">
-        {%- for post in site.posts offset:1 limit:2 -%}
-        <article class="post-item">
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>{{ post.title | escape }}</h3>
-            <p>{{ post.description | escape }}</p>
-            <div>
-              {%- for category in post.categories -%}
-              <a href="{{category.url}}">{{ category }}</a>
-              {%- endfor -%}
-            </div>
-            {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-          </a>
-        </article>
-        {%- endfor -%}
-      </div>
-
-      <p class="rss-subscribe" style="display: none;">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    </div>
     {%- endif -%}
 
-    <div>
+    <div calss="action-button">
       <a class="button-link link-gray" href="/blog" title="Ver todos os posts">Ver todos os posts</a>
     </div>
   </div>
+
+  <p class="rss-subscribe" style="display: none;">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
 </section>
 <!-- /posts -->

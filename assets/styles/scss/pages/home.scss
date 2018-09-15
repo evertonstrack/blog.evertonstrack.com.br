@@ -89,20 +89,67 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-width: 800px;
+    // max-width: 800px;
     width: auto;
   }
   
   .button-link{
     display: table;
-    padding: 10px 30px;
-    margin: 0 auto;
+    padding: 20px 30px;
+    margin: 20px auto 30px;
+    background-color: #276ef1;
+    border-color: #276ef1;
+    color: #FFF;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    max-width: 50%;
+  }
+
+  .post-list-container{
+    display: flex;
+  }
+
+  .last-post{
+    width: 40%;
+    padding-right: 12.5px;
+    display: flex;
+    flex-direction: column;
+
+    .post-list{
+      flex: 1;
+
+      .post-item,
+      .post-link{
+        height: 100%;
+      }
+
+      .post-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          font-size: 2.5rem;
+          line-height: 125%;
+        }
+
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .latest-post{
+    width: 60%;
+    padding-left: 12.5px;
   }
 }
 /* end/ home-posts */
 
 
-/* tablet */
+/* tablet only */
 @media screen and (min-width: 641px) and (max-width: 900px) {
 
   .greetings{
@@ -125,6 +172,26 @@
       img{
         width: 100%;
       }
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 767px) {
+  .home-posts{
+
+    .post-list-container{
+      flex-direction: column;
+    }
+
+    .last-post {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .latest-post {
+      width: 100%;
+      padding-left: 0;
     }
   }
 }
@@ -152,6 +219,7 @@
 
       h2{
         font-size: 2rem;
+        text-align: center;
       }
 
       p{
@@ -160,7 +228,18 @@
     }
 
     .greetings__image{
-      display: none;
+      width: 70%;
+      margin: 0 auto 10px;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .home-posts{
+    .button-link{
+      max-width: 100%;
     }
   }
 }
