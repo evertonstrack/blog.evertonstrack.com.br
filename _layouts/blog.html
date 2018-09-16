@@ -27,7 +27,7 @@ layout: default
         <article class="post-item">
           <a class="post-link" href="{{ post.url | relative_url }}">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <time class="post-meta">{% include date.html date=post.date %}</time>
             <h3>{{ post.title | escape }}</h3>
             <p>{{ post.description | escape }}</p>
             {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
