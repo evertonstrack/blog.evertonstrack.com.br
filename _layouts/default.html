@@ -4,6 +4,24 @@
   {%- include head.html -%}
 
   <body class="{{page.bodyClass}}">
+
+    <script type="text/javascript">
+      // Verify webp support on browser
+      var supportsWebP = (function () {
+        'use strict';
+        var canvas = typeof document === 'object' ? document.createElement('canvas') : {};
+        canvas.width = canvas.height = 1;
+        var index = canvas.toDataURL ? canvas.toDataURL('image/webp').indexOf('image/webp') === 5 : false;
+        return index;
+      }());
+
+      if (supportsWebP) {
+        document.querySelector('html').classList.add('webp');
+      } else {
+        document.querySelector('html').classList.add('no-webp');
+      }
+    </script>
+
     {% include svg-icons.html %}
     {%- include header.html -%}
 

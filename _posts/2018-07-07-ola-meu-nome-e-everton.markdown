@@ -16,7 +16,13 @@ A ideia é escrever coisas diversas por aqui, sobre o dia-a-dia de um front-end,
 
 ## Mas quem diabos é você?
 
-![Everton Strack Desenvolvedor Front-end](/assets/images/posts/ola-meu-nome-e-everton/everton-strack.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/ola-meu-nome-e-everton/everton-strack.webp" />
+      <source srcset="/assets/images/posts/ola-meu-nome-e-everton/everton-strack.jpg" />
+      <img itemprop="image" src="/assets/images/posts/ola-meu-nome-e-everton/everton-strack.jpg" alt="Everton Strack Desenvolvedor Front-end" />
+    </picture>
+</figure>
 
 Bom, como diz no título, meu nome  é Everton Strack, já passei da síndrome dos 20 e poucos, moro em São Leopoldo, Rio Grande do Sul e trabalho como Desenvolvedor Front-end desde a época em que precisávamos fazer **mágica** para que as coisas funcionassem no IE6. 
 
@@ -33,7 +39,13 @@ Sou estudante de Design, e isso meu deu um novo olhar sobre tudo na tecnologia. 
 
 Minha noiva me definiria como o **Spock, com ódio**. Sou um cara meio quieto no geral, mas entre amigos sempre rola alguma piada sem graça. 
 
-![Spock - Star Trek](/assets/images/posts/ola-meu-nome-e-everton/spock.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/ola-meu-nome-e-everton/spock.webp" />
+      <source srcset="/assets/images/posts/ola-meu-nome-e-everton/spock.jpg" />
+      <img itemprop="image" src="/assets/images/posts/ola-meu-nome-e-everton/spock.jpg" alt="Spock - Star Trek" />
+    </picture>
+</figure>
 
 Para finalizar, algumas curiosidade que ao meu ver me descrevem bem:
 

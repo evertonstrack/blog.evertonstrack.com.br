@@ -17,7 +17,13 @@ Vamos refletir um pouco sobre isso e sobre o que podemos fazer para melhorar nos
 
 ## **O problema**
 
-![Quanto vale o seu tempo?]( /assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.webp" />
+      <source srcset="/assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg" />
+      <img itemprop="image" src="/assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg" alt="Quanto vale o seu tempo?" />
+    </picture>
+</figure>
 
 Você já deve ter pensado muitas vezes que não aguenta mais o seu trabalho, essa rotina diária, que tudo isso te estressa muito, certo?
 

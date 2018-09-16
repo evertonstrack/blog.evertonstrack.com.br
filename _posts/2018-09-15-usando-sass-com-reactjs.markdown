@@ -9,8 +9,13 @@ tags: ['javascript', 'react', 'sass']
 image: /assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg
 ---
 
-![Usando Sass com Create React App (sem ejetar)](/assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg)
-
+<figure>
+  <picture>
+    <source type="image/webp" srcset="/assets/images/webp/posts/usando-sass-com-react/usando-sass-com-react.webp" />
+    <source srcset="/assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg" />
+    <img itemprop="image" src="/assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg" alt="Usando Sass com Create React App (sem ejetar)" />
+  </picture>
+</figure>
 
 A maneira mais fácil de iniciar um projeto com React é usando a ferramenta oficial que o Facebook criou, para nos dar um boilerplate inicial para qualquer projeto com react. Sim, estou falando do [Create React App](https://github.com/facebook/create-react-app){:target="_blank"}.
 
