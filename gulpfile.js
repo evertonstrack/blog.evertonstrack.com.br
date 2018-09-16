@@ -8,6 +8,8 @@ const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const exec = require('child_process').exec ;
 const sass = require('gulp-sass');
+const webp = require('gulp-webp');
+
 
 const messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -31,6 +33,13 @@ const pageStyles = [
   './assets/styles/scss/pages/projects.scss',
   './assets/styles/scss/pages/contact.scss'
 ];
+
+
+gulp.task('convert-webp', () =>
+  gulp.src('assets/images/**/*.{jpg,png}')
+    .pipe(webp({ quality: 50 }))
+    .pipe(gulp.dest('assets/images/webp'))
+);
 
 /**
  * Build the Jekyll Site

@@ -13,9 +13,13 @@ A mundo front-end é uma loucura total, principalmente quando falamos em framewo
 
 Hoje vamos falar sobre a lib que estampa a frente do trem do hype, isso mesmo, vamos falar do ReactJS.. ou apenas React, para os íntimos.
 
-
-![ReactJS: Uma biblioteca javascript para trabalhar com views](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg)
-
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.webp" />
+      <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg" />
+      <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg" alt="ReactJS: Uma biblioteca javascript para trabalhar com views" />
+    </picture>
+</figure>
 
 > **TL;DR;** Vamos abordar o que é, para que foi criado e o que você precisa fazer para iniciar hoje mesmo.
 
@@ -38,9 +42,13 @@ Um engenheiro do Facebook negociou tempo com seu gerente para levar o XHP ao nav
 
 > Então esse tal de React.. é um tipo de Angular, certo?
 
-
-![Faustão](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/faustao-errou.jpg)
-
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/faustao-errou.webp" />
+      <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/faustao-errou.jpg" />
+      <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/faustao-errou.jpg" alt="ReactJS: Uma biblioteca javascript para trabalhar com views" />
+    </picture>
+</figure>
 
 Não. O React é uma **biblioteca**, focada em resolver um problema específico, neste caso, renderizar componentes. Angular é um **framework**, um conjunto de ferramentas que foca em resolver vários problemas.
 
@@ -49,7 +57,13 @@ Mas não se prenda a isso, existem tantas coisas mais importantes no desenvolvim
 > Lib ou framework, não importa.. não faz diferença.
 
 
-![Frameworks e libs javascript: AngularJS, ReactJS, VueJS, Ember](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lib-e-framwork.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lib-e-framwork.webp" />
+      <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lib-e-framwork.jpg" />
+      <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lib-e-framwork.jpg" alt="Frameworks e libs javascript: AngularJS, ReactJS, VueJS, Ember" />
+    </picture>
+</figure>
 
 
 ## Entendendo melhor o React
@@ -66,7 +80,13 @@ Agora sabemos o que é o React, entendemos qual foi o motivo que levou a sua cri
 
 Para entender e usar o React, basicamente precisamos entender os 4 pilares principais: **states**, **props**, **render** e o **lifecycle**.
 
-![Pilares do React](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/pilares-do-react.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/pilares-do-react.webp" />
+      <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/pilares-do-react.jpg" />
+      <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/pilares-do-react.jpg" alt="Pilares do React" />
+    </picture>
+</figure>
 
 Vamos explanar um pouco cada um desses pilares.
 
@@ -258,7 +278,13 @@ componentWillUnmount() { }
 {% endhighlight %}
 Último método no ciclo de vida. Isso é executado imediatamente antes de o componente ser removido do DOM.
 
-![Ciclo de vida do React](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lifecycle-react.png)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lifecycle-react.webp" />
+      <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lifecycle-react.jpg" />
+      <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/lifecycle-react.jpg" alt="Ciclo de vida do React" />
+    </picture>
+</figure>
 
 
 ### Algumas considerações
@@ -312,7 +338,13 @@ Toda biblioteca introduz um nível de complexidade adicional ao projeto, você d
 
 Antes de usar qualquer lib ou framework, tire algum tempo para pensar se realmente ele é necessário para a sua aplicação.
 
-![Mind](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/think.jpg)
+<figure>
+  <picture>
+    <source type="image/webp" srcset="/assets/images/webp/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/think.webp" />
+    <source srcset="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/think.jpg" />
+    <img itemprop="image" src="/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/think.jpg" alt="Pense se faz sentido" />
+  </picture>
+</figure>
 
 Pode parecer só mais uma dependência pra você, mas é o plano de dados do usuário que paga o pato por fazer o download de 1 Kg de javascript.
 

@@ -21,7 +21,16 @@ Transformar um site simples em um PWA não é tão difícil e os benefícios sã
 
 ## O que é um Progressive Web App?
 
-![Progressive Web Apps (PWA): funcionam offline](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg)
+<!-- ![Progressive Web Apps (PWA): funcionam offline](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg) -->
+
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.webp" />
+      <source srcset="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg" />
+      <img itemprop="image" src="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg" alt="Progressive Web Apps (PWA): funcionam offline" />
+    </picture>
+</figure>
+
 
 PWA, ou Progressive Web App são sites que se comportam como apps, que se traduzem em experiências que combinam o melhor da Web e o melhor dos aplicativos. 
 
@@ -130,9 +139,13 @@ A melhor abordagem é configurar o seu servidor para sempre carregar de novo o a
 
 Agora que já sabemos o que são service workers e algumas das coisas que podemos fazer com eles, vamos ao que interessa.
 
-
-![Jerry Maguire (1996)](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/jerry-maguire-show-me-the-code.jpg)
-
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/como-transformar-seu-site-em-um-progressive-web-app/jerry-maguire-show-me-the-code.webp" />
+      <source srcset="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/jerry-maguire-show-me-the-code.jpg" />
+      <img itemprop="image" src="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/jerry-maguire-show-me-the-code.jpg" alt="Jerry Maguire (1996)" />
+    </picture>
+</figure>
 
 **Detectando suporte do navegador**
 
@@ -271,8 +284,13 @@ Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqu
 
 Abaixo podemos ver o banner de instalação do Progressive Web App e após instalada, parece um aplicativo nativo no app drawer (gaveta de aplicativos).
 
-
-![Banner de instalação do Progressive Web App](/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.jpg)
+<figure>
+  <picture>
+      <source type="image/webp" srcset="/assets/images/webp/posts/como-transformar-seu-site-em-um-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.webp" />
+      <source srcset="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.jpg" />
+      <img itemprop="image" src="/assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/progressivve-web-app-install-banner-and-app-drawer.jpg" alt="Banner de instalação do Progressive Web App" />
+    </picture>
+</figure>
 
 
 ## Conclusão
