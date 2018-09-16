@@ -105,3 +105,22 @@ image: /assets/images/evertonstrack.jpg
 <!-- /section sobre everton -->
 
 {%- include skills.html -%}
+
+<script type="application/ld+json">
+  {
+      "@context": "http://schema.org/",
+      "@type": "Website",
+      "url": "https://evertonstrack.com.br/",
+      "name": "Everton Strack Blog",
+      "author": {
+          "type": "Person",
+          "name": "Everton Strack",
+          "sameAs": [
+              "https://www.instagram.com/evertonstrack/",
+              "https://twitter.com/evertonstrack",
+              "https://www.linkedin.com/in/evertonstrack/"
+          ]
+      },
+      "description": "{{ site.description }}"
+  }
+</script>
