@@ -131,3 +131,60 @@ pre>code.language-cmd{
     }
   }
 }
+
+
+// Toast
+.toast{
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(#276ef1, 0.9);
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+
+  &.show{
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .toast__text{
+    color: #FFF;
+    font-size: 16px;
+    flex: 1;
+    margin: 0;
+  }
+
+  .toast__button{
+    border: none;
+    color: #FFF;
+    padding: 10px 15px;
+    background-color: #25262a;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .toast{
+    position: fixed;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: none;
+
+    &.show{
+      bottom: 64px;
+    }
+  }
+}
