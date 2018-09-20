@@ -3,7 +3,7 @@
 .home-page{
   .site-header{
     background-color: #FFF;
-    box-shadow: 0 4px 10px rgba(0,0,0,.4);
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
     z-index: 2;
 
     .site-title{
@@ -23,18 +23,11 @@
   }
 }
 
-.webp .greetings{
-  background: #25262a fixed url('./assets/images/webp/tecnologias-frontend-1600w.webp') repeat 50%;
-}
-.no-webp .greetings{
-  background: #25262a fixed url('./assets/images/tecnologias-frontend-1600w.jpg') repeat 50%;
-}
-
 /* home gretings */
 .greetings{
   display: flex;
-  background-color: #25262a;
-  box-shadow: inset 0 -4px 10px rgba(0,0,0,.4);
+  background-color: #369cd6;
+  box-shadow: inset 0 -4px 10px rgba(0,0,0,.2);
   align-items: center;
   color: #FFF;
   min-height: 82vh;
@@ -54,13 +47,13 @@
     h2{
       font-size: 2rem;
       padding: 1% 5%;
-      background-color: #276ef1;
+      background-color: #25262a;
     }
 
     p{
       font-size: 1.2rem;
       padding: 2% 5%;
-      background-color: #276ef1;
+      background-color: #25262a;
     }
 
     a {
@@ -103,13 +96,18 @@
     display: table;
     padding: 20px 30px;
     margin: 20px auto 30px;
-    background-color: #276ef1;
-    border-color: #276ef1;
+    background-color: #25262a;
+    border-color: #25262a;
     color: #FFF;
     font-size: 1.2rem;
     width: 100%;
     text-align: center;
     max-width: 50%;
+
+    &:hover{
+      background-color: transparent;
+      color: #25262a;
+    }
   }
 
   .post-list-container{
@@ -204,10 +202,9 @@
 
 /* mobile */
 @media screen and (max-width: 640px) {
-  .webp .greetings,
-  .no-webp .greetings
+
   .greetings{
-    background: #276ef1;
+    background: #369cd6;
   }
 
   .greetings{
@@ -251,6 +248,10 @@
   .home-posts{
     .button-link{
       max-width: 100%;
+    }
+
+    h2, h3{
+      word-break: break-word;
     }
   }
 }

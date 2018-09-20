@@ -143,7 +143,7 @@ pre>code.language-cmd{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(#276ef1, 0.9);
+  background-color: rgba(#25262a, 0.9);
   border-radius: 5px;
   padding: 10px 20px;
   transition: all 0.3s ease-in-out;
@@ -165,9 +165,9 @@ pre>code.language-cmd{
 
   .toast__button{
     border: none;
-    color: #FFF;
     padding: 10px 15px;
-    background-color: #25262a;
+    background-color: #FFF;
+    color: #25262a;
     border-radius: 5px;
     margin-left: 15px;
     cursor: pointer;
@@ -186,5 +186,12 @@ pre>code.language-cmd{
     &.show{
       bottom: 64px;
     }
+  }
+}
+
+@media (max-width: 380px) {
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
