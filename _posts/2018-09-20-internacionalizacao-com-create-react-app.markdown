@@ -360,6 +360,6 @@ Tenho trabalhado bastante com react nos últimos tempos, e passei semanas atrás
 
 Dê uma conferida no [react-intl-universal](https://github.com/alibaba/react-intl-universal){:target="_blank"}{:rel="noopener"}.
 
-**O código que desenvolvemos aqui está [GithHub](https://github.com/evertonstrack/react-intl-universal-exemple), para ver o código completo é só acessar**
+**O código que desenvolvemos aqui está [GithHub](https://github.com/evertonstrack/react-intl-universal-exemple), para ver o código completo é só acessar.**
 
 Até mais e obrigado pelos peixes.
