@@ -83,12 +83,34 @@
 
   <!-- Add Service Worker -->
   <script type="text/javascript">
-    if ("serviceWorker" in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-      navigator.serviceWorker.register("/service-worker.js").then(function (registration) {
-        console.info("Service Worker registration successful with scope: ", registration.scope);
-      }).catch(function (err) {
-        console.error("Service Worker registration failed: ", err);
-      });
-    }
+    // make the whole serviceworker process into a promise so later on we can
+    // listen to it and in case new content is available a toast will be shown
+    window.isUpdateAvailable = new Promise(function (resolve, reject) {
+      if ("serviceWorker" in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
+        navigator.serviceWorker.register("/service-worker.js")
+          .then(function (registration) {
+            console.info("Service Worker registration successful with scope: ", registration.scope);
+            registration.onupdatefound = function() {
+              const installingWorker = registration.installing;
+              installingWorker.onstatechange = function() {
+                switch (installingWorker.state) {
+                  case 'installed':
+                    if (navigator.serviceWorker.controller) {
+                      // new update available
+                      resolve(true);
+                    } else {
+                      // no update available
+                      resolve(false);
+                    }
+                    break;
+                }
+              };
+            };
+          }).catch(function (err) {
+            console.error("[SW ERROR] ", err);
+          });
+      }
+    });
+    
   </script>
 </head>
