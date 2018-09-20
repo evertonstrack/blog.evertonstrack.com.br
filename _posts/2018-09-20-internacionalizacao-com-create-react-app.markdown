@@ -18,7 +18,7 @@ image: /assets/images/posts/internacionalizacao-com-create-react-app/internacion
 </figure>
 
 
-Qundo falamos em internacionalização em React, a primeira lib que nos vem a mente é a [react-intl](https://github.com/yahoo/react-intl){:target="_blank"}{:rel="noopener"}, uma das bibliotecas mais pupulares do mercado, criada pelo Yahoo para internacionalizar aplicações feitas em React.
+Quando falamos em internacionalização em React, a primeira lib que nos vem a mente é a [react-intl](https://github.com/yahoo/react-intl){:target="_blank"}{:rel="noopener"}, uma das bibliotecas mais pupulares do mercado, criada pelo Yahoo para internacionalizar aplicações feitas em React.
 
 ## Por que outra solução de internacionalização para React?
 
