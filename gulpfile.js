@@ -110,7 +110,7 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['js', 'styles', 'browser-sync', 'watch']);
+gulp.task('default', ['js', 'styles', 'convert-webp', 'browser-sync', 'watch']);
 
 // build to deploy
-gulp.task('build', ['js', 'styles', 'jekyll-build']);
+gulp.task('build', ['js', 'styles', 'convert-webp', 'jekyll-build']);
