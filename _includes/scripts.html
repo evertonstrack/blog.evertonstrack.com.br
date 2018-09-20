@@ -4,25 +4,3 @@
   {%- include google-analytics.html -%}
 {%- endif -%}
 <!-- /Google Analytics -->
-
-<div class="toast">
-  <p class="toast__text">Nova atualização disponível! Atualize o webapp para ver as novas mudanças.</p>
-  <button class="toast__button">Atualizar</button>
-</div>
-
-
-<!-- Verify new version -->
-<script>
-  // listen to the service worker promise in index.html to see if there has been a new update.
-  // condition: the service-worker.js needs to have some kind of change - e.g. increment CACHE_VERSION.
-  window['isUpdateAvailable']
-    .then(function(isAvailable) {
-      if (isAvailable) {
-        document.querySelector('.toast').classList.add('show');
-      }
-    });
-
-  document.querySelector('.toast__button').addEventListener('click', function(){
-    window.location.reload();
-  });
-</script>
