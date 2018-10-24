@@ -6,7 +6,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
-const exec = require('child_process').exec ;
+const exec = require('child_process').exec;
 const sass = require('gulp-sass');
 const webp = require('gulp-webp');
 
@@ -36,9 +36,11 @@ const pageStyles = [
 
 
 gulp.task('convert-webp', () =>
-  gulp.src('assets/images/**/*.{jpg,png}')
-    .pipe(webp({ quality: 50 }))
-    .pipe(gulp.dest('assets/images/webp'))
+  gulp.src('assets/images/**/*.{jpg,jpeg,png}')
+  .pipe(webp({
+    quality: 50
+  }))
+  .pipe(gulp.dest('assets/images/webp'))
 );
 
 /**
@@ -47,8 +49,8 @@ gulp.task('convert-webp', () =>
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return exec('jekyll build', function (err, stdout, stderr) {
-    console.log(stdout);
-  })
+      console.log(stdout);
+    })
     .on('close', done);
 });
 
@@ -80,7 +82,9 @@ gulp.task('styles', function () {
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
     .pipe(gulp.dest('_includes/styles'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
     .pipe(gulp.dest('_includes/styles'));
 });
 
