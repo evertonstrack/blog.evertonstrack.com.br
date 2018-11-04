@@ -77,7 +77,7 @@ Ao falar de ambiente friendly entramos também no quesito saúde mental, pois sa
 
 ## **História real**
 
-O que me motivou a escrever (terminar) este post, foi ter lido um texto do [Felipe Fialho](https://www.felipefialho.com/){:target="_blank"}, no qual ele fazia [uma reflexão sobre salários, valor hora e qualidade de vida](https://www.felipefialho.com/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida){:target="_blank"}.
+O que me motivou a escrever (terminar) este post, foi ter lido um texto do [Felipe Fialho](https://www.felipefialho.com/){:target="_blank"}{:rel="noopener"}, no qual ele fazia [uma reflexão sobre salários, valor hora e qualidade de vida](https://www.felipefialho.com/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida){:target="_blank"}{:rel="noopener"}.
 
 Este texto me fez lembrar o quão estressante era perder 3h a 3h30 diárias com deslocamento de casa até o trabalho, sem contar com o aperto do transporte público, com ônibus e trens sempre com a capacidade máxima de lotação ultrapassada.
 
@@ -111,8 +111,8 @@ O recado que quero passar aqui é, pense bem como está gastando seu tempo, pois
 Pra quem se interessou sobre o assunto, dê uma conferida nos dois posts abaixo que abordam de uma forma bem interessante e com outro ponto de vista esse assunto:
 
 
-- [Nem React, nem VueJs. Saúde deve ser uma prioridade por Willian Justen](https://willianjusten.com.br/saude-deve-ser-a-prioridade/){:target="_blank"}
-- [Uma reflexão sobre salários, valor hora e qualidade de vida por Felipe Fialho](https://www.felipefialho.com/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida){:target="_blank"}
+- [Nem React, nem VueJs. Saúde deve ser uma prioridade por Willian Justen](https://willianjusten.com.br/saude-deve-ser-a-prioridade/){:target="_blank"}{:rel="noopener"}
+- [Uma reflexão sobre salários, valor hora e qualidade de vida por Felipe Fialho](https://www.felipefialho.com/blog/2015/uma-reflexao-sobre-salarios-valor-hora-e-qualidade-de-vida){:target="_blank"}{:rel="noopener"}
 
 
 Até mais e obrigado pelos peixes. 

@@ -315,7 +315,7 @@ Começe pelo basico:
 - Se familiarize com o Javascript Moderno.
 
 
-Após isso, o pessoal do Facebook criou o [create react app](https://github.com/facebook/create-react-app){:target="_blank"}, um boilerplate que deixa tudo pronto para você só se preocupar em desenvolver.
+Após isso, o pessoal do Facebook criou o [create react app](https://github.com/facebook/create-react-app){:target="_blank"}{:rel="noopener"}, um boilerplate que deixa tudo pronto para você só se preocupar em desenvolver.
 
 {% highlight cmd %}
 npm install -g create-react-app
@@ -353,7 +353,7 @@ Até mais e obrigado pelos peixes.
 
 ---
 
-_Este post foi resultado de uma Tech Talk feita na [Accera](https://accera.com.br/){:target="_blank"} no dia 30/07._
+_Este post foi resultado de uma Tech Talk feita na [Accera](https://accera.com.br/){:target="_blank"}{:rel="noopener"} no dia 30/07._
 
 ![Tech Talk sobre React na Accera](/assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/tech-talk-react-aceera.jpg)
 

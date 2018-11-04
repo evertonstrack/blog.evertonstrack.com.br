@@ -21,7 +21,7 @@ image: /assets/images/posts/uma-conversa-sobre-coisas-importantes/minimalism-net
 
 Faz muito tempo que tenho um questionamento bem forte sobre a vida que tenho levado, sobre a quantidade de coisas que eu tenho e a importância de cada uma delas. 
 
-Semana passada vi um documentário no Netflix chamado [Minimalism: A Documentary About the Important Things](https://www.netflix.com/br/title/80114460){:target="_blank"}, que me impactou de uma forma muito positiva, pois foi exatamente de encontro a tudo isso que aconteceu e segue acontecendo em minha vida.
+Semana passada vi um documentário no Netflix chamado [Minimalism: A Documentary About the Important Things](https://www.netflix.com/br/title/80114460){:target="_blank"}{:rel="noopener"}, que me impactou de uma forma muito positiva, pois foi exatamente de encontro a tudo isso que aconteceu e segue acontecendo em minha vida.
 
 Nossa sociedade moderna nos bombardeia de comerciais, anúncios e propagandas sobre uma infinidade de coisas que “precisamos comprar”. Mas a pergunta que não estamos nos fazendo é:  **Eu realmente preciso disto?**
 
@@ -67,7 +67,7 @@ Sempre levei essa frase como um certo “lema”, com a licença poética, mas a
 
 Podemos neste ponto fazer uma analogia com uma Startup, que precisa tomar decisões rápidas e pivotar sem medo quando identificar que está seguindo em um caminho que não está dando resultado.
 
-É bem curioso pensar que o ciclo descrito da [Startup enxuta (Eric Ries)](https://www.amazon.com.br/Startup-Enxuta-Eric-Ries/dp/8581780040?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=go_726685122_51601401518_242574450465_aud-519888259198:pla-435119911103_c_){:target="_blank"} **Construir, medir e aprender**, se encaixa perfeitamente na vida também. 
+É bem curioso pensar que o ciclo descrito da [Startup enxuta (Eric Ries)](https://www.amazon.com.br/Startup-Enxuta-Eric-Ries/dp/8581780040?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=go_726685122_51601401518_242574450465_aud-519888259198:pla-435119911103_c_){:target="_blank"}{:rel="noopener"} **Construir, medir e aprender**, se encaixa perfeitamente na vida também. 
 
 <figure>
   <picture>
@@ -86,7 +86,7 @@ Só não ter medo de errar, não é o bastante. Precisamos encarar estes erros c
 
 Hoje em dia tenho tentado cada vez mais olhar para as coisas e me perguntar se realmente preciso delas. Muitas vezes ainda acabo comprando coisas que não precisava, ou apenas guardando coisas que não preciso mais, mas com uma frequência bem menor.
 
-Se você se identifica ao menos em partes com esse sentimento, sugiro que assista o [documentário Minimalism](https://www.netflix.com/br/title/80114460){:target="_blank"}. Como nome já diz, **“Um documentário sobre as coisas importantes”**. 
+Se você se identifica ao menos em partes com esse sentimento, sugiro que assista o [documentário Minimalism](https://www.netflix.com/br/title/80114460){:target="_blank"}{:rel="noopener"}. Como nome já diz, **“Um documentário sobre as coisas importantes”**. 
 
 Não pense que se trata de um documentário sobre jogar todas as suas coisas fora e viver com pouco, não. Ele fala sobre repensar a importância das coisas em nossas vida e sobre o que você considera importante.
 

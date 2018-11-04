@@ -107,21 +107,21 @@ Os Progressive Web Apps precisam de uma conexão segura, portanto, o protocolo H
 
 O Google já anunciou mudanças no algorítimo de busca, para beneficiar sites que usam HTTPS e também o Google Chorme passou a marcar como não seguros os sites que ainda usam HTTP.
 
-Não está convencido? [veja alguns motivos de por que usar HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https?hl=pt-br){:target="_blank"}.
+Não está convencido? [veja alguns motivos de por que usar HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https?hl=pt-br){:target="_blank"}{:rel="noopener"}.
 
 **Como migrar para HTTPS?**
 
 Para mudar para HTTPS, você precisará de um certificado SSL. A forma para obtê-lo, depende da sua hospedagem, mas geralmente há duas maneiras comuns de fazê-lo:
 
 
-- Se você gerencia o seu servidor ou tem acesso root a ele, confira o [LetsEncrypt](https://letsencrypt.org/){:target="_blank"}, a forma mais fácil e rápido de migrar para HTTPS.
+- Se você gerencia o seu servidor ou tem acesso root a ele, confira o [LetsEncrypt](https://letsencrypt.org/){:target="_blank"}{:rel="noopener"}, a forma mais fácil e rápido de migrar para HTTPS.
 - Caso não tenha acesso root, você pode criar uma conta no CloudFlare e usar o certificado SSL grátis.
-- Caso seu site seja estático, ou com geradores de blogs e sites estáticos, pode hospedá-lo no Netlify ou no GitHub pages. O aqui tem [um post bem bacana sobre o assunto](https://willianjusten.com.br/como-colocar-seu-site-no-ar-de-graca/){:target="_blank"}.
+- Caso seu site seja estático, ou com geradores de blogs e sites estáticos, pode hospedá-lo no Netlify ou no GitHub pages. O aqui tem [um post bem bacana sobre o assunto](https://willianjusten.com.br/como-colocar-seu-site-no-ar-de-graca/){:target="_blank"}{:rel="noopener"}.
 - Caso nenhuma das opções acima sejam viáveis, e você estiver em hospedagem compartilhada, verifique com sua hospedagem se possuem SSL grátis. Algumas hospedagens, geralmente oferecem certificados SSL por uma taxa mensal ou anual. Se você não souber como obter um certificado, entre em contato com seu provedor de hospedagem.
 
 ### 3. O Service Worker
 
-Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM. 
+Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"}{:rel="noopener"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM. 
 
 Há várias coisas legais que podemos fazer com os service workers, como por exemplo armazenar conteúdo em cache localmente e disponibilizá-lo quando o usuário estiver offline.  Mesmo que o usuário esteja online, isso gera um impacto muito grande no tempo de carregamento da página, uma vez que as solicitações podem simplesmente ignorar completamente a rede e os recursos ficam disponíveis instantaneamente.
 
@@ -160,7 +160,7 @@ if ("serviceWorker" in navigator) {
 }
 {% endhighlight %}
 
-Para mais informações sobre o suporte dos navegadores, tem o site [Is Service Worker Ready?](https://jakearchibald.github.io/isserviceworkerready/){:target="_blank"} que tem informações sobre os navegadores que já suportam.
+Para mais informações sobre o suporte dos navegadores, tem o site [Is Service Worker Ready?](https://jakearchibald.github.io/isserviceworkerready/){:target="_blank"}{:rel="noopener"} que tem informações sobre os navegadores que já suportam.
 
 
 **Registrar service worker**
@@ -280,7 +280,7 @@ this.addEventListener("fetch", event => {
 });
 {% endhighlight %}
 
-Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"} que construímos. 
+Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"}{:rel="noopener"} que construímos. 
 
 Abaixo podemos ver o banner de instalação do Progressive Web App e após instalada, parece um aplicativo nativo no app drawer (gaveta de aplicativos).
 
@@ -304,9 +304,9 @@ Vejo que os Progressive Web Apps vão crescer muito ainda, seja em adoção ou e
 Pra quem se interessou, seguem alguns links que vão ajudar:
 
 
-- [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/?hl=pt-br){:target="_blank"}
-- [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist){:target="_blank"}
-- [PWA Builder](https://preview.pwabuilder.com/){:target="_blank"}
+- [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/?hl=pt-br){:target="_blank"}{:rel="noopener"}
+- [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist){:target="_blank"}{:rel="noopener"}
+- [PWA Builder](https://preview.pwabuilder.com/){:target="_blank"}{:rel="noopener"}
 
 
 Até mais e obrigado pelos peixes.

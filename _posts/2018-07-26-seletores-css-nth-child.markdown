@@ -9,7 +9,7 @@ tags: ['css']
 image: /assets/images/post/seletores-css-nth-child/pseudo-seletor-nth-child.jpg
 ---
 
-Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}. Como eu sempre digo, **CSS é magia negra**. 
+Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}{:rel="noopener"}. Como eu sempre digo, **CSS é magia negra**. 
 
 Mas hoje vamos abordar coisas bem mais simples, porém muito úteis para o dia-a-dia, vamos ver alguns seletores CSS que são uma mão na roda, e um dos seletores mais versáteis, que facilitam muito nosso trabalho.
 
@@ -108,7 +108,7 @@ li:nth-last-child(2) {
 
 O `:nth-child` é um seletor que eu gosto bastante, pois ele facilita muito a vida e ainda ajuda a escrever menos regras e ter o mesmo resultado.
 
-Quer fazer uns testes rápidos, [aqui](https://css-tricks.com/examples/nth-child-tester/){:target="_blank"} consegue testar esses seletores e ver o resultado na hora.
+Quer fazer uns testes rápidos, [aqui](https://css-tricks.com/examples/nth-child-tester/){:target="_blank"}{:rel="noopener"} consegue testar esses seletores e ver o resultado na hora.
 
 Então, bora aplicar esses seletores no próximo projeto?
 
