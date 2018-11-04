@@ -17,7 +17,7 @@ image: /assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg
   </picture>
 </figure>
 
-A maneira mais fácil de iniciar um projeto com React é usando a ferramenta oficial que o Facebook criou, para nos dar um boilerplate inicial para qualquer projeto com react. Sim, estou falando do [Create React App](https://github.com/facebook/create-react-app){:target="_blank"}.
+A maneira mais fácil de iniciar um projeto com React é usando a ferramenta oficial que o Facebook criou, para nos dar um boilerplate inicial para qualquer projeto com react. Sim, estou falando do [Create React App](https://github.com/facebook/create-react-app){:target="_blank"}{:rel="noopener"}.
 
 Para iniciar nosso projeto, só precisamos instalar o Create react app:
 
@@ -69,7 +69,7 @@ Para isso vamos instalar o `node-sass-chokidar` como dependência do nosso proje
 npm install --save node-sass-chokidar
 {% endhighlight %}
 
-O [`node-sass-chokidar`](https://github.com/michaelwayman/node-sass-chokidar#node-sass-chokidar){:target="_blank"}, é um pequeno wrapper em torno do executável *node-sass*, que usa o chokidar em vez de Gaze ao monitorar alterações nos arquivos. A funcionalidade é a mesma do node-sass, sendo a única diferença o chokidar em vez do Gaze para a visualização de arquivos.
+O [`node-sass-chokidar`](https://github.com/michaelwayman/node-sass-chokidar#node-sass-chokidar){:target="_blank"}{:rel="noopener"}, é um pequeno wrapper em torno do executável *node-sass*, que usa o chokidar em vez de Gaze ao monitorar alterações nos arquivos. A funcionalidade é a mesma do node-sass, sendo a única diferença o chokidar em vez do Gaze para a visualização de arquivos.
 
 No nosso `package.json`, vamos adicionar as seguintes linhas em "scripts":
 Then in package.json, add the following lines to scripts:

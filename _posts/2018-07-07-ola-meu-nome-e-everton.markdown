@@ -26,7 +26,7 @@ A ideia é escrever coisas diversas por aqui, sobre o dia-a-dia de um front-end,
 
 Bom, como diz no título, meu nome  é Everton Strack, já passei da síndrome dos 20 e poucos, moro em São Leopoldo, Rio Grande do Sul e trabalho como Desenvolvedor Front-end desde a época em que precisávamos fazer **mágica** para que as coisas funcionassem no IE6. 
 
-Também sou estudante de Design e entusiasta de UI/UX. Trabalho com front-end a cerca de 10 anos, e não acredito que o [front-end vai acabar](https://kvnol.github.io/ofrontendacabou/){:target="_blank"}, mas sim que ele vai se transformar e mutar mais e mais.
+Também sou estudante de Design e entusiasta de UI/UX. Trabalho com front-end a cerca de 10 anos, e não acredito que o [front-end vai acabar](https://kvnol.github.io/ofrontendacabou/){:target="_blank"}{:rel="noopener"}, mas sim que ele vai se transformar e mutar mais e mais.
 
 
 ## O inicio
@@ -68,5 +68,5 @@ Vamos ver onde podemos chegar!
 Até mais e obrigado pelos peixes!
 
 Onde me encontrar:
-- GitHub [@evertonstrack](https://github.com/evertonstrack){:target="_blank"}
-- Twitter [@evertonstrack](https://twitter.com/evertonstrack){:target="_blank"}
+- GitHub [@evertonstrack](https://github.com/evertonstrack){:target="_blank"}{:rel="noopener"}
+- Twitter [@evertonstrack](https://twitter.com/evertonstrack){:target="_blank"}{:rel="noopener"}
