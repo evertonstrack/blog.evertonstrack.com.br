@@ -120,3 +120,69 @@ img.round{
 
   padding-bottom: 50px;
 }
+
+.post-list {
+  .post-item {
+
+    .post-link{
+      border-top-width: 5px;
+      border-top-style: solid;
+      border-top-color: #25262a;
+      border-radius: 5px;
+    }
+
+    .tags{
+      .tag{
+        padding: 5px 10px;
+        color: #FFF;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    &.post-javascript {
+
+      .post-link{
+        border-top-color: map-get($color-javascript, light );
+      }
+
+      .tag{
+        background-color: map-get($color-javascript, light );
+      }
+    }
+
+    &.post-css {
+
+      .post-link{
+        border-top-color: map-get($color-css, light );
+      }
+
+      .tag{
+        background-color: map-get($color-css, light );
+      }
+    }
+
+    &.post-html {
+
+      .post-link{
+        border-top-color: map-get($color-html, light );
+      }
+
+      .tag{
+        background-color: map-get($color-html, light );
+      }
+    }
+
+    &.post-life{
+
+      .post-link{
+        border-top-color: map-get($pallete, green );
+      }
+
+      .tag{
+        background-color: map-get($pallete, green );
+      }
+    }
+  }
+}

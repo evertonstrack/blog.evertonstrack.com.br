@@ -24,15 +24,20 @@ layout: default
     {%- if site.posts.size > 0 -%}
       <div class="post-list">
         {%- for post in site.posts -%}
-        <article class="post-item">
+        <article class="post-item {{ post.bodyClass }}">
           <a class="post-link" href="{{ post.url | relative_url }}">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <time class="post-meta">{% include date.html date=post.date %}</time>
             <h3>{{ post.title | escape }}</h3>
             <p>{{ post.description | escape }}</p>
             {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+
+            <!-- <div class="tags">
+              {%- for tag in post.tags -%}
+                <span class="tag">#{{tag}}</span>
+              {%- endfor -%}
+            </div> -->
           </a>
-          
         </article>
         {%- endfor -%}
       </div>

@@ -45,7 +45,7 @@ layout: default
         <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
         <div class="post-list">
           {%- for post in site.posts limit:1 -%}
-            <article class="post-item">
+            <article class="post-item {{ post.bodyClass }}">
               <a class="post-link" href="{{ post.url | relative_url }}">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                 <time class="post-meta">{% include date.html date=post.date %}</time>
@@ -69,7 +69,7 @@ layout: default
         <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
         <div class="post-list">
           {%- for post in site.posts offset:1 limit:2 -%}
-          <article class="post-item">
+          <article class="post-item {{ post.bodyClass }}">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <time class="post-meta">{% include date.html date=post.date %}</time>
