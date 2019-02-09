@@ -1,5 +1,17 @@
 
 .site-header{
+  height: 100px;
+
+  .wrapper{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+    &:after{
+      display: none;
+    }
+  }
 
   .site-title{
     text-transform: lowercase;
