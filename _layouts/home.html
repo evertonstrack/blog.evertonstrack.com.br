@@ -6,10 +6,9 @@ layout: default
 <section class="section section-full greetings clearfix">
   <div class="wrap">
     <div class="greetings__text">
-      <h2>Hey. <br />Tudo bem? </h2>
+      <h2><span>Hey.</span> <br /><span>Tudo bem?</span></h2>
     </div>
-  </div>
-  <img src="assets/images/square.svg" class="square" />
+  <span class="arrow-down"></span>
 </section>
 <!-- /greeatings -->
 
@@ -110,6 +109,24 @@ layout: default
 
 </section>
 <!-- /posts -->
+
+<script>
+
+  function scrollIt(element) {
+    window.scrollTo({
+      'behavior': 'smooth',
+      'left': 0,
+      'top': element.offsetTop
+    });
+  }
+
+  var arrow = document.querySelector('.arrow-down');
+  var about = document.querySelector('.home-about');
+  arrow.addEventListener('click', function(){
+    scrollIt(about);
+  });
+
+</script>
 
 <script type="application/ld+json">
   {

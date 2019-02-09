@@ -4,7 +4,7 @@
 
 .blog-page{
   .site-header{
-    background-color: rgba(243, 223, 73, 1);
+    background-color: map-get($pallete, yellow);
     
     .site-nav .page-link,
     .site-title:visited,
@@ -17,14 +17,8 @@
 .section-blog{
 
   .section-header{
-    background-color: rgba(243, 223, 73, 1);
+    background-color: map-get($pallete, yellow);
     color: #2e2e2e;
-    max-height: 250px;
-
-    .page-heading {
-      font-size: 42px;
-      font-weight: bold;
-    }
   }
 
   .post-list {
