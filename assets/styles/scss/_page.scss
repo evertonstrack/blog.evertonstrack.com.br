@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
 
   > .wrapper{
     max-width: none;
+    overflow-x: hidden;
   }
 }
 
@@ -99,9 +100,12 @@ img.round{
     margin-bottom: 50px;
     align-items: center;
     padding: 50px 0;
+    max-height: 250px;
     
     .page-heading{
       flex: 1;
+      font-size: 100px;
+      font-weight: bold;
     }
   }
 }
@@ -182,6 +186,20 @@ img.round{
 
       .tag{
         background-color: map-get($pallete, green );
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .section{
+    .section-header{
+      max-height: none;
+      
+      .page-heading{
+        font-size: 40px;
       }
     }
   }

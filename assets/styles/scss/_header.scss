@@ -8,11 +8,11 @@
 
     .logo{
       text-decoration: none;
+      font-size: 30px;
 
       &:before,
       &:after{
         display: inline;
-        
       }
 
       &:before{
@@ -33,6 +33,11 @@
     .page-link{
       text-transform: lowercase;
       color: #FFF;
+      font-size: 20px;
+
+      &:not(:last-child){
+        margin-right: 40px;
+      }
     }
   }
 }
@@ -40,37 +45,81 @@
 @media screen and (max-width: 641px) {
 
   .site-header{
+
+    .site-title{
+
+      .logo{
+        font-size: 26px;
+      }
+    }
+
     .site-nav{
       position: absolute;
       border: none;
       background: none;
 
+      .menu-icon{
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
       label[for="nav-trigger"]{
-        display: none;
+        position: relative;
+        z-index: 11;
+      }
+
+      input:checked{
+
+        + label[for="nav-trigger"]{
+          position: fixed;
+          right: 15px;
+          
+          .menu-icon>svg{
+            fill: #FFF;
+          }
+        }
+
+        ~ .trigger{
+        
+          opacity: 1;
+          transform: scale(1);
+          visibility: visible;
+          border-radius: 0;
+        }
       }
 
       input ~ .trigger {
+        width: 100vw;
+        height: 100vh;
         position: fixed;
+        z-index: 1000;
+        top: 0;
         left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 54px;
-        background-color: #25262a;
-        -webkit-box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
-        color: #FFF;
+        z-index: 10;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(#005cef, 0.95);
+        color: #FFF;
+
+        opacity: 0;
+        transform: scale(0.95);
+        visibility: hidden;
+        transition: all 0.1s ease; 
+        border-radius: 50%;
 
         .page-link{
           color: #FFF;
-          height: 100%;
+          font-weight: 700;
+          font-size: 24px;
           line-height: 50px;
-          padding: 0;
+          padding: 15px 0;
           margin: 0;
           text-align: center;
-          width: 25%;
-          font-size: 18px;
+          width: 50%;
+          font-size: 24px;
         }
       }
     }

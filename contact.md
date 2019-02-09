@@ -24,9 +24,9 @@ image: /assets/images/code.jpg
 
 <!-- section sobre everton -->
 <section class="section section-contact">
-    <header class="section-header title-section" role="heading">
-        <div class="title-section-container wrap">
-            <h2>Contato</h2>
+    <header class="section-header" role="heading">
+        <div class="wrap">
+            <h1 class="page-heading">Contato</h1>
             <p>Precisando de um novo site institucional, hotsite ou um blog? Tem um projeto em mente mas precisa de um desenvolvedor front-end rápido, de qualidade e com um bom preço? Contate-me!</p>
         </div>
     </header>
