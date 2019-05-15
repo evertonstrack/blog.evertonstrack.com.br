@@ -235,6 +235,7 @@ pre>code.language-cmd{
   transition: all 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
+  z-index: 100;
 
   &.show{
     bottom: 20px;
