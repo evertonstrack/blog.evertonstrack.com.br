@@ -76,11 +76,11 @@ image: /assets/images/evertonstrack.jpg
               desde 2008 em aplicações web.
             </p>
             <p>
-              Tenho sólido conhecimento em: HTML5, CSS3, JS, AngularJS, Grunt, Gulp, design responsivo, web mobile. Trabalhei em projetos com grande clientes como Tramontina, Boticário, Lacta, LG, Trakinas, Petrobrás.
+              Tenho sólido conhecimento em: HTML5, CSS3, JS, React, Angular, AngularJS Grunt, Gulp, design responsivo, web mobile. Trabalhei em projetos com grande clientes como Tramontina, Boticário, Lacta, LG, Trakinas, Petrobrás.
             </p>
             <p>
                 Atualmente trabalho como
-                <strong>desenvolvedor front-end</strong> na <a href="http://www.accera.com.br/" target="_blank">Accera</a>. Já trabalhei em empresas como Brivia, E-Storage, W3Haus
+                <strong>Desenvolvedor de Software Front-end</strong> na <a href="http://king.host/" target="_blank"> KingHost</a>. Já trabalhei em empresas como Brivia, E-Storage, W3Haus
                 e Huia, CWI Software, dentre outras. Desenvolvi e participei de vários projetos bem bacanas, alguns deles estão aqui no meu
                 <strong>
                     <a href="/portfolio" class="link-anchor">portfolio <span class="hihe">de desenvolvedor front-end</span></a>
