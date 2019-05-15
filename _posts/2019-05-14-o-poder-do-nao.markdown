@@ -2,7 +2,7 @@
 layout: post
 title:  "O poder do não"
 description: "Essa palavra que causa arrepios em muitas pessoas. Hoje vamos conversar sobre sua importância e por que ela deveria estar no seu vocabulário."
-date:   2019-05-14 21:00:00 -0300
+date:   2019-05-14 15:00:00 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
 tags: ['life']
