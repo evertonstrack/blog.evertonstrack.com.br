@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "O poder do \"não\""
+title:  "O poder do não"
 description: "Essa palavra que causa arrepios em muitas pessoas. Hoje vamos conversar sobre porque ela é importante e porque ela deveria estar no seu vocabulário."
 date:   2019-05-14 21:00:00 -0300
 bodyClass: post-life
