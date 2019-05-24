@@ -36,23 +36,16 @@
 }
 
 /* tablet */
-@media screen and (min-width: 641px) and (max-width: 900px) {
-  .section-blog {
-    .post-list{
-      .post-item {
-        max-width: 50%;
-      }
-    }
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1200px) {
   .section-blog {
     .post-list{
       .post-item {
         max-width: 100%;
         padding: 0;
+
+        .post-link{
+          width: 100%;
+        }
       }
     }
   }
