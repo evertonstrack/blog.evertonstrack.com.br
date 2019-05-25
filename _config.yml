@@ -9,6 +9,15 @@ twitter_username: evertonstrack
 github_username:  evertonstrack
 disqus_shortname: evertonstrack
 
+# Where things are
+# source              : ./app
+# collections_dir     : ./pages
+# plugins_dir         : ./app/plugins
+# data_dir            : ./data
+destination         : ./dist
+layouts_dir         : ./app/layouts
+includes_dir        : ./app/components
+
 # Build settings
 markdown: kramdown
 google_analytics: UA-50129966-1
@@ -43,7 +52,8 @@ include: ["_redirects",
           "_headers"]
 
 # Exclude from processing.
-exclude: ["_app",
+exclude: ["app/components",
+          "app/layouts",
           "Gemfile",
           "Gemfile.lock",
           "gulpfile.js",
