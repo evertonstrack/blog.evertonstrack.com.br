@@ -1,4 +1,6 @@
 _site
+_sass
+dist
 .sass-cache
 .jekyll-metadata
 node_modules
