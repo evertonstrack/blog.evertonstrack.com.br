@@ -10,6 +10,7 @@ const exec = require('child_process').exec;
 const sass = require('gulp-sass');
 const webp = require('gulp-webp');
 
+const stylesDest = './app/components/styles';
 
 const messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -35,12 +36,13 @@ const pageStyles = [
 ];
 
 
+
 gulp.task('convert-webp', () =>
-  gulp.src('assets/images/**/*.{jpg,jpeg,png}')
+  gulp.src('./assets/images/**/*.{jpg,jpeg,png}')
   .pipe(webp({
     quality: 50
   }))
-  .pipe(gulp.dest('assets/images/webp'))
+  .pipe(gulp.dest('./assets/images/webp'))
 );
 
 /**
@@ -67,7 +69,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['jekyll-build'], function () {
   browserSync({
     server: {
-      baseDir: '_site'
+      baseDir: './dist'
     }
   });
 });
@@ -81,11 +83,11 @@ gulp.task('styles', function () {
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
-    .pipe(gulp.dest('_includes/styles'))
+    .pipe(gulp.dest(stylesDest))
     .pipe(browserSync.reload({
       stream: true
     }))
-    .pipe(gulp.dest('_includes/styles'));
+    .pipe(gulp.dest(stylesDest));
 });
 
 
@@ -105,9 +107,9 @@ gulp.task('js', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
+  gulp.watch('./assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
   // gulp.watch('src/js/**/*.js', ['js', 'styles']);
-  gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', './app/**/*.html'], ['jekyll-rebuild']);
 });
 
 /**
