@@ -1,0 +1,469 @@
+@import "../variables";
+
+.post-title{
+  line-height: 1.2;
+}
+
+.post-detail{
+  padding-bottom: 30px;
+
+  .post-header{
+    min-height: 40vh;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+
+    background-color: map-get($color-javascript, dark );
+    color:#FFF;
+    
+    .wrapper{
+      flex: 1;
+    }
+  
+    .post-meta{
+      color: rgba($color: #FFFFFF, $alpha: 0.7);
+    }
+  }
+}
+
+.post-content{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure{
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  hr{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: calc(200px - (30px * 2));
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  figure.highlight{
+    max-width: -webkit-calc(740px - (30px * 2));
+    max-width: calc(740px - (30px * 2));
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  figure{
+    legend{
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+
+  p, blockquote, pre, ul, ol, dl{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  h2, h3, h4, h5, h6{
+    padding-top: 10px;
+  }
+
+  .highlight {
+    background-color: #282a36;
+
+    pre{
+      border: none;
+      background-color: #282a36;
+    }
+  }
+
+  ul, ol {
+    list-style-position: inside;
+  }
+
+  blockquote {
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > p {
+      border-left: 4px solid #282a36;
+      margin: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  p{
+    pre, code {
+      border: 1px solid #282a36;
+      color: #FFF;
+      background-color: #282a36;
+    }
+  }
+}
+
+pre {
+  
+  > code {
+    background-color: transparent;
+    color: #FFF;
+  }
+}
+
+.comments{
+  background: #f2f2f2;
+  padding: 30px 0;
+
+  h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom:20px;
+  }
+
+  .wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.highlight pre { background-color: #272822; }
+.highlight .hll { background-color: #272822; }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+.highlight .gh { } /* Generic Heading & Diff Header */
+.highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
+.highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+
+
+/* POST TYPES COLORS */
+
+/* CSS HEADER */
+.post-css{
+  .site-header{
+    background-color: map-get($color-css, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-css, light );
+      color: #FFF;
+      .post-meta{
+        color: rgba($color: #FFFFFF, $alpha: 0.7);
+      }
+    }
+  }
+}
+/* end: CSS HEADER */
+
+
+
+/* HTML HEADER */
+.post-html{
+  .site-header{
+    background-color: map-get($color-html, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-html, light );
+      color: #FFF;
+      .post-meta{
+        color: rgba($color: #FFFFFF, $alpha: 0.7);
+      }
+    }
+  }
+}
+/* end: HTML HEADER */
+
+/* Javascript HEADER */
+.post-javascript{
+  .site-header{
+    background-color: map-get($color-javascript, light );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: map-get($color-javascript, dark );
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-javascript, light );
+      color: map-get($color-javascript, dark );
+      .post-meta{
+        color: map-get($color-javascript, dark );
+      }
+    }
+  }
+}
+/* end: Javascript HEADER */
+
+/* LIFE HEADER */
+.post-life{
+  .site-header{
+    background-color: map-get($pallete, green );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($pallete, green );
+      color: #FFF;
+      .post-meta{
+        color: #FFF;
+      }
+    }
+  }
+}
+/* end: LIFE HEADER */
+
+/* POST DEFAULT */
+.post-default{
+  .site-header{
+    background-color: map-get($color-javascript, dark );
+    
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-javascript, dark );
+      color: #FFF;
+      .post-meta{
+        color: #FFF;
+      }
+    }
+  }
+}
+/* end: POST DEFAULT */
+
+
+/* Autor */
+.author{
+  background-color: #25262a;
+  color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 30px 0 0;
+
+  .details{
+    display: flex;
+    align-items: center;
+  }
+
+  .author__desc{
+    flex: 1;
+
+    .author__desc-title{
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 100%;
+
+      a{
+        color: #FFF;
+      }
+    }
+
+    .author__desc-contact{
+
+      a{
+        display: inline-block;
+
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+      .icon{
+        width: 30px;
+        height: 30px;
+        fill: #FFF;
+      }
+    }
+
+  }
+
+  .author__image{
+    padding-left: 50px;
+
+    img{
+      max-width: 250px;
+    }
+  }
+}
+/* END: Autor */
+
+/* Share */
+.share{
+  padding: 30px 0;
+
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom:20px;
+  }
+  
+  .wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .share-button {
+    padding: 10px 20px;
+    border: 1px solid #25262a;
+    margin: 0 7px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #25262a;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    .icon{
+      fill:#25262a;
+      width: 30px;
+      height: 30px;
+      margin: 0 10px 0 0;
+    }
+
+    span{
+      display: block;
+      text-align: center;
+    }
+
+    &:hover{
+      background-color: #25262a;
+      color: #FFF;
+      text-decoration: none;
+
+      .icon{
+        fill: #FFF;
+      }
+    }
+  }
+}
+/* END: Share */
+
+/* mobile */
+@media screen and (max-width: 640px) {
+  .post-detail{
+     .post-header{
+       padding-left: 30px;
+       padding-right: 30px;
+     }
+  }
+
+  // Autor box
+  .author{
+    .details{
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .author__image{
+      order: 1;
+      padding-left: 0;
+      padding-bottom: 30px;
+    }
+    .author__desc{
+      order: 2;
+      text-align: center;
+    }
+  }
+
+  // Share
+  .share{
+    .share-button{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  } 
+}
