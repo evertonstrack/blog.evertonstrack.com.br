@@ -60,10 +60,8 @@ image: /assets/images/evertonstrack.jpg
             </figure>
             <p>
               Meu nome é
-              <a itemprop="url" href="https://plus.google.com/+EvertonStrack/" title="Perfil de Everton Strack no Google+" target="_blank"
-                  rel="external">
                   <strong itemprop="name">Everton Strack</strong>
-              </a>, mas todos me chamam de Thom. Tenho 31 anos, moro em
+              , mas todos me chamam de Thom. Tenho 31 anos, moro em
               <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                   <span itemprop="addressLocality">São Leopoldo</span>,
                   <span itemprop="addressRegion">Rio Grande do Sul</span>
