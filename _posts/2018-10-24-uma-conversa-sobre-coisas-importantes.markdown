@@ -5,7 +5,7 @@ description: "Vamos conversar um pouco sobre a vida, hábitos, consumismo e como
 date:   2018-10-24 18:42:00 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
-tags: ['life']
+tags: ['carreira']
 image: /assets/images/posts/uma-conversa-sobre-coisas-importantes/minimalism-netflix.jpeg
 ---
 

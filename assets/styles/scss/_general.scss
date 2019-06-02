@@ -190,9 +190,7 @@ pre>code.language-cmd{
   .post-link {
     display: block;
     font-size: 24px;
-    background-color: #FFF;
-    border: 1px solid rgba(37, 38, 42, 0.1);
-    box-shadow: 0 2px 5px 0 #F0F0F0;
+    background-color: transparent;
     padding: 15px 30px;
     color: map-get($colors, primary);
     transition: all 0.3s ease;
@@ -272,6 +270,15 @@ pre>code.language-cmd{
 
     &.show{
       bottom: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 641px) {
+
+  body:not(.post-life):not(.post-javascript){
+    .site-nav .menu-icon>svg{
+      fill: #FFF;
     }
   }
 }

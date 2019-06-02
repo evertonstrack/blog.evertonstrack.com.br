@@ -5,7 +5,7 @@ description: "Como internacionalizar a sua aplicação em react de forma simples
 date:   2018-09-20 16:10:00 -0300
 bodyClass: post-javascript
 theme-color: "#f0db4f"
-tags: ['javascript', 'react', 'internacionalizacao']
+tags: ['javascript', 'react']
 image: /assets/images/posts/internacionalizacao-com-create-react-app/internacionalizacao-react.jpg
 ---
 

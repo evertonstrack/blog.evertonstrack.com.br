@@ -4,12 +4,14 @@
 
 .blog-page{
   .site-header{
-    background-color: map-get($pallete, yellow);
+    background-color: #25262a;
+    
     
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
-      color: #2e2e2e;
+      // color: #2e2e2e;
+      color: #FFF;
     }
   }
 }
@@ -17,8 +19,8 @@
 .section-blog{
 
   .section-header{
-    background-color: map-get($pallete, yellow);
-    color: #2e2e2e;
+    background-color: #25262a;
+    color: #FFF;
   }
 
   .post-list {

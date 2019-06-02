@@ -25,18 +25,6 @@ layout: default
       café medíocre e dias chuvosos.</p>
       <a class="simple-link link-white" href="/sobre" title="Saiba mais sobre Everton Strack">Saiba mais sobre Everton</a>
     </div>
-    <!-- <figure class="home-about__image">
-      <a role="img" href="/sobre" title="Saiba mais sobre Everton Strack">
-        <picture>
-          <source type="image/webp" srcset="/assets/images/webp/evertonstrack-small.webp" />
-          <source srcset="/assets/images/evertonstrack-small.jpg" />
-          <img class="round" src="/assets/images/evertonstrack-small.jpg" alt="Foto de Everton Strack" />
-        </picture>
-        <figcaption class="hide">
-          <strong>Everton Strack</strong>
-        </figcaption>
-      </a>
-    </figure> -->
   </div>
 </section>
 <!-- /greeatings -->
@@ -52,43 +40,21 @@ layout: default
 
     {%- if site.posts.size > 0 -%}
     <div class="post-list-container">
-      <div class="last-post">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Último post" }}</h2>
-        <div class="post-list">
-          {%- for post in site.posts limit:1 -%}
-            <article class="post-item {{ post.bodyClass }}">
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <time class="post-meta">{% include date.html date=post.date %}</time>
-                <h3>{{ post.title | escape }}</h3>
-                <p>{{ post.description | escape }}</p>
-                <div> 
-                  {%- for category in post.categories -%}
-                      <a href="{{category.url}}">{{ category }}</a>
-                    {%- endfor -%}
-                </div>
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
-                {%- endif -%}
-              </a>
-            </article>
-          {%- endfor -%}
-        </div>
-      </div>
-
       <div class="latest-post">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Posts recentes" }}</h2>
+        <h2 class="post-list-heading">{{ page.list_title | default: "Últimos posts" }}</h2>
         <div class="post-list">
-          {%- for post in site.posts offset:1 limit:2 -%}
+          {%- for post in site.posts limit:3 -%}
           <article class="post-item {{ post.bodyClass }}">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <time class="post-meta">{% include date.html date=post.date %}</time>
-              <h3>{{ post.title | escape }}</h3>
-              <p>{{ post.description | escape }}</p>
-              <div>
-                {%- for category in post.categories -%}
-                <a href="{{category.url}}">{{ category }}</a>
+              <div class="post-item__content">
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{ post.description | escape }}</p>
+              </div>
+              <div class="tags">
+                {%- for tag in post.tags -%}
+                  <strong class="tag">{{tag}}</strong>
                 {%- endfor -%}
               </div>
               {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}

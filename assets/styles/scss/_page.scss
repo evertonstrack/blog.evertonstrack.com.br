@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
   color: #FFF;
 
   .wrapper{
-    max-width: 1280px;
+    max-width: 100%;
     padding-left: 30px;
     padding-right: 30px; 
   }
@@ -129,10 +129,8 @@ img.round{
   .post-item {
 
     .post-link{
-      border-top-width: 5px;
-      border-top-style: solid;
-      border-top-color: #25262a;
-      border-radius: 5px;
+      border-radius: 10px;
+      transition: none;
     }
 
     .tags{
@@ -140,54 +138,99 @@ img.round{
         padding: 5px 10px;
         color: #FFF;
         font-size: 14px;
-        border-radius: 5px;
+        border-radius: 25px;
         margin-right: 5px;
       }
     }
 
-    &.post-javascript {
+    &:hover{
 
-      .post-link{
-        border-top-color: map-get($color-javascript, light );
+      .post-meta{
+        color: rgba(256,256,256,0.7);
       }
 
+      // Javascript
+      &.post-javascript {
+
+        .post-link{
+          background-color: map-get($color-javascript, light );
+          color: #25262a;
+        }
+
+        .post-meta{
+          color: rgba(#25262a,0.7);
+        }
+  
+        .tag{
+          background-color: #25262a;
+          color: map-get($color-javascript, light );
+        }
+      }
+
+      &.post-css {
+
+        .post-link{
+          background-color: map-get($color-css, light );
+        }
+  
+        .tag{
+          color: map-get($color-css, light );
+          background-color: #FFF;
+        }
+      }
+
+      &.post-html {
+
+        .post-link{
+          background-color: map-get($color-html, light );
+        }
+  
+        .tag{
+          color: map-get($color-html, light );
+          background-color: #FFF;
+        }
+      }
+  
+      &.post-life{
+  
+        .post-link{
+          background-color: map-get($pallete, green );
+        }
+  
+        .tag{
+          color: map-get($pallete, green );
+          background-color: #FFF;
+        }
+      }
+    }
+
+    // Javascript
+    &.post-javascript {
       .tag{
         background-color: map-get($color-javascript, light );
       }
     }
 
+    // CSS
     &.post-css {
-
-      .post-link{
-        border-top-color: map-get($color-css, light );
-      }
-
       .tag{
         background-color: map-get($color-css, light );
       }
     }
 
+    // HTML
     &.post-html {
-
-      .post-link{
-        border-top-color: map-get($color-html, light );
-      }
-
       .tag{
         background-color: map-get($color-html, light );
       }
     }
 
     &.post-life{
-
-      .post-link{
-        border-top-color: map-get($pallete, green );
-      }
-
       .tag{
         background-color: map-get($pallete, green );
       }
     }
+
   }
 }
 
@@ -200,6 +243,55 @@ img.round{
       
       .page-heading{
         font-size: 40px;
+      }
+    }
+  }
+
+  .post-list {
+    .post-item{
+      &:hover{
+        .post-link{
+          background-color: transparent !important;
+          
+          h3, p, .post-meta{
+            color: initial;
+          }
+        }
+
+        &.post-javascript {
+          .tag{
+            background-color: map-get($color-javascript, light );
+            color: #FFF;
+          }
+        }
+    
+        // CSS
+        &.post-css {
+          .tag{
+            background-color: map-get($color-css, light );
+            color: #FFF;
+          }
+        }
+    
+        // HTML
+        &.post-html {
+          .tag{
+            background-color: map-get($color-html, light );
+            color: #FFF;
+          }
+        }
+    
+        &.post-life{
+          .tag{
+            background-color: map-get($pallete, green );
+            color: #FFF;
+          }
+        }
+      }
+  
+      .post-link{
+        padding: 0;
+        margin-bottom: 30px;
       }
     }
   }
