@@ -99,9 +99,11 @@
                   case 'installed':
                     if (navigator.serviceWorker.controller) {
                       // new update available
+                      console.log('new update available');
                       resolve(true);
                     } else {
                       // no update available
+                      console.log('no update available');
                       resolve(false);
                     }
                     break;
