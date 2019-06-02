@@ -10,13 +10,16 @@ github_username:  evertonstrack
 disqus_shortname: evertonstrack
 
 # Where things are
-# source              : ./app
-# collections_dir     : ./pages
+source              : ./app
+collections_dir     : collections
+collections:
+  posts:
+    output: true
 # plugins_dir         : ./app/plugins
 # data_dir            : ./data
 destination         : ./dist
-layouts_dir         : ./app/layouts
-includes_dir        : ./app/components
+layouts_dir         : layouts
+includes_dir        : components
 
 # Build settings
 markdown: kramdown
@@ -52,8 +55,8 @@ include: ["_redirects",
           "_headers"]
 
 # Exclude from processing.
-exclude: ["app/components",
-          "app/layouts",
+exclude: ["components",
+          "layouts",
           "Gemfile",
           "Gemfile.lock",
           "gulpfile.js",

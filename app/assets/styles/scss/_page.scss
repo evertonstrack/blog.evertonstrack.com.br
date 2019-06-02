@@ -136,7 +136,7 @@ img.round{
     .tags{
       .tag{
         padding: 5px 10px;
-        color: #FFF;
+        color: #25262a;
         font-size: 14px;
         border-radius: 25px;
         margin-right: 5px;
@@ -145,80 +145,20 @@ img.round{
 
     &:hover{
 
-      .post-meta{
-        color: rgba(256,256,256,0.7);
-      }
-
-      // Javascript
-      &.post-javascript {
-
-        .post-link{
-          background-color: map-get($color-javascript, light );
-          color: #25262a;
-        }
-
-        .post-meta{
-          color: rgba(#25262a,0.7);
-        }
-  
-        .tag{
-          background-color: #25262a;
-          color: map-get($color-javascript, light );
-        }
-      }
-
-      &.post-css {
-
-        .post-link{
-          background-color: map-get($color-css, light );
-        }
-  
-        .tag{
-          color: map-get($color-css, light );
-          background-color: #FFF;
-        }
-      }
-
-      &.post-html {
-
-        .post-link{
-          background-color: map-get($color-html, light );
-        }
-  
-        .tag{
-          color: map-get($color-html, light );
-          background-color: #FFF;
-        }
-      }
-  
-      &.post-life{
-  
-        .post-link{
-          background-color: map-get($pallete, green );
-        }
-  
-        .tag{
-          color: map-get($pallete, green );
-          background-color: #FFF;
-        }
-      }
     }
 
-    // Javascript
     &.post-javascript {
       .tag{
         background-color: map-get($color-javascript, light );
       }
     }
 
-    // CSS
     &.post-css {
       .tag{
         background-color: map-get($color-css, light );
       }
     }
 
-    // HTML
     &.post-html {
       .tag{
         background-color: map-get($color-html, light );

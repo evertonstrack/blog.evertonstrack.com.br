@@ -21,6 +21,7 @@ bodyClass: blog-page
 </div>
 <!-- /breadcrumb - rich snippts -->
 
+
 <script type="application/ld+json">
   {
       "@context": "http://schema.org/",
