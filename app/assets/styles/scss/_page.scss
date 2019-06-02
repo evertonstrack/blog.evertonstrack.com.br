@@ -145,29 +145,60 @@ img.round{
 
     &:hover{
 
+      &.post-javascript,
+      &.post-css,
+      &.post-html,
+      &.post-life{
+        .tag{
+          color: #25262a;
+        }
+      }
+
+      &.post-javascript {
+        .tag{
+          background-color: map-get($color-javascript, light );
+        }
+      }
+
+      &.post-life{
+        .tag{
+          background-color: map-get($pallete, green );
+        }
+      }
+      &.post-css {
+        .tag{
+          background-color: map-get($color-css, light );
+        }
+      }
+      &.post-html {
+        .tag{
+          background-color: map-get($color-html, light );
+        }
+      }
+  
     }
 
     &.post-javascript {
       .tag{
-        background-color: map-get($color-javascript, light );
+        border: 3px solid  map-get($color-javascript, light );
       }
     }
 
     &.post-css {
       .tag{
-        background-color: map-get($color-css, light );
+        border: 3px solid  map-get($color-css, light );
       }
     }
 
     &.post-html {
       .tag{
-        background-color: map-get($color-html, light );
+        border: 3px solid map-get($color-html, light );
       }
     }
 
     &.post-life{
       .tag{
-        background-color: map-get($pallete, green );
+        border: 3px solid map-get($pallete, green );
       }
     }
 
