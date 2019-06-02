@@ -183,6 +183,13 @@
 
 /* mobile */
 @media screen and (max-width: 640px) {
+
+  .about-page{
+    .site-nav .menu-icon>svg{
+      fill: #FFF;
+    }
+  }
+
   .content-sobre{
 
     .section-header{

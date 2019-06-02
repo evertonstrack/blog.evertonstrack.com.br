@@ -123,29 +123,23 @@
   padding-top: 60px;
   padding-bottom: 60px;
   min-height: auto;
+  align-items: center;
 
   .post-list-heading{
     font-size: 50px;
     color: #005cef;
     font-weight: 700;
-  }
-
-  > .wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: auto;
+    text-align: center;
   }
   
   .button-link{
     display: table;
-    padding: 20px 30px;
+    padding: 10px 30px;
     margin: 20px auto 30px;
     background-color: #005cef;
     border-color: #005cef;
     color: #FFF;
-    font-size: 28px;
-    width: 100%;
+    font-size: 24px;
     text-align: center;
     max-width: 50%;
 
@@ -161,40 +155,14 @@
     z-index: 2;
   }
 
-  .last-post{
-    width: 40%;
-    padding-right: 12.5px;
-    display: flex;
-    flex-direction: column;
-
-    .post-list{
-      flex: 1;
-
-      .post-item,
-      .post-link{
-        height: 100%;
-      }
-
-      .post-link{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h3{
-          font-size: 2.5rem;
-          line-height: 125%;
-        }
-
-        p{
-          font-size: 18px;
-        }
-      }
-    }
-  }
 
   .latest-post{
-    width: 60%;
-    padding-left: 12.5px;
+    width: 100%;
+
+    .post-list{
+      max-width: 800px;
+      margin: 0 auto;
+    }
   }
 }
 /* end/ home-posts */
@@ -308,6 +276,7 @@
   .home-posts{
     .button-link{
       max-width: 100%;
+      width: 100%;
     }
 
     h2, h3{

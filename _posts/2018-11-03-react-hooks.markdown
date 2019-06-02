@@ -4,7 +4,7 @@ title:  "React Hooks: O que são e porque eles são importantes"
 description: "Hoje vamos conversar sobre React Hooks. O que são, e porque são importantes e como eles mudam a forma como escrevemos nossos componentes com react."
 date:   2018-11-03 17:45:00 -0300
 bodyClass: post-javascript
-theme-color: "#f0db4f"
+theme-color: "#ffdd18"
 tags: ['javascript', 'react']
 image: /assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg
 ---

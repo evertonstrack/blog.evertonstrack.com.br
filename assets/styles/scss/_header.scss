@@ -57,6 +57,8 @@
 @media screen and (max-width: 641px) {
 
   .site-header{
+    
+    height: 56px;
 
     .site-title{
 
@@ -135,9 +137,5 @@
         }
       }
     }
-  }
-
-  .site-footer{
-    padding-bottom: 80px;
   }
 }

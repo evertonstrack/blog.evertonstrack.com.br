@@ -5,7 +5,7 @@ description: "Vamos refletir um pouco sobre a vida pessoal e profissional, carre
 date:   2018-09-27 19:02:00 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
-tags: ['life']
+tags: ['carreira']
 image: /assets/images/posts/o-que-voce-busca-na-vida/homem-sentado-pensando.jpg
 ---
 

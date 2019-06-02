@@ -4,7 +4,6 @@ title: Blog
 description: Um pequeno apanhado sobre o dia-a-dia de um front-end. As frustrações, as alegrias, vida, o universo e tudo mais.
 permalink: /blog/
 bodyClass: blog-page
-theme-color: "#ffdd18"
 ---
 
 <!-- breadcrumb - rich snippts -->

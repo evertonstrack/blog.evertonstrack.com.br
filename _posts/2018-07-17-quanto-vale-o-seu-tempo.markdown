@@ -5,7 +5,7 @@ description: "Vamos refletir um pouco sobre a rotina de quem trabalha na área d
 date:   2018-07-17 21:58:09 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
-tags: ['life']
+tags: ['carreira']
 image: /assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg
 ---
 

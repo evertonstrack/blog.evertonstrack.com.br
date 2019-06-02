@@ -5,7 +5,7 @@ description: "Essa palavra que causa arrepios em muitas pessoas. Hoje vamos conv
 date:   2019-05-14 15:00:00 -0300
 bodyClass: post-life
 theme-color: "#4CAF50"
-tags: ['life']
+tags: ['carreira']
 image: /assets/images/posts/o-poder-do-nao/o-poder-do-nao.jpg
 ---
 
