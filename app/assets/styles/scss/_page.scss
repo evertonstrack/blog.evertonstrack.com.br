@@ -136,7 +136,7 @@ img.round{
     .tags{
       .tag{
         padding: 5px 10px;
-        color: #FFF;
+        color: #25262a;
         font-size: 14px;
         border-radius: 25px;
         margin-right: 5px;
@@ -145,89 +145,60 @@ img.round{
 
     &:hover{
 
-      .post-meta{
-        color: rgba(256,256,256,0.7);
-      }
-
-      // Javascript
-      &.post-javascript {
-
-        .post-link{
-          background-color: map-get($color-javascript, light );
+      &.post-javascript,
+      &.post-css,
+      &.post-html,
+      &.post-life{
+        .tag{
           color: #25262a;
         }
+      }
 
-        .post-meta{
-          color: rgba(#25262a,0.7);
-        }
-  
+      &.post-javascript {
         .tag{
-          background-color: #25262a;
-          color: map-get($color-javascript, light );
+          background-color: map-get($color-javascript, light );
         }
       }
 
-      &.post-css {
-
-        .post-link{
-          background-color: map-get($color-css, light );
-        }
-  
-        .tag{
-          color: map-get($color-css, light );
-          background-color: #FFF;
-        }
-      }
-
-      &.post-html {
-
-        .post-link{
-          background-color: map-get($color-html, light );
-        }
-  
-        .tag{
-          color: map-get($color-html, light );
-          background-color: #FFF;
-        }
-      }
-  
       &.post-life{
-  
-        .post-link{
+        .tag{
           background-color: map-get($pallete, green );
         }
-  
+      }
+      &.post-css {
         .tag{
-          color: map-get($pallete, green );
-          background-color: #FFF;
+          background-color: map-get($color-css, light );
         }
       }
+      &.post-html {
+        .tag{
+          background-color: map-get($color-html, light );
+        }
+      }
+  
     }
 
-    // Javascript
     &.post-javascript {
       .tag{
-        background-color: map-get($color-javascript, light );
+        border: 3px solid  map-get($color-javascript, light );
       }
     }
 
-    // CSS
     &.post-css {
       .tag{
-        background-color: map-get($color-css, light );
+        border: 3px solid  map-get($color-css, light );
       }
     }
 
-    // HTML
     &.post-html {
       .tag{
-        background-color: map-get($color-html, light );
+        border: 3px solid map-get($color-html, light );
       }
     }
 
     &.post-life{
       .tag{
-        background-color: map-get($pallete, green );
+        border: 3px solid map-get($pallete, green );
       }
     }
 

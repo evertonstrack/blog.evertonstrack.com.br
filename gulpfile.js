@@ -26,23 +26,23 @@ const sassOptions = {
 };
 
 const pageStyles = [
-  './assets/styles/scss/main.scss',
-  './assets/styles/scss/pages/home.scss',
-  './assets/styles/scss/pages/about.scss',
-  './assets/styles/scss/pages/blog.scss',
-  './assets/styles/scss/pages/post.scss',
-  './assets/styles/scss/pages/projects.scss',
-  './assets/styles/scss/pages/contact.scss'
+  './app/assets/styles/scss/main.scss',
+  './app/assets/styles/scss/pages/home.scss',
+  './app/assets/styles/scss/pages/about.scss',
+  './app/assets/styles/scss/pages/blog.scss',
+  './app/assets/styles/scss/pages/post.scss',
+  './app/assets/styles/scss/pages/projects.scss',
+  './app/assets/styles/scss/pages/contact.scss'
 ];
 
 
 
 gulp.task('convert-webp', () =>
-  gulp.src('./assets/images/**/*.{jpg,jpeg,png}')
+  gulp.src('./app/assets/images/**/*.{jpg,jpeg,png}')
   .pipe(webp({
     quality: 50
   }))
-  .pipe(gulp.dest('./assets/images/webp'))
+  .pipe(gulp.dest('./app/assets/images/webp'))
 );
 
 /**
@@ -95,11 +95,11 @@ gulp.task('styles', function () {
  * Javascript Task
  */
 gulp.task('js', function () {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('./**/*.js')
     .pipe(plumber())
     .pipe(concat('blog.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js/'));
+    .pipe(gulp.dest('./app/assets/js/'));
 });
 
 /**
@@ -107,16 +107,15 @@ gulp.task('js', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('./assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  // gulp.watch('src/js/**/*.js', ['js', 'styles']);
-  gulp.watch(['index.html', './app/**/*.html'], ['jekyll-rebuild']);
+  gulp.watch('./app/assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
+  gulp.watch(['index.html', './**/*.{html,md,markdown}'], ['jekyll-rebuild']);
 });
 
 /**
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['js', 'styles', 'convert-webp', 'browser-sync', 'watch']);
+gulp.task('default', ['styles', 'convert-webp', 'browser-sync', 'watch']);
 
 // build to deploy
-gulp.task('build', ['js', 'styles', 'convert-webp', 'jekyll-build']);
+gulp.task('build', ['styles', 'convert-webp', 'jekyll-build']);

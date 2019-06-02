@@ -6,7 +6,7 @@
   "repository": "https://github.com/evertonstrack/blog.evertonstrack.com.br.git",
   "scripts": {
     "start": "gulp",
-    "build": "gulp js && gulp styles && gulp jekyll-build"
+    "build": "gulp styles && gulp jekyll-build"
   },
   "keywords": [
     "frontend",
