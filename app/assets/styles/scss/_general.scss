@@ -231,7 +231,7 @@ pre>code.language-cmd{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(#25262a, 0.9);
+  background-color: #feae13;
   border-radius: 5px;
   padding: 10px 20px;
   transition: all 0.3s ease-in-out;
@@ -273,7 +273,7 @@ pre>code.language-cmd{
     max-width: none;
 
     &.show{
-      bottom: 64px;
+      bottom: 20px;
     }
   }
 }
@@ -281,7 +281,7 @@ pre>code.language-cmd{
 @media screen and (max-width: 641px) {
 
   body:not(.post-javascript):not(.home-page){
-    .site-nav .menu-icon>svg{
+    .site-nav .menu-icon > svg{
       fill: #FFF;
     }
   }

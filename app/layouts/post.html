@@ -25,7 +25,7 @@ comments: true
 
 <article class="post h-entry post-detail" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header" data-color="{{page.color}}">
+  <header class="post-header animate" data-color="{{page.color}}">
     <div class="wrapper">
       <p class="post-meta">
         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -34,12 +34,16 @@ comments: true
       </p>
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="post-description">{{ page.description | escape }}</p>
-      <p class="post-meta">
-        {%- if page.author -%}
+      {%- if page.author -%}
+        <p class="post-meta">
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-        {%- endif -%}</p>
+        </p>
+      {%- endif -%}
     </div>
-  </header>
+
+    <a class="link-back" href="/blog"></a>
+
+  </header>  
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}

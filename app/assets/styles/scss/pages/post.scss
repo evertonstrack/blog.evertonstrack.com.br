@@ -7,6 +7,10 @@
 .post-detail{
   padding-bottom: 30px;
 
+  img{
+    border-radius: 30px;
+  }
+
   .post-header{
     min-height: 40vh;
     display: flex;
@@ -65,7 +69,8 @@
   figure{
     legend{
       font-style: italic;
-      font-size: 14px;
+      font-size: 12px;
+      text-align: center;
     }
   }
 
@@ -473,4 +478,48 @@ pre {
       margin-bottom: 15px;
     }
   } 
+
+  .posts .site-header{
+    width: 85vw;
+    margin-left: auto;
+    border-radius: 30px 0 0 0;
+  }
+
+  .post-detail .post-header{
+    width: 85vw;
+    margin-left: auto;
+    border-radius: 0 0 0 30px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .link-back{
+    position: absolute;
+    left: -15vw;
+    top: -56px;
+    width: 15vw;
+    padding: 86px 0 0 5vw;
+    height: calc(100% + 56px);
+
+    &:before,
+    &:after{
+      content:"";
+      display: block;
+      width: 4px;
+      height: 20px;
+      background-color: #282a36;
+      border-radius: 3px;
+      position: absolute;
+      transform-origin: left;
+    }
+
+    &:before{
+      transform: rotate(45deg) translateY(-10px);
+    }
+
+    &:after{
+      transform: rotate(-45deg) translateY(10px);
+    }
+  }
 }
