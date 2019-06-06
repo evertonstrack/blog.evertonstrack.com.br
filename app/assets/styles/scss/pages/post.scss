@@ -432,6 +432,13 @@ pre {
 
 /* mobile */
 @media screen and (max-width: 640px) {
+  
+  .post-content{
+    p, blockquote, pre, ul, ol, dl{
+      font-size: 18px;
+    }
+  }
+  
   .post-detail{
      .post-header{
        padding-left: 30px;
