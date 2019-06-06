@@ -280,7 +280,7 @@ pre>code.language-cmd{
 
 @media screen and (max-width: 641px) {
 
-  body:not(.post-life):not(.post-javascript){
+  body:not(.post-life):not(.post-javascript):not(.home-page){
     .site-nav .menu-icon>svg{
       fill: #FFF;
     }
