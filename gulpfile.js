@@ -108,7 +108,7 @@ gulp.task('js', function () {
  */
 gulp.task('watch', function () {
   gulp.watch('./app/assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  gulp.watch(['index.html', './**/*.{html,md,markdown}'], ['jekyll-rebuild']);
+  gulp.watch(['./app/index.html', './app/**/*.{html,md,markdown}'], ['jekyll-rebuild']);
 });
 
 /**
