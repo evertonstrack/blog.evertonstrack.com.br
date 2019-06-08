@@ -269,6 +269,10 @@ pre {
     .site-title{
       color: map-get($color-javascript, dark );
     }
+
+    .site-nav .page-link svg{
+      fill: map-get($color-javascript, dark );
+    }
   }
   .post-detail{
     .post-header{
