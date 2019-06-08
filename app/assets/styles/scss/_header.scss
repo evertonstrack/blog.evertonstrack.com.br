@@ -40,8 +40,19 @@
       }
     }
   }
+
   .site-nav  {
     z-index: 10;
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+
+
+    .trigger{
+      display: flex;
+      align-items: center;
+    }
+
     .page-link{
       text-transform: lowercase;
       color: #FFF;
@@ -49,6 +60,18 @@
 
       &:not(:last-child){
         margin-right: 40px;
+      }
+
+      &.page-link--icon{
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+
+        svg{
+          margin: 0;
+          width: 26px;
+          height: 26px;
+        }
       }
     }
   }
@@ -134,6 +157,10 @@
           text-align: center;
           width: 50%;
           font-size: 24px;
+
+          svg{
+            fill: #FFF;
+          }
         }
       }
     }
