@@ -26,7 +26,17 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-        </div>
+
+          <a class="page-link page-link--icon" href="https://github.com/evertonstrack" title="Everton Strack no GitHub" target="_blank">
+            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+          </a>
+          <a class="page-link page-link--icon" href="https://twitter.com/evertonstrack" title="Everton Strack no Twitter" target="_blank">
+            <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+          <a class="page-link page-link--icon" href="https://www.linkedin.com/in/evertonstrack/" title="Everton Strack no Linkedin" target="_blank">
+            <svg class="icon icon-instagram"><use xlink:href="#icon-linkedin"></use></svg>
+          </a>
+        </div>        
       </nav>
     {%- endif -%}
   </div>
