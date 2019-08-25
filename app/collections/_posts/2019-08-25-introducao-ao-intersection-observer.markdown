@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introdução ao Intersection Observer’s"
-description: "Uma simples API que nos permiteverificar se um elemento está visível na tela com mais facilidade e sem custar tanto na performance. Essa é a API do Intersection Observer."
+description: "Uma simples API que nos permite verificar se um elemento está visível na tela com mais facilidade e sem custar tanto na performance. Essa é a API do Intersection Observer."
 date:   2019-08-25 11:00:00 -0300
 bodyClass: post-javascript
 theme-color: "#ffdd18"
