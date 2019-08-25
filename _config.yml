@@ -55,12 +55,24 @@ include: ["_redirects",
           "_headers"]
 
 # Exclude from processing.
-exclude: ["components",
-          "layouts",
-          "Gemfile",
-          "Gemfile.lock",
-          "gulpfile.js",
-          "node_modules",
-          "package.json",
-          "package-lock.json",
-          "gulpfile.js"]
+exclude: [
+  "components",
+  "layouts",
+  "Gemfile",
+  "Gemfile.lock",
+  "gulpfile.js",
+  "node_modules",
+  "package.json",
+  "package-lock.json",
+  "gulpfile.js"
+  # ".sass-cache/",
+  # ".jekyll-cache/",
+  # "gemfiles/",
+  # "Gemfile",
+  # "Gemfile.lock",
+  # "node_modules/",
+  # "vendor/bundle/",
+  # "vendor/cache/",
+  # "vendor/gems/",
+  # "vendor/ruby/"
+]

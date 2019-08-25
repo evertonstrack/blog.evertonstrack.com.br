@@ -3,3 +3,13 @@ dist
 .sass-cache
 .jekyll-metadata
 node_modules
+.sass-cache
+.jekyll-cache
+gemfiles
+Gemfile
+Gemfile.lock
+node_modules
+vendor/bundle
+vendor/cache
+vendor/gems
+vendor/ruby
