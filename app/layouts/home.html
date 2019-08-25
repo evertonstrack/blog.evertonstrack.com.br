@@ -1,48 +1,13 @@
 ---
 layout: default
 ---
-
-<!-- greeatings -->
-<section class="section section-full greetings clearfix">
-  <div class="wrap">
-    <div class="greetings__text">
-      <h2>
-        <span>Escrevo</span> <br />
-        <span>código para<br />
-        <span>pessoas</span></span>
-      </h2>
-    </div>
-  <span class="arrow-down"></span>
-</section>
-<!-- /greeatings -->
-
-<!-- greeatings -->
-<section class="section section-full home-about clearfix">
-  <div class="wrap">
-    <div class="home-about__text">
-
-      <h2>Meu nome é <strong>Everton Strack</strong>, sou um <strong>Front-End developer</strong> com grande foco em resolução de problemas, design, performance e SEO.</h2>
-
-      <p>Especialista em HTML, CSS e Javascript, com sólidos conhecimentos no ecosistema Front-End, e em tecnologias com Angular, React, Grunt, Gulp, design responsivo, web mobile;</p>
-
-      <p>Sou entusiasta de tecnologia, gosto de ler entre as linhas da indústria de tecnologia e tentar entender as
-      motivações por trás de decisões que podem parecer incríveis, irracionais ou puramente idiotas. Também gosto de beleza,
-      café medíocre e dias chuvosos.</p>
-      <a class="simple-link link-white" href="/sobre" title="Saiba mais sobre Everton Strack">Saiba mais sobre Everton</a>
-    </div>
-  </div>
-</section>
-<!-- /greeatings -->
+<!-- Home -->
+{{ content }}
+<!-- Home -->
 
 <!-- posts -->
 <section class="section section-full home-posts">
   <div class="wrap">
-    <!-- {%- if page.title -%}
-      <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%} -->
-
-    {{ content }}
-
     {%- if site.posts.size > 0 -%}
     <div class="post-list-container">
       <div class="latest-post">
@@ -80,24 +45,6 @@ layout: default
 
 </section>
 <!-- /posts -->
-
-<script>
-
-  function scrollIt(element) {
-    window.scrollTo({
-      'behavior': 'smooth',
-      'left': 0,
-      'top': element.offsetTop
-    });
-  }
-
-  var arrow = document.querySelector('.arrow-down');
-  var about = document.querySelector('.home-about');
-  arrow.addEventListener('click', function(){
-    scrollIt(about);
-  });
-
-</script>
 
 <script type="application/ld+json">
   {
