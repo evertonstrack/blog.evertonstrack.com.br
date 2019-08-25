@@ -11,7 +11,7 @@ theme-color: "#FFFFFF"
 <section class="section section-full home clearfix">
   <article class="greetings">
     <h2>
-      Escrevo<br />
+      Eu Escrevo<br />
       código para<br />
       <strong>pessoas</strong>
     </h2>

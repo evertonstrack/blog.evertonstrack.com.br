@@ -1,121 +1,97 @@
-const gulp = require('gulp');
-const plumber = require('gulp-plumber');
+const spawn = require('cross-spawn');
+const del = require('del');
 const browserSync = require('browser-sync');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const prefix = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
-const exec = require('child_process').exec;
+const gulp = require('gulp');
 const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
+const sourcemaps = require('gulp-sourcemaps');
 const webp = require('gulp-webp');
-
-const stylesDest = './app/components/styles';
+const { config } = require('./build.config');
 
 const messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-const prefixerOptions = {
-  browsers: ['last 2 versions']
-};
+// const server = browserSync.create();
 
-const sassOptions = {
-  // outputStyle: 'expanded'
-  outputStyle: 'compressed'
-};
+const clean = () => del(['dist/*']);
 
-const pageStyles = [
-  './app/assets/styles/scss/main.scss',
-  './app/assets/styles/scss/pages/home.scss',
-  './app/assets/styles/scss/pages/about.scss',
-  './app/assets/styles/scss/pages/blog.scss',
-  './app/assets/styles/scss/pages/post.scss',
-  './app/assets/styles/scss/pages/projects.scss',
-  './app/assets/styles/scss/pages/contact.scss'
-];
+console.log(config);
 
-
-
-gulp.task('convert-webp', () =>
-  gulp.src('./app/assets/images/**/*.{jpg,jpeg,png}')
-  .pipe(webp({
-    quality: 50
-  }))
-  .pipe(gulp.dest('./app/assets/images/webp'))
-);
-
-/**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', function (done) {
+function serve(done) {
   browserSync.notify(messages.jekyllBuild);
-  return exec('jekyll build', function (err, stdout, stderr) {
-      console.log(stdout);
-    })
-    .on('close', done);
-});
+  browserSync.init(config.browserSync);
+  done();
+}
+
+function reload() {
+  browserSync.notify(messages.jekyllBuild);
+  return browserSync.reload({stream:true})
+}
 
 /**
- * Rebuild Jekyll & do page reload
+ * Styles Build
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-  browserSync.reload();
-});
+async function styles () {
+  await gulp.src(config.styles.src, {
+    since: gulp.lastRun(styles)
+  }).pipe(sourcemaps.init())
+    .pipe(
+      sass({
+        outputStyle: 'compressed'
+      }).on('error', error => {
+        console.error(`${error.messageFormatted}`);
+        this.emit('end');
+      }
+    )
+    .pipe(
+      cssnano({
+        autoprefixer: {
+          add: true,
+          browsers: ['last 2 versions']
+        }
+      })
+    )
+    .pipe(gulp.dest(config.styles.dest))
+    .pipe(browserSync.reload({stream:true}))
+  );
+}
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
-gulp.task('browser-sync', ['jekyll-build'], function () {
-  browserSync({
-    server: {
-      baseDir: './dist'
-    }
-  });
-});
+/***
+ * Convert Images to WebP
+*/
+async function images () {
 
-
-/**
- * Styles Task
- */
-gulp.task('styles', function () {
-  gulp.src(pageStyles)
-    .pipe(sourcemaps.init())
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(prefix(prefixerOptions))
-    .pipe(gulp.dest(stylesDest))
-    .pipe(browserSync.reload({
-      stream: true
+  await gulp.src(config.images.src)
+    .pipe(webp({
+      quality: 50
     }))
-    .pipe(gulp.dest(stylesDest));
-});
-
-
-/**
- * Javascript Task
- */
-gulp.task('js', function () {
-  return gulp.src('./**/*.js')
-    .pipe(plumber())
-    .pipe(concat('blog.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./app/assets/js/'));
-});
+    .pipe(gulp.dest(config.images.webpDest))
+}
 
 /**
- * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
+ * Jekyll build
  */
-gulp.task('watch', function () {
-  gulp.watch('./app/assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  gulp.watch(['./app/index.html', './app/**/*.{html,md,markdown}'], ['jekyll-rebuild']);
-});
+function jekyll (done) {
 
-/**
- * Default task, running just `gulp` will compile the stylus,
- * compile the jekyll site, launch BrowserSync & watch files.
- */
-gulp.task('default', ['styles', 'convert-webp', 'browser-sync', 'watch']);
+  spawn('jekyll', [
+    'build',
+    '--config',
+    config.jekyll.development
+  ], {
+    env: process.env,
+    stdio: 'ignore'
+  }).on('close', reload).on('exit', done)
 
-// build to deploy
-gulp.task('build', ['styles', 'convert-webp', 'jekyll-build']);
+}
+
+function watch (done) {
+
+  gulp.watch(config.styles.src, styles);
+  gulp.watch(config.views, jekyll);
+  done();
+}
+
+exports.styles = styles;
+exports.build = gulp.series(clean, styles, gulp.parallel(jekyll, reload));
+exports.default = gulp.series(serve, gulp.parallel(styles), watch);
