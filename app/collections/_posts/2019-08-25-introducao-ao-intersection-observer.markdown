@@ -72,7 +72,7 @@ O primeiro parâmetro do construtor do `IntersectionObserver` é uma função qu
 }]
 {% endhighlight %}
 
-Caso você queira observar vários mais de um elemento, pode fazê-lo usando a mesma instância do IntersectionObserver, da seguinte forma:
+Caso você queira observar mais de um elemento, pode fazê-lo usando a mesma instância do IntersectionObserver, da seguinte forma:
 
 {% highlight javascript %}
 const home = document.getElementById('home');
