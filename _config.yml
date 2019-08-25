@@ -31,13 +31,6 @@ lang: pt-br
 locale: pt_BR
 show_excerpts: false
 
-# html minify
-# compress_html:
-#   clippings: all
-#   comments: all
-#   endings: []
-#   profile: false
-
 files_to_cache:
 - '/assets/styles/all.css'
 - '/assets/images/404.jpg'
