@@ -39,7 +39,6 @@ pages_to_cache:
   - '/'
   - '/sobre/'
   - '/blog/'
-  - '/contato/'
   - '/projetos/'
   - '/404/'
 
@@ -58,14 +57,4 @@ exclude: [
   "package.json",
   "package-lock.json",
   "gulpfile.js"
-  # ".sass-cache/",
-  # ".jekyll-cache/",
-  # "gemfiles/",
-  # "Gemfile",
-  # "Gemfile.lock",
-  # "node_modules/",
-  # "vendor/bundle/",
-  # "vendor/cache/",
-  # "vendor/gems/",
-  # "vendor/ruby/"
 ]
