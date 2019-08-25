@@ -19,7 +19,7 @@
 
     .site-title{
       color: #25262a;
-  
+
       .logo{
         &:visited {
           color: #25262a;
@@ -53,11 +53,22 @@
     z-index: 3;
 
     h2{
-      font-size: 140px;
+      font-size: 100px;
       font-weight: 700;
       padding: 0;
       margin: 0;
-      line-height: 1.33;
+      line-height: 1.14;
+
+      span + br + span{
+        position: relative;
+        z-index: 2;
+        +br + span{
+          font-size: 160px;
+          position: relative;
+          z-index: 1;
+          line-height: 0.9
+        }
+      }
 
       span {
         background-color: #ffdd18;
@@ -97,7 +108,7 @@
     }
 
     h2{
-      font-size: 75px;
+      font-size: 42px;
       font-weight: 500;
       line-height: 1.3;
       color: #FFF;
@@ -135,7 +146,7 @@
     font-weight: 700;
     text-align: center;
   }
-  
+
   .button-link{
     display: table;
     padding: 10px 30px;
@@ -295,7 +306,7 @@
         }
       }
     }
-    
+
     .last-post{
       .post-list{
         .post-link{
