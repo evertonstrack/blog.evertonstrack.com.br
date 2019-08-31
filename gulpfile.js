@@ -1,9 +1,6 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
 const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const exec = require('child_process').exec;
@@ -88,18 +85,6 @@ gulp.task('styles', function () {
       stream: true
     }))
     .pipe(gulp.dest(stylesDest));
-});
-
-
-/**
- * Javascript Task
- */
-gulp.task('js', function () {
-  return gulp.src('./**/*.js')
-    .pipe(plumber())
-    .pipe(concat('blog.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./app/assets/js/'));
 });
 
 /**

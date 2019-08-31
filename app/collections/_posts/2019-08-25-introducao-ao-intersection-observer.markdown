@@ -18,11 +18,11 @@ Mas e se existisse uma forma de verificar se um elemento está visível na tela 
 
 ## Contexto histórico
 
-Se você trabalha com desenvolvimento web a bastante tempo, deve conhecer nomes como “jQuery ScrollSpy” e [“Super Scrollorama”](https://johnpolacek.github.io/superscrollorama/), certo?
+Se você trabalha com desenvolvimento web a bastante tempo, deve conhecer nomes como “jQuery ScrollSpy” e [“Super Scrollorama”](https://johnpolacek.github.io/superscrollorama/){:target="_blank"}{:rel="noopener"}, certo?
 
 Para que não conheceu, eram dois plugins jQuery muito usados para aplicar animações em nos elementos da tela conforme a rolagem do site ia sendo feita e os elementos iam ficando visíveis na tela.
 
-O Superscrollorama, hoje tem uma versão em javascript puro, chamada [ScrollMagic](https://github.com/janpaepke/ScrollMagic), a qual não cheguei a usar ainda, mas tem mais de 11 mil stars no GitHub.
+O Superscrollorama, hoje tem uma versão em javascript puro, chamada [ScrollMagic](https://github.com/janpaepke/ScrollMagic){:target="_blank"}{:rel="noopener"}, a qual não cheguei a usar ainda, mas tem mais de 11 mil stars no GitHub.
 
 
 ## Intersection Observer
@@ -140,7 +140,7 @@ Caso você queira usar hoje, todos os navegadores modernos já suportam o Inters
 </figure>
 
 
-Mas caso precise suportar navegadores mais antigos ainda, pode colocar [um polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
+Mas caso precise suportar navegadores mais antigos ainda, pode colocar [um polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill){:target="_blank"}{:rel="noopener"}.
 
 
 ## Conclusão
@@ -150,9 +150,9 @@ Uma API bem simples e fácil de usar para controlarmos quando um elemento está 
 Seguem alguns posts relacionados com caso queira se aprofundar mais (em inglês):
 
 
-- [Google Developers](https://developers.google.com/web/updates/2016/04/intersectionobserver)
-- [Intersection Observer API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-- [CanIUse - IntersectionObserver](https://caniuse.com/#feat=intersectionobserver)
+- [Google Developers](https://developers.google.com/web/updates/2016/04/intersectionobserver){:target="_blank"}{:rel="noopener"}
+- [Intersection Observer API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API){:target="_blank"}{:rel="noopener"}
+- [CanIUse - IntersectionObserver](https://caniuse.com/#feat=intersectionobserver){:target="_blank"}{:rel="noopener"}
 
 
 Até mais e obrigado pelos peixes!
