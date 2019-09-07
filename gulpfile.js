@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync');
 const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
