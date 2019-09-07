@@ -20,13 +20,13 @@ layout: default
               <time class="post-meta">{% include date.html date=post.date %}</time>
               <div class="post-item__content">
                 <h3>{{ post.title | escape }}</h3>
-                <p>{{ post.description | escape }}</p>
+                <!-- <p>{{ post.description | escape }}</p> -->
               </div>
-              <div class="tags">
+              <!-- <div class="tags">
                 {%- for tag in post.tags -%}
                   <strong class="tag">{{tag}}</strong>
                 {%- endfor -%}
-              </div>
+              </div> -->
               {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
             </a>
           </article>
