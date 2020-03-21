@@ -34,7 +34,7 @@ const pageStyles = [
 
 
 gulp.task('convert-webp', () =>
-  gulp.src('./app/assets/images/**/*.{jpg,jpeg,png}')
+  gulp.src('/app/assets/images/**/*.{jpg,jpeg,png}')
   .pipe(webp({
     quality: 50
   }))
@@ -47,7 +47,7 @@ gulp.task('convert-webp', () =>
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return exec('jekyll build', function (err, stdout, stderr) {
-      console.log(stdout);
+    console.log(stdout);
     })
     .on('close', done);
 });
