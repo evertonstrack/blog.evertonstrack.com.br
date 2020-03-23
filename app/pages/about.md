@@ -61,7 +61,7 @@ image: /assets/images/evertonstrack.jpg
             <p>
               Meu nome é
                   <strong itemprop="name">Everton Strack</strong>
-              , mas todos me chamam de Thom. Tenho 31 anos, moro em
+              , mas todos me chamam de Thom. Tenho 34 anos, moro em
               <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                   <span itemprop="addressLocality">São Leopoldo</span>,
                   <span itemprop="addressRegion">Rio Grande do Sul</span>
