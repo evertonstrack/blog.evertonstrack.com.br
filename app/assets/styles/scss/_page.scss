@@ -177,6 +177,12 @@ img.round{
         }
       }
 
+      &.post-design {
+        .tag{
+          background-color: map-get($color-design, light );
+        }
+      }
+
     }
 
     &.post-javascript {
@@ -200,6 +206,12 @@ img.round{
     &.post-life{
       .tag{
         border: 3px solid map-get($pallete, green );
+      }
+    }
+
+    &.post-design {
+      .tag{
+        border: 3px solid  map-get($color-design, light );
       }
     }
 
