@@ -30,7 +30,7 @@
       &:before{
         content: "<";
       }
-      
+
       &:after{
         content: "/>";
       }
@@ -71,6 +71,10 @@
         display: flex;
         justify-content: center;
 
+        &:last-child{
+          margin-right: 0;
+        }
+
         svg{
           margin: 0;
           width: 26px;
@@ -84,7 +88,7 @@
 @media screen and (max-width: 641px) {
 
   .site-header{
-    
+
     height: 56px;
 
     .site-title{
@@ -116,14 +120,14 @@
           position: fixed;
           right: 15px;
           top: 10px;
-          
+
           .menu-icon>svg{
             fill: #FFF;
           }
         }
 
         ~ .trigger{
-        
+
           opacity: 1;
           transform: scale(1);
           visibility: visible;
@@ -149,7 +153,7 @@
         opacity: 0;
         transform: scale(0.95);
         visibility: hidden;
-        transition: all 0.1s ease; 
+        transition: all 0.1s ease;
         border-radius: 50%;
 
         .page-link{
