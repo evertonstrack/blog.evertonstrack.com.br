@@ -43,38 +43,17 @@
   flex-wrap: wrap;
 
   article{
-    width: 54vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-
-    &.greetings{
-      padding: 60px 11vw 60px 30px;
-    }
-
-    &.presentation{
-      padding: 60px 30px 60px 60px;
-      margin-top: -17vh;
-      position: relative;
-      z-index: 3;
-    }
-
-    &.about{
-      padding: 60px 11vw 60px 30px;
-      margin-top: -17vh;
-      flex-direction: column;
-      justify-content: center;
-    }
   }
 }
 
 /* home gretings */
 .greetings{
-  position: relative;
-  z-index: 3;
   background-color: #ffdd18;
-  padding: 60px 10vw 60px 30px;
-  border-radius: 0 30px 30px 0;
+  padding: 30px;
+  width: 50%;
 
   h2{
     font-size: 100px;
@@ -93,24 +72,23 @@
 }
 
 /* end: home gretings */
-
+.content-presentation{
+  width: 50%;
+}
 .presentation{
-  background-color: #005cef;
-  padding: 60px 30px 30px 5vw;
-  border-radius: 30px 0 0 30px;
+  padding: 60px 30px 30px 60px;
   margin-left: auto;
+  color: map-get($colors, 'primary');
 
   strong{
-    color: #003286;
-    background-color: #fff;
+    color: #FFF;
+    background-color: map-get($colors, 'primary');
   }
 
   h2{
     font-size: 42px;
     font-weight: 500;
     line-height: 1.3;
-    color: #FFF;
-    padding: 30px;
 
     strong{
       font-weight: 500;
@@ -119,15 +97,15 @@
 }
 
 .about{
-  background-color: #e53935;
-  padding: 60px 12vw 60px 30px;
-  border-radius: 0 30px 30px 0;
+  color: map-get($colors, 'primary');
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px 60px 60px;
 
   p{
     font-size: 20px;
     line-height: 1.8;
     font-weight: 400;
-    color: #FFF;
 
     strong{
       font-weight: 400;
@@ -145,7 +123,7 @@
 
   .post-list-heading{
     font-size: 50px;
-    color: #005cef;
+    color: map-get($colors, 'primary');
     font-weight: 700;
     text-align: center;
   }
@@ -154,8 +132,8 @@
     display: table;
     padding: 10px 30px;
     margin: 20px auto 30px;
-    background-color: #005cef;
-    border-color: #005cef;
+    background-color: map-get($colors, 'primary');
+    border-color: map-get($colors, 'primary');
     color: #FFF;
     font-size: 24px;
     text-align: center;
@@ -178,7 +156,7 @@
     width: 100%;
 
     .post-list{
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
     }
   }
@@ -229,8 +207,12 @@
 /* mobile */
 @media screen and (max-width: 996px) {
   .home{
+    .content-presentation{
+      width: 100%;
+    }
+
     article{
-      width: 90vw;
+      width: 100vw;
 
       &.greetings{
         padding: 30px 20px 60px;
@@ -247,7 +229,6 @@
       }
 
       &.presentation{
-        margin-top: -30px;
         padding: 30px 20px 30px;
 
         h2{
@@ -258,8 +239,7 @@
       }
 
       &.about{
-        margin-top: -30px;
-        padding: 60px 20px 30px;
+        padding: 30px 20px 30px;
 
         p{
           font-size: 18px;

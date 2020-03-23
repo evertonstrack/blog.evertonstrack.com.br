@@ -22,11 +22,11 @@
 
     background-color: map-get($color-javascript, dark );
     color:#FFF;
-    
+
     .wrapper{
       flex: 1;
     }
-  
+
     .post-meta{
       color: rgba($color: #FFFFFF, $alpha: 0.7);
     }
@@ -118,7 +118,7 @@
 }
 
 pre {
-  
+
   > code {
     background-color: transparent;
     color: #FFF;
@@ -215,7 +215,7 @@ pre {
 .post-css{
   .site-header{
     background-color: map-get($color-css, light );
-    
+
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
@@ -234,13 +234,34 @@ pre {
 }
 /* end: CSS HEADER */
 
+/* DESIGN HEADER */
+.post-design{
+  .site-header{
+    background-color: map-get($color-design, light );
 
+    .site-nav .page-link,
+    .site-title:visited,
+    .site-title{
+      color: #FFF;
+    }
+  }
+  .post-detail{
+    .post-header{
+      background-color: map-get($color-design, light );
+      color: #FFF;
+      .post-meta{
+        color: rgba($color: #FFFFFF, $alpha: 0.7);
+      }
+    }
+  }
+}
+/* end: DESIGN HEADER */
 
 /* HTML HEADER */
 .post-html{
   .site-header{
     background-color: map-get($color-html, light );
-    
+
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
@@ -263,7 +284,7 @@ pre {
 .post-javascript{
   .site-header{
     background-color: map-get($color-javascript, light );
-    
+
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
@@ -290,7 +311,7 @@ pre {
 .post-life{
   .site-header{
     background-color: map-get($pallete, green );
-    
+
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
@@ -313,7 +334,7 @@ pre {
 .post-default{
   .site-header{
     background-color: map-get($color-javascript, dark );
-    
+
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
@@ -396,7 +417,7 @@ pre {
     font-weight: bold;
     padding-bottom:20px;
   }
-  
+
   .wrapper{
     padding-left: 30px;
     padding-right: 30px;
@@ -441,13 +462,13 @@ pre {
 
 /* mobile */
 @media screen and (max-width: 640px) {
-  
+
   .post-content{
     p, blockquote, pre, ul, ol, dl{
       font-size: 18px;
     }
   }
-  
+
   .post-detail{
      .post-header{
        padding-left: 30px;
@@ -481,7 +502,7 @@ pre {
       justify-content: center;
       margin-bottom: 15px;
     }
-  } 
+  }
 
   .posts .site-header{
     width: 85vw;

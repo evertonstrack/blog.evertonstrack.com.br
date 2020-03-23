@@ -34,11 +34,11 @@ const pageStyles = [
 
 
 gulp.task('convert-webp', () =>
-  gulp.src('/app/assets/images/**/*.{jpg,jpeg,png}')
+  gulp.src('app/assets/images/**/*.{jpg,jpeg,png}')
   .pipe(webp({
     quality: 50
   }))
-  .pipe(gulp.dest('./app/assets/images/webp'))
+  .pipe(gulp.dest('app/assets/images/webp'))
 );
 
 /**
