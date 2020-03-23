@@ -42,7 +42,7 @@ Projetos grandes que requerem manutenção ao longo do tempo, exigem que nossas 
     <source srcset="/assets/images/posts/atomic-design/atomic-design.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/atomic-design.png" alt="Atomic design" />
   </picture>
-  <legend>[Atomic Design. (Image from https://bradfrost.com/]</legend>
+  <legend>Atomic Design. (Image from https://bradfrost.com/)</legend>
 </figure>
 
 
@@ -56,7 +56,7 @@ Os Átomos são os blocos básicos da interface. Os átomos são nossas tags HTM
     <source srcset="/assets/images/posts/atomic-design/atoms.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/atoms.png" alt="Átomos (Atoms)" />
   </picture>
-  <legend>[Átomos (Atoms) (Image from https://bradfrost.com/]</legend>
+  <legend>Átomos (Atoms) (Image from https://bradfrost.com/)</legend>
 </figure>
 
 Também podem incluir elementos mais abstratos,como paletas de cores, fontes e aspectos ainda mais invisíveis de uma interface, como animações.
@@ -75,7 +75,7 @@ Por exemplo, um `<label>`, `<input>` de busca e um `<button>` podem se unir para
     <source srcset="/assets/images/posts/atomic-design/molecule.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/molecule.png" alt="Átomos (Atoms)" />
   </picture>
-  <legend>[Moléculas (molecules) (Image from https://bradfrost.com/]</legend>
+  <legend>Moléculas (molecules) (Image from https://bradfrost.com/)</legend>
 </figure>
 
 
@@ -93,7 +93,7 @@ Como por exemplo, a molécula do formulário de pesquisa combinada com a molécu
     <source srcset="/assets/images/posts/atomic-design/organism2.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/organism2.png" alt="Organismos (organisms)" />
   </picture>
-  <legend>[Organismos (organisms) (Image from https://bradfrost.com/]</legend>
+  <legend>Organismos (organisms) (Image from https://bradfrost.com/)</legend>
 </figure>
 
 Os organismos podem consistir em tipos de moléculas semelhantes e/ou diferentes.
@@ -118,7 +118,7 @@ Os Templates consistem principalmente de grupos de organismos estruturados junto
     <source srcset="/assets/images/posts/atomic-design/template1.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/template1.png" alt="Templates (templates)" />
   </picture>
-  <legend>[Templates (templates) (Image from https://bradfrost.com/]</legend>
+  <legend>Templates (templates) (Image from https://bradfrost.com/)</legend>
 </figure>
 
 
@@ -132,7 +132,7 @@ As Páginas são instâncias específicas de templates. As páginas provém o co
     <source srcset="/assets/images/posts/atomic-design/page1.png" />
     <img itemprop="image" src="/assets/images/posts/atomic-design/page1.png" alt="Páginas (pages)" />
   </picture>
-  <legend>[Páginas (pages) (Image from https://bradfrost.com/]</legend>
+  <legend>Páginas (pages) (Image from https://bradfrost.com/)</legend>
 </figure>
 
 
