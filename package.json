@@ -28,7 +28,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^1.0.2",
     "gulp-webp": "^3.0.0",
-    "lodash": ">=4.17.11",
+    "lodash": ">=4.17.13",
     "minimatch": ">=3.0.2",
     "natives": "^1.1.6",
     "tar": ">=4.4.2"
