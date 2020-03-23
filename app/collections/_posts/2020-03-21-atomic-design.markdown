@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Atomic Design"
-description: "Quem trabalha com web, já deve estar cansado em ouvir sobre componentes, componentização, modular, modularização. Não é um conceito novo, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas."
+description: "Componentes, componentização, modularização. Não são conceitos novos, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas."
 date:   2020-03-20 13:00:00 -0300
 bodyClass: post-html
 theme-color: "#ffdd18"
@@ -9,7 +9,7 @@ tags: ['html']
 image: /assets/images/posts/atomic-design/atomic-design.png
 ---
 
-Quem trabalha com web, já deve estar cansado em ouvir sobre componentes, componentização, modular, modularização. Não é um conceito novo, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas.
+Quem trabalha com web, já deve estar cansado em ouvir sobre componentes, componentização e modularização. Não sãp conceitos novos, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas.
 
 ## O que é Atomic Design?
 
@@ -145,9 +145,9 @@ Com isso podemos criar sistemas que promovam consistência e escalabilidade enqu
 ## Conclusão
 
 
-O que falamos aqui, é um resumo do Atomic Design, você pode conferir mais no [site do do Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}, e também pode comprar o livro para se aprofundar mais.
+O que falamos aqui, é um resumo do Atomic Design, você pode conferir mais no [site do do Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}, e pode também comprar o livro para se aprofundar mais.
 
-Vale bastante a lida.
+Recomendo a leitura!
 
 Links:
 - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}
