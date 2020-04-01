@@ -24,7 +24,7 @@
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  
+
 
   &:before,
   &:after{
@@ -56,7 +56,7 @@
   }
   50% {
     transform: translateY(0)
-  }    
+  }
   100% {
     transform: translateY(0)
   }
@@ -70,7 +70,7 @@
   }
   50% {
     transform: translateY(0)
-  }    
+  }
   100% {
     transform: translateY(0)
   }
@@ -85,7 +85,7 @@
   }
   50% {
     transform: translateY(0)
-  }    
+  }
   100% {
     transform: translateY(0)
   }
@@ -97,7 +97,7 @@
 .wrap{
   width: 100%;
   max-width: 1280px;
-  padding-left: 30px; 
+  padding-left: 30px;
   padding-right: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -123,14 +123,14 @@
 
   &.link-gray{
     border-color: #25262a;
-    
+
     &:hover{
       background-color: #25262a;
       color: #FFF;
       text-decoration: none;
     }
   }
-  
+
 }
 
 .link-white{
@@ -211,7 +211,7 @@ pre>code.language-cmd{
     }
 
     h3{
-      margin-bottom: 0;
+      line-height: 120%;
     }
 
     p {

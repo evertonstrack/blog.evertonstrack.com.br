@@ -47,7 +47,9 @@ gulp.task('convert-webp', () =>
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   return exec('jekyll build', function (err, stdout, stderr) {
-    console.log(stdout);
+    console.log('stdout', stdout);
+    console.log('err', err);
+    console.log('stderr', stderr);
     })
     .on('close', done);
 });
