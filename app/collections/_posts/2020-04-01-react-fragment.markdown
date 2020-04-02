@@ -5,7 +5,7 @@ description: "Quantas vezes já nos pegamos em uma aplicação onde o HTML tem m
 date:   2020-04-01 13:00:00 -0300
 bodyClass: post-javascript
 theme-color: "#ffdd18"
-tags: ['javascript']
+tags: ['javascript', 'react']
 image: /assets/images/posts/react-fragments/react-fragments.jpg
 ---
 

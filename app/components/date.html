@@ -1,4 +1,8 @@
 {% assign months = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
 {% assign month_number = include.date | date: "%-m" | minus: 1 %}
 
-{{ include.date | date: "%-d" }} de {{ months[month_number] }} de {{ include.date | date: "%Y" }}
+<span class="day">{{ include.date | date: "%d" }}</span>
+<span class="mouth-year">de {{ months[month_number] }} de {{ include.date | date: "%Y" }}</span>
+<!-- {{ include.date | date: "%d" }} de {{ months[month_number] }} de {{ include.date | date: "%Y" }} -->
+
+<!-- <time itemprop="datePublished" datetime="{{ include.date }}" class="date">{{ include.date | date_to_string }}</time> -->

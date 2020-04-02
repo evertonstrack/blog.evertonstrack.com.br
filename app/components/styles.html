@@ -2,7 +2,6 @@
 <!-- general -->
 <style type="text/css">{%- include styles/main.css -%}</style>
 
-
 {% if page.layout == 'home' %}
 <style type="text/css">{%- include styles/home.css -%}</style>
 {% endif %}
@@ -11,7 +10,7 @@
   <style type="text/css">{%- include styles/post.css -%}</style>
 {% endif %}
 
-{% if page.url == "/blog/" %}
+{% if page.url contains "/blog" %}
 <style type="text/css">{%- include styles/blog.css -%}</style>
 {% endif %}
 
