@@ -65,6 +65,8 @@ pages_to_cache:
   - '/'
   - '/sobre/'
   - '/blog/'
+  - '/blog/pagina-2/'
+  - '/blog/pagina-3/'
   - '/projetos/'
   - '/404/'
 
