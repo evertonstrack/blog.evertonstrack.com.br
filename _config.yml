@@ -26,10 +26,36 @@ markdown: kramdown
 google_analytics: UA-50129966-1
 permalink: /blog/:title/
 theme: minima
-plugins: [jekyll-feed]
+# plugins: [jekyll-feed]
 lang: pt-br
 locale: pt_BR
 show_excerpts: false
+gems:
+  - jekyll-paginate-v2
+  - jekyll-feed
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/pagina-:num/'
+  title: ':title - Página :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Sobre
+    url: /sobre
+  - title: Blog
+    url: /blog
+  - title: Projetos
+    url: /projetos
 
 files_to_cache:
 - '/assets/styles/all.css'
@@ -39,6 +65,8 @@ pages_to_cache:
   - '/'
   - '/sobre/'
   - '/blog/'
+  - '/blog/pagina-2/'
+  - '/blog/pagina-3/'
   - '/projetos/'
   - '/404/'
 
