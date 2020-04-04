@@ -145,14 +145,14 @@ Com isso podemos criar sistemas que promovam consistência e escalabilidade enqu
 ## Conclusão
 
 
-O que falamos aqui, é um resumo do Atomic Design, você pode conferir mais no [site do do Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}, e pode também comprar o livro para se aprofundar mais.
+O que falamos aqui, é um resumo do Atomic Design, você pode conferir mais no [site do do Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}{:rel="noopener"}, e pode também comprar o livro para se aprofundar mais.
 
 Recomendo a leitura!
 
 Links:
-- [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}
-- [Livro Atomic Design (Inglês)](http://atomicdesign.bradfrost.com/){:target="_blank"}
-- [A modularidade é um importante princípio de design para a Web (Tim Berners-Lee)](https://www.w3.org/DesignIssues/Modularity.html){:target="_blank"}
+- [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/){:target="_blank"}{:rel="noopener"}
+- [Livro Atomic Design (Inglês)](http://atomicdesign.bradfrost.com/){:target="_blank"}{:rel="noopener"}
+- [A modularidade é um importante princípio de design para a Web (Tim Berners-Lee)](https://www.w3.org/DesignIssues/Modularity.html){:target="_blank"}{:rel="noopener"}
 
 
 Até mais e obrigado pelos peixes.
