@@ -50,12 +50,10 @@ pagination:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Sobre
-    url: /sobre
   - title: Blog
     url: /blog
-  - title: Projetos
-    url: /projetos
+  - title: Sobre
+    url: /sobre
 
 files_to_cache:
 - '/assets/styles/all.css'
@@ -67,7 +65,6 @@ pages_to_cache:
   - '/blog/'
   - '/blog/pagina-2/'
   - '/blog/pagina-3/'
-  - '/projetos/'
   - '/404/'
 
 # Include from processing.

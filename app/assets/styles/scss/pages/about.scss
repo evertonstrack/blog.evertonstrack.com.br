@@ -25,85 +25,9 @@
     padding-right: 0;
   }
 
-  /* section persona */
-  .section-persona{
-    display: flex;
-    min-height: 80vh !important;
-
-    .persona{
-      width: 100%;
-      height: 80vh;
-      display: flex;
-
-      .side{
-        width: 50%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        -webkit-transition: all .75s cubic-bezier(.55,0,.1,1);
-        -ms-transition: all .75s cubic-bezier(.55,0,.1,1);
-        transition: all .75s cubic-bezier(.55,0,.1,1);
-        z-index: 1;
-
-        &:hover{
-          width: 100%;
-
-          .text{
-            -webkit-opacity: 1;
-            -moz-opacity: 1;
-            -ms-opacity: 1;
-            -o-opacity: 1;
-            opacity: 1;
-          }
-        }
-
-        &.code-side {
-          background-color: #005cef;
-        }
-
-        &.side.design-side {
-          background-color: #273238;
-        }
-
-
-        img{
-          width: 1050px;
-          display: block;
-          max-width: none;
-        }
-
-        .text{
-          width: 300px;
-          color: #FFF;
-
-          -webkit-opacity: 0.5;
-          -ms-opacity: 0.5;
-          opacity: 0.5;
-          -webkit-transition: all .5s cubic-bezier(.55,0,.1,1);
-          -ms-transition: all .5s cubic-bezier(.55,0,.1,1);
-          transition: all .5s cubic-bezier(.55,0,.1,1);
-
-          h2{
-            font-size: 60px;
-            margin: 0 0 25px 0;
-            line-height: 100%
-          }
-
-          p{
-            font-size: 20px;
-            margin: 0;
-          }
-        }
-      }
-    }
-  }
-  /* end: section persona */
-
   /* section sobre everton */
   .section-sobre-everton{
-    min-height: 80vh;
+    min-height: auto !important;
     height: auto !important;
     display: flex;
     align-items: center;
@@ -116,69 +40,7 @@
   }
   /* end: section sobre everton*/
 
-  .section-skills{
-    background-color: #ffbc01;
-    min-height: 80vh;
-    height: auto !important;
-    display: flex;
-    align-items: center;
-  }
-
 }
-
-/* skills */
-.skills{
-
-  display: block;
-  text-align: center;
-
-  .skill{
-    display: inline-block;
-    width: 250px;
-    margin-bottom: 15px;
-
-    .skill__label{
-      display: block;
-    }
-
-
-    /* circle SVG */
-    .skill__level{
-      display: inline-block;
-      margin: 10px auto;
-      max-width: 80%;
-      max-height: 250px;
-
-      .circle-bg {
-        fill: none;
-        stroke: rgba($color: #ca9602, $alpha: 0.3);
-        stroke-width: 3.8;
-      }
-
-      .skill__level-progress{
-        stroke: #201801;
-        fill: none;
-        stroke-width: 2.8;
-        stroke-linecap: round;
-        animation: progress 1s ease-out forwards;
-      }
-
-      .percentage {
-        fill: #201801;
-        font-size: 0.5em;
-        text-anchor: middle;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
 
 /* mobile */
 @media screen and (max-width: 640px) {
@@ -195,29 +57,6 @@
       margin-bottom: 0;
     }
 
-    .section-persona{
-      min-height: auto !important;
-      padding-bottom: 0 !important;
-
-      .persona{
-        flex-direction: column;
-        height: auto;
-
-        .side{
-          width: 100%;
-          display: block;
-          padding: 70px 30px;
-
-          .text{
-            width: 100%;
-            h2{
-              font-size: 42px;
-            }
-          }
-        }
-      }
-    }
-
     .section-sobre-everton{
       img{
         float: none;
@@ -226,33 +65,11 @@
       }
     }
   }
-  .skills .skill{
-    max-width: 49%;
-  }
 }
 
 @media screen and (max-width: 400px) {
   /* about */
   .content-sobre{
-    .section-persona{
-      .persona{
-        .side{
-          width: 100%;
-          display: block;
-          padding: 70px 30px;
-
-          .text{
-            h2 {
-              font-size: 30px;
-            }
-            p {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-    }
-
     .section-sobre-everton{
       img{
         float: none;

@@ -1,8 +1,10 @@
 # Older pages
-/portfolio /projetos
+/portfolio /sobre
+/projetos /sobre
 /servicos /sobre
 /core /sobre
 /contato https://www.linkedin.com/in/evertonstrack/
+
 
 # custom 404
 /* /404/ 404
