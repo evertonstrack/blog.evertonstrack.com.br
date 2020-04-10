@@ -135,17 +135,16 @@ img.round{
 
     .tags{
       .tag{
-        padding: 5px 10px;
+        padding: 0px 6px;
         color: #25262a;
         font-size: 14px;
-        border-radius: 25px;
+        border-radius: 4px;
         margin-right: 5px;
         display: inline-block;
       }
     }
 
     &:hover{
-
       &.post-javascript,
       &.post-css,
       &.post-html,

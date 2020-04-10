@@ -18,7 +18,7 @@ O Atomic Design é uma metodologia para criar design systems criada pelo Brad Fr
 Um conjunto de Átomos forma uma Molécula, e um conjunto de moléculas forma um Organismo.
 
 
-> "O Atomic Design é uma metodologia que nos ajuda a pensar na interface do usuário (UI) de maneira hierarquia e reforça a importância da qualidade de pattern libraries eficazes, e apresenta técnicas para otimizar o fluxo de trabalho do design e desenvolvimento em equipe. O Atomic Design também detalha o que acontece durante a criação e manutenção de sistemas de design, permitindo a implementação de UIs com mais consistência e qualidade."_
+> _"O Atomic Design é uma metodologia que nos ajuda a pensar na interface do usuário (UI) de maneira hierarquia e reforça a importância da qualidade de pattern libraries eficazes, e apresenta técnicas para otimizar o fluxo de trabalho do design e desenvolvimento em equipe. O Atomic Design também detalha o que acontece durante a criação e manutenção de sistemas de design, permitindo a implementação de UIs com mais consistência e qualidade."_
 > — Brad Frost
 
 
