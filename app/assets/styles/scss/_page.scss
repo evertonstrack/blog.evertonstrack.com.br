@@ -141,10 +141,19 @@ img.round{
         border-radius: 4px;
         margin-right: 5px;
         display: inline-block;
+
       }
     }
 
+    .tag{
+      border: 3px solid #25262a;
+    }
+
     &:hover{
+      .tag{
+        background-color: #FFF;
+        border-color: #FFF;
+      }
       &.post-javascript,
       &.post-css,
       &.post-html,
@@ -275,7 +284,7 @@ img.round{
       .post-link{
         padding: 0;
         margin-bottom: 30px;
-        border-radius: 30px;
+        border-radius: 8px;
 
         h3{
           text-decoration: underline;
