@@ -8,7 +8,7 @@
   padding-bottom: 30px;
 
   img{
-    border-radius: 30px;
+    border-radius: 8px;
   }
 
   .post-header{
@@ -20,7 +20,7 @@
     align-items: center;
     text-align: center;
 
-    background-color: map-get($color-javascript, dark );
+    background-color: #25262a;
     color:#FFF;
 
     .wrapper{
