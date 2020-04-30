@@ -232,9 +232,10 @@ Realizo essa revisão uma vez por semana, toda sexta-feira. No GTD é chamada de
 
 O texto ficou um pouco longo, mas queria detalhar o bastante para que ficasse mais fácil de entender e pudesse ajudar, caso vocês quisessem algo para começar a se organizar. Caso se interessem pelo assunto, ou queiram mais detalhes sobre o meu workflow, comenta aí embaixo que vou ter o prazer de responder.
 
+Esse é o primeiro post sobre uma série de posts que estou planejando fazer sobre organização e produtividade. Trazendo algumas ferramentas e alguns processos que uso no meu dia-a-dia e que me ajudam muito a manter o foco e fazer o que preciso e quero fazer. :)
+
 
 ### 💡 Dicas
-
 
 De agora em diante, sempre que for pertinente, vou compilar os links aqui para ficar mais fácil a consulta.
 
