@@ -117,7 +117,7 @@ Se você tem uma conta do Google, você já tem o Google Keep incluído, é só 
   <legend>Evernote</legend>
 </figure>
 
-O Evernote é o local ou guardo minhas referências para consultas. A linha pode parecer meio tênue entre o Google Keep e o Evernote, mas para meu uso faz sentido. Uso o Evernote como uma "gaveta virtual". Os itens que vão para o Evernote também são informações que preciso lembrar, mas não necessitam de uma ação, como por exemplo:
+O Evernote é o local onde armazeno minhas referências para consultas. A linha pode parecer meio tênue entre o Google Keep e o Evernote, mas para meu uso faz sentido. Uso o Evernote como uma "gaveta virtual". Os itens que vão para o Evernote também são informações que preciso lembrar, mas não necessitam de uma ação, como por exemplo:
 
 - Ideias já detalhadas e/ou mais elaboradas (muitas vezes elas saem do Google Keep e vão para o Evernote após serem detalhadas).
 - Minhas metas pessoais mensais, semestrais e anuais
@@ -163,7 +163,7 @@ Simplesmente descarto. Aqui é uma dica importante: Não tenha medo de descartar
 
 Após capturar e organizar os itens, é hora de colocar a mão na massa. Consulto diversas vezes ao dia o meu Todoist para verificar o que preciso fazer, e em qual momento. Para as tarefas que tem hora determinada para fazer, eu faço quando recebo o lembrete daquela tarefa.
 
-Você também pode usar o calendário para todas as tarefas e compromissos que tem hora e dia marcados, o David Allen sugere isso com o Getting Things Done. Eu usava desta forma, e depois de alguns experimentos cheguei a conclusão que meu dia fluí melhor usando apenas um local, no meu caso, o Todoist.
+Você também pode usar o calendário para todas as tarefas e compromissos que tem hora e dia marcados, o David Allen sugere isso com o Getting Things Done. Eu usava desta forma, e depois de alguns experimentos cheguei a conclusão que meu dia flui melhor usando apenas um local, no meu caso, o Todoist.
 
 No Todoist, uso as visualizações:
 
@@ -236,7 +236,7 @@ O texto ficou um pouco longo, mas queria detalhar o bastante para que ficasse ma
 ### 💡 Dicas
 
 
-De agora em diante, sempre que for pertinente, vou compliar os links aqui para ficar mais fácil a consulta.
+De agora em diante, sempre que for pertinente, vou compilar os links aqui para ficar mais fácil a consulta.
 
 Seguem algumas dicas sobre organização e produtividade:
 
