@@ -9,7 +9,7 @@ tags: ['design']
 image: /assets/images/posts/atomic-design/atomic-design.png
 ---
 
-Quem trabalha com web, já deve estar cansado em ouvir sobre componentes, componentização e modularização. Não sãp conceitos novos, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas.
+Quem trabalha com web, já deve estar cansado em ouvir sobre componentes, componentização e modularização. Não são conceitos novos, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas.
 
 ## O que é Atomic Design?
 
@@ -53,8 +53,8 @@ Os Átomos são os blocos básicos da interface. Os átomos são nossas tags HTM
 <figure>
   <picture>
     <source type="image/webp" srcset="/assets/images/webp/posts/atomic-design/atoms.webp" />
-    <source srcset="/assets/images/posts/atomic-design/atoms.png" />
-    <img itemprop="image" src="/assets/images/posts/atomic-design/atoms.png" alt="Átomos (Atoms)" />
+    <source srcset="/assets/images/posts/atomic-design/atoms.jpg" />
+    <img itemprop="image" src="/assets/images/posts/atomic-design/atoms.jpg" alt="Átomos (Atoms)" />
   </picture>
   <legend>Átomos (Atoms) (Image from https://bradfrost.com/)</legend>
 </figure>
@@ -72,8 +72,8 @@ Por exemplo, um `<label>`, `<input>` de busca e um `<button>` podem se unir para
 <figure>
   <picture>
     <source type="image/webp" srcset="/assets/images/webp/posts/atomic-design/molecule.webp" />
-    <source srcset="/assets/images/posts/atomic-design/molecule.png" />
-    <img itemprop="image" src="/assets/images/posts/atomic-design/molecule.png" alt="Átomos (Atoms)" />
+    <source srcset="/assets/images/posts/atomic-design/molecule.jpg" />
+    <img itemprop="image" src="/assets/images/posts/atomic-design/molecule.jpg" alt="Átomos (Atoms)" />
   </picture>
   <legend>Moléculas (molecules) (Image from https://bradfrost.com/)</legend>
 </figure>
@@ -90,8 +90,8 @@ Como por exemplo, a molécula do formulário de pesquisa combinada com a molécu
 <figure>
   <picture>
     <source type="image/webp" srcset="/assets/images/webp/posts/atomic-design/organism2.webp" />
-    <source srcset="/assets/images/posts/atomic-design/organism2.png" />
-    <img itemprop="image" src="/assets/images/posts/atomic-design/organism2.png" alt="Organismos (organisms)" />
+    <source srcset="/assets/images/posts/atomic-design/organism2.jpg" />
+    <img itemprop="image" src="/assets/images/posts/atomic-design/organism2.jpg" alt="Organismos (organisms)" />
   </picture>
   <legend>Organismos (organisms) (Image from https://bradfrost.com/)</legend>
 </figure>
@@ -115,8 +115,8 @@ Os Templates consistem principalmente de grupos de organismos estruturados junto
 <figure>
   <picture>
     <source type="image/webp" srcset="/assets/images/webp/posts/atomic-design/template1.webp" />
-    <source srcset="/assets/images/posts/atomic-design/template1.png" />
-    <img itemprop="image" src="/assets/images/posts/atomic-design/template1.png" alt="Templates (templates)" />
+    <source srcset="/assets/images/posts/atomic-design/template1.jpg" />
+    <img itemprop="image" src="/assets/images/posts/atomic-design/template1.jpg" alt="Templates (templates)" />
   </picture>
   <legend>Templates (templates) (Image from https://bradfrost.com/)</legend>
 </figure>
@@ -129,8 +129,8 @@ As Páginas são instâncias específicas de templates. As páginas provém o co
 <figure>
   <picture>
     <source type="image/webp" srcset="/assets/images/webp/posts/atomic-design/page1.webp" />
-    <source srcset="/assets/images/posts/atomic-design/page1.png" />
-    <img itemprop="image" src="/assets/images/posts/atomic-design/page1.png" alt="Páginas (pages)" />
+    <source srcset="/assets/images/posts/atomic-design/page1.jpg" />
+    <img itemprop="image" src="/assets/images/posts/atomic-design/page1.jpg" alt="Páginas (pages)" />
   </picture>
   <legend>Páginas (pages) (Image from https://bradfrost.com/)</legend>
 </figure>

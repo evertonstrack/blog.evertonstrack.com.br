@@ -43,17 +43,17 @@ npm start
 
 Como queremos usar Sass em seu projeto react, existem 2 maneiras comuns para fazer isso:
 
-1. **Criar uma task separada para compilar o Sass para CSS**
+1 - **Criar uma task separada para compilar o Sass para CSS**
 
 Instalar o Sass, executar uma conversão para o CSS e incluir o CSS no aplicativo React. Este é um processo simples, pois o sass é uma gem do Ruby, porém é preciso executar um processo separado para fazer a conversão, paralelamente ao processo que está rodando o aplicativo React.
 
-2. **Ejetando seu React app**
-O processo de "Ejetar", remove parte da *"mágica"* do `Create react app`, revelando as configurações, scripts de criação e as dependências. Com isso, eles são movidos para dentro do projeto. 
+2 - **Ejetando seu React app**
+O processo de "Ejetar", remove parte da *"mágica"* do `Create react app`, revelando as configurações, scripts de criação e as dependências. Com isso, eles são movidos para dentro do projeto.
 
 Isso é ótimo para desenvolvedores avançados, e quando precisamos customizar algumas tasks do Webpack permite uma melhor personalização, mas para iniciantes acaba sendo mais confuso.
 
 
-Mas então, como faremos isso sem ejetar nosso app e sem rodar uma task paralela? 
+Mas então, como faremos isso sem ejetar nosso app e sem rodar uma task paralela?
 
 
 > ..você não é obrigado a usar nada. Pense e use se fizer sentido.
@@ -99,7 +99,7 @@ Para resolver isso vamos alterar nossa task de **start** no nosso `package.json`
 "start": "npm run watch:sass | react-scripts start",
 {% endhighlight %}
 
-Agora, toda vez que rodarmos nosso projeto, os arquivos Sass vão ser compilados, e Sass irá monitorar qualquer alteração nos arquivos e gerar novamente e o nosso script do create react app também continuará rodando. 
+Agora, toda vez que rodarmos nosso projeto, os arquivos Sass vão ser compilados, e Sass irá monitorar qualquer alteração nos arquivos e gerar novamente e o nosso script do create react app também continuará rodando.
 
 
 ## Conclusão

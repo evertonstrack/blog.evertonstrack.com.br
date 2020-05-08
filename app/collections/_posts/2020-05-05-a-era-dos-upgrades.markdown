@@ -2,11 +2,11 @@
 layout: post
 title:  "A era dos upgrades: Como saber a hora certa de comprar [Guia Prático]"
 description: "Estamos vivendo em uma era de upgrades. Todos os anos muitas empresas anunciam novas versões de produtos com melhorias que são muito superiores às versões anteriores e é difícil não sentir-se tentado a adquiri-las. Como saber se é o momento certo de fazer o upgrade?"
-date:   2020-05-07 13:00:00 -0300
+date:   2020-05-08 15:00:00 -0300
 bodyClass: post-life
 theme-color: "#ffdd18"
-tags: ['vida']
-image: /assets/images/posts/como-se-organizar/todoist.jpg
+tags: ['vida', 'minimalismo']
+image: /assets/images/posts/a-era-dos-upgrades/tim-cook-apple.jpg
 ---
 
 Estamos vivendo em uma era de upgrades. Todos os anos muitas empresas anunciam novas versões de produtos com melhorias que são muito superiores às versões anteriores e é difícil não sentir-se tentado a adquiri-las.
@@ -35,31 +35,38 @@ A ideia desse post, surgiu de um ótimo [vídeo do Matt D'Avella intitulado "The
 
 As perguntas são:
 
-### Eu posso pagar?
+- ✅ Eu posso pagar?
+- ✅ Como está o meu dispositivo atual?
+- ✅ A diferença vale a pena?
 
-A primeira pergunta, e uma das mais importantes é: **"Eu posso pagar?"**. Se você está vivendo de salário a salário, e o dinheiro mal da pra pagar as contas, você já tem sua resposta e nem precisa das outras perguntas.
+### ⭐ Eu posso pagar?
+
+Uma das perguntas mais importantes. Se você está vivendo de salário a salário, e o dinheiro mal da pra pagar as contas, você já tem sua resposta e nem precisa das outras perguntas.
 
 Não é prudente nem saudável se endividar para fazer um upgrade, seja ele qual for.
 
-### Como está o meu dispositivo atual?
+Sempre que possível, viva um degrau abaixo do seu dinheiro.
 
-Se você passou da primeira pergunta, a próxima pergunta que deve se fazer é: **"Como está o meu dispositivo atual?"** Ele está dando conta do recado?. Se a resposta for sim, você não deve fazer o upgrade.
+### ⭐ Como está o meu dispositivo atual?
+
+Ainda consigo seguir com meu dispositivo por mais tempo? Ele está dando conta do recado? Se a resposta for sim, você não deve fazer o upgrade.
 
 Se a resposta for mais ou menos, tente elencar os pontos que nos quais ele não está dando conta, isso vai te ajudar a ter uma visão muito melhor do todo.
 
-### A diferença vale a pena?
+### ⭐ A diferença vale a pena?
 
-A Última pergunta é: **"A diferença vale a pena?"**. E neste ponto, você precisa ser bem sincero consigo mesmo, pois muitas vezes estamos falando de um grande quantia de dinheiro.
+Neste ponto, você precisa ser bem sincero consigo mesmo, pois muitas vezes estamos falando de um grande quantia de dinheiro.
 
 Pondere muito bem, liste os pontos positivos e negativos, faça uma comparação com quais outros sonhos ou outras coisas você poderia realizar se não fizesse esse upgrade. Quando comparamos temos uma visão melhor e menos viciada da situação.
 
-Eu sou um entusiasta de tecnologia, trocava de smartphone todo ano quase, mesmo sabendo que não precisava fazer isso, mas eu gostava bastante de ter a versão mais nova, a mais atual. Estar na crista da onda.
+
+## Conclusão
+
+Eu sou um entusiasta de tecnologia, trocava de smartphone todo ano quase, mesmo sabendo que não precisava fazer isso, mas eu gostava bastante de ter a versão mais nova, a mais atual, estar na crista da onda.
 
 Mas sejamos realistas, vivemos em um país de 3° mundo, onde a grande maioria da população vive (sobrevive) com um salário mínimo. Essa cultura consumista afeta as pessoas de uma forma muito negativa.
 
 De uns 3 anos pra cá, eu desapeguei bastante dessa cultura, tento ter o mínimo de coisas possíveis, que eu realmente use e que me tragam benefícios.
-
-## Conclusão
 
 Apesar do post falar mais de smartphones, que estão mais em foco nos últimos anos, esse questionamento serve para todo e qualquer produto. Seguindo essas três perguntas:
 
@@ -69,16 +76,16 @@ Apesar do post falar mais de smartphones, que estão mais em foco nos últimos a
 
 Você vai estar muita mais embasado para tomar sua decisão de fazer ou não o upgrade.
 
-## Dicas
+## 💡 Dicas
 
-Hoje trago duas dicas, uma delas é o vídeo que me inspirou a escrever esse post, que trouxe essas 3 perguntas que mudaram a forma como eu decido se compro ou não algo novo e um documentário chamado "Minimalismo: Um documentário sobre as coisas importantes", da Netflix, que é produzido pelo Matt D'Avella, que fez o vídeo que citei.
+Hoje trago duas dicas, uma delas é o vídeo que me inspirou a escrever esse post, que trouxe essas 3 perguntas que mudaram a forma como eu decido se compro ou não algo novo e um documentário chamado **"Minimalismo: Um documentário sobre as coisas importantes"**, da Netflix, que é produzido pelo Matt D'Avella, que fez o vídeo que citei.
 
 Esse documentário mudou totalmente a minha forma de pensar e me fez rever todos os aspectos da minha vida. Já falei sobre esse documentário [nesse post](https://evertonstrack.com.br/blog/uma-conversa-sobre-coisas-importantes/).  Recomendo muito!
 
 - [The Era of Upgrades](https://www.youtube.com/watch?v=vCoF21OXu2E){:target="_blank"}{:rel="noopener"}
 - [Minimalism: A Documentary About the Important Things - Netflix](https://www.netflix.com/br/title/80114460){:target="_blank"}{:rel="noopener"}
+- [Viva um degrau abaixo! Como fazer isso?](https://financaspessoais.organizze.com.br/regra-para-ter-dinheiro-viva-um-degrau-abaixo-como-fazer-isso/){:target="_blank"}{:rel="noopener"}
 - [Uma conversa sobre as coisas importantes](https://evertonstrack.com.br/blog/uma-conversa-sobre-coisas-importantes/)
 
 
 Ate mais e obrigado pelos peixes.
-
