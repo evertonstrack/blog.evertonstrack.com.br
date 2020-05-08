@@ -9,7 +9,7 @@ tags: ['javascript', 'react']
 image: /assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg
 ---
 
-A mundo front-end é uma loucura total, principalmente quando falamos em frameworks e libs javascript. No momento que escrevo este post, é bem provável que esteja surgindo um novo framework. 
+A mundo front-end é uma loucura total, principalmente quando falamos em frameworks e libs javascript. No momento que escrevo este post, é bem provável que esteja surgindo um novo framework.
 
 Hoje vamos falar sobre a lib que estampa a frente do trem do hype, isso mesmo, vamos falar do ReactJS.. ou apenas React, para os íntimos.
 
@@ -160,7 +160,6 @@ render() {
 {% endhighlight %}
 
 
-> A regra é: **se o componente precisa ser atualizado quando a informação mudar, essa informação deve ficar no state, pois ela representa o “estado” da aplicação**.
 > A regra é: **se a mudança da informação impacta em uma (re)renderização do componente, essa informação deve ficar no state, pois ela representa o “estado” da aplicação**.
 
 
@@ -184,7 +183,7 @@ const UserName = (props) => {
 <UserName name="Jubileu" />
 {% endhighlight %}
 
-Podemos escrever o exemplo acima, omitindo o objeto "prop", ficaria assim: 
+Podemos escrever o exemplo acima, omitindo o objeto "prop", ficaria assim:
 
 {% highlight react %}
 const UserName = ({ name }) => {
@@ -204,21 +203,22 @@ O método render é onde a mágica acontece. Como o nome já diz, ele é o respo
 Toda vez que o state muda, ele é chamado automaticamente e a view é atualizada. O React atualiza **apenas a parte do DOM que sofreu alteração**, graças ao virtual DOM.
 
 {% highlight react %}
-  componentDidMount() {
-    this.setState({
-      favorite_thing: 'Pipoca'
-    });
-  }
-
-  render() {
-    return (
-      <div className="user-data">
-        <h2>{this.state.name}</h2>
-        <p>{this.state.favorite_thing}</p>
-      </div>
-    );
-  }
+// código omitido
+componentDidMount() {
+  this.setState({
+    favorite_thing: 'Pipoca'
+  });
 }
+
+render() {
+  return (
+    <div className="user-data">
+      <h2>{this.state.name}</h2>
+      <p>{this.state.favorite_thing}</p>
+    </div>
+  );
+}
+// código omitido
 {% endhighlight %}
 
 
@@ -241,7 +241,7 @@ Um componente React também possui quatro fases:
 -- Quando nosso componente é desmontado do DOM;
 
 
-Para nos ajudar a trabalhar com o ciclo de vida dos nossos componentes, o react nos disponibiliza alguns métodos que facilitam esse trabalhdo. 
+Para nos ajudar a trabalhar com o ciclo de vida dos nossos componentes, o react nos disponibiliza alguns métodos que facilitam esse trabalhdo.
 
 {% highlight react %}
 componentWillMount() {  }

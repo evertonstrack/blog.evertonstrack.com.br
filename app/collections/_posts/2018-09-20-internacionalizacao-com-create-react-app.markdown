@@ -110,7 +110,7 @@ Nossa aplicação foi criada, vamos instalar o react-intl-universal:
 npm install react-intl-universal --save
 {% endhighlight %}
 
-Após isso, vamos criar uma pasta `locales`, dentro da pasta **src** do nosso projeto. O nome desta pasta é você quem escolhe, caso queira definir um nome ou localização diferente para ela, sinta-se à vontade. 
+Após isso, vamos criar uma pasta `locales`, dentro da pasta **src** do nosso projeto. O nome desta pasta é você quem escolhe, caso queira definir um nome ou localização diferente para ela, sinta-se à vontade.
 
 Na sequência, podemos criar nossos arquivos que contém os textos que serão traduzidos. Aqui neste exemplo, vamos criar 2 arquivos `.json` dentro da pasta que acabamos de criar. Um para o idioma português e outro para o idioma inglês.
 
@@ -201,7 +201,7 @@ class App extends Component {
       locales
     });
   }
-  
+
   render() {
     return (
       <div className="App">
@@ -220,15 +220,15 @@ class App extends Component {
 export default App;
 {% endhighlight %}
 
-Com isso, a internacionalização do nosso projeto está configurada e podemos partir para as traduções. 
+Com isso, a internacionalização do nosso projeto está configurada e podemos partir para as traduções.
 
 
 ## Como aplicamos as traduções
 
-O `react-intl-universal` disponibiliza 2 métodos bem simples mas bastante poderosos para nós: o `intl.get()` e o `intl.getHTML()`. 
+O `react-intl-universal` disponibiliza 2 métodos bem simples mas bastante poderosos para nós: o `intl.get()` e o `intl.getHTML()`.
 
 
-**intl.get()** -- Usamos ele para buscar uma string simples ou uma string que tenha algum trecho que precisamos fazer um replace. 
+**intl.get()** -- Usamos ele para buscar uma string simples ou uma string que tenha algum trecho que precisamos fazer um replace.
 
 **intl.getHTML()** -- Usamos para buscar uma string que também contenha blocos de HTML.
 
@@ -236,7 +236,7 @@ Vamos ao exemplo:
 
 **pt-BR.json**
 {% highlight json %}
-{ 
+{
   "text": "Lorem ipsum dolor sit amet",
   "textHTML": "Lorem ipsum <span style='color:red'>dolor</span> sit amet"
 }
@@ -252,13 +252,19 @@ Podemos também definir um texto padrão quando a texto que buscarmos não exist
 
 {% highlight javascript %}
 // Padrão
-intl.get('um-texto-inexistente').default('Esta tradução não existe'); // Esta tradução não existe
+intl
+  .get('um-texto-inexistente')
+  .default('Esta tradução não existe'); // Esta tradução não existe
 
 // Reduzida
-intl.get('um-texto-inexistente').d('Esta tradução não existe'); // Esta tradução não existe
+intl
+  .get('um-texto-inexistente')
+  .d('Esta tradução não existe'); // Esta tradução não existe
 
 // Com HTML
-intl.getHTML('um-texto-inexistente').d('<p>Esta tradução não existe</p>'); // <p>Esta tradução não existe</p>
+intl
+  .getHTML('um-texto-inexistente')
+  .d('<p>Esta tradução não existe</p>'); // <p>Esta tradução não existe</p>
 {% endhighlight %}
 
 ### Textos com variáveis
@@ -267,7 +273,7 @@ Se a mensagem contiver variáveis, o `{nome_da_variavel}` será substituído dir
 
 **pt-BR.json**
 {% highlight json %}
-{ 
+{
   "bemvindo": "Olá, {name}. Bem vindo a {where}!"
 }
 {% endhighlight %}
@@ -275,7 +281,8 @@ Se a mensagem contiver variáveis, o `{nome_da_variavel}` será substituído dir
 
 **nosso-javascript.js**
 {% highlight javascript %}
-intl.get('bemvindo', {name:'Everton', where:'Meu blog'}) // "Olá, Everton. Bem vindo ao Meu blog!"
+intl.get('bemvindo', {name:'Everton', where:'Meu blog'})
+// "Olá, Everton. Bem vindo ao Meu blog!"
 {% endhighlight %}
 
 A lib também tem suporte para Plural, números, separadores, moeda, datas, horas, etc. Os textos no Plural, suportam o padrão [ICU Message syntax](http://userguide.icu-project.org/formatparse/messages){:target="_blank"}{:rel="noopener"}.
@@ -328,7 +335,7 @@ render() {
       </header>
       <p className="App-intro">
         {intl.getHTML('home.description', {arquivo: arquivo})}
-      </p>        
+      </p>
     </div>
   );
 }
@@ -351,12 +358,12 @@ O bacana no `react-intl-universal` é que ele não se limita somente ao react, m
 
 Na hora dos testes unitários, também é bem fácil de usar. Apenas chamamos o arquivo com a localização e iniciamos o `react-intl-universal`.
 
-Como próximo passo poderíamos adicionar um seletor de idioma na nossa aplicação, para alterar de um idioma para o selecionado. 
+Como próximo passo poderíamos adicionar um seletor de idioma na nossa aplicação, para alterar de um idioma para o selecionado.
 
 
 ## Conclusão
 
-Tenho trabalhado bastante com react nos últimos tempos, e passei semanas atrás de uma solução menos *engessada* para internacionalizar a aplicação que estou construindo, o `react-intl-universal` supriu essa minha necessidade de uma forma simples e menos intrusiva. 
+Tenho trabalhado bastante com react nos últimos tempos, e passei semanas atrás de uma solução menos *engessada* para internacionalizar a aplicação que estou construindo, o `react-intl-universal` supriu essa minha necessidade de uma forma simples e menos intrusiva.
 
 Dê uma conferida no [react-intl-universal](https://github.com/alibaba/react-intl-universal){:target="_blank"}{:rel="noopener"}.
 

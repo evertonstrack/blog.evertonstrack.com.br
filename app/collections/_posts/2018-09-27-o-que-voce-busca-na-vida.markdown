@@ -38,23 +38,23 @@ Vamos debater um pouco sobre o assunto.
 
 ## O que um profissional busca?
 
-Esta é uma pergunta bem interessante, pois a resposta dela vai ser diferente para cada pessoa que responder. 
+Esta é uma pergunta bem interessante, pois a resposta dela vai ser diferente para cada pessoa que responder.
 
 > **O que te falta para chegar onde você quer chegar?**
 
 Alguns vão dizer que todos buscam salários melhores, o que, de um todo, não é uma mentira; Sempre buscamos salários melhores, pois no geral, sempre estamos evoluindo profissionalmente. Também sempre temos contas para pagar, contas que inflacionam e crescem a cada mês, e nada mais justo que o salários também inflacionassem e crescessem (utopia).
 
-Algumas pessoas buscam ser reconhecidos como bons profissionais, serem vistos como referências na área que atuam. Seja dentro de suas empresas, ou na comunidade open source. 
+Algumas pessoas buscam ser reconhecidos como bons profissionais, serem vistos como referências na área que atuam. Seja dentro de suas empresas, ou na comunidade open source.
 
-Cada pessoa busca uma coisa diferente, cada um tem suas metas pessoais, profissionais. A vida é assim. 
+Cada pessoa busca uma coisa diferente, cada um tem suas metas pessoais, profissionais. A vida é assim.
 
 ## Buscando suas metas
 
 Se eu lhe perguntasse hoje: **O que te impede de concluir as suas metas?** ou **O que te falta para chegar onde você quer chegar?** Você saberia responder?
 
-A grande maioria talvez não conseguiria sitetizar esta resposta de uma forma objetiva, e isso é normal, pois em grande parte das vezes, não é uma ou outra coisa que nos impede de chegar onde queremos, mas sim um somatório de variávies que acabam se transformando em algo tão grande que acabamos ficando com medo de encará-las.
+A grande maioria talvez não conseguiria sintetizar esta resposta de uma forma objetiva, e isso é normal, pois em grande parte das vezes, não é uma ou outra coisa que nos impede de chegar onde queremos, mas sim um somatório de variáveis que acabam se transformando em algo tão grande que acabamos ficando com medo de encará-las.
 
-O que podemos fazer quanto a isso? 
+O que podemos fazer quanto a isso?
 
 > TL;DR; Dividir para conquistar.
 

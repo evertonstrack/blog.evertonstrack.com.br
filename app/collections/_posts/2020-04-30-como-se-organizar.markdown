@@ -5,7 +5,7 @@ description: "Com tudo que tem acontecido no mundo ultimamente, o home office te
 date:   2020-04-30 13:00:00 -0300
 bodyClass: post-produtividade
 theme-color: "#ffdd18"
-tags: ['produtividade']
+tags: ['produtividade', 'organização']
 image: /assets/images/posts/como-se-organizar/todoist.jpg
 ---
 
