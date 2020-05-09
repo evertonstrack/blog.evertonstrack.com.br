@@ -9,9 +9,9 @@ tags: ['javascript', 'pwa']
 image: /assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg
 ---
 
-Com a evolução da tecnologia dos navegadores, puxado principalmente pelo Google Chrome, que domina com muita folga a já vencida “guerra dos navegadores”, nos dias de hoje temos tecnologias que dão mais poder para as páginas na web. 
+Com a evolução da tecnologia dos navegadores, puxado principalmente pelo Google Chrome, que domina com muita folga a já vencida “guerra dos navegadores”, nos dias de hoje temos tecnologias que dão mais poder para as páginas na web.
 
-Os PWAs, ou Progressive Web Apps, usam essas tecnologias para levar uma experiência antes vista só em aplicativos para seu web site. 
+Os PWAs, ou Progressive Web Apps, usam essas tecnologias para levar uma experiência antes vista só em aplicativos para seu web site.
 
 Transformar um site simples em um PWA não é tão difícil e os benefícios são bem visíveis. Então, vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em um PWA.
 
@@ -32,22 +32,34 @@ Transformar um site simples em um PWA não é tão difícil e os benefícios sã
 </figure>
 
 
-PWA, ou Progressive Web App são sites que se comportam como apps, que se traduzem em experiências que combinam o melhor da Web e o melhor dos aplicativos. 
+PWA, ou Progressive Web App são sites que se comportam como apps, que se traduzem em experiências que combinam o melhor da Web e o melhor dos aplicativos.
 
 Algumas das principais características dos Progressive Web App são:
 
 
-**Progressivo**: Funciona para qualquer usuário, independentemente do navegador escolhido, pois é criado com aprimoramento progressivo como princípio fundamental.
+**Progressivo**
 
-**Responsivo**: Se adapta a qualquer formato: desktop, celular, tablet ou o que for inventado a seguir.
+Funciona para qualquer usuário, independentemente do navegador escolhido, pois é criado com aprimoramento progressivo como princípio fundamental.
 
-**Independente de conectividade**: Funciona off-line ou em redes de baixa qualidade graças ao service workers.
+**Responsivo**
 
-**Semelhante a aplicativos**: Parece com aplicativos para os usuários, inclusive pode ser instalado com um app em suas telas iniciais sem precisar acessar uma loja de aplicativos.
+Se adapta a qualquer formato: desktop, celular, tablet ou o que for inventado a seguir.
 
-**Atualizado**: Sempre atualizado, mais uma vez, graças ao service worker.
+**Independente de conectividade**
 
-**Seguro**: Fornecido via HTTPS.
+Funciona off-line ou em redes de baixa qualidade graças ao service workers.
+
+**Semelhante a aplicativos**
+
+Parece com aplicativos para os usuários, inclusive pode ser instalado com um app em suas telas iniciais sem precisar acessar uma loja de aplicativos.
+
+**Atualizado**
+
+Sempre atualizado, mais uma vez, graças ao service worker.
+
+**Seguro**
+
+Fornecido via HTTPS.
 
 
 ## O que preciso fazer?
@@ -103,7 +115,7 @@ Salve o arquivo com `manifest.json` na raiz do seu site, e adicione a chamada pa
 
 ### 2. Seu site precisa ter HTTPS
 
-Os Progressive Web Apps precisam de uma conexão segura, portanto, o protocolo HTTPS é necessário. Se você ainda não usar HTTPS no seu site, sugiro que pare tudo que estiver fazendo e faço isso o quanto antes. 
+Os Progressive Web Apps precisam de uma conexão segura, portanto, o protocolo HTTPS é necessário. Se você ainda não usar HTTPS no seu site, sugiro que pare tudo que estiver fazendo e faço isso o quanto antes.
 
 O Google já anunciou mudanças no algorítimo de busca, para beneficiar sites que usam HTTPS e também o Google Chorme passou a marcar como não seguros os sites que ainda usam HTTP.
 
@@ -121,7 +133,7 @@ Para mudar para HTTPS, você precisará de um certificado SSL. A forma para obt�
 
 ### 3. O Service Worker
 
-Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"}{:rel="noopener"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM. 
+Basicamente, o Service Worker é um [Javascript Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/){:target="_blank"}{:rel="noopener"} que seu navegador executa em background, desacoplado da sua página web, ou seja, ele funciona numa thread separada no browser, com isso não tem acesso ao DOM.
 
 Há várias coisas legais que podemos fazer com os service workers, como por exemplo armazenar conteúdo em cache localmente e disponibilizá-lo quando o usuário estiver offline.  Mesmo que o usuário esteja online, isso gera um impacto muito grande no tempo de carregamento da página, uma vez que as solicitações podem simplesmente ignorar completamente a rede e os recursos ficam disponíveis instantaneamente.
 
@@ -131,9 +143,9 @@ Diferente do cache do navegador, você define uma lista de recursos para armazen
 > O Service Worker não pode ser cacheado.
 
 
-Um ponto bem importante, é  que **o arquivo javascript do Service Worker não pode ser cacheado**, caso contrário, você pode gerar um cache infinito na máquina do usuário. 
+Um ponto bem importante, é  que **o arquivo javascript do Service Worker não pode ser cacheado**, caso contrário, você pode gerar um cache infinito na máquina do usuário.
 
-Também não adianta colocar um parâmetro na chamada do script, como por exemplo `service-workers.js?nocache`, pois dessa forma ele será considerado um novo service worker. 
+Também não adianta colocar um parâmetro na chamada do script, como por exemplo `service-workers.js?nocache`, pois dessa forma ele será considerado um novo service worker.
 
 A melhor abordagem é configurar o seu servidor para sempre carregar de novo o arquivo, sem cache.
 
@@ -154,7 +166,7 @@ O primeiro passo é verificar se o navegador suporta service workers, para isso,
 {% highlight javascript %}
 // verifica se o navegador suporta service workers
 if ("serviceWorker" in navigator) {
-  console.log('Seu navegador suporta service workers');      
+  console.log('Seu navegador suporta service workers');
 } else {
   console.log('Hoje não.. Hoje não.. Hoje sim! :/');
 }
@@ -165,10 +177,10 @@ Para mais informações sobre o suporte dos navegadores, tem o site [Is Service 
 
 **Registrar service worker**
 
-Após verificarmos o suporte do navegador, precisamos permitir que o navegador saiba que pretendemos usar esse arquivo como um Service Worker. Para isso, precisamos registrá-lo. 
+Após verificarmos o suporte do navegador, precisamos permitir que o navegador saiba que pretendemos usar esse arquivo como um Service Worker. Para isso, precisamos registrá-lo.
 
-Na página principal do seu site, inclua o seguinte script e criamos nosso arquivo `service-worker.js`, na pasta root do nosso site. 
- 
+Na página principal do seu site, inclua o seguinte script e criamos nosso arquivo `service-worker.js`, na pasta root do nosso site.
+
 {% highlight html %}
 <script type="text/javascript">
 // verifica se o navegador suporta service workers
@@ -185,9 +197,9 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 {% endhighlight %}
- 
- 
-Inicialmente, vamos definir apenas o nome do nosso cache no `service-worker.js`. 
+
+
+Inicialmente, vamos definir apenas o nome do nosso cache no `service-worker.js`.
 
 {% highlight javascript %}
 // Criando um nome para o arquivo de cache
@@ -206,7 +218,7 @@ O Service Worker possuí um ciclo de vida definido, que consiste nas seguintes e
 - fetch
 - message
 - sync
-- push 
+- push
 
 Vamos focar nos 3 primeiros itens dessa lista, **install**, **activate** e **fetch**. Tanto o `install`, quanto o `activate` são executados somente 1 vez.
 
@@ -225,7 +237,7 @@ const files = [
   '/assets/scripts/main.min.js',
 ];
 
-// Faz cache dos arquivos ao instalar 
+// Faz cache dos arquivos ao instalar
 this.addEventListener("install", event => {
   this.skipWaiting();
 
@@ -241,7 +253,7 @@ this.addEventListener("install", event => {
 O evento `activate`  é onde você deleta os caches anteriores. Esse evento só é executado 1 vez, quando uma nova versão do `service-worker.js` foi instalado.
 
 {% highlight javascript %}
-// Limpa o cache antigo 
+// Limpa o cache antigo
 this.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -260,7 +272,7 @@ this.addEventListener('activate', event => {
 O evento `fetch` é disparado toda vez que uma requisição é realizada. Caso o arquivo exista no cache, retornamos do cache, caso contrário, realizamos a requisição normalmente. O bacana é que caso não consigamos realizar a requisição, como por exemplo, se ficarmos sem internet, podemos mostrar uma página avisando que não conseguimos conectar ao servidor.
 
 {% highlight javascript %}
-// Reponde o request direto do cache
+// Responde o request direto do cache
 this.addEventListener("fetch", event => {
   event.respondWith(
     caches.match(event.request)
@@ -269,7 +281,7 @@ this.addEventListener("fetch", event => {
         if (response) {
           return response;
         }
-        // Faz a requisição  
+        // Faz a requisição
         return fetch(event.request);
       })
       .catch(() => {
@@ -280,7 +292,7 @@ this.addEventListener("fetch", event => {
 });
 {% endhighlight %}
 
-Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"}{:rel="noopener"} que construímos. 
+Com esses passos, temos nosso Progressive Web App funcionando perfeitamente. Aqui você encontra o [service-worker.js](https://gist.github.com/evertonstrack/934d97612e46d19362c3a3a458c1f0aa){:target="_blank"}{:rel="noopener"} que construímos.
 
 Abaixo podemos ver o banner de instalação do Progressive Web App e após instalada, parece um aplicativo nativo no app drawer (gaveta de aplicativos).
 
@@ -295,11 +307,11 @@ Abaixo podemos ver o banner de instalação do Progressive Web App e após insta
 
 ## Conclusão
 
-Se colocarmos na balança a dificuldade e o benefício que temos ao criar um PWA, não temos motivos para não fazer. Claro, que cada site tem suas peculiaridades e complexidades, para um blog ou um site estático, é super simples fazer. 
+Se colocarmos na balança a dificuldade e o benefício que temos ao criar um PWA, não temos motivos para não fazer. Claro, que cada site tem suas peculiaridades e complexidades, para um blog ou um site estático, é super simples fazer.
 
-Você também pode ir além, dependendo do que é importante para o seu projeto, caso você tenha um blog, talvez fosse interessante implementar notificações push sempre que sair um novo post. Caso seja uma loja virtual, poderia notificar o cliente quando o produto que ele visualizou está em promoção, são inúmeras possibilidades. 
+Você também pode ir além, dependendo do que é importante para o seu projeto, caso você tenha um blog, talvez fosse interessante implementar notificações push sempre que sair um novo post. Caso seja uma loja virtual, poderia notificar o cliente quando o produto que ele visualizou está em promoção, são inúmeras possibilidades.
 
-Vejo que os Progressive Web Apps vão crescer muito ainda, seja em adoção ou em funcionalidades. Muita novidade vai surgir. 
+Vejo que os Progressive Web Apps vão crescer muito ainda, seja em adoção ou em funcionalidades. Muita novidade vai surgir.
 
 Pra quem se interessou, seguem alguns links que vão ajudar:
 

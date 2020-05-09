@@ -14,14 +14,14 @@ Hoje vamos conversar sobre **React Hooks**. O que são, porque são importantes 
 
 ## O que são Hooks
 
-Os Hooks no react são uma nova funcionalidade proposta pelo pessoal do Facebook, que nos deixa usar o state e outras features do React *como os métodos do ciclo de vida*, sem precisarmos escrever uma **class**. 
+Os Hooks no react são uma nova funcionalidade proposta pelo pessoal do Facebook, que nos deixa usar o state e outras features do React *como os métodos do ciclo de vida*, sem precisarmos escrever uma **class**.
 
 
 ## A motivação
 
-Os componentes e o fluxo de dados de cima para baixo nos ajudam a organizar uma interface de usuário grande em partes pequenas, independentes e reutilizáveis. 
+Os componentes e o fluxo de dados de cima para baixo nos ajudam a organizar uma interface de usuário grande em partes pequenas, independentes e reutilizáveis.
 
-O React é uma lib fantástica que nos permite construir insterfaces componentizadas com grande facilidade, porém em alguns momentos é bem difícil reaproveitar a lógica entre componentes por que ela é **stateful** e não pode ser extraída para uma função ou outro componente.  
+O React é uma lib fantástica que nos permite construir interfaces componentizadas com grande facilidade, porém em alguns momentos é bem difícil reaproveitar a lógica entre componentes por que ela é **stateful** e não pode ser extraída para uma função ou outro componente.
 
 Quando tentamos resolver esses casos de uso apenas com componentes, geralmente acabamos com:
 
@@ -30,7 +30,7 @@ Quando tentamos resolver esses casos de uso apenas com componentes, geralmente a
 - Padrões complexos como render props e High order components;
 - E o Wrapper hell;
 
-Hoje, para criarmos um componente **stateful**, obrigatóriamente temos que declarar uma class. Mas e se **pudessemos usar state em uma function componente?**
+Hoje, para criarmos um componente **stateful**, obrigatoriamente temos que declarar uma class. Mas e se **pudéssemos usar state em uma function componente?**
 
 Como hooks podemos fazer isso, e vamos ver isso agora, mas antes de você sair correndo e gritando para o mundo que as classes vão ser depreciadas no React:
 
@@ -39,7 +39,7 @@ Como hooks podemos fazer isso, e vamos ver isso agora, mas antes de você sair c
 
 ## React Hooks
 
-Como já dei o spoiler antes, os Hooks nos deixam usar o state e outras features do React *como os métodos do ciclo de vida*, sem precisarmos escrever uma **class**. 
+Como já dei o spoiler antes, os Hooks nos deixam usar o state e outras features do React *como os métodos do ciclo de vida*, sem precisarmos escrever uma **class**.
 
 Mas não é só isso, também conseguimos usar o Context sem cair no **Wrapper hell**. Vamos ver como funciona:
 
@@ -75,16 +75,16 @@ export default class Card extends Component {
         {({theme}) => (
           <section className={theme}>
             <Row label="Nome">
-              <input 
-                id="name" 
-                value={this.state.name} 
+              <input
+                id="name"
+                value={this.state.name}
                 onChange={this.handleChange}
               />
             </Row>
             <Row label="Sobrenome">
-              <input 
+              <input
                 id="lastname"
-                value={this.state.lastname} 
+                value={this.state.lastname}
                 onChange={this.handleChange}
                 />
             </Row>
@@ -124,18 +124,18 @@ export default function CardWithHooks() {
   function handlerChangeLastname(e) {
     setLastname(e.target.value)
   }
-  
+
   return (
     <section className={theme}>
       <Row label="Nome">
-        <input 
+        <input
           id="name"
           value={name}
           onChange={handlerChangeName}
         />
       </Row>
       <Row label="Sobrenome">
-        <input 
+        <input
           id="lastname"
           value={lastname}
           onChange={handlerChangeLastname}
@@ -173,10 +173,10 @@ import React, { useContext } from 'react';
 const { theme } = useContext(ThemeContext);
 {% endhighlight %}
 
-Esses são apenas 2 exemplos de uso dos hooks do react, as possibilidades são muitas. 
+Esses são apenas 2 exemplos de uso dos hooks do react, as possibilidades são muitas.
 
 
-## Lifecycle 
+## Lifecycle
 
 Imagine que precisamos atualizar o title da página com o nome e sobre nome do usuário conforme ele digita nos inputs, do modo convencional, usariamos 2 métodos do ciclo de vida do React: `componentDidMount` e `componentDidUpdate`, para setarmos o valor inicial e atualizá-lo sempre que o state for atualizado.
 
@@ -194,7 +194,7 @@ componentDidUpdate() {
 
 Com hooks, podemos fazer a mesma coisa de uma forma mais simples, e também em um function component. Neste caso, usamos o `useEffect`.
 
-O Effect Hook, useEffect, adiciona a capacidade de realizar *efeitos colaterais* de um function component. Ele serve o mesmo propósito que `componentDidMount`, `componentDidUpdate` e `componentWillUnmount` nas classes React, mas unificado em uma única API. 
+O Effect Hook, useEffect, adiciona a capacidade de realizar *efeitos colaterais* de um function component. Ele serve o mesmo propósito que `componentDidMount`, `componentDidUpdate` e `componentWillUnmount` nas classes React, mas unificado em uma única API.
 
 Para usá-lo, importamos ele e usamos da seguinte forma:
 
@@ -207,9 +207,9 @@ useEffect(() => {
 // código omitido
 {% endhighlight %}
 
-Desta forma, o title da página será alterado quando o componente for montado no DOM e toda a vez que ele for atualizado, a alteração serão feita no title da págian também. Fácil não? :)
+Desta forma, o title da página será alterado quando o componente for montado no DOM e toda a vez que ele for atualizado, a alteração será feita no title da página também. Fácil não? :)
 
-## One more thing
+## Mais uma coisa
 
 Antes de finalizarmos, vamos melhorar nossa reutilização de código e legibilidade do nosso componente, criando um hook customizado.
 
@@ -225,7 +225,7 @@ function useFormInput(initialValue) {
   function handlerChange(e) {
     setValue(e.target.value);
   }
-  
+
   return {
     value: value,
     onChange: handlerChange
@@ -233,9 +233,9 @@ function useFormInput(initialValue) {
 }
 {% endhighlight %}
 
-Vamos analisar esse hook. 
+Vamos analisar esse hook.
 
-Recebemos como argumento o valor inicial do nosso input, usamos o hook `useState`, declaramos um método que seta o valor quando ele for atualizado e por fim, retornamos um objeto com o value e o envento de change.
+Recebemos como argumento o valor inicial do nosso input, usamos o hook `useState`, declaramos um método que seta o valor quando ele for atualizado e por fim, retornamos um objeto com o value e o evento de change.
 
 Após essa alteração, veja como nosso componente ficou bem mais legível e mais enxuto:
 
@@ -251,7 +251,7 @@ export default function CardWithHooks() {
   const lastname = useFormInput('Pipoca');
   const { theme } = useContext(ThemeContext);
   const { locale } = useContext(LocaleContext);
-  
+
   useEffect(() => {
     document.title = name.value + ' ' + lastname.value;
   });
@@ -279,7 +279,7 @@ Apesar que Hooks do react ainda são uma versão alpha, o Facebook tem usado a c
 
 Alguns pontos muito importantes sobre os hooks:
 
-- Os hooks são 100% retrocompatívies, ou seja, não vão quebrar seus componentes atuais;
+- Os hooks são 100% retrocompatíveis, ou seja, não vão quebrar seus componentes atuais;
 - São completamente opcionais;
 - Eles podem ser usados lado a lado com class components;
 - Novas APIs propostas;
@@ -287,7 +287,7 @@ Alguns pontos muito importantes sobre os hooks:
 
 Caso queira entender mais sobre os Hooks, acesse a [documentação oficial](https://reactjs.org/docs/hooks-intro.html){:target="_blank"}{:rel="noopener"} e [contribua para a evolução dos hooks](https://github.com/reactjs/rfcs/pull/68){:target="_blank"}{:rel="noopener"}.
 
-O exemplo que criamos aqui é bem simples, mas é uma boa introdução aos Hooks. Ele está [diponível no github](https://github.com/evertonstrack/react-hooks){:target="_blank"}{:rel="noopener"}, baixe e faça seus testes.
+O exemplo que criamos aqui é bem simples, mas é uma boa introdução aos Hooks. Ele está [disponível no github](https://github.com/evertonstrack/react-hooks){:target="_blank"}{:rel="noopener"}, baixe e faça seus testes.
 
 Caso tenha dúvidas, comente aqui embaixo que terei o prazer de responder.
 

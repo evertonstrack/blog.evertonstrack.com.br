@@ -31,7 +31,7 @@ Criar o nosso projeto:
 create-react-app react-app-with-sass
 {% endhighlight %}
 
-E então rodamos nosso proejto e começamos a brincadeira:
+E então rodamos nosso projeto e começamos a brincadeira:
 
 {% highlight cmd %}
 cd react-app-with-sass
@@ -48,6 +48,7 @@ Como queremos usar Sass em seu projeto react, existem 2 maneiras comuns para faz
 Instalar o Sass, executar uma conversão para o CSS e incluir o CSS no aplicativo React. Este é um processo simples, pois o sass é uma gem do Ruby, porém é preciso executar um processo separado para fazer a conversão, paralelamente ao processo que está rodando o aplicativo React.
 
 2 - **Ejetando seu React app**
+
 O processo de "Ejetar", remove parte da *"mágica"* do `Create react app`, revelando as configurações, scripts de criação e as dependências. Com isso, eles são movidos para dentro do projeto.
 
 Isso é ótimo para desenvolvedores avançados, e quando precisamos customizar algumas tasks do Webpack permite uma melhor personalização, mas para iniciantes acaba sendo mais confuso.

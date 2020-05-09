@@ -139,7 +139,7 @@ Neste momento podem acontecer basicamente 3 coisas:
 
 **Se for algo que precisa/faz sentido ser feito em algum momento**
 
-Vou mover item da caixa de entrada para um Projeto, defino ou não uma data para ser feito, e adiciono tags de contexto (no mobile,  no computador, em casa, no trabalho, na rua), que são locais onde eu farei estes itens.
+Vou mover item da caixa de entrada para um Projeto, definir ou não uma data para ser feito, e adiciono tags de contexto (no mobile,  no computador, em casa, no trabalho, na rua), que são locais onde eu farei estes itens.
 
 Aqui temos um ponto bem importante, na minha opinião, é um dos mais importantes de todo o método GTD (Getting Things Done), a regra dos 2 minutos. Se a tarefa leva até 2 minutos para ser feita, como por exemplo ou responder um e-mail, mandar uma mensagem, faça ela imediatamente e remova ela da lista.
 
@@ -190,7 +190,7 @@ Quando termino minhas tarefas de hoje, ou tenho algum tempo sobrando, ou ainda p
 - Todas as tarefas de hoje ou atrasadas no projeto trabalho, que não tem o label Rotinas
 - Todas as tarefas de hoje ou atrasadas que não são do projeto trabalho (Pessoais) e não tem o label rotinas ou são prioridade baixa
 
-Gosto bastante dessa visualização pois ela não me mostra as tarefas de rotina que tenho diariamente e, na visualização pessoal, ainda excluí da lista as tarefas com baixa prioridade. Assim consigo focar no que realmente é importante para aquele dia.
+Gosto bastante dessa visualização pois ela não me mostra as tarefas de rotina que tenho diariamente e, na visualização pessoal, ainda exclui da lista as tarefas com baixa prioridade. Assim consigo focar no que realmente é importante para aquele dia.
 
 #### **Próximas ações**
 

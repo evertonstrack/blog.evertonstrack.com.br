@@ -74,7 +74,7 @@ Agora sabemos o que é o React, entendemos qual foi o motivo que levou a sua cri
 - Faz a manipulação estruturada do DOM;
 - O fluxo é sempre de cima para baixo, um componente passa o estado dele para os componentes abaixo dele;,
 - Virtual DOM, que é uma cópia exata do DOM;
-- Statefull e Stateless components. (Manter o estado sempre no componente pai, e os componenetes filhos recebem o estado este estado);
+- Statefull e Stateless components. (Manter o estado sempre no componente pai, e os componentes filhos recebem o estado este estado);
 
 ### Pilares do React
 
@@ -129,9 +129,9 @@ export default class UserData extends Component {
 
 Temos várias informações neste trecho de código, vamos abordar um à um.
 
-Inicialmente, estamos importando os módulos do **React** e o **Component**, exportamos uma classe que extende do múdulo componente.
+Inicialmente, estamos importando os módulos do **React** e o **Component**, exportamos uma classe que extende do módulo componente.
 
-No contrutor, declaramos o nosso state "name", inicialmente ele tem como valor uma string vazia.
+No construtor, declaramos o nosso state "name", inicialmente ele tem como valor uma string vazia.
 
 {% highlight react %}
 this.state = {
@@ -139,7 +139,7 @@ this.state = {
 };
 {% endhighlight %}
 
-Posteriormente, quando nosso componente é montado no DOM `componentDidMount`, setamos um valor neste state, usando o método `setState()`. No momento que fizemos isso, nosso componenete é atualizado automaticamente.
+Posteriormente, quando nosso componente é montado no DOM `componentDidMount`, setamos um valor neste state, usando o método `setState()`. No momento que fizemos isso, nosso componente é atualizado automaticamente.
 
 {% highlight react %}
 this.setState({
@@ -241,7 +241,7 @@ Um componente React também possui quatro fases:
 -- Quando nosso componente é desmontado do DOM;
 
 
-Para nos ajudar a trabalhar com o ciclo de vida dos nossos componentes, o react nos disponibiliza alguns métodos que facilitam esse trabalhdo.
+Para nos ajudar a trabalhar com o ciclo de vida dos nossos componentes, o react nos disponibiliza alguns métodos que facilitam esse trabalho.
 
 {% highlight react %}
 componentWillMount() {  }

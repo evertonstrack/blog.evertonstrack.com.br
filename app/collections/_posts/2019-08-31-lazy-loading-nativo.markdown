@@ -46,12 +46,11 @@ Carregar imagens não críticas abaixo da dobra — A parte de um website que fi
 
 ## Como implementar o Lazy Load?
 
-Até então, sempre precisavamos de bibliotecas javascript para implementar o lazy load. A partir da versão 76 do Google Chrome, você não precisa mais de biliotecas para usar.
+Até então, sempre precisávamos de bibliotecas javascript para implementar o lazy load. A partir da versão 76 do Google Chrome, você não precisa mais de bibliotecas para usar.
 
-O atributo **loading** da a instrução para o navegador atrasar o carregamento das imagens e iframes fora da área visivel da tela, até que o usuário role a página até próximo delas ficarem visiveis.
+O atributo **loading** dá a instrução para o navegador atrasar o carregamento das imagens e iframes fora da área visível da tela, até que o usuário role a página até próximo delas ficarem visíveis.
 
-O atributo loading suporta 3 valores diferentes: **lazy**, **eager** e **auto**.
-Quando não especificado a atributo, terá o mesmo impacto da contiguração **auto**.
+O atributo loading suporta 3 valores diferentes:  **lazy**, **eager** e **auto**. Quando não especificado a atributo, terá o mesmo impacto da configuração **auto**.
 
 **Exemplos:**
 
@@ -93,7 +92,7 @@ Para usar só no Chorme 76+, a única coisa que você precisa fazer é colocar o
 
 Vou te mostrar uma forma bem simples de deixar seu código pronto para usar o lazy load nativo, caso o navegador tenha suporte e caso contrário, carregar uma biblioteca como fallback para os demais navegadores.
 
-**Detectando se o navegador tem suporte ao atributo loading:**
+### Detectando se o navegador tem suporte ao atributo loading
 
 {% highlight javascript %}
 if ('loading' in HTMLImageElement.prototype) {
@@ -105,7 +104,7 @@ if ('loading' in HTMLImageElement.prototype) {
 {% endhighlight %}
 
 
-**Implementando o lazy load de imagens cross-browser**
+### Implementando o lazy load de imagens cross-browser
 
 Para implementação cross-browser, você declara as suas imagens com o caminho da imagem no atributo **data-src** ao invés de como faria normalmente, no atributo **src,** para evitar que os navegadores que não suportam o atributo **loading** carreguem as imagens instantaneamente.  E com algumas linhas de javascript e o uso de da biblioteca [LazySizes](https://github.com/aFarkas/lazysizes){:target="_blank"}{:rel="noopener"} implementamos o lazyload cross-browser de forma  bem simples.
 
@@ -121,7 +120,7 @@ Para implementação cross-browser, você declara as suas imagens com o caminho 
 {% endhighlight %}
 
 
-Javascript com a implementação:
+**Javascript com a implementação:**
 
 {% highlight javascript %}
 if ('loading' in HTMLImageElement.prototype) {
@@ -146,7 +145,7 @@ A implementação do atributo loading pelo Google Chrome, que é o navegador mai
 
 No início do post eu brinquei com o fato de alguns desenvolvedores não darem a devida atenção a performance, e gostaria de terminar lembrando que hoje a grande maioria dos acessos é feita através de dispositivos móveis.
 
-Os dispositivos móveis ajudaram muita gente a ter acesso, antes quase impossível em virtude do preço dos computadores. Mas lembre-se que eles ainda precisam pagar a internet móvel, e para grande parte da popuação, não é nem um pouco barata.
+Os dispositivos móveis ajudaram muita gente a ter acesso, antes quase impossível em virtude do preço dos computadores. Mas lembre-se que eles ainda precisam pagar a internet móvel, e para grande parte da população, não é nem um pouco barata.
 
 Vamos nos preocupar com performance sim e tornar a web mais acessível ainda.
 

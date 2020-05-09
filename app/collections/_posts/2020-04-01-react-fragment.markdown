@@ -145,7 +145,7 @@ Que resulta no nosso HTML limpo e semântico conforme queriamos:
 
 ### Sintaxe curta do React Fragment
 
-Você pode usar também a sintaxe curta para usar o `Fragament`, como se fossem tags vazias:
+Você pode usar também a sintaxe curta para usar o `Fragment`, como se fossem tags vazias:
 
 {% highlight react %}
 class ListItem extends Component {

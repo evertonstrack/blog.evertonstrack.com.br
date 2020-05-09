@@ -9,18 +9,18 @@ tags: ['css']
 image: /assets/images/post/seletores-css-nth-child/pseudo-seletor-nth-child.jpg
 ---
 
-Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}{:rel="noopener"}. Como eu sempre digo, **CSS é magia negra**. 
+Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}{:rel="noopener"}. Como eu sempre digo, **CSS é magia negra**.
 
 Mas hoje vamos abordar coisas bem mais simples, porém muito úteis para o dia-a-dia, vamos ver alguns seletores CSS que são uma mão na roda, e um dos seletores mais versáteis, que facilitam muito nosso trabalho.
 
-Vamos abordar alguns seletores CSS que podem facilitar muito nosso dia-a-dia. 
+Vamos abordar alguns seletores CSS que podem facilitar muito nosso dia-a-dia.
 
 > **TL;DR:** Para alguns, provavelmente seja algo usado diariamente, mas para muita gente, principalmente para quem está iniciando na área, pode ter certeza que vai ajudar bastante.
 
 
 ## :nth-child
 
-Esse carinha é muito útil, principalmente quando trabalhamos com listas; Podemos aplicar estilos a itens específicos facilmente, fazer as clássicas “listas zebra” (alternando as cores de linha para linha), remover/adicionar `margin` ou `padding` no último item, e tudo mais que você conseguir imaginar. 
+Esse carinha é muito útil, principalmente quando trabalhamos com listas; Podemos aplicar estilos a itens específicos facilmente, fazer as clássicas “listras zebra” (alternando as cores de linha para linha), remover/adicionar `margin` ou `padding` no último item, e tudo mais que você conseguir imaginar.
 
 Mas sua utilidade pode ir muito além disso. Vamos ver alguns exemplos:
 
@@ -40,7 +40,7 @@ Seleciona apenas os itens ímpares.
 
 {% highlight css %}
 li:nth-child(odd) {
-    background-color: blue; 
+    background-color: blue;
 }
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ Seleciona apenas os itens pares.
 
 {% highlight css %}
 li:nth-child(even) {
-    background-color: blue; 
+    background-color: blue;
 }
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ li:nth-child(even) {
 
 {% highlight css %}
 li:nth-child(3n+3){
-    background-color: blue; 
+    background-color: blue;
 }
 {% endhighlight %}
 

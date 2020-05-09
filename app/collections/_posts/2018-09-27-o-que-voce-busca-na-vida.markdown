@@ -42,7 +42,7 @@ Esta é uma pergunta bem interessante, pois a resposta dela vai ser diferente pa
 
 > **O que te falta para chegar onde você quer chegar?**
 
-Alguns vão dizer que todos buscam salários melhores, o que, de um todo, não é uma mentira; Sempre buscamos salários melhores, pois no geral, sempre estamos evoluindo profissionalmente. Também sempre temos contas para pagar, contas que inflacionam e crescem a cada mês, e nada mais justo que o salários também inflacionassem e crescessem (utopia).
+Alguns vão dizer que todos buscam salários melhores, o que, de um todo, não é uma mentira; Sempre buscamos salários melhores, pois no geral, sempre estamos evoluindo profissionalmente. Também sempre temos contas para pagar, contas que inflacionam e crescem a cada mês, e nada mais justo que o salários também inflacionarem e crescessem (utopia).
 
 Algumas pessoas buscam ser reconhecidos como bons profissionais, serem vistos como referências na área que atuam. Seja dentro de suas empresas, ou na comunidade open source.
 
@@ -58,7 +58,7 @@ O que podemos fazer quanto a isso?
 
 > TL;DR; Dividir para conquistar.
 
-Primeiro precisamos classificar cada um desses itens, que chamarei de *contra-tempos*. O que é mais importante? Qual é o que pesa mais? Qual te afeta mais? Após essa "classificação", fica um pouco mais fácil ver o cenário e planejar como *resolver* cada um desse *contra-tempos*.
+Primeiro precisamos classificar cada um desses itens, que chamarei de *contratempos*. O que é mais importante? Qual é o que pesa mais? Qual te afeta mais? Após essa "classificação", fica um pouco mais fácil ver o cenário e planejar como *resolver* cada um desse *contratempos*.
 
 Vamos pensar em alguns possíveis itens que provavelmente aparecerão na sua lista:
 

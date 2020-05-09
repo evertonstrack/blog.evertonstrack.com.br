@@ -9,7 +9,7 @@ tags: ['carreira']
 image: /assets/images/posts/como-se-manter-atualizado-tecnologia/pessoas-vidradas-em-seus-smartphones.jpg
 ---
 
-> TL;DR; Não tem como, fim! 😛 
+> TL;DR; Não tem como, fim! 😛
 
 
 Esta é uma questão que é bastante abordada na área de tecnologia, mas não se limita apenas a ela. Como podemos nos manter atualizados em um mundo em constante mudança e onde as informações circulam em uma velocidade nunca antes imaginada?
@@ -24,12 +24,12 @@ Esta é uma questão que é bastante abordada na área de tecnologia, mas não s
 </figure>
 
 
-Não existe uma receita de bolo para isso, assim como quase nada neste vida. Vou compartilhar algumas dicar que funcionaram bem para mim. 
+Não existe uma receita de bolo para isso, assim como quase nada nesta vida. Vou compartilhar algumas dicas que funcionaram bem para mim.
 
 
 ##  Um bom feed de notícias
 
-Um bom feed de notícias, com alguns sites e blogs sobre desenvolvimento, principalmente focado na sua área ou especialização é um ótimo começo. 
+Um bom feed de notícias, com alguns sites e blogs sobre desenvolvimento, principalmente focado na sua área ou especialização é um ótimo começo.
 
 Para ter boas fontes de notícias e novidades sobre os assuntos que lhe interessam, comece fazendo uma lista de todos assuntos, sejam eles assuntos macro ou assuntos assuntos mais específicos, como por exemplo:
 
@@ -37,7 +37,7 @@ Para ter boas fontes de notícias e novidades sobre os assuntos que lhe interess
 - Desenvolvimento web - macro assunto;
 - ReactJS - assunto específico;
 
-Após isso, busque por fontes de notícias, sites, blogs, etc, que falam sobre os assuntos que você tem interesse e faça uma lista destes links. 
+Após isso, busque por fontes de notícias, sites, blogs, etc, que falam sobre os assuntos que você tem interesse e faça uma lista destes links.
 
 Com isso em mãos, crie uma rotina de conferir as novidades e ler sobre os assuntos. Eu uso 2 ferramentas para me ajudar a centralizar os assuntos e as fontes.
 
@@ -67,7 +67,7 @@ O [Pocket](https://getpocket.com/){:target="_blank"}{:rel="noopener"}, que nada 
 
 ## Planejar um tempo de estudo
 
-Planejamento é algo que pode ajudar bastante em muitas situações, planejar um tempo para estudos é uma ótima forma de se manter atualizado em tecnologia. Assim você reserva um tempo específico para isso. 
+Planejamento é algo que pode ajudar bastante em muitas situações, planejar um tempo para estudos é uma ótima forma de se manter atualizado em tecnologia. Assim você reserva um tempo específico para isso.
 
 
 <figure class="align-center">
@@ -79,11 +79,11 @@ Planejamento é algo que pode ajudar bastante em muitas situações, planejar um
 
 
 
-Para organizar esse tempo, você pode utilizar as [metas do Google Agenda](https://brasil.googleblog.com/2016/04/encontre-tempo-para-cumprir-suas-metas.html){:target="_blank"}{:rel="noopener"}. 
+Para organizar esse tempo, você pode utilizar as [metas do Google Agenda](https://brasil.googleblog.com/2016/04/encontre-tempo-para-cumprir-suas-metas.html){:target="_blank"}{:rel="noopener"}.
 
 Podemos configurar a periodicidade, o tempo e ainda acompanhar seu progresso, pois após cada sessão você pode marcar aquela sessão como concluída. Além de que, caso você não possa parar para estudar naquele momento, você pode usar a opção "mais tarde", então o Google Agenda vai procurar um outro momento em sua agenda para você fazê-la.
 
-As metas nos ajudam bastante a criar uma rotina de estudar, praticar e se atualizar. Elas podem ser criadas no aplicativo para Android ou iOS. 
+As metas nos ajudam bastante a criar uma rotina de estudar, praticar e se atualizar. Elas podem ser criadas no aplicativo para Android ou iOS.
 
 
 ##  Conclusão

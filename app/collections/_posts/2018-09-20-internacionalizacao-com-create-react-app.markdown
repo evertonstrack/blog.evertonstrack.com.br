@@ -18,7 +18,7 @@ image: /assets/images/posts/internacionalizacao-com-create-react-app/internacion
 </figure>
 
 
-Quando falamos em internacionalização em React, a primeira lib que nos vem a mente é a [react-intl](https://github.com/yahoo/react-intl){:target="_blank"}{:rel="noopener"}, uma das bibliotecas mais pupulares do mercado, criada pelo Yahoo para internacionalizar aplicações feitas em React.
+Quando falamos em internacionalização em React, a primeira lib que nos vem a mente é a [react-intl](https://github.com/yahoo/react-intl){:target="_blank"}{:rel="noopener"}, uma das bibliotecas mais populares do mercado, criada pelo Yahoo para internacionalizar aplicações feitas em React.
 
 ## Por que outra solução de internacionalização para React?
 
@@ -43,7 +43,7 @@ export default injectIntl(MyComponent);
 
 No entanto, com essa abordagem nos deparamos com dois problemas novos:
 
-1 - A internacionalização pode ser aplicada apenas na camada de visualizaçâo, em um component react. Em um arquivo com Vanilla JS não é possível internacionalizá-lo, como por exemplo, imaginamos o código abaixo, um validador genérico que é usado por diversos componentes em nossa aplicação.
+1 - A internacionalização pode ser aplicada apenas na camada de visualizaçâo, em um component react. Em um arquivo com Vanilla JS não é possível internacionalizar, como por exemplo, imaginamos o código abaixo, um validador genérico que é usado por diversos componentes em nossa aplicação.
 
 {% highlight javascript %}
 export default const rules = {
@@ -98,7 +98,7 @@ Devido aos empecilhos citados acima, o pessoal do [Alibaba](https://github.com/a
 
 ## Setup do projeto
 
-Vamos a prática! Inciamos criando nosso app com o `create-react-app`. Caso não tenha instalado, confira o início [deste post](http://localhost:3000/blog/usando-sass-com-reactjs/) onde ensino como instalar.
+Vamos a prática! Iniciamos criando nosso app com o `create-react-app`. Caso não tenha instalado, confira o início [deste post](https://evertonstrack.com.br/blog/usando-sass-com-reactjs/) onde ensino como instalar.
 
 {% highlight cmd %}
 create-react-app react-intl-universal-exemple
@@ -147,7 +147,7 @@ import intl from 'react-intl-universal';
 // Código omitido
 {% endhighlight %}
 
-Vamos criar uma constante referênciando nossos arquivos de tradução.
+Vamos criar uma constante referenciando nossos arquivos de tradução.
 
 {% highlight react %}
 // Código omitido
@@ -165,7 +165,9 @@ E finalizando o setup do projeto, vamos inicializar o `react-intl-universal`, pa
 constructor() {
   super();
 
-  const currentLocale = locales[navigator.language] ? navigator.language : 'pt-BR';
+  const currentLocale = locales[navigator.language]
+                        ? navigator.language
+                        : 'pt-BR';
 
   intl.init({
     currentLocale,
@@ -194,7 +196,9 @@ class App extends Component {
   constructor() {
     super();
 
-    const currentLocale = locales[navigator.language] ? navigator.language : 'pt-BR';
+    const currentLocale = locales[navigator.language]
+                            ? navigator.language
+                            : 'pt-BR';
 
     intl.init({
       currentLocale,
@@ -248,7 +252,7 @@ intl.get('text');
 intl.getHTML('text');
 {% endhighlight %}
 
-Podemos também definir um texto padrão quando a texto que buscarmos não existir:
+Podemos também definir um texto padrão quando a texto que buscamos não existir:
 
 {% highlight javascript %}
 // Padrão
@@ -319,7 +323,7 @@ Vamos aplicar as traduções ao nosso projeto, seguindo o que aprendemos até ag
 {% endhighlight %}
 
 
-E vamos alterar o método `render` do nosso App.js, para renderizar nossos textos conforme o idioma e as váriáveis que passarmos.
+E vamos alterar o método `render` do nosso App.js, para renderizar nossos textos conforme o idioma e as variáveis que passarmos.
 
 {% highlight react %}
 render() {
