@@ -175,15 +175,15 @@ No Todoist, uso as visualizações:
 - Aguardando revisão (filtro)
 
 
-#### 📆 **Hoje**
+#### **Hoje**
 
 Lista todas as tarefas que tenho para hoje, de todos os projetos e prioridades. Caso você tenha planejado previamente os dias, você pode focar somente nessa lista e não se preocupar com nada mais.
 
-#### 📅 **Próximos 7 dias**
+#### **Próximos 7 dias**
 
 Quando termino minhas tarefas de hoje, ou tenho algum tempo sobrando, ou ainda preciso mover para outro dia uma tarefa, confiro nessa visualização como estão os próximos dias. Ela me mostra, dia-a-dia todas as tarefas para os próximos 7 dias, me dando uma visão bem bacana de tudo que preciso fazer nesta semana, por exemplo.
 
-#### 🎯 **Objetivos de hoje**
+#### **Objetivos de hoje**
 
 É um filtro customizado que mostra duas listas:
 
@@ -192,7 +192,7 @@ Quando termino minhas tarefas de hoje, ou tenho algum tempo sobrando, ou ainda p
 
 Gosto bastante dessa visualização pois ela não me mostra as tarefas de rotina que tenho diariamente e, na visualização pessoal, ainda excluí da lista as tarefas com baixa prioridade. Assim consigo focar no que realmente é importante para aquele dia.
 
-#### 📌 **Próximas ações**
+#### **Próximas ações**
 
 Também é um filtro customizado, baseado no GTD. É usado somente em tarefas que tem mais de uma etapa e as etapas são sequenciais, ou seja preciso terminar a anterior para fazer a próxima. Essa lista me mostra todas as próximas ações de todos os projetos que tenho em aberto.
 
@@ -209,12 +209,12 @@ No exemplo acima, a tarefa "Pesquisar referências de organização e produtivid
 Se você leu o GTD ou segue ele a risca, talvez você tenha estranhado que o item "Criar novo post sobre Organização" não é um projeto. Eu uso os projetos como agrupadores de contexto (categorias), não como "Projetos". Alguns exemplos de projetos que uso são: Pessoal, Casa, Hábitos, Trabalho, Algum Dia/Talvez.
 
 
-#### 📚 **Minhas Rotinas**
+#### **Minhas Rotinas**
 
 A lista Minhas Rotinas é outro filtro customizado, onde só aparecem as minhas rotinas, pois eu excluí elas da minha lista de Objetivos de hoje, então aqui posso ver somente elas e fazer o que precisa ser feito.
 
 
-#### ⏳ **Aguardando revisão**
+#### **Aguardando revisão**
 
 A lista Aguardando Revisão, exibe todos os itens que estão na minha caixa de entrada, no meu projeto "Algum dia/talvez" e qualquer tarefa que não tenha data e não tenha nenhum label. São itens que precisam ser organizados ainda.
 
@@ -235,7 +235,7 @@ O texto ficou um pouco longo, mas queria detalhar o bastante para que ficasse ma
 Esse é o primeiro post sobre uma série de posts que estou planejando fazer sobre organização e produtividade. Trazendo algumas ferramentas e alguns processos que uso no meu dia-a-dia e que me ajudam muito a manter o foco e fazer o que preciso e quero fazer. :)
 
 
-### 💡 Dicas
+### Dicas
 
 De agora em diante, sempre que for pertinente, vou compilar os links aqui para ficar mais fácil a consulta.
 

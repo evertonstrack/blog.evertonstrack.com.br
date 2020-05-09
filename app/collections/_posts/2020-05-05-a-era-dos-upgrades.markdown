@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A era dos upgrades: Como saber a hora certa de comprar [Guia Prático]"
+title:  "A era dos upgrades: como saber a hora certa de comprar [Guia Prático]"
 description: "Estamos vivendo em uma era de upgrades. Todos os anos muitas empresas anunciam novas versões de produtos com melhorias que são muito superiores às versões anteriores e é difícil não sentir-se tentado a adquiri-las. Como saber se é o momento certo de fazer o upgrade?"
 date:   2020-05-08 15:00:00 -0300
 bodyClass: post-life
@@ -39,7 +39,7 @@ As perguntas são:
 - ✅ Como está o meu dispositivo atual?
 - ✅ A diferença vale a pena?
 
-### ⭐ Eu posso pagar?
+### Eu posso pagar?
 
 Uma das perguntas mais importantes. Se você está vivendo de salário a salário, e o dinheiro mal da pra pagar as contas, você já tem sua resposta e nem precisa das outras perguntas.
 
@@ -47,13 +47,13 @@ Não é prudente nem saudável se endividar para fazer um upgrade, seja ele qual
 
 Sempre que possível, viva um degrau abaixo do seu dinheiro.
 
-### ⭐ Como está o meu dispositivo atual?
+### Como está o meu dispositivo atual?
 
 Ainda consigo seguir com meu dispositivo por mais tempo? Ele está dando conta do recado? Se a resposta for sim, você não deve fazer o upgrade.
 
 Se a resposta for mais ou menos, tente elencar os pontos que nos quais ele não está dando conta, isso vai te ajudar a ter uma visão muito melhor do todo.
 
-### ⭐ A diferença vale a pena?
+### A diferença vale a pena?
 
 Neste ponto, você precisa ser bem sincero consigo mesmo, pois muitas vezes estamos falando de um grande quantia de dinheiro.
 
@@ -76,7 +76,7 @@ Apesar do post falar mais de smartphones, que estão mais em foco nos últimos a
 
 Você vai estar muita mais embasado para tomar sua decisão de fazer ou não o upgrade.
 
-## 💡 Dicas
+## Dicas
 
 Hoje trago duas dicas, uma delas é o vídeo que me inspirou a escrever esse post, que trouxe essas 3 perguntas que mudaram a forma como eu decido se compro ou não algo novo e um documentário chamado **"Minimalismo: Um documentário sobre as coisas importantes"**, da Netflix, que é produzido pelo Matt D'Avella, que fez o vídeo que citei.
 
