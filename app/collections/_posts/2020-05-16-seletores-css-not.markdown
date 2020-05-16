@@ -141,7 +141,7 @@ button:not(:disabled) + button:not(.active) {
 
 ## Conclusão
 
-O CSS é muito poderoso, e as pseudo-classes como o **:not() ** nos ajudam a compor nossas regras de estilização de uma forma muito dinâmica. Os exemplos que apresentei são apenas algumas ideias para você iniciar, e a sua criatividade é o limite.
+O CSS é muito poderoso, e as pseudo-classes como o **:not()** nos ajudam a compor nossas regras de estilização de uma forma muito dinâmica. Os exemplos que apresentei são apenas algumas ideias para você iniciar, e a sua criatividade é o limite.
 
 Caso você não tenha visto a parte 1 dessa série, o link vai estar aqui embaixo. ;)
 
