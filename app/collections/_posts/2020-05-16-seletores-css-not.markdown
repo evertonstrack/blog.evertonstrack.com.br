@@ -148,7 +148,7 @@ Caso você não tenha visto a parte 1 dessa série, o link vai estar aqui embaix
 
 
 - [Seletores CSS que vão mudar sua vida (Parte 1) - :nth-child()](https://evertonstrack.com.br/blog/seletores-css-nth-child/)
-- [:not() - CSS MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not)
+- [:not() - CSS MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not){:target="_blank"}{:rel="noopener"}
 
 Qual é o seletor, pseudo-seletor, pseudo-classe que você mais gosta? Comenta aqui embaixo. :)
 
