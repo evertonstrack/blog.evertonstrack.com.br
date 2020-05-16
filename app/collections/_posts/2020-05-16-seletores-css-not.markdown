@@ -65,7 +65,7 @@ Este é um exemplo muito simples, mas vamos fazer alguns bem mais complexos logo
 
 ### Estilizando o último elemento de uma lista
 
-Você provavelmente já deve conhecer e até mesmo utilizar o **:last-child **para estilizar o último componente de uma lista, fazendo algo assim
+Você provavelmente já deve conhecer e até mesmo utilizar o **:last-child** para estilizar o último componente de uma lista, fazendo algo assim
 
 
 {% highlight css %}
