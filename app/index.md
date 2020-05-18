@@ -25,30 +25,7 @@ theme-color: "#FFFFFF"
       <p>Sou entusiasta de tecnologia, gosto de ler entre as linhas da indústria de tecnologia e tentar entender as
       motivações por trás de decisões que podem parecer incríveis, irracionais ou puramente idiotas. Também gosto de beleza,
       café medíocre e dias chuvosos.</p>
-      <button id="share">Share teste</button>
     </article>
   </div>
 </section>
 <!-- /greeatings -->
-
-
-<script>
-function share() {
-
-  if (navigator.share){
-    navigator.share({
-        url: "https://evertonstrack.com.br/blog/seletores-css-not/",
-        title: "Seletores CSS que vão mudar sua vida (Parte 2) - :not()"
-        // text: "Hoje vamos falar sobre a pseudo-classe :not(), é um seletor muito poderoso que pode nos ajudar a criar regras de estilização muito bacanas."
-    })
-    .then(() => { alert("Shared YEEEE!!!!!"); })
-    .catch((error) => { alert("Sharing Failed" + error) });
-  } else {
-    alert('Web Share API is not supported');
-  }
-}
-
-const shareButton = document.querySelector('#share');
-shareButton.addEventListener('click', share);
-  
-</script>

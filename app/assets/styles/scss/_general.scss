@@ -263,6 +263,28 @@ pre>code.language-cmd{
   }
 }
 
+button.share{
+  padding: 10px 20px;
+  border: 1px solid #25262a;
+  margin: 0 7px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  color: #25262a;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+button.share:hover{
+  background-color: #25262a;
+  color: #FFF;
+}
+
+.hidden{
+  display: none !important;
+}
+
 @media (max-width: 640px) {
 
   .toast{
