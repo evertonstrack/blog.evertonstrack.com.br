@@ -264,7 +264,7 @@ pre>code.language-cmd{
 }
 
 button.share{
-  padding: 10px 20px;
+  padding: 20px 60px;
   border: 1px solid #25262a;
   margin: 0 7px;
   border-radius: 5px;
@@ -274,6 +274,9 @@ button.share{
   transition: all 0.3s ease;
   text-decoration: none;
   background-color: transparent;
+  max-width: 300px;
+  margin: 0 auto 30px;
+
 }
 
 button.share:hover{
