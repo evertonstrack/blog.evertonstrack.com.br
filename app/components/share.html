@@ -33,12 +33,12 @@
     if (navigator.share){
       const url = document.location.href;
       const title = document.querySelector('title').textContent;
-      const text = document.querySelector('meta[name="description"]').content;
+      // const text = document.querySelector('meta[name="description"]').content;
 
       navigator.share({
         url,
-        title,
-        text
+        title
+        // text
       })
         .then(() => {
           console.log('Conteúdo compartilhado.')
