@@ -1,4 +1,6 @@
 <section class="share" onclick="ga('send', 'event', 'share', 'click', 'share_buttons')">
+  <button class="share">Compartilhar</button>
+
   <div class="wrapper">
     <h4>Compartilhe</h4>
     <a class="share-button share-twitter" aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
@@ -24,3 +26,40 @@
     </a>
   </div>
 </section>
+
+<script>
+
+  function share() {
+    if (navigator.share){
+      const url = document.location.href;
+      const title = document.querySelector('title').textContent;
+      const text = document.querySelector('meta[name="description"]').content;
+
+      navigator.share({
+        url, title, text
+      })
+        .then(() => {
+          console.log('Conteúdo compartilhado.')
+        })
+        .catch(console.error);
+    } else {
+
+      console.log('Web Share API is not supported');
+    }
+  }
+
+  const shareButton = document.querySelector('button.share');
+  const shareSection = document.querySelector('section.share .wrapper');
+
+  if( navigator.share ) {
+    shareButton.addEventListener('click', share);
+    shareSection.classList.add('hidden');
+  } else {
+    shareSection.classList.remove('hidden');
+    shareButton.classList.add('hidden');
+  }
+
+
+
+
+</script>
