@@ -98,7 +98,7 @@ Devido aos empecilhos citados acima, o pessoal do [Alibaba](https://github.com/a
 
 ## Setup do projeto
 
-Vamos a prática! Iniciamos criando nosso app com o `create-react-app`. Caso não tenha instalado, confira o início [deste post](https://evertonstrack.com.br/blog/usando-sass-com-reactjs/) onde ensino como instalar.
+Vamos a prática! Iniciamos criando nosso app com o `create-react-app`. Caso não tenha instalado, confira o início [deste post](https://evertonstrack.dev/blog/usando-sass-com-reactjs/) onde ensino como instalar.
 
 {% highlight cmd %}
 create-react-app react-intl-universal-exemple

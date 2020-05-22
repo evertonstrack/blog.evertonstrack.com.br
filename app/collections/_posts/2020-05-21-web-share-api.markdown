@@ -67,7 +67,7 @@ E nosso código fica assim:
 if (navigator.share) {
     navigator.share({
       title: 'Como usar a Web Share API',
-      url: 'https://evertonstrack.com.br/'
+      url: 'https://evertonstrack.dev/'
     }).then(() => {
       console.log('Compartilhado com sucesso!');
     })
@@ -101,7 +101,7 @@ function shareContent() {
   if (navigator.share) {
     navigator.share({
       title: 'Como usar a Web Share API',
-      url: 'https://evertonstrack.com.br/'
+      url: 'https://evertonstrack.dev/'
     }).then(() => {
       console.log('Compartilhado com sucesso!');
     })

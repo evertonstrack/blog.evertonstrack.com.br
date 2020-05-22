@@ -10,7 +10,7 @@ image: /assets/images/posts/seletores-css-not/css-logotipo.jpg
 ---
 
 
-Voltando no tempo, lá em 2018 fiz a primeira versão desta série, seletores css que vão mudar sua vida, naquele momento foi a vez da [pseudo-classe :nth-child()](https://evertonstrack.com.br/blog/seletores-css-nth-child/), hoje finalmente vamos dar sequência a essa série.
+Voltando no tempo, lá em 2018 fiz a primeira versão desta série, seletores css que vão mudar sua vida, naquele momento foi a vez da [pseudo-classe :nth-child()](https://evertonstrack.dev/blog/seletores-css-nth-child/), hoje finalmente vamos dar sequência a essa série.
 
 Hoje vamos falar sobre a pseudo-classe :not(), é um seletor bem poderoso que pode nos ajudar a criar regras de estilização muito bacanas.
 
@@ -147,7 +147,7 @@ Caso você não tenha visto a parte 1 dessa série, o link vai estar aqui embaix
 
 
 
-- [Seletores CSS que vão mudar sua vida (Parte 1) - :nth-child()](https://evertonstrack.com.br/blog/seletores-css-nth-child/)
+- [Seletores CSS que vão mudar sua vida (Parte 1) - :nth-child()](https://evertonstrack.cdev/blog/seletores-css-nth-child/)
 - [:not() - CSS MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:not){:target="_blank"}{:rel="noopener"}
 
 Qual é o seletor, pseudo-seletor, pseudo-classe que você mais gosta? Comenta aqui embaixo. :)

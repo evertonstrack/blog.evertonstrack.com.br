@@ -80,12 +80,12 @@ Você vai estar muita mais embasado para tomar sua decisão de fazer ou não o u
 
 Hoje trago duas dicas, uma delas é o vídeo que me inspirou a escrever esse post, que trouxe essas 3 perguntas que mudaram a forma como eu decido se compro ou não algo novo e um documentário chamado **"Minimalismo: Um documentário sobre as coisas importantes"**, da Netflix, que é produzido pelo Matt D'Avella, que fez o vídeo que citei.
 
-Esse documentário mudou totalmente a minha forma de pensar e me fez rever todos os aspectos da minha vida. Já falei sobre esse documentário [nesse post](https://evertonstrack.com.br/blog/uma-conversa-sobre-coisas-importantes/).  Recomendo muito!
+Esse documentário mudou totalmente a minha forma de pensar e me fez rever todos os aspectos da minha vida. Já falei sobre esse documentário [nesse post](https://evertonstrack.dev/blog/uma-conversa-sobre-coisas-importantes/).  Recomendo muito!
 
 - [The Era of Upgrades](https://www.youtube.com/watch?v=vCoF21OXu2E){:target="_blank"}{:rel="noopener"}
 - [Minimalism: A Documentary About the Important Things - Netflix](https://www.netflix.com/br/title/80114460){:target="_blank"}{:rel="noopener"}
 - [Viva um degrau abaixo! Como fazer isso?](https://financaspessoais.organizze.com.br/regra-para-ter-dinheiro-viva-um-degrau-abaixo-como-fazer-isso/){:target="_blank"}{:rel="noopener"}
-- [Uma conversa sobre as coisas importantes](https://evertonstrack.com.br/blog/uma-conversa-sobre-coisas-importantes/)
+- [Uma conversa sobre as coisas importantes](https://evertonstrack.dev/blog/uma-conversa-sobre-coisas-importantes/)
 
 
 Ate mais e obrigado pelos peixes.
