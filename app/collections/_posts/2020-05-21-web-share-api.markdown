@@ -6,7 +6,7 @@ date:   2020-05-21 16:00:00 -0300
 bodyClass: post-javascript
 theme-color: "#ffdd18"
 tags: ['javascript']
-image: /assets/images/webp/posts/web-share-api/smartphone.jpg
+image: /assets/images/posts/web-share-api/smartphone.jpg
 ---
 
 A web segue evoluindo e nos trazendo mais funcionalidades para incrementarmos nossos sites e aplicações web. Hoje em dia, conseguimos acessar a câmera e o microfone, além de outros.
