@@ -98,7 +98,7 @@ Criar nossa função e adicionar nossa lógica de compartilhamento nela;
 
 {% highlight javascript %}
 function shareContent() {
-	if (navigator.share) {
+  if (navigator.share) {
     navigator.share({
       title: 'Como usar a Web Share API',
       url: 'https://evertonstrack.com.br/'
