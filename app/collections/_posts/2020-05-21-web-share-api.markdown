@@ -6,7 +6,7 @@ date:   2020-05-21 16:00:00 -0300
 bodyClass: post-javascript
 theme-color: "#ffdd18"
 tags: ['javascript']
-image: /assets/images/posts/seletores-css-not/css-logotipo.jpg
+image: /assets/images/webp/posts/web-share-api/smartphone.jpg
 ---
 
 A web segue evoluindo e nos trazendo mais funcionalidades para incrementarmos nossos sites e aplicações web. Hoje em dia, conseguimos acessar a câmera e o microfone, além de outros.
@@ -138,6 +138,6 @@ Mas como mencionei acima, podemos usar um fallback para os dispositivos e navega
 - [Share like a native app with the Web Share API](https://web.dev/web-share/)
 - [Web Share API - CanIUse](https://caniuse.com/#feat=web-share)
 
-Já conhecia a Web Share API? Comenta aqui embaixo com a sua experiência com ela.
+Já conhecia a Web Share API? Comenta aqui embaixo sobre a sua experiência, e compartilha! 😉
 
 Até mais e obrigado pelos peixes.
