@@ -27,7 +27,7 @@ Ela nos permite usar o **compartilhamento nativo do dispositivo**, sim, aquele m
 
 Passamos por uma fase onde tudo virava um aplicativo, mesmo coisas que seriam muito melhores e mais acessíveis se fossem um site.
 
-Com as novas APIs que vem sendo desenvolvidas para os navegadores, podemos construir sites e aplicação web muito mais poderosas e muitas vezes com cara de aplicativos, até mesmo instalá-los, com a ajuda do service worker.
+Com as novas APIs que vem sendo desenvolvidas para os navegadores, podemos construir sites e aplicações web muito mais poderosas e muitas vezes com cara de aplicativos, até mesmo instalá-los, com a ajuda do service worker.
 
 
 ## Como usar?
@@ -60,7 +60,7 @@ Usar a Web Share API é simples como chamar uma função **navigator.share()**, 
 - **title:** Uma string com o título ao ser compartilhado, você pode usar o **document.title**
 - **text:** Uma string com qualquer texto que você queira incluir
 
-E nosso código fica assim?
+E nosso código fica assim:
 
 
 {% highlight javascript %}
