@@ -117,16 +117,6 @@ E está pronto nosso compartilhamento. :)
 
 Para testar você pode implementar por sua conta mesmo, ou **se você estiver vendo em um dispositivo móvel, clicar no botão compartilhar aqui embaixo desse post.** :)
 
-<figure>
-  <picture>
-    <source type="image/webp" srcset="/assets/images/webp/posts/web-share-api/compartilhar.webp" />
-    <source srcset="/assets/images/posts/web-share-api/compartilhar.jpg" />
-    <img itemprop="image" src="/assets/images/posts/web-share-api/compartilhar.jpg" alt="Botão compartilhar" />
-  </picture>
-  <legend>Botão compartilhar</legend>
-</figure>
-
-
 ## Conclusão
 
 É muito bacana ver a web evoluindo mais e mais, fazendo hoje muita coisa que só era possível com um aplicativo. Ainda tem bastante para evoluir, mas seguimos nessa.
