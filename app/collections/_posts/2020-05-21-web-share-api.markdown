@@ -94,7 +94,7 @@ shareButton.addEventListener('click', shareContent);
 {% endhighlight %}
 
 
-Criar nossa função e adicionar nossa lógica de compartilhamento nela;
+Criar nossa função e adicionar nossa lógica de compartilhamento nela:
 
 {% highlight javascript %}
 function shareContent() {
