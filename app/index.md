@@ -20,7 +20,8 @@ theme-color: "#FFFFFF"
     <div class="author-resume__text">
       <h2>Everton Strack</h2>
       <h3>Front-end de(<strong>sign</strong>|<strong>velop</strong>)er</h3>
-      <p>Um pequeno apanhado sobre o dia-a-dia de um front-end. As frustrações, as alegrias, vida, o universo e tudo mais.</p>
+      <p>Tentando consertar as coisas com design e código. As vezes com sucesso!<br /> 
+      Meu blog com um pequeno apanhado sobre o dia-a-dia de um front-end. As frustrações, as alegrias, vida, o universo e tudo mais.</p>
     </div>
   </article>
 </section>

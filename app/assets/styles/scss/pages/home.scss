@@ -1,6 +1,13 @@
 @import "../variables";
 
 .home-page{
+
+  .page-content {
+    .wrap {
+      max-width: 800px;
+    }
+  }
+
   .button-link {
     width: 100%;
     max-width: 350px;
