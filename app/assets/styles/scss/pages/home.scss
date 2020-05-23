@@ -26,12 +26,12 @@
   margin-bottom: 50px;
   position: relative;
 
-  &:before, &:after{
-    width: 20px;
-    height: 20px;
+  &:after{
+    width: 40%;
+    height: 7px;
     content: "";
     display: block;
-    border-radius: 50%;
+    border-radius: 5px;
     background-color:  rgba(#25262a, 0.1);
     margin: 0 auto;
     position: absolute;
@@ -39,12 +39,8 @@
     left: 50%;
   }
 
-  &:before{
-    transform: translateX(-30px);
-   }
-
   &:after{
-   transform: translateX(10px);
+   transform: translateX(-50%);
   }
 
   article{
