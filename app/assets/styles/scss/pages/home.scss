@@ -75,6 +75,11 @@
 }
 
 @media screen and (max-width: 767.9px) {
+  .home-page{
+    .site-nav .menu-icon>svg {
+      fill: #FFF;
+    }
+  }
   .author-resume{
     article{
       flex-direction: column;
@@ -83,6 +88,10 @@
       .author-resume__text{
         text-align: center;
       }
+    }
+
+    figure{
+      margin-right: 0;
     }
   }
   .latest-post{
