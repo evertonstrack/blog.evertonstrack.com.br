@@ -14,25 +14,31 @@
   }
 
   .site-title{
-    text-transform: lowercase;
+    // text-transform: lowercase;
     color: #FFF;
     margin: 0;
 
     .logo{
       text-decoration: none;
       font-size: 30px;
+      line-height: 100%;
+      padding-left: 10px;
 
       &:before,
       &:after{
-        display: inline;
+        display: block;
+        font-size: 20px;
+        line-height: 100%;
+        margin-left: -10px;
+        opacity: 0.7;
       }
 
       &:before{
-        content: "<";
+        content: "import {";
       }
 
       &:after{
-        content: "/>";
+        content: "} from './de(sign|velop)er';";
       }
 
       &:visited {
@@ -89,7 +95,8 @@
 
   .site-header{
 
-    height: 56px;
+    // height: 56px;
+    height: 100px;
 
     .site-title{
 
@@ -112,6 +119,7 @@
       label[for="nav-trigger"]{
         position: relative;
         z-index: 11;
+        margin-top: 25px;
       }
 
       input:checked{

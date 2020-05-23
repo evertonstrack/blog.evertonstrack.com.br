@@ -4,15 +4,15 @@
   background-color: #F0F0F0;
 
   .section-header{
-    height: auto;
+    // height: auto;
 
-    .title-section-container{
-      margin: 0 auto;
+    // .title-section-container{
+    //   margin: 0 auto;
 
-      h2, p{
-        text-align: center;
-      }
-    }
+    //   h2, p{
+    //     text-align: center;
+    //   }
+    // }
   }
 
   .post-header{
@@ -24,22 +24,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  /* section sobre everton */
-  .section-sobre-everton{
-    min-height: auto !important;
-    height: auto !important;
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-
-    a{
-      color: inherit;
-      font-weight: bold;
-    }
-  }
-  /* end: section sobre everton*/
-
 }
 
 /* mobile */

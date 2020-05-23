@@ -1,345 +1,100 @@
 @import "../variables";
 
 .home-page{
-  .site-header{
-    background-color: #FFF;
-    z-index: 5;
-    height: 100px;
 
-    .wrapper{
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      &:after{
-        display: none;
-      }
+  .page-content {
+    .wrap {
+      max-width: 800px;
     }
+  }
 
-    .site-title{
-      color: #25262a;
+  .button-link {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
 
-      .logo{
-        &:visited {
-          color: #25262a;
-        }
-      }
-    }
-    .site-nav  {
-      .page-link{
-        color: #25262a;
-
-        svg{
-          fill: #25262a;
-        }
-      }
-    }
+  .home-posts{
+    margin-bottom: 50px;
   }
 }
 
-.home{
-  display: flex;
-  flex-wrap: wrap;
+.author-resume{
+  padding: 50px 0;
+  margin-bottom: 50px;
+  position: relative;
+
+  &:after{
+    width: 40%;
+    height: 7px;
+    content: "";
+    display: block;
+    border-radius: 5px;
+    background-color:  rgba(#25262a, 0.1);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  &:after{
+   transform: translateX(-50%);
+  }
 
   article{
-    box-sizing: border-box;
     display: flex;
     align-items: center;
+    align-items: center;
   }
-}
 
-/* home gretings */
-.greetings{
-  background-color: #ffdd18;
-  padding: 30px;
-  width: 50%;
-
-  h2{
-    font-size: 100px;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-
-    strong{
-      font-size: 160px;
-      padding-bottom: 30px;
-      display: block;
-      margin-top: -30px;
+  figure{
+    margin-right: 25px;
+    img{
+      max-width: 150px;
     }
-  }
-}
-
-/* end: home gretings */
-.content-presentation{
-  width: 50%;
-}
-.presentation{
-  padding: 60px 30px 30px 60px;
-  margin-left: auto;
-  color: map-get($colors, 'primary');
-
-  strong{
-    color: #FFF;
-    background-color: map-get($colors, 'primary');
   }
 
   h2{
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 1.3;
+    margin-bottom: 0;
+  }
+}
 
-    strong{
-      font-weight: 500;
+.latest-post{
+  .post-item{
+    .post-link{
+      margin-left: -30px;
+      margin-right: -30px;
     }
   }
 }
 
-.about{
-  color: map-get($colors, 'primary');
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 30px 60px 60px;
-
-  p{
-    font-size: 20px;
-    line-height: 1.8;
-    font-weight: 400;
-
-    strong{
-      font-weight: 400;
+@media screen and (max-width: 767.9px) {
+  .home-page{
+    .site-nav .menu-icon>svg {
+      fill: #FFF;
     }
   }
-}
-
-/* home-posts */
-.home-posts{
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  min-height: auto;
-  align-items: center;
-
-  .post-list-heading{
-    font-size: 50px;
-    color: map-get($colors, 'primary');
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .button-link{
-    display: table;
-    padding: 10px 30px;
-    margin: 20px auto 30px;
-    background-color: map-get($colors, 'primary');
-    border-color: map-get($colors, 'primary');
-    color: #FFF;
-    font-size: 24px;
-    text-align: center;
-    max-width: 50%;
-
-    &:hover{
-      background-color: transparent;
-      color: #25262a;
-    }
-  }
-
-  .post-list-container{
-    display: flex;
-    position: relative;
-    z-index: 2;
-  }
-
-
-  .latest-post{
-    width: 100%;
-
-    .post-list{
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-  }
-}
-/* end/ home-posts */
-
-/* desktop small */
-@media screen and (min-width: 1240px) and (max-width: 1400px){
-  .home{
+  .author-resume{
     article{
-      &.greetings{
-        h2{
-          font-size: 70px;
-
-          strong {
-            font-size: 130px;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* desktop small */
-@media screen and (min-width: 996px) and (max-width: 1240px){
-  .home{
-    article{
-      &.greetings{
-        h2{
-          font-size: 50px;
-
-          strong {
-            font-size: 110px;
-          }
-        }
-      }
-
-      &.presentation{
-        h2{
-          font-size: 36px;
-        }
-      }
-    }
-  }
-}
-
-
-/* mobile */
-@media screen and (max-width: 996px) {
-  .home{
-    .content-presentation{
-      width: 100%;
-    }
-
-    article{
-      width: 100vw;
-
-      &.greetings{
-        padding: 30px 20px 60px;
-
-        h2{
-          font-size: 40px;
-
-          strong {
-            font-size: 80px;
-            margin-top: -15px;
-            padding-bottom: 10px;
-          }
-        }
-      }
-
-      &.presentation{
-        padding: 30px 20px 30px;
-
-        h2{
-          padding: 0;
-          font-size: 30px;
-          margin-bottom: 0;
-        }
-      }
-
-      &.about{
-        padding: 30px 20px 30px;
-
-        p{
-          font-size: 18px;
-          line-height: 1.5;
-
-          &:last-child{
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* tablet */
-@media screen and (max-width: 767px) {
-
-  .home-posts{
-
-    .post-list-heading {
-      font-size: 40px;
-      line-height: 48px;
-    }
-
-    .post-list-container{
       flex-direction: column;
+      align-items: center;
+
+      .author-resume__text{
+        text-align: center;
+      }
     }
 
-    .last-post {
-      width: 100%;
-      padding-right: 0;
-    }
-
-    .latest-post {
-      width: 100%;
-      padding-left: 0;
+    figure{
+      margin-right: 0;
     }
   }
-}
-
-/* mobile */
-@media screen and (max-width: 640px) {
-
-  .home-posts{
-    .button-link{
-      max-width: 100%;
-      width: 100%;
-    }
-
-    h2, h3{
-      word-break: break-word;
-      font-size: 20px;
-    }
-
+  .latest-post{
     .post-item{
       .post-link{
-        h3{
-          margin-bottom: 10px;
-        }
-      }
-    }
-
-    .last-post{
-      .post-list{
-        .post-link{
-          h3{
-            font-size: 20px;
-            margin-bottom: 10px;
-          }
-          p{
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
-
-  .home-page .site-header{
-    height: 50px;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 640px) {
-  .home{
-    article{
-      &.greetings{
-        h2{
-          font-size: 30px;
-
-          strong {
-            font-size: 70px;
-          }
-        }
-      }
-
-      &.presentation{
-        h2{
-          font-size: 26px;
-        }
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

@@ -96,12 +96,13 @@
 /* general classes */
 .wrap{
   width: 100%;
-  max-width: 1280px;
+  max-width: 1000px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 .simple-link,
 .button-link{
@@ -186,7 +187,7 @@ pre>code.language-cmd{
 
 /* listagem posts */
 .post-list {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .post-item{

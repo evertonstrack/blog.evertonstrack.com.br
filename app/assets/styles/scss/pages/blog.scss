@@ -1,6 +1,9 @@
 @import "../variables";
 
 /* blog */
+.wrap.wrapper-blog {
+  max-width: 1280px;
+}
 
 .blog-page{
   .site-header{
@@ -10,7 +13,6 @@
     .site-nav .page-link,
     .site-title:visited,
     .site-title{
-      // color: #2e2e2e;
       color: #FFF;
     }
   }
