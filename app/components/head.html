@@ -17,10 +17,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@evertonstrack">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"> 
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="@evertonstrack">
   {% if page.image %}
-  <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}"> 
+  <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
   {% else %}
   <meta property="twitter:image:src" content="{{ "/assets/images/share-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
@@ -53,7 +53,7 @@
   <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
   <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
-  
+
   <!-- Android Icons -->
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-512x512.png" sizes="512x512" />
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
@@ -62,7 +62,7 @@
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
-  
+
   <!-- Windows Tile Icons -->
   <meta name="application-name" content="Everton Strack Blog" />
   <meta name="msapplication-TileColor" content="{{ page.theme-color | default: '#25262a' }}" />
@@ -84,37 +84,6 @@
   {%- include styles.html -%}
 
   <!-- Add Service Worker -->
-  <script type="text/javascript">
-    // make the whole serviceworker process into a promise so later on we can
-    // listen to it and in case new content is available a toast will be shown
-    window.isUpdateAvailable = new Promise(function (resolve, reject) {
-      if ("serviceWorker" in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
-        navigator.serviceWorker.register("/service-worker.js")
-          .then(function (registration) {
-            console.info("Service Worker registration successful with scope: ", registration.scope);
-            registration.onupdatefound = function() {
-              const installingWorker = registration.installing;
-              installingWorker.onstatechange = function() {
-                switch (installingWorker.state) {
-                  case 'installed':
-                    if (navigator.serviceWorker.controller) {
-                      // new update available
-                      console.log('new update available');
-                      resolve(true);
-                    } else {
-                      // no update available
-                      console.log('no update available');
-                      resolve(false);
-                    }
-                    break;
-                }
-              };
-            };
-          }).catch(function (err) {
-            console.error("[SW ERROR] ", err);
-          });
-      }
-    });
-    
-  </script>
+  {%- include scripts/add-service-worker.js.html -%}
+  <!-- END: /Add Service Worker -->
 </head>

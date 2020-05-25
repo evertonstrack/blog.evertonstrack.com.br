@@ -74,22 +74,6 @@ comments: true
 {% include author.html %}
 {% include comments.html %}
 
-<script>
-  function calculeReadingTime(text, wordsPerMinute = 200) {
-    if( !text || text.length === 0 ) {
-      return false;
-    }
-
-    const textLength = text.split(" ").length;
-    const timeInMinutes = Math.ceil(textLength / wordsPerMinute);
-
-    return timeInMinutes > 1
-      ? `${timeInMinutes} minutos.`
-      : `${timeInMinutes} minuto.`;
-  }
-
-  const textContent = document.querySelector('body.posts .post-content').textContent;
-  const readingTimeElement = document.querySelector(".reading-time span");
-  const readingTime = calculeReadingTime(textContent);
-  readingTimeElement.innerText = readingTime;
-</script>
+<!-- Theme Toogle -->
+{%- include scripts/reading-time.js.html -%}
+<!-- END: /Theme Toogle -->

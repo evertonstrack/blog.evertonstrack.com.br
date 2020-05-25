@@ -1,0 +1,42 @@
+<script type="text/javascript">
+  const html = document.querySelector("html");
+  const themes = {
+    light: {
+      background: '#FDFDFD',
+      background_alt: 'rgba(218, 214, 214, 0.3)',
+      text: '#25262a',
+    },
+    dark: {
+      background: '#25262a',
+      background_alt: 'rgba(218, 214, 214, 0.1)',
+      text: '#FFFFFF',
+    }
+  };
+
+  function getTheme() {
+    try {
+      window.__theme = localStorage.getItem('theme');
+    } catch (err) { }
+  }
+  getTheme();
+
+  function setTheme(newTheme) {
+    changeColors(newTheme)
+    window.__theme = newTheme;
+    try {
+      localStorage.setItem('theme', newTheme);
+    } catch (err) {}
+  }
+
+  function changeColors(newTheme) {
+    const themeColors = themes[newTheme];
+
+    Object.keys(themeColors).map(function(key) {
+      html.style.setProperty(`--${key}`, themeColors[key]);
+    });
+  }
+
+  const newTheme = window.__theme || (isPreferredThemeDark.matches ? 'dark' : 'light');
+  setTheme(newTheme);
+  changeColors(newTheme);
+</script>

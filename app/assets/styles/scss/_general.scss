@@ -91,7 +91,19 @@
   }
 }
 
+a{
+  color: var(--text);
+  text-decoration: underline;
 
+  &:visited{
+    color: var(--text);
+  }
+
+  &:hover{
+    background-color:  var(--text);
+    color: var(--background);
+  }
+}
 
 /* general classes */
 .wrap{
