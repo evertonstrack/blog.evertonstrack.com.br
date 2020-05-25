@@ -1,6 +1,7 @@
 <script type="text/javascript">
   const html = document.querySelector("html");
   const metaTheme = document.querySelector('meta[name=theme-color]');
+  window.__theme = localStorage.getItem('theme');
   const themes = {
     light: {
       background: '#FDFDFD',
@@ -14,19 +15,10 @@
     }
   };
 
-  function getTheme() {
-    try {
-      window.__theme = localStorage.getItem('theme');
-    } catch (err) { }
-  }
-  getTheme();
-
   function setTheme(newTheme) {
     changeColors(newTheme)
     window.__theme = newTheme;
-    try {
-      localStorage.setItem('theme', newTheme);
-    } catch (err) {}
+    localStorage.setItem('theme', newTheme);
   }
 
   function changeColors(newTheme) {
