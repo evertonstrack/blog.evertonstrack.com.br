@@ -4,7 +4,6 @@ title:  "Seletores CSS que vão mudar sua vida (Parte 2) - :not()"
 description: "Hoje vamos falar sobre a pseudo-classe :not(), é um seletor muito poderoso que pode nos ajudar a criar regras de estilização muito bacanas."
 date:   2020-05-16 09:00:00 -0300
 bodyClass: post-css
-theme-color: "#ffdd18"
 tags: ['css']
 image: /assets/images/posts/seletores-css-not/css-logotipo.jpg
 ---

@@ -27,14 +27,29 @@ comments: true
 
   <header class="post-header animate" data-color="{{page.color}}">
     <div class="wrapper">
-      <p class="post-meta">
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% include date.html date=page.date %}
-        </time>
-      </p>
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-description">{{ page.description | escape }}</p>
-      <p class="reading-time post-meta">Tempo de leitura: <span></span></p>
+      <!-- <p class="post-description">{{ page.description | escape }}</p> -->
+
+      <div class="container-post-meta">
+        <p class="post-meta">
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% include date.html date=page.date %}
+          </time>
+        </p>
+        <span class="spacer"></span>
+        <p class="reading-time post-meta">Tempo de leitura: <span></span></p>
+        <span class="spacer"></span>
+        <div class="tags post-meta">
+          {%- for tag in page.tags -%}
+            <span class="tag">
+              <!-- <svg class="icon"><use xlink:href="#icon-tag"></use></svg> -->
+              {{tag}}
+            </span>
+          {%- endfor -%}
+        </div>
+      </div>
+
+
 
       {%- if page.author -%}
         <p class="post-meta">
@@ -48,7 +63,7 @@ comments: true
   </header>
 
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="post-content e-content wrapper" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -59,22 +74,6 @@ comments: true
 {% include author.html %}
 {% include comments.html %}
 
-<script>
-  function calculeReadingTime(text, wordsPerMinute = 200) {
-    if( !text || text.length === 0 ) {
-      return false;
-    }
-
-    const textLength = text.split(" ").length;
-    const timeInMinutes = Math.ceil(textLength / wordsPerMinute);
-
-    return timeInMinutes > 1
-      ? `${timeInMinutes} minutos.`
-      : `${timeInMinutes} minuto.`;
-  }
-
-  const textContent = document.querySelector('body.posts .post-content').textContent;
-  const readingTimeElement = document.querySelector(".reading-time span");
-  const readingTime = calculeReadingTime(textContent);
-  readingTimeElement.innerText = readingTime;
-</script>
+<!-- Theme Toogle -->
+{%- include scripts/reading-time.js.html -%}
+<!-- END: /Theme Toogle -->

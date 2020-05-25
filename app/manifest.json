@@ -1,8 +1,8 @@
 {
 	"name": "Everton Strack Blog",
 	"short_name": "Everton Blog",
-	"theme_color": "#25262a",
-	"background_color": "#25262a",
+	"theme_color": "#FDFDFD",
+	"background_color": "#FDFDFD",
 	"display": "standalone",
 	"scope": "/",
 	"start_url": "/",

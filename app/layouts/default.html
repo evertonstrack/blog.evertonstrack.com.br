@@ -5,34 +5,45 @@
 
   <body class="{{page.bodyClass}} {{page.collection}}">
 
-    <script type="text/javascript">
-      // Verify webp support on browser
-      var supportsWebP = (function () {
-        'use strict';
-        var canvas = typeof document === 'object' ? document.createElement('canvas') : {};
-        canvas.width = canvas.height = 1;
-        var index = canvas.toDataURL ? canvas.toDataURL('image/webp').indexOf('image/webp') === 5 : false;
-        return index;
-      }());
-
-      if (supportsWebP) {
-        document.querySelector('html').classList.add('webp');
-      } else {
-        document.querySelector('html').classList.add('no-webp');
-      }
-    </script>
-
+    <!-- Theme Control -->
+    {%- include scripts/theme-control.js.html -%}
+    <!-- END: /Theme Control -->
+    <!-- Webp Support -->
+    {%- include scripts/support-webp.js.html -%}
+    <!-- END: /Webp Support -->
+    <!-- SVG Icons -->
     {% include svg-icons.html %}
-    {%- include header.html -%}
+    <!-- END: /SVG Icons -->
 
+    <!-- HEADER -->
+    {%- include header.html -%}
+    <!-- END: /HEADER -->
+
+    <!-- CONTENT -->
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
+    <!-- END: /CONTENT -->
 
+    <!-- FOOTER -->
     {%- include footer.html -%}
-    {%- include scripts.html -%}
+    <!-- END:/ FOOTER -->
+
+    <!-- Theme Toogle -->
+    {%- include scripts/theme-toggle.js.html -%}
+    <!-- END: /Theme Toogle -->
+
+    <!-- Google Analytics -->
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include scripts/google-analytics.js.html -%}
+    {%- endif -%}
+    <!-- /Google Analytics -->
+
+    <!-- Verify service worker update -->
+    {%- include scripts/update-service-worker.js.html -%}
+    <!-- END /Verify service worker update -->
   </body>
 
 </html>

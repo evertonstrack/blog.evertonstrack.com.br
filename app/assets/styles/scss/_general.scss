@@ -92,7 +92,6 @@
 }
 
 
-
 /* general classes */
 .wrap{
   width: 100%;
@@ -121,17 +120,6 @@
 .button-link{
   text-decoration: none;
   border-radius: 5px;
-
-  &.link-gray{
-    border-color: #25262a;
-
-    &:hover{
-      background-color: #25262a;
-      color: #FFF;
-      text-decoration: none;
-    }
-  }
-
 }
 
 .link-white{
@@ -148,15 +136,22 @@
 }
 
 .link-gray{
-  color: #25262a;
+  color: var(--text);
+  border-color: var(--text);
+  background-color: var(--background_alt);
+
   &:hover{
-    border-color: #25262a;
-    color: #25262a;
+    background-color: var(--background);
+    text-decoration: none;
   }
 
   &:focus,
   &:visited{
-    color: #25262a;
+    color: var(--text);
+
+    &:hover{
+      color: var(--text);
+    }
   }
 }
 
@@ -166,10 +161,11 @@
 .copyright{
   display: table;
   margin: 0 auto;
+  text-align: center;
 }
 
 .post-meta{
-  color: #757575;
+  color: var(--text);
 }
 
 .icon{
@@ -197,18 +193,24 @@ pre>code.language-cmd{
     font-size: 24px;
     background-color: transparent;
     padding: 15px 30px;
-    color: map-get($colors, primary);
-    transition: all 0.3s ease;
+    color: var(--text);
     margin-bottom: 25px;
+    background-color: var(--background_alt);
+    border: 1px solid var(--background);
 
     &:visited {
-      color: map-get($colors, primary);
+      color: var(--text);
     }
 
     &:hover{
-      color: #FFF;
-      background-color: map-get($colors, primary);
+      color: var(--text);
+      background-color: var(--background);
+      border-color: var(--text);
       text-decoration: none;
+
+      .post-meta{
+        color: var(--text);
+      }
     }
 
     h3{
@@ -289,6 +291,22 @@ button.share:hover{
   display: none !important;
 }
 
+
+a{
+  color: var(--text);
+  text-decoration: underline;
+
+  &:visited{
+    color: var(--text);
+  }
+}
+@media (min-width: 641px) {
+  a:hover{
+    background-color:  var(--text);
+    color: var(--background);
+  }
+}
+
 @media (max-width: 640px) {
 
   .toast{
@@ -304,11 +322,14 @@ button.share:hover{
   }
 }
 
-@media screen and (max-width: 641px) {
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
 
-  body:not(.post-javascript):not(.home-page){
-    .site-nav .menu-icon > svg{
-      fill: #FFF;
+    .wrapper{
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

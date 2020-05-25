@@ -1,13 +1,6 @@
 @import "../variables";
 
 .home-page{
-
-  .page-content {
-    .wrap {
-      max-width: 800px;
-    }
-  }
-
   .button-link {
     width: 100%;
     max-width: 350px;
@@ -18,13 +11,26 @@
 
   .home-posts{
     margin-bottom: 50px;
+
+    .post-list-heading{
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 }
 
 .author-resume{
-  padding: 50px 0;
+  padding: 25px 0 70px;
   margin-bottom: 50px;
   position: relative;
+
+  article{
+    display: flex;
+    padding: 20px;
+    background-color: var(--background_alt);
+    margin: 0 auto;
+    border-radius: 8px;
+  }
 
   &:after{
     width: 40%;
@@ -32,7 +38,7 @@
     content: "";
     display: block;
     border-radius: 5px;
-    background-color:  rgba(#25262a, 0.1);
+    background-color:  var(--background_alt);
     margin: 0 auto;
     position: absolute;
     bottom: 0;
@@ -61,22 +67,17 @@
   }
 }
 
-.latest-post{
-  .post-item{
-    .post-link{
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-  }
-}
-
 @media screen and (max-width: 767.9px) {
   .home-page{
-    .site-nav .menu-icon>svg {
-      fill: #FFF;
+    .home-posts{
+      .post-list-heading{
+        font-size: 30px;
+      }
     }
   }
   .author-resume{
+    padding-top: 0;
+
     article{
       flex-direction: column;
       align-items: center;
@@ -88,6 +89,10 @@
 
     figure{
       margin-right: 0;
+
+      img{
+        max-width: 100px;
+      }
     }
   }
   .latest-post{

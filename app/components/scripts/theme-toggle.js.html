@@ -1,0 +1,23 @@
+<!-- Toogle theme -->
+<script>
+  const themeToggle = document.querySelector("input[name=theme]");
+  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  if( window.__theme === 'dark' ) {
+    themeToggle.checked = true;
+  }
+
+  isPreferredThemeDark.addListener(function(event) {
+    setTheme(event.matches ? 'dark' : 'light');
+    themeToggle.checked = event.matches ? true : false;
+  });
+
+  themeToggle.addEventListener("change", function({ target }) {
+    setTheme(target.checked ? 'dark' : 'light');
+  });
+
+  setTimeout(function() {
+    themeToggle.classList.add('animating')
+  }, 250);
+</script>
+<!-- /Toogle theme -->

@@ -1,4 +1,56 @@
 
+.theme-toggle-container {
+  cursor: pointer;
+}
+
+.theme-toggle{
+  width: 50px;
+  height: 30px;
+  background-color: var(--background_alt);
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+
+  &:after{
+    width: 22px;
+    height: 22px;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background-color: #fcc100;
+    border-radius: 50%;
+    border: 0px solid #fcc100;
+  }
+}
+
+input[name=theme] {
+
+  &.animating{
+    + .theme-toggle{
+      &:after{
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+
+  &:checked{
+    + .theme-toggle{
+      &:after{
+        left: calc(100% - 33px);
+        background-color: transparent;
+        border-right-width: 6px;
+        border-right-color: #FFF;
+      }
+
+      &:before{
+        opacity: 1;
+      }
+    }
+  }
+}
+
 .site-header{
   height: 100px;
 
@@ -14,41 +66,21 @@
   }
 
   .site-title{
-    // text-transform: lowercase;
-    color: #FFF;
     margin: 0;
 
     .logo{
       text-decoration: none;
       font-size: 30px;
       line-height: 100%;
-      padding-left: 10px;
-
-      &:before,
-      &:after{
-        display: block;
-        font-size: 20px;
-        line-height: 100%;
-        margin-left: -10px;
-        opacity: 0.7;
-      }
 
       &:before{
-        content: "import {";
+        content: "<";
       }
 
       &:after{
-        content: "} from './de(sign|velop)er';";
-      }
-
-      &:visited {
-        color: #FFF;
+        content: "/>";
       }
     }
-  }
-
-  .site-nav .page-link svg{
-    fill: #FFF;
   }
 
   .site-nav  {
@@ -65,7 +97,6 @@
 
     .page-link{
       text-transform: lowercase;
-      color: #FFF;
       font-size: 20px;
 
       &:not(:last-child){
@@ -94,8 +125,6 @@
 @media screen and (max-width: 600px) {
 
   .site-header{
-
-    // height: 56px;
     height: 100px;
 
     .site-title{
@@ -114,6 +143,10 @@
         color: #000;
         font-size: 24px;
         font-weight: 700;
+
+        > svg{
+          fill: var(--text);
+        }
       }
 
       label[for="nav-trigger"]{
@@ -130,7 +163,7 @@
           top: 10px;
 
           .menu-icon>svg{
-            fill: #FFF;
+            fill: var(--text);
           }
         }
 
@@ -155,8 +188,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: rgba(#005cef, 0.95);
-        color: #FFF;
+        background-color: var(--background);
+        color: var(--text);
 
         opacity: 0;
         transform: scale(0.95);
@@ -165,7 +198,7 @@
         border-radius: 50%;
 
         .page-link{
-          color: #FFF;
+          color: var(--text);
           font-weight: 700;
           font-size: 24px;
           line-height: 50px;
@@ -176,7 +209,7 @@
           font-size: 24px;
 
           svg{
-            fill: #FFF;
+            fill: var(--text);
           }
         }
       }

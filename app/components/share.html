@@ -27,39 +27,6 @@
   </div>
 </section>
 
-<script>
-
-  function share() {
-    if (navigator.share){
-      const url = document.location.href;
-      const title = document.querySelector('title').textContent;
-      const text = document.querySelector('meta[name="description"]').content;
-
-      navigator.share({
-        url, title, text
-      })
-        .then(() => {
-          console.log('Conteúdo compartilhado.')
-        })
-        .catch(console.error);
-    } else {
-
-      console.log('Web Share API is not supported');
-    }
-  }
-
-  const shareButton = document.querySelector('button.share');
-  const shareSection = document.querySelector('section.share .wrapper');
-
-  if( navigator.share ) {
-    shareButton.addEventListener('click', share);
-    shareSection.classList.add('hidden');
-  } else {
-    shareSection.classList.remove('hidden');
-    shareButton.classList.add('hidden');
-  }
-
-
-
-
-</script>
+<!-- Theme Toogle -->
+{%- include scripts/share.js.html -%}
+<!-- END: /Theme Toogle -->

@@ -4,7 +4,6 @@ title:  "Quanto vale o seu tempo?"
 description: "Vamos refletir um pouco sobre a rotina de quem trabalha na área de tecnologia, os problemas do dia-a-dia e o que podemos fazer para melhorar nosso dia-a-dia."
 date:   2018-07-17 21:58:09 -0300
 bodyClass: post-life
-theme-color: "#4CAF50"
 tags: ['carreira']
 image: /assets/images/posts/quanto-vale-seu-tempo/quanto-vale-seu-tempo.jpg
 ---

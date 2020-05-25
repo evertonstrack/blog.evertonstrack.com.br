@@ -19,20 +19,15 @@
           </span>
         </label>
 
-        <div class="trigger">
+        <div class="trigger" title="Alterar tema do site">
           {% for link in site.links %}
             <a class="page-link" href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
-
-          <a class="page-link page-link--icon" href="https://github.com/evertonstrack" title="Everton Strack no GitHub" target="_blank" rel="noopener">
-            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-          </a>
-          <a class="page-link page-link--icon" href="https://twitter.com/evertonstrack" title="Everton Strack no Twitter" target="_blank" rel="noopener">
-            <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-          </a>
-          <a class="page-link page-link--icon" href="https://www.linkedin.com/in/evertonstrack/" title="Everton Strack no Linkedin" target="_blank" rel="noopener">
-            <svg class="icon icon-instagram"><use xlink:href="#icon-linkedin"></use></svg>
-          </a>
+          <label class="theme-toggle-container">
+            <input name="theme" type="checkbox" class="hidden" />
+            <span class="theme-toggle"></span>
+            <strong class="hidden">Alterar tema do site</strong>
+          </label>
         </div>
       </nav>
     {%- endif -%}

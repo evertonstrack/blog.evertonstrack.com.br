@@ -4,7 +4,6 @@ title:  "ReactJS: Uma biblioteca javascript para trabalhar com views."
 description: "O que é? De onde veio? Para que foi criado? E o que você precisa fazer para começar a brincar hoje mesmo  com ReactJS."
 date:   2018-09-09 09:30:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript', 'react']
 image: /assets/images/posts/reactjs-uma-biblioteca-javascript-para-trabalhar-com-views/reactjs.jpg
 ---

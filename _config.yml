@@ -44,8 +44,8 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
   trail:
-    before: 2 # The number of links before the current page
-    after: 2  # The number of links after the current page
+    before: 1 # The number of links before the current page
+    after: 1  # The number of links after the current page
 
 # Links to include in menu navigation
 # For external links add external: true
