@@ -4,7 +4,6 @@ title:  "Usando Sass com Create React App (sem ejetar)"
 description: "Quem usar Sass em seus projetos com o Create React App? Vamos ver como fazer isso sem ejetar o projeto ou rodar uma task extra."
 date:   2018-09-15 18:30:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript', 'react', 'sass']
 image: /assets/images/posts/usando-sass-com-react/usando-sass-com-react.jpg
 ---

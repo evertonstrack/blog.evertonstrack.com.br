@@ -4,7 +4,6 @@ title:  "Compartilhando como um aplicativo nativo com a Web Share API"
 description: "Hoje vamos conhecer e entender como usar o compartilhamento nativo dos dispositivos móveis, como a Web Share API."
 date:   2020-05-21 16:00:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript']
 image: /assets/images/posts/web-share-api/smartphone.jpg
 ---

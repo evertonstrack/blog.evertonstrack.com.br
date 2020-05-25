@@ -4,7 +4,6 @@ title:  "Como se organizar na vida pessoal e profissional"
 description: "Com tudo que tem acontecido no mundo ultimamente, o home office tem ganhado muita força em muitas empresas. Hoje vou trazer algumas da práticas, métodos, fluxos e aplicativos que uso no meu fluxo de trabalho e na minha vida pessoal."
 date:   2020-04-30 13:00:00 -0300
 bodyClass: post-produtividade
-theme-color: "#ffdd18"
 tags: ['produtividade', 'organização']
 image: /assets/images/posts/como-se-organizar/todoist.jpg
 ---

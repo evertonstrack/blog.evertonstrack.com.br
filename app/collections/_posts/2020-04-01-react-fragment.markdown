@@ -4,7 +4,6 @@ title:  "React Fragment: O que é, e por que você deveria usá-lo"
 description: "Quantas vezes já nos pegamos em uma aplicação onde o HTML tem muitos elementos, que quando analisamos, ficamos nos perguntando, por que isso está aqui? Hoje vamos tentar resolver isso!"
 date:   2020-04-01 13:00:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript', 'react']
 image: /assets/images/posts/react-fragments/react-fragments.jpg
 ---

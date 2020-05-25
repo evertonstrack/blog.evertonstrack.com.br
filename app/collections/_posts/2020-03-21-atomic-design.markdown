@@ -4,7 +4,6 @@ title:  "Atomic Design"
 description: "Componentes, componentização, modularização. Não são conceitos novos, mas atualmente sua força tem sido maior do que nunca. Hoje vamos ver uma metodologia que vai nos ajudar a construir interfaces melhores, mais consistentes e coesas."
 date:   2020-03-20 13:00:00 -0300
 bodyClass: post-design
-theme-color: "#e91363"
 tags: ['design']
 image: /assets/images/posts/atomic-design/atomic-design.png
 ---

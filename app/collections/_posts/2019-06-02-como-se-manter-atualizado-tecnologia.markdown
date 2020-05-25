@@ -4,7 +4,6 @@ title:  "Como se manter atualizado em tecnologia?"
 description: "Como podemos nos manter atualizados em um mundo em constante mudança e onde as informações circulam em uma velocidade nunca antes imaginada?"
 date:   2019-06-02 13:00:00 -0300
 bodyClass: post-life
-theme-color: "#4CAF50"
 tags: ['carreira']
 image: /assets/images/posts/como-se-manter-atualizado-tecnologia/pessoas-vidradas-em-seus-smartphones.jpg
 ---

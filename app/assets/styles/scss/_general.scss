@@ -91,19 +91,6 @@
   }
 }
 
-a{
-  color: var(--text);
-  text-decoration: underline;
-
-  &:visited{
-    color: var(--text);
-  }
-
-  &:hover{
-    background-color:  var(--text);
-    color: var(--background);
-  }
-}
 
 /* general classes */
 .wrap{
@@ -302,6 +289,22 @@ button.share:hover{
 
 .hidden{
   display: none !important;
+}
+
+
+a{
+  color: var(--text);
+  text-decoration: underline;
+
+  &:visited{
+    color: var(--text);
+  }
+}
+@media (min-width: 641px) {
+  a:hover{
+    background-color:  var(--text);
+    color: var(--background);
+  }
 }
 
 @media (max-width: 640px) {

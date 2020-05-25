@@ -4,7 +4,6 @@ title:  "Progressive Web Apps (PWA): O que são? E como transformar seu site em 
 description: "Como transformar seu site em um Progressive Web App. Vamos dar uma olhada nos três principais passos necessários para transformarmos nosso site em um PWA."
 date:   2018-07-31 19:00:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript', 'pwa']
 image: /assets/images/posts/como-transformar-seu-site-em-um-progressive-web-app/pwa-progressive-web-app.jpg
 ---

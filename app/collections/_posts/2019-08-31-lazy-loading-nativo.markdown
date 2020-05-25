@@ -4,7 +4,6 @@ title:  "Lazy loading nativo na web"
 description: "Com a atualização do Google Chrome para a versão 76, foi lançada a funcionalidade de lazy load nativo, que já havia sido anunciada em abril, agora está na versão estável e sem precisar alterar nenhuma flag."
 date:   2019-08-31 10:00:00 -0300
 bodyClass: post-javascript
-theme-color: "#ffdd18"
 tags: ['javascript']
 image: /assets/images/posts/lazy-loading-nativo/lazy-loading.jpg
 ---

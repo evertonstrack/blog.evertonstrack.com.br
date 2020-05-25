@@ -4,7 +4,6 @@ title:  "A era dos upgrades: como saber a hora certa de comprar [Guia Prático]"
 description: "Estamos vivendo em uma era de upgrades. Todos os anos muitas empresas anunciam novas versões de produtos com melhorias que são muito superiores às versões anteriores e é difícil não sentir-se tentado a adquiri-las. Como saber se é o momento certo de fazer o upgrade?"
 date:   2020-05-08 15:00:00 -0300
 bodyClass: post-life
-theme-color: "#ffdd18"
 tags: ['vida', 'minimalismo']
 image: /assets/images/posts/a-era-dos-upgrades/tim-cook-apple.jpg
 ---

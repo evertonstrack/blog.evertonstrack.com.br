@@ -1,5 +1,6 @@
 <script type="text/javascript">
   const html = document.querySelector("html");
+  const metaTheme = document.querySelector('meta[name=theme-color]');
   const themes = {
     light: {
       background: '#FDFDFD',
@@ -34,6 +35,8 @@
     Object.keys(themeColors).map(function(key) {
       html.style.setProperty(`--${key}`, themeColors[key]);
     });
+
+    metaTheme.setAttribute('content', themeColors['background']);
   }
 
   const newTheme = window.__theme || (isPreferredThemeDark.matches ? 'dark' : 'light');
