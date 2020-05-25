@@ -26,28 +26,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
 }
 
 
-.page-content{
-  .wrapper{
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .site-header,
 .site-footer{
-  background-color: map-get($colors, primary);
   border-top: none;
   border-bottom: none;
-  color: #FFF;
-
-  .wrapper{
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   a{
-    color: #FFF;
+    color: var(--text);
   }
 }
 
@@ -133,96 +117,15 @@ img.round{
       transition: none;
     }
 
-    .tags{
-      .tag{
-        padding: 0px 6px;
-        color: #25262a;
-        font-size: 14px;
-        border-radius: 4px;
-        margin-right: 5px;
-        display: inline-block;
-
-      }
-    }
-
     .tag{
-      border: 3px solid #25262a;
+      border: 1px solid var(--text);
+      padding: 0px 6px;
+      color: var(--text);
+      font-size: 14px;
+      border-radius: 4px;
+      margin-right: 5px;
+      display: inline-block;
     }
-
-    &:hover{
-      .tag{
-        background-color: #FFF;
-        border-color: #FFF;
-      }
-      &.post-javascript,
-      &.post-css,
-      &.post-html,
-      &.post-life{
-        .tag{
-          color: #25262a;
-        }
-      }
-
-      &.post-javascript {
-        .tag{
-          background-color: map-get($color-javascript, light );
-        }
-      }
-
-      &.post-life{
-        .tag{
-          background-color: map-get($pallete, green );
-        }
-      }
-      &.post-css {
-        .tag{
-          background-color: map-get($color-css, light );
-        }
-      }
-      &.post-html {
-        .tag{
-          background-color: map-get($color-html, light );
-        }
-      }
-
-      &.post-design {
-        .tag{
-          background-color: map-get($color-design, light );
-        }
-      }
-
-    }
-
-    &.post-javascript {
-      .tag{
-        border: 3px solid  map-get($color-javascript, light );
-      }
-    }
-
-    &.post-css {
-      .tag{
-        border: 3px solid  map-get($color-css, light );
-      }
-    }
-
-    &.post-html {
-      .tag{
-        border: 3px solid map-get($color-html, light );
-      }
-    }
-
-    &.post-life{
-      .tag{
-        border: 3px solid map-get($pallete, green );
-      }
-    }
-
-    &.post-design {
-      .tag{
-        border: 3px solid  map-get($color-design, light );
-      }
-    }
-
   }
 }
 
@@ -232,6 +135,8 @@ img.round{
   .section{
     .section-header{
       max-height: none;
+      height: auto;
+      padding: 0;
 
       .page-heading{
         font-size: 40px;
@@ -249,40 +154,10 @@ img.round{
             color: initial;
           }
         }
-
-        &.post-javascript {
-          .tag{
-            background-color: map-get($color-javascript, light );
-            color: #FFF;
-          }
-        }
-
-        // CSS
-        &.post-css {
-          .tag{
-            background-color: map-get($color-css, light );
-            color: #FFF;
-          }
-        }
-
-        // HTML
-        &.post-html {
-          .tag{
-            background-color: map-get($color-html, light );
-            color: #FFF;
-          }
-        }
-
-        &.post-life{
-          .tag{
-            background-color: map-get($pallete, green );
-            color: #FFF;
-          }
-        }
       }
 
       .post-link{
-        padding: 0;
+        padding: 10px 20px;
         margin-bottom: 30px;
         border-radius: 8px;
 
@@ -290,13 +165,6 @@ img.round{
           text-decoration: underline;
           font-size: 24px;
         }
-
-        // &:after {
-        //   content: "";
-        //   width: 15%;
-        //   border-top: 1px solid rgba(0,0,0,0.2);
-        //   display: table;
-        // }
 
         .post-item__content{
           p{

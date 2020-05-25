@@ -4,30 +4,18 @@ $colors: (
 );
 
 
-$pallete: (
-  green: #4CAF50,
-  red: #E24E42,
-  orange: #F7B733,
-  yellow:#ffdd18,
-  blue: #005cef
-);
+html{
+  --background: #FDFDFD;
+  --text: #25262a;
+  --background_alt: rgba(218, 214, 214, 0.3); //#dad6d6
 
-$color-css: (
-  light: #005cef,
-  dark: #2162af
-);
+  // --layout_bg: #25262a;
+  // --layout_text: #FFFFFF;
 
-$color-html: (
-  light: #f16529,
-  dark: #e44d26
-);
-
-$color-javascript: (
-  light: #ffdd18,
-  dark: #323330
-);
-
-$color-design: (
-  light: #e91363,
-  dark: #FFFFFF
-);
+  --frontend_bg: #f16529;
+  --frontend_text: #FFFFFF;
+  --design_bg: #ffdd18;
+  --design_text: #323330;
+  --vida_bg: #4CAF50;
+  --vida_text: #FFFFFF;
+}

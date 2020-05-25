@@ -1,20 +1,15 @@
 @import "../variables";
 
-.content-sobre{
-  background-color: #F0F0F0;
-
-  .section-header{
-    // height: auto;
-
-    // .title-section-container{
-    //   margin: 0 auto;
-
-    //   h2, p{
-    //     text-align: center;
-    //   }
-    // }
+.about-page{
+  .page-content{
+    > .wrapper{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
+}
 
+.content-sobre{
   .post-header{
     display: none;
   }
@@ -28,12 +23,6 @@
 
 /* mobile */
 @media screen and (max-width: 640px) {
-
-  .about-page{
-    .site-nav .menu-icon>svg{
-      fill: #FFF;
-    }
-  }
 
   .content-sobre{
 

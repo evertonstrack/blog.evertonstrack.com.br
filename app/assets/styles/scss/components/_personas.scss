@@ -34,10 +34,18 @@
 
       &.code-side {
         background-color: #005cef;
+
+        .text{
+          margin-left: 50px;
+        }
       }
 
       &.side.design-side {
         background-color: #273238;
+
+        .text{
+          margin-right: 50px;
+        }
       }
 
 
@@ -88,6 +96,14 @@
         width: 100%;
         display: block;
         padding: 70px 30px;
+
+        &.code-side .text{
+          margin-left: 0;
+        }
+
+        &.design-side .text{
+          margin-right: 0;
+        }
 
         .text{
           width: 100%;

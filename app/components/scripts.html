@@ -10,6 +10,29 @@
   <button class="toast__button">Atualizar</button>
 </div>
 
+<script>
+  const themeToggle = document.querySelector("input[name=theme]");
+  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  if( window.__theme === 'dark' ) {
+    themeToggle.checked = true;
+  }
+
+  isPreferredThemeDark.addListener(event => {
+    console.log('THEME CHANGES -> event', event);
+    console.log('THEME CHANGES -> event.matches', event.matches);
+
+    setPreferredTheme(event.matches ? 'dark' : 'light');
+    themeToggle.checked = event.matches ? true : false;
+  });
+
+  themeToggle.addEventListener("change", ({ target }) => {
+    const theme = target.checked ? 'dark' : 'light';
+    setPreferredTheme(theme);
+  });
+
+  setTimeout(function() { themeToggle.classList.add('animating') }, 250);
+</script>
 
 <!-- Verify new version -->
 <script>
