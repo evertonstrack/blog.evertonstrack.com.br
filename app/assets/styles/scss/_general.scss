@@ -300,7 +300,8 @@ a{
   }
 }
 @media (min-width: 641px) {
-  a:hover{
+
+  .post-content a:hover{
     background-color:  var(--text);
     color: var(--background);
   }
