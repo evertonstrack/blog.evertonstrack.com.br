@@ -1,6 +1,11 @@
 
+.right-header{
+  display: flex;
+}
+
 .theme-toggle-container {
   cursor: pointer;
+  margin-left: 40px;
 }
 
 .theme-toggle{
@@ -124,6 +129,11 @@ input[name=theme] {
 
 @media screen and (max-width: 600px) {
 
+  .theme-toggle-container{
+    margin-left: 0;
+    margin-right: 40px;
+  }
+
   .site-header{
     height: 100px;
 
@@ -152,7 +162,7 @@ input[name=theme] {
       label[for="nav-trigger"]{
         position: relative;
         z-index: 11;
-        margin-top: 25px;
+        margin-top: 23px;
       }
 
       input:checked{
