@@ -31,13 +31,6 @@
     metaTheme.setAttribute('content', themeColors['background']);
   }
 
-  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-  const newTheme = window.__theme || (isPreferredThemeDark.matches ? 'dark' : 'light');
+  const newTheme = window.__theme || ( window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   setTheme(newTheme);
-
-  isPreferredThemeDark.addListener(function(event) {
-    setTheme(event.matches ? 'dark' : 'light');
-    themeToggle.checked = event.matches ? true : false;
-  });
-  setTheme(isPreferredThemeDark.matches ? 'dark' : 'light');
 </script>
