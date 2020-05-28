@@ -124,8 +124,8 @@ Hoje o suporte da Web Share Api é praticamente limitado ao mobile, com exceçã
 
 Mas como mencionei acima, podemos usar um fallback para os dispositivos e navegadores que não suportam.
 
-- [Share like a native app with the Web Share API](https://web.dev/web-share/)
-- [Web Share API - CanIUse](https://caniuse.com/#feat=web-share)
+- [Share like a native app with the Web Share API](https://web.dev/web-share/){:target="_blank"}{:rel="noopener"}
+- [Web Share API - CanIUse](https://caniuse.com/#feat=web-share){:target="_blank"}{:rel="noopener"}
 
 Já conhecia a Web Share API? Comenta aqui embaixo sobre a sua experiência, e compartilha! 😉
 
