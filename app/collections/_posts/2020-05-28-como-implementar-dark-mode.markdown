@@ -4,7 +4,7 @@ title:  "Como implementar o dark mode"
 description: "Nos últimos tempos o tema escuro, ou dark mode se transformou em uma febre, tanto que muitas empresas anunciam o suporte ao tema escuro como uma grande feature. Vamos entender como implementar facilmente no nosso site hoje mesmo."
 date:   2020-05-28 13:00:00 -0300
 bodyClass: post-javascript
-tags: ['javascript']
+tags: ['javascript', 'css']
 image: /assets/images/posts/como-implementar-dark-mode/iphone-dark-mode.jpg
 ---
 
