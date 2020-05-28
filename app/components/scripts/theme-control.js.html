@@ -1,7 +1,16 @@
 <script type="text/javascript">
   const html = document.querySelector("html");
   const metaTheme = document.querySelector('meta[name=theme-color]');
+  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
   window.__theme = localStorage.getItem('theme');
+
+  // Change theme when user change in the OS
+  isPreferredThemeDark.addListener(function(event) {
+    setTheme(event.matches ? 'dark' : 'light');
+    themeToggle.checked = event.matches ? true : false;
+  });
+
+  // Themes
   const themes = {
     light: {
       background: '#FDFDFD',
@@ -15,12 +24,14 @@
     }
   };
 
+  // Set Theme
   function setTheme(newTheme) {
     changeColors(newTheme)
     window.__theme = newTheme;
     localStorage.setItem('theme', newTheme);
   }
 
+  // Change colors
   function changeColors(newTheme) {
     const themeColors = themes[newTheme];
 
@@ -31,6 +42,6 @@
     metaTheme.setAttribute('content', themeColors['background']);
   }
 
-  const newTheme = window.__theme || ( window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const newTheme = window.__theme || isPreferredThemeDark.matches ? 'dark' : 'light';
   setTheme(newTheme);
 </script>
