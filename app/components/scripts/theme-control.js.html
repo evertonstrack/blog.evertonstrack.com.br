@@ -40,6 +40,10 @@
     themeToggle.checked = event.matches ? true : false;
   });
 
-  const newTheme = window.__theme || isPreferredThemeDark.matches ? 'dark' : 'light';
-  setTheme(newTheme);
+  // Se existe um tema salvo, seta esse tema, caso contrário, pega o tema do sistema do usuário
+  if( window.__theme ) {
+    setTheme(window.__theme);
+  } else {
+    setTheme(isPreferredThemeDark.matches ? 'dark' : 'light');
+  }
 </script>
