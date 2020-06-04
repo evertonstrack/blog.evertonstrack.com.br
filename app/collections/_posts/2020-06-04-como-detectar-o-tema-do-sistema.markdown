@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Como detectar o tema do usuário"
+title:  "[Dark Mode] Como detectar o tema do sistema"
 description: "Já que o dark mode chegou para ficar, e se pudéssemos fazer nosso site usar o tema que o usuário selecionou no dispositivo que está usando? É exatamente isso que vamos ver hoje."
 date:   2020-06-04 15:00:00 -0300
 bodyClass: post-javascript
@@ -20,7 +20,7 @@ O `prefers-color-scheme` é uma [CSS media feature](https://developer.mozilla.or
 
 ## Detectando o tema
 
-Para detectar o tema do usuário vamos usar o método `matchMedia()`, do nosso conhecido objeto `window`.  passando como parâmetro a media query string que queremos, no nosso caso, vamos usar o `prefers-color-scheme`.
+Para detectar o tema do sistema vamos usar o método `matchMedia()`, do nosso conhecido objeto `window`.  passando como parâmetro a media query string que queremos, no nosso caso, vamos usar o `prefers-color-scheme`.
 
 A implementação fica assim:
 
@@ -38,15 +38,15 @@ Essa chamada vai nos retornar um objeto do tipo `MediaQueryList` com os seguinte
 }
 {% endhighlight %}
 
-Para nós, o que importa aqui é o matches, então para sabermos o tema do usuário, é só testarmos essa propriedade:
+Para nós, o que importa aqui é o matches, então para sabermos o tema dos sistema que o usuário está usando, é só testarmos essa propriedade:
 
 {% highlight javascript %}
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 if( prefersColorScheme.matches ) {
-  // O tema do usuário é o dark
+  // O tema é o dark
 } else {
-  // O tema do usuário é o light
+  // O tema é o light
 }
 {% endhighlight %}
 
@@ -59,9 +59,9 @@ Para melhorarmos ainda mais nossa implementação, deixarmos mais robusta e comp
 {% highlight javascript %}
 prefersColorScheme.addListener(function(event) {
   if( event.matches ) {
-    // O tema do usuário é o dark
+    // O tema é o dark
   } else {
-    // O tema do usuário é o light
+    // O tema é o light
   }
 });
 {% endhighlight %}
@@ -80,9 +80,9 @@ const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 // Altera o tema
 function changeTheme(event) {
   if( event.matches ) {
-    // O tema do usuário é o dark
+    // O tema é o dark
   } else {
-    // O tema do usuário é o light
+    // O tema é o light
   }
 }
 
