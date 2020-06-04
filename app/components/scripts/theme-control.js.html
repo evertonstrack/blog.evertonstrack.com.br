@@ -1,4 +1,7 @@
 <script type="text/javascript">
+  const html = document.querySelector("html");
+  const metaTheme = document.querySelector('meta[name=theme-color]');
+  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
   const themes = {
     light: {
       background: '#FDFDFD',
@@ -11,10 +14,8 @@
       text: '#FFFFFF',
     }
   };
-  const html = document.querySelector("html");
-  const metaTheme = document.querySelector('meta[name=theme-color]');
-  const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-  window.__theme = localStorage.getItem('theme');
+
+  window.__userTheme = localStorage.getItem('user-theme');
 
   // Change colors
   function changeColors(newTheme) {
@@ -30,8 +31,7 @@
   // Set Theme
   function setTheme(newTheme) {
     changeColors(newTheme)
-    window.__theme = newTheme;
-    localStorage.setItem('theme', newTheme);
+    window.__userTheme = newTheme;
   }
 
   // Change theme when user change in the OS
@@ -41,8 +41,8 @@
   });
 
   // Se existe um tema salvo, seta esse tema, caso contrário, pega o tema do sistema do usuário
-  if( window.__theme ) {
-    setTheme(window.__theme);
+  if( window.__userTheme ) {
+    setTheme(window.__userTheme);
   } else {
     setTheme(isPreferredThemeDark.matches ? 'dark' : 'light');
   }
