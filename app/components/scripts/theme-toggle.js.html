@@ -8,7 +8,6 @@
 
   themeToggle.addEventListener("change", function({ target }) {
     const theme = target.checked ? 'dark' : 'light';
-    localStorage.setItem('user-theme', theme);
     setTheme(theme);
   });
 
