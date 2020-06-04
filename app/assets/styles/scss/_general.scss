@@ -200,6 +200,13 @@ pre>code.language-cmd{
 
     &:visited {
       color: var(--text);
+
+      &:hover{
+        color: var(--text);
+        .post-meta{
+          color: var(--text);
+        }
+      }
     }
 
     &:hover{

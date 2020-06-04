@@ -2,12 +2,13 @@
 <script>
   const themeToggle = document.querySelector("input[name=theme]");
 
-  if( window.__theme === 'dark' ) {
+  if( window.__userTheme === 'dark' ) {
     themeToggle.checked = true;
   }
 
   themeToggle.addEventListener("change", function({ target }) {
-    setTheme(target.checked ? 'dark' : 'light');
+    const theme = target.checked ? 'dark' : 'light';
+    setTheme(theme);
   });
 
   setTimeout(function() {
