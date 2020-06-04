@@ -15,8 +15,6 @@
     }
   };
 
-  window.__userTheme = localStorage.getItem('user-theme');
-
   // Change colors
   function changeColors(newTheme) {
     const themeColors = themes[newTheme];
@@ -30,7 +28,7 @@
 
   // Set Theme
   function setTheme(newTheme) {
-    changeColors(newTheme)
+    changeColors(newTheme);
     window.__userTheme = newTheme;
   }
 
@@ -41,9 +39,6 @@
   });
 
   // Se existe um tema salvo, seta esse tema, caso contrário, pega o tema do sistema do usuário
-  if( window.__userTheme ) {
-    setTheme(window.__userTheme);
-  } else {
-    setTheme(isPreferredThemeDark.matches ? 'dark' : 'light');
-  }
+  window.__userTheme = localStorage.getItem('user-theme') || isPreferredThemeDark.matches ? 'dark' : 'light';
+  setTheme(window.__userTheme);
 </script>
