@@ -2,7 +2,7 @@
   const html = document.querySelector('html');
   const metaTheme = document.querySelector('meta[name=theme-color]');
   const isPreferredThemeDark = window.matchMedia('(prefers-color-scheme: dark)');
-  const userTheme = localStorage.getItem('user-theme');
+  const userTheme = localStorage.getItem('userTheme');
   const themes = {
     light: {
       background: '#FDFDFD',
@@ -29,9 +29,10 @@
 
   // Set Theme
   function setTheme(theme) {
+    console.log('setTheme -> theme', theme);
     changeColors(theme);
     window.__userTheme = theme;
-    localStorage.setItem('user-theme', theme);
+    localStorage.setItem('userTheme', theme);
   }
 
   // Change event when user change theme in the OS
