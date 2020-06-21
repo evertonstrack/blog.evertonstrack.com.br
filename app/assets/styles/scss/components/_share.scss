@@ -49,4 +49,27 @@
     }
   }
 }
+
+button.share{
+  padding: 20px 60px;
+  border: 1px solid var(--text);
+  margin: 0 7px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: var(--background_alt);
+  max-width: 300px;
+  margin: 0 auto 30px;
+  cursor: pointer;
+}
+
+button.share:hover{
+  background-color: var(--background);
+  color: var(--text);
+  text-decoration: none;
+}
+
 /* END: Share */
