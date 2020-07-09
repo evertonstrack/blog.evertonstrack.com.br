@@ -108,15 +108,18 @@
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 15px;
 
     > p {
-      border-left: 4px solid #282a36;
+
       margin: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 30px;
-      padding-right: 30px;
-      color: #111;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      color: var(--text);
+      background-color: var(--background_alt);
+      border-left: 4px solid var(--text);
       font-size: 22px;
       font-style: normal;
     }
