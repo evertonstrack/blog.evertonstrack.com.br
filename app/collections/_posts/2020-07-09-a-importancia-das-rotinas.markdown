@@ -10,16 +10,15 @@ image: /assets/images/posts/a-importancia-das-rotinas/live-work-create.jpg
 
 Antes de 2020, muito provavelmente você seguia uma rotina diária que passava por alguns desses passos:
 
-- Acordar
 - Tomar banho
 - Tomar café da manhã
 - Se arrumar
 - Sair de casa
-- Pegar transporte / carro / etc para se deslocar até o trabalho
-
-Se hoje você tem um trabalho e está trabalhando de casa, no agora famoso, **home office** ou **trabalho remoto,**  você é privilegiado. Claro que isso não quer dizer que trabalhar de casa é muito fácil, porque com isso, as barreiras entre momento de trabalho e momento de lazer ficaram mais tênues ainda, ou até mesmo, deixam de existir.
+- Pegar transporte / carro / etc, para se deslocar até o trabalho
 
 > *Se você está trabalhando de casa, sim você é privilegiado. Por ter um trabalho e poder fazê-lo sem se colocar em risco nas ruas.*
+
+Se hoje você tem um trabalho e está trabalhando de casa, no agora famoso, **home office** ou **trabalho remoto,**  você é privilegiado. Claro que isso não quer dizer que trabalhar de casa é muito fácil, porque com isso, as barreiras entre momento de trabalho e momento de lazer ficaram mais tênues ainda, ou até mesmo, deixam de existir.
 
 Isto é um problema, pois precisamos dessas barreiras para viver. Hoje vou compartilhar algumas ideias de como criar novamente essas barreiras e melhorar o seu dia-a-dia neste momento de pandemia.
 
