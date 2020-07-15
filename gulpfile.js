@@ -18,7 +18,8 @@ const prefixerOptions = {
 
 const sassOptions = {
   // outputStyle: 'expanded'
-  outputStyle: 'compressed'
+  outputStyle: 'compressed',
+  allowEmpty: true
 };
 
 const pageStyles = [
@@ -32,52 +33,67 @@ const pageStyles = [
 ];
 
 
-
-gulp.task('convert-webp', () =>
+gulp.task('convert-webp', (done) => {
   gulp.src('app/assets/images/**/*.{jpg,jpeg,png}')
   .pipe(webp({
     quality: 50
   }))
-  .pipe(gulp.dest('app/assets/images/webp'))
-);
+  .pipe(gulp.dest('app/assets/images/webp'));
+  done();
+});
 
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', (done) => {
   browserSync.notify(messages.jekyllBuild);
-  return exec('jekyll build', function (err, stdout, stderr) {
-    console.log('stdout', stdout);
-    console.log('err', err);
-    console.log('stderr', stderr);
+  exec('jekyll build', (err, stdout, stderr) => {
+      console.log('stdout', stdout);
+      console.log('err', err);
+      console.log('stderr', stderr);
     })
     .on('close', done);
+    done();
 });
 
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+// gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+//   browserSync.reload();
+// });
+
+gulp.task('jekyll-rebuild', gulp.series('jekyll-build', async (done) => {
   browserSync.reload();
-});
+  done();
+}));
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['jekyll-build'], function () {
+// gulp.task('browser-sync', ['jekyll-build'], function () {
+//   browserSync({
+//     server: {
+//       baseDir: './dist'
+//     }
+//   });
+// });
+
+gulp.task('browser-sync', gulp.series('jekyll-build', async (done) => {
   browserSync({
     server: {
       baseDir: './dist'
     }
   });
-});
+  done();
+}));
 
 
 /**
  * Styles Task
  */
-gulp.task('styles', function () {
-  gulp.src(pageStyles)
+gulp.task('styles', (done) => {
+  gulp.src(pageStyles, { allowEmpty: true })
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
@@ -86,22 +102,30 @@ gulp.task('styles', function () {
       stream: true
     }))
     .pipe(gulp.dest(stylesDest));
+
+  done();
 });
 
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
-gulp.task('watch', function () {
-  gulp.watch('./app/assets/styles/**/*.scss', ['styles', 'jekyll-rebuild']);
-  gulp.watch(['./app/index.html', './app/**/*.{html,md,markdown}'], ['jekyll-rebuild']);
+gulp.task('watch', (done) => {
+  gulp.watch('./app/assets/styles/**/*.scss', gulp.series('styles', 'jekyll-rebuild'));
+  gulp.watch(['./app/index.html', './app/**/*.{html,md,markdown}'], gulp.series('jekyll-rebuild'));
+  done();
 });
 
 /**
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['styles', 'convert-webp', 'browser-sync', 'watch']);
+// gulp.task('default', ['styles', 'convert-webp', 'browser-sync', 'watch']);
+
+gulp.task('default', gulp.series('styles', 'convert-webp', 'browser-sync', 'watch'));
+
 
 // build to deploy
-gulp.task('build', ['styles', 'convert-webp', 'jekyll-build']);
+// gulp.task('build', ['styles', 'convert-webp', 'jekyll-build']);
+
+gulp.task('build', gulp.series('styles', 'convert-webp', 'jekyll-build'));
