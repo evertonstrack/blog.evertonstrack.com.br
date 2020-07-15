@@ -6,7 +6,7 @@
   "repository": "https://github.com/evertonstrack/blog.evertonstrack.com.br.git",
   "scripts": {
     "start": "gulp",
-    "build": "gulp styles && gulp jekyll-build"
+    "build": "gulp build"
   },
   "keywords": [
     "frontend",
@@ -20,21 +20,20 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^1.9.0",
-    "gulp": "^3.8.10",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^1.0.2",
-    "gulp-webp": "^3.0.0",
-    "lodash": ">=4.17.11",
+    "gulp-webp": "^4.0.1",
+    "lodash": "^4.17.19",
     "minimatch": ">=3.0.2",
     "natives": "^1.1.6",
     "tar": ">=4.4.2"
   },
   "dependencies": {
-    "gulp-cli": "^2.2.0",
-    "netlify-cms": "^2.10.49"
+    "gulp-cli": "^2.2.0"
   }
 }
