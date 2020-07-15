@@ -50,11 +50,11 @@ function convertWebp(done) {
 function jekyllBuild(done) {
   browserSync.notify(messages.jekyllBuild);
   exec('jekyll build', (err, stdout, stderr) => {
-    // if(err) {
+    if(err) {
       console.log('stdout', stdout);
       console.log('err', err);
       console.log('stderr', stderr);
-    // }
+    }
   }).on('close', done);
   done();
 }
