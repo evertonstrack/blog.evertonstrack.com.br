@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Dark Mode] Como detectar o tema do sistema"
+title:  "Dark Mode: Como detectar o tema do sistema"
 description: "Já que o dark mode chegou para ficar, e se pudéssemos fazer nosso site usar o tema que o usuário selecionou no dispositivo que está usando? É exatamente isso que vamos ver hoje."
 date:   2020-06-04 15:00:00 -0300
 bodyClass: post-javascript
