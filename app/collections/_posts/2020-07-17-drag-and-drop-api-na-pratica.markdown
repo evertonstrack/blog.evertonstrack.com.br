@@ -271,5 +271,3 @@ Caso você não tenha visto o post anterior, Drag and Drop API: Introdução, é
 - [Drag and Drop API: Introdução](https://evertonstrack.com.br/blog/drag-and-drop-api/)
 
 Até mais e obrigado pelos peixes.
-
-Há algumas semanas atrás, demos continuidade a nossa saga de Web APIs com a [introdução a Web API do Drag and Drop](https://evertonstrack.com.br/blog/drag-and-drop-api/), com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API.
