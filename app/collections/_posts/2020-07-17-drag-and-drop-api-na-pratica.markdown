@@ -2,7 +2,7 @@
 layout: post
 title:  "Drag and Drop API: Aprendendo na prática"
 description: "Há algumas semanas, demos continuidade a nossa saga de Web APIs com a introdução a Web API do Drag and Drop, com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API."
-date:   2020-07-17 15:00:00 -0300
+date:   2020-07-18 16:00:00 -0300
 bodyClass: post-javascript
 tags: ['javascript', 'Web API']
 image: /assets/images/posts/drag-and-drop-api/drag-and-drop.jpg
