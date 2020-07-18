@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Drag and Drop API: Criando um quadro Kanban"
+title:  "Drag and Drop API: Aprendendo na prática"
 description: "Há algumas semanas, demos continuidade a nossa saga de Web APIs com a introdução a Web API do Drag and Drop, com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API."
 date:   2020-07-17 15:00:00 -0300
 bodyClass: post-javascript
@@ -13,9 +13,9 @@ Há algumas semanas, demos continuidade a nossa saga de Web APIs com a [introdu�
 
 Caso você não tenha visto o post anterior, [Drag and Drop API: Introdução, confira ele antes](https://evertonstrack.com.br/blog/drag-and-drop-api/).
 
-Conferiu? Bora criar o nosso quadro?
+Conferiu? Bora criar algum usando a Drag and Drop API?
 
-## Criando o quadro kanban
+## O que vamos criar?
 
 Para mostrar na prática algumas das funcionalidades da Drag and Drop API, vamos criar um quadro kanban, bem simples, mas que vai nos permitir explorar os principais eventos desta Web API.
 
