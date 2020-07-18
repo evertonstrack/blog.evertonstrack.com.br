@@ -9,7 +9,7 @@ image: /assets/images/posts/drag-and-drop-api/drag-and-drop.jpg
 ---
 
 
-Há algumas semanas, demos continuidade a nossa saga de Web APIs com a [introdução a Web API do Drag and Drop](https://evertonstrack.com.br/blog/drag-and-drop-api/), com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API.
+Há algumas semanas atrás, demos continuidade a nossa saga de Web APIs com a [introdução a Web API do Drag and Drop](https://evertonstrack.com.br/blog/drag-and-drop-api/), com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API.
 
 Caso você não tenha visto o post anterior, [Drag and Drop API: Introdução, confira ele antes](https://evertonstrack.com.br/blog/drag-and-drop-api/).
 
@@ -157,7 +157,7 @@ Os cards serão os elementos que serão arrastáveis, definimos isso no momento 
 </article>
 {% endhighlight %}
 
-Nos card, vamos adicionar as escutas dos eventos: `dragstart` e `dragend`.
+Nos cards, vamos adicionar as escutas dos eventos: `dragstart` e `dragend`.
 
 {% highlight javascript %}
 cards.forEach(card => {
@@ -166,7 +166,7 @@ cards.forEach(card => {
 });
 {% endhighlight %}
 
-Para facilitar a visualização e a legibilidade, vamos criar os métodos com os mesmos nomes de cada um dos eventos evento.
+Para facilitar a visualização e a legibilidade, vamos criar os métodos com os mesmos nomes de cada um dos eventos.
 
 {% highlight javascript %}
 function dragstart() { }
@@ -195,7 +195,7 @@ function drop() { }
 
 ### Implementando a funcionalidade
 
-Agora temos a base pronta e os métodos que vamos usar já criados, vamos para a implementação.
+Agora que temos a base pronta e os métodos que vamos usar já criados, vamos para a implementação.
 
 **Dragstart**
 
@@ -219,7 +219,7 @@ Neste caso, como passamos apenas a função como parâmetro no `addEventListener
 
 **Dragend**
 
-O evento `dragend` , disparado quando estamos terminando a operação de arrastar. (ao soltar o botão do mouse, por exemplo). Neste momento, queremos remover a classe css que adicionamos nas listagens e também no card, pois elas não são mais necessárias.
+O evento `dragend` é disparado quando estamos terminando a operação de arrastar -- _ao soltar o botão do mouse, por exemplo_. Neste momento, queremos remover a classe css que adicionamos nas listagens e também no card, pois elas não são mais necessárias.
 
 {% highlight javascript %}
 function dragend() {
@@ -262,9 +262,9 @@ Você pode conferir o código fonte final no [repositório do GitHub](https://gi
 
 ## Conclusão
 
-A web tem evoluído muito nos últimos tempos e dando cada vez mais poder aos desenvolvedores para construir aplicações cada vez mais poderosas. O que vimos aqui hoje é o básico da Web API do Drag and Drop, mas já conseguimos criar a funcionalidade principal de um quadro kanban.
+A web tem evoluído muito nos últimos tempos e dado mais poder aos desenvolvedores para construir aplicações cada vez mais poderosas. O que vimos aqui hoje é o básico da Web API do Drag and Drop, mas já conseguimos criar a funcionalidade principal de um quadro kanban.
 
-Você pode usar outras funcionalidades web para evoluir esse quadro e deixá-lo mais poderoso, como por exemplo, transformando ele em um [Progressive Web App (PWA)](https://evertonstrack.com.br/blog/como-transformar-seu-site-em-um-progressive-web-app/), ou implementar para que a usabilidade fique melhor na versão mobile. São muitas possibilidades.
+Você pode usar outras funcionalidades web para evoluir esse quadro e deixá-lo mais poderoso, como por exemplo, transformando ele em um [Progressive Web App (PWA)](https://evertonstrack.com.br/blog/como-transformar-seu-site-em-um-progressive-web-app/), ou implementar para que a usabilidade fique melhor na versão mobile, são muitas possibilidades!
 
 Caso você não tenha visto o post anterior, Drag and Drop API: Introdução, é só acessar o link abaixo.
 
@@ -272,4 +272,4 @@ Caso você não tenha visto o post anterior, Drag and Drop API: Introdução, é
 
 Até mais e obrigado pelos peixes.
 
-Há algumas semanas, demos continuidade a nossa saga de Web APIs com a [introdução a Web API do Drag and Drop](https://evertonstrack.com.br/blog/drag-and-drop-api/), com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API.
+Há algumas semanas atrás, demos continuidade a nossa saga de Web APIs com a [introdução a Web API do Drag and Drop](https://evertonstrack.com.br/blog/drag-and-drop-api/), com a teoria básica sobre o assunto. Como prometi no final daquele post, hoje vamos criar algo na prática usando a Drag and Drop API.
