@@ -11,6 +11,22 @@
     <source type="image/webp" srcset="{{image_webp | replace: ".png", ".webp"}}" />
     {% endif %}
     <source srcset="{{post.image}}" />
-    <img itemprop="image" src="{{post.image}}" alt="{{ post.title | escape }}" />
+    <img itemprop="image" data-src="{{post.image}}" loading="lazy" class="lazyload" alt="{{ post.title | escape }}" />
   </picture>
 </figure>
+
+
+<script>
+  if ('loading' in HTMLImageElement.prototype) {
+    const images = document.querySelectorAll("img.lazyload");
+    images.forEach(img => {
+      img.src = img.dataset.src;
+    });
+  } else {
+    // Importamos dinamicamente a biblioteca LazySizes
+    let lazysizes = document.createElement("script");
+    lazysizes.async = true;
+    lazysizes.src = "/assets/js/lazysizes.min.js";
+    document.body.appendChild(lazysizes);
+  }
+</script>
