@@ -215,7 +215,7 @@
       border-radius: 5px;
       margin: 0 5px;
 
-      &[aria-selected="true"]{
+      &[data-selected="true"]{
         background-color: var(--text);
         color: var(--background);
       }

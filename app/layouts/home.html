@@ -68,7 +68,7 @@ layout: default
     {% if paginator.page_trail %}
       <div class="pager__pages">
         {% for trail in paginator.page_trail %}
-          <a class="pager__pages-item" {% if page.url == trail.path %}aria-selected="true"{% endif %} href="{{ trail.path | prepend: site.baseurl | replace: '/index.html', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+          <a class="pager__pages-item" {% if page.url == trail.path %}data-selected="true"{% endif %} href="{{ trail.path | prepend: site.baseurl | replace: '/index.html', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
         {% endfor %}
       </div>
     {% endif %}
