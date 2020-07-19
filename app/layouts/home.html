@@ -6,47 +6,96 @@ layout: default
 <!-- Home -->
 
 <!-- posts -->
-<section class="section section-full home-posts">
-  <div class="wrapper">
-    {%- if site.posts.size > 0 -%}
-    <div class="post-list-container">
-      <div class="latest-post">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Últimos posts" }}</h2>
-        <div class="post-list">
-          {%- for post in site.posts limit:6 -%}
-          <article class="post-item {{ post.bodyClass }}">
-            <a class="post-link" href="{{ post.url | relative_url }}">
+<section class="section section-blog">
+
+  <header class="section-header wrapper">
+    <div class="wrapper">
+      {%- if page.title -%}
+        <h1 class="hidden">{{ page.title }}</h1>
+      {%- endif -%}
+      <h3 class="page-heading">Posts</h3>
+      {%- if page.description -%}
+        <p>{{ page.description }}</p>
+      {%- endif -%}
+    </div>
+  </header>
+
+  <div class="wrapper wrapper-blog">
+
+
+    {%- if paginator.total_pages > 0 -%}
+      <div class="post-list">
+        {%- for post in paginator.posts -%}
+        <article class="post-item {{ post.bodyClass }}">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+
+            {% include post-image.html post=post %}
+
+            <div class="post-item__content">
+              <strong class="post-meta post-category">
+                {%- for tag in post.tags -%}
+                  {{tag}}{%- if forloop.index != forloop.length -%}&nbsp;• {% endif %}
+                {%- endfor -%}
+              </strong>
+              <h3>{{ post.title | escape }}</h3>
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              <time class="post-meta">{% include date.html date=post.date %}</time>
-              <div class="post-item__content">
-                <h3>{{ post.title | escape }}</h3>
-                <p>{{ post.description | escape }}</p>
-
-                <div class="tags">
-                  {%- for tag in post.tags -%}
-                    <strong class="tag">{{tag}}</strong>
-                  {%- endfor -%}
-                </div>
-
-                {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-              </div>
-            </a>
-          </article>
-          {%- endfor -%}
-        </div>
+              <time class="post-meta post-date">{% include date.html date=post.date %}</time>
+              <p>{{ post.description | escape }}</p>
+              {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+            </div>
+          </a>
+        </article>
+        {%- endfor -%}
       </div>
-    </div>
-    {%- endif -%}
 
-    <div calss="action-button">
-      <a class="button-link link-gray" href="/blog" title="Ver todos os posts">Ver todos os posts</a>
-    </div>
+      <p class="rss-subscribe" style="display: none;">subscribe
+        <a href="{{ " /feed.xml " | relative_url }}">via RSS</a>
+      </p>
+    {%- endif -%}
   </div>
 
-  <p class="rss-subscribe" style="display: none;">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <!--
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pager">
+    {% if paginator.previous_page %}
+      <a class=" previous"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="mobile-hidden">&larr;</span> Anterior</a>
+    {% else %}
+      <a class="previous disabled"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="mobile-hidden">&larr;</span> Anterior</a>
+    {% endif %}
+
+    {% if paginator.page_trail %}
+      <div class="pager__pages">
+        {% for trail in paginator.page_trail %}
+          <a class="pager__pages-item" {% if page.url == trail.path %}aria-selected="true"{% endif %} href="{{ trail.path | prepend: site.baseurl | replace: '/index.html', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo <span class="mobile-hidden">&rarr;</span></a>
+    {% else %}
+      <a class="next disabled" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo <span class="mobile-hidden">&rarr;</span></a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <script>
+    const pagerElements = document.querySelectorAll('.pager a');
+    pagerElements.forEach(function(item) {
+      item.addEventListener('click', function(event) {
+        if( item.classList && item.classList.contains('disabled') ) {
+          event.preventDefault();
+          return false;
+        }
+      })
+    })
+  </script>
 
 </section>
 <!-- /posts -->
+
 
 <script type="application/ld+json">
   {

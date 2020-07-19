@@ -30,6 +30,12 @@ comments: true
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       <!-- <p class="post-description">{{ page.description | escape }}</p> -->
 
+      <strong class="post-meta post-category">
+        {%- for tag in page.tags -%}
+          {{tag}}{%- if forloop.index != forloop.length -%}&nbsp;• {% endif %}
+        {%- endfor -%}
+      </strong>
+
       <div class="container-post-meta">
         <p class="post-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -38,15 +44,6 @@ comments: true
         </p>
         <span class="spacer"></span>
         <p class="reading-time post-meta">Tempo de leitura: <span></span></p>
-        <span class="spacer"></span>
-        <div class="tags post-meta">
-          {%- for tag in page.tags -%}
-            <span class="tag">
-              <!-- <svg class="icon"><use xlink:href="#icon-tag"></use></svg> -->
-              {{tag}}
-            </span>
-          {%- endfor -%}
-        </div>
       </div>
 
 
