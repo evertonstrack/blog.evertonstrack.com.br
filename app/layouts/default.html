@@ -44,6 +44,22 @@
     <!-- Verify service worker update -->
     {%- include scripts/update-service-worker.js.html -%}
     <!-- END /Verify service worker update -->
+
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll("img.lazyload");
+        images.forEach(img => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Importamos dinamicamente a biblioteca LazySizes
+        let lazysizes = document.createElement("script");
+        lazysizes.async = true;
+        lazysizes.src = "/assets/js/lazysizes.min.js";
+        document.body.appendChild(lazysizes);
+      }
+    </script>
+
   </body>
 
 </html>
