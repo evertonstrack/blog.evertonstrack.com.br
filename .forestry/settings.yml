@@ -11,6 +11,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  new_doc_ext: ".markdown"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
