@@ -1,5 +1,16 @@
 @import "../variables";
 
+.author-resume__text{
+  p{
+    margin-bottom: 10px;
+  }
+  a{
+    text-decoration: underline;
+    line-height: 40px;
+    display: table;
+  }
+}
+
 .home-page{
   .button-link {
     width: 100%;
@@ -244,6 +255,12 @@
 @media screen and (max-width: 768px) {
   .mobile-hidden{
     display: none !important;
+  }
+
+  .author-resume__text{
+    a{
+      margin: 0 auto;
+    }
   }
 
   .section-blog .post-list{
