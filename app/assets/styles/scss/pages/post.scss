@@ -78,6 +78,10 @@
   }
 
   figure{
+    &:not(.highlight){
+      text-align: center;
+    }
+
     legend{
       font-style: italic;
       font-size: 12px;
