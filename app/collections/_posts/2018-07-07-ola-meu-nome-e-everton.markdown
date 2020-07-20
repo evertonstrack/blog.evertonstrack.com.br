@@ -5,7 +5,7 @@ description: "Colocando em prática esse projeto depois de muito tempo engavetad
 date:   2018-07-07 13:44:09 -0300
 bodyClass: post-default
 tags:
-image: /assets/images/evertonstrack.jpg
+image: /assets/images/webp/posts/ola-meu-nome-e-everton/everton-strack.jpg
 ---
 
 Depois de muito planejar, escrever e não colocar em prática, aqui estamos. Hoje em uma conversa no twitter, tive o "empurrãozinho" que faltava para começar esse projeto.

@@ -5,7 +5,7 @@ description: "Conheça um seletor CSS que é uma mão na roda. É um dos seletor
 date:   2018-07-26 21:58:09 -0300
 bodyClass: post-css
 tags: ['css']
-image: /assets/images/post/seletores-css-nth-child/pseudo-seletor-nth-child.jpg
+image: /assets/images/posts/seletores-css-nth-child/pseudo-seletor-nth-child.jpg
 ---
 
 Quem trabalha com front-end há algum tempo, sabe a mágica que pode-se fazer com CSS. Como por exemplo, pinturas incríveis como [esta aqui](https://github.com/cyanharlow/purecss-zigario){:target="_blank"}{:rel="noopener"}. Como eu sempre digo, **CSS é magia negra**.
