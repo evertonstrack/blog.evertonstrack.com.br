@@ -1,0 +1,31 @@
+{% if paginator.total_pages > 1 %}
+<div class="wrapper">
+  <div class="pager">
+    {% if paginator.previous_page %}
+      <a class=" previous"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="mobile-hidden">&larr;</span> Anterior</a>
+    {% endif %}
+
+    {% if paginator.page_trail %}
+      <span class="pager__info">
+        {{ paginator.page }} de {{ paginator.total_pages }}
+      </span>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo <span class="mobile-hidden">&rarr;</span></a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<script>
+  const pagerElements = document.querySelectorAll('.pager a');
+  pagerElements.forEach(function(item) {
+    item.addEventListener('click', function(event) {
+      if( item.classList && item.classList.contains('disabled') ) {
+        event.preventDefault();
+        return false;
+      }
+    })
+  })
+</script>

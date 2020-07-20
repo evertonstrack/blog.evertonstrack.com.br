@@ -194,9 +194,12 @@
 
 .pager{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 50px 0;
   line-height: 40px;
+  background-color: var(--background_alt);
+  border-radius: 8px;
+  padding: 10px 20px;
 
   a{
     color: var(--text);
@@ -362,5 +365,8 @@
     object-fit: cover;
     height: 220px;
     width: 100%;
+  }
+  .pager{
+    padding: 10px 10px;
   }
 }

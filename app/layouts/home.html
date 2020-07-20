@@ -54,44 +54,9 @@ layout: default
     {%- endif -%}
   </div>
 
-  <!--
-    Showing buttons to move to the next and to the previous list of posts (pager buttons).
-  -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pager">
-    {% if paginator.previous_page %}
-      <a class=" previous"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="mobile-hidden">&larr;</span> Anterior</a>
-    {% else %}
-      <a class="previous disabled"  href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="mobile-hidden">&larr;</span> Anterior</a>
-    {% endif %}
-
-    {% if paginator.page_trail %}
-      <div class="pager__pages">
-        {% for trail in paginator.page_trail %}
-          <a class="pager__pages-item" {% if page.url == trail.path %}data-selected="true"{% endif %} href="{{ trail.path | prepend: site.baseurl | replace: '/index.html', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
-        {% endfor %}
-      </div>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo <span class="mobile-hidden">&rarr;</span></a>
-    {% else %}
-      <a class="next disabled" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo <span class="mobile-hidden">&rarr;</span></a>
-    {% endif %}
-  </div>
-  {% endif %}
-
-  <script>
-    const pagerElements = document.querySelectorAll('.pager a');
-    pagerElements.forEach(function(item) {
-      item.addEventListener('click', function(event) {
-        if( item.classList && item.classList.contains('disabled') ) {
-          event.preventDefault();
-          return false;
-        }
-      })
-    })
-  </script>
+  <!-- Pagination -->
+  {% include pagination.html paginator=paginator %}
+  <!-- /Pagination -->
 
 </section>
 <!-- /posts -->
