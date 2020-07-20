@@ -192,11 +192,11 @@ pre>code.language-cmd{
     display: block;
     font-size: 24px;
     background-color: transparent;
-    padding: 15px 30px;
+    // padding: 15px 30px;
     color: var(--text);
     margin-bottom: 25px;
-    background-color: var(--background_alt);
-    border: 1px solid var(--background);
+    // background-color: var(--background_alt);
+    // border: 1px solid var(--background);
 
     &:visited {
       color: var(--text);

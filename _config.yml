@@ -24,7 +24,7 @@ includes_dir        : components
 # Build settings
 markdown: kramdown
 google_analytics: UA-50129966-1
-permalink: /blog/:title/
+permalink: /:title/
 theme: minima
 # plugins: [jekyll-feed]
 lang: pt-br
@@ -37,9 +37,9 @@ gems:
 # Pagination Settings
 pagination:
   enabled: true
-  per_page: 10
+  per_page: 9
   permalink: '/pagina-:num/'
-  title: ':title - Página :num'
+  title: 'Posts - Página :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
@@ -50,8 +50,6 @@ pagination:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Blog
-    url: /blog
   - title: Sobre
     url: /sobre
 
@@ -62,9 +60,8 @@ files_to_cache:
 pages_to_cache:
   - '/'
   - '/sobre/'
-  - '/blog/'
-  - '/blog/pagina-2/'
-  - '/blog/pagina-3/'
+  - '/pagina-2/'
+  - '/pagina-3/'
   - '/404/'
 
 # Include from processing.
