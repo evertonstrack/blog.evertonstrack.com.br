@@ -238,23 +238,6 @@
 }
 
 
-/* tablet */
-@media screen and (max-width: 1200px) {
-  .section-blog {
-    .post-list{
-      .post-item {
-        max-width: 100%;
-        width: 100%;
-        padding: 0;
-
-        .post-link{
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 768px) {
   .mobile-hidden{
     display: none !important;
