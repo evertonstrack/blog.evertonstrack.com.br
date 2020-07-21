@@ -12,10 +12,10 @@ layout: null
 	"lang": "pt-BR",
   "orientation": "any",
   "shortcuts": [
-    {% for post in site.posts limit: 1 %}
+    {% for post in site.posts limit: 3 %}
     {
-      "name": "Último post",
-      "short_name": "Último post",
+      "name": "{{post.title}}",
+      "short_name": "Últimos posts",
       "description": "{{post.title}}",
       "url": "{{post.url}}",
       "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
