@@ -1,3 +1,6 @@
+---
+layout: null
+---
 {
 	"name": "Everton Strack Blog",
 	"short_name": "Everton Blog",
@@ -7,7 +10,25 @@
 	"scope": "/",
 	"start_url": "/",
 	"lang": "pt-BR",
-	"orientation": "any",
+  "orientation": "any",
+  "shortcuts": [
+    {
+      "name": "Sobre Everton Strack",
+      "short_name": "Sobre",
+      "description": "Mais sobre Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!.",
+      "url": "/sobre",
+      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {% for post in site.posts limit: 1 %}
+    {
+      "name": "Último post",
+      "short_name": "Último post",
+      "description": "{{post.title}}",
+      "url": "{{post.url}}",
+      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    }
+    {% endfor %}
+  ],
 	"icons": [
 		{
 			"src": "/assets/images/favicons/apple-touch-icon-57x57.png",
