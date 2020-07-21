@@ -17,7 +17,7 @@ layout: null
       "name": "Último post",
       "short_name": "Último post",
       "description": "{{post.title}}",
-      "url": "https://evertonstrack.com.br{{post.url}}",
+      "url": "{{post.url}}",
       "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
     },
     {% endfor %}
@@ -25,7 +25,7 @@ layout: null
       "name": "Sobre Everton Strack",
       "short_name": "Sobre",
       "description": "Mais sobre Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!.",
-      "url": "https://evertonstrack.com.br/sobre",
+      "url": "/sobre",
       "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
     }
   ],
