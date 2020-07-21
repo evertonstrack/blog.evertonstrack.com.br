@@ -14,7 +14,7 @@ layout: null
   "shortcuts": [
     {% for post in site.posts limit: 3 %}
     {
-      "name": "{{post.title}}",
+      "name": "{{post.title | truncate: 29, ".."}}",
       "short_name": "Últimos posts",
       "description": "{{post.title}}",
       "url": "{{post.url}}",
