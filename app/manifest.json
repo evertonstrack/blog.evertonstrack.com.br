@@ -12,22 +12,22 @@ layout: null
 	"lang": "pt-BR",
   "orientation": "any",
   "shortcuts": [
-    {
-      "name": "Sobre Everton Strack",
-      "short_name": "Sobre",
-      "description": "Mais sobre Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!.",
-      "url": "/sobre",
-      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
-    },
     {% for post in site.posts limit: 1 %}
     {
       "name": "Último post",
       "short_name": "Último post",
       "description": "{{post.title}}",
-      "url": "{{post.url}}",
+      "url": "https://evertonstrack.com.br{{post.url}}",
       "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
-    }
+    },
     {% endfor %}
+    {
+      "name": "Sobre Everton Strack",
+      "short_name": "Sobre",
+      "description": "Mais sobre Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!.",
+      "url": "https://evertonstrack.com.br/sobre",
+      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    },
   ],
 	"icons": [
 		{
@@ -75,7 +75,7 @@ layout: null
 		},
 		{
       "src": "/favicon.ico",
-      "sizes": "16x16",
+      "sizes": "64x64",
 			"type": "image/x-icon"
 		}
 	]
