@@ -47,6 +47,10 @@
 .post-detail{
   padding-bottom: 30px;
 
+  .wrapper{
+    max-width: calc(1100px - (30px * 2));
+  }
+
   img{
     border: 1px solid rgba(0,0,0,0.1);
   }

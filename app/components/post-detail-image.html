@@ -1,0 +1,10 @@
+<!-- include post-detail-image.html image="app-shortcuts-windows" legend="Atalhos de aplicativos na barra de tarefas do Windows" -->
+
+<figure>
+  <picture>
+    <source type="image/webp" srcset="/assets/images/webp/posts/app-shortcuts/{{include.image}}.webp" />
+    <source srcset="/assets/images/posts/app-shortcuts/{{include.image}}.jpg" />
+    <img itemprop="image" src="/assets/images/posts/app-shortcuts/{{include.image}}.jpg" alt="{{include.legend}}" />
+  </picture>
+  <legend>{{ include.legend }} {{include.image}}</legend>
+</figure>
