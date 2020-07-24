@@ -105,7 +105,7 @@ Para testar se os atalhos foram configurados corretamente, é só acessar a aba 
   <legend>Atalhos de aplicativos no Google Chrome Dev Tools</legend>
 </figure>
 
-_O DevTools suporta os atalhos de aplicativos a partir da versão 84 de Google Chorme e 84 do Microsoft Edge._
+> _O DevTools suporta os atalhos de aplicativos a partir da versão 84 de Google Chorme e 84 do Microsoft Edge._
 
 ## Compatibilidade
 
@@ -117,7 +117,7 @@ No Windows você pode testar habilitando a flag:
 chrome://flags/#enable-desktop-pwas-app-icon-shortcuts-menu
 {% endhighlight %}
 
-No Android, aparentemente não está funcionando ainda, mesmo na versão 84 do Chrome, pode ser porque as atualizações do Progressive Web App são limitadas uma vez ao dia. Você pode encontrar mais detalhes [neste artigo](https://developers.google.com/web/fundamentals/integration/webapks#update-webapk){:target="_blank"}{:rel="noopener"}.
+No Android, aparentemente não está funcionando ainda, mesmo na versão 84 do Chrome, pode ser porque as atualizações do Progressive Web App são limitadas uma vez ao dia. Você pode encontrar mais detalhes [neste artigo](https://developers.google.com/web/fundamentals/integration/webapks#update-webapk){:target="_blank"}{:rel="noopener"}. Você pode testar no Chrome Dev que funciona normalmente.
 
 
 ## Conclusão
