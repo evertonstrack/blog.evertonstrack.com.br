@@ -19,5 +19,9 @@ https://evertonstrack.netlify.app/* https://evertonstrack.com.br/:splat 301!
 # Redirect all pages wit /blog/ to /
 /blog/* /:splat 301!
 
+
+# Posts
+/progressive-web-apps https://evertonstrack.com.br/como-transformar-seu-site-em-um-progressive-web-app
+
 # custom 404
 /* /404/ 404
