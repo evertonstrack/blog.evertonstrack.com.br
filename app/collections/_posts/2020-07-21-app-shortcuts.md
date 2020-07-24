@@ -8,7 +8,7 @@ tags: ['javascript', 'pwa', 'progressive web app']
 image: "/assets/images/posts/app-shortcuts/app-shortcuts-windows.jpg"
 ---
 
-Frequentemente falamos sobre como a web está evoluido e estreitando as linhas entre sites e aplicativos.
+Frequentemente falamos sobre como a web está evoluindo e estreitando as linhas entre sites e aplicativos.
 
 Hoje vamos falar sobre uma funcionalidade bem simples mas que traz nossos web apps para mais próximos dos aplicativos.
 
