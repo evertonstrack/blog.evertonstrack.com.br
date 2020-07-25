@@ -19,6 +19,10 @@
     {%- include header.html -%}
     <!-- END: /HEADER -->
 
+     <!-- SEARCH -->
+     {%- include search.html -%}
+     <!-- END: /SEARCH -->
+
     <!-- CONTENT -->
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -44,6 +48,10 @@
     <!-- Verify service worker update -->
     {%- include scripts/update-service-worker.js.html -%}
     <!-- END /Verify service worker update -->
+
+    <!-- Search -->
+    {%- include scripts/search.js.html -%}
+    <!-- END /Search -->
 
     <script>
       if ('loading' in HTMLImageElement.prototype) {

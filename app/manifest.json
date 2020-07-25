@@ -27,6 +27,13 @@ layout: null
       "description": "Mais sobre Everton Strack, Desenvolvedor Front-end, aspirante a Ux/UI Designer e Co-Fundador da UFA!.",
       "url": "/sobre",
       "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Pesquisar",
+      "short_name": "Pesquisar",
+      "description": "Encontre o que você procura",
+      "url": "/#pesquisar",
+      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
     }
   ],
 	"icons": [
