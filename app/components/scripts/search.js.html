@@ -15,6 +15,15 @@ const openSearchButton = document.querySelector('.open-search');
 const closeSearchButton = document.querySelector('.close-search');
 const sugestionButtons = document.querySelectorAll('.search-suggestion__button');
 
+function debounce(callback, wait) {
+  let timeout;
+  return (...args) => {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => callback.apply(context, args), wait);
+  };
+}
+
 async function getPosts() {
   return fetch(settings.posts)
     .then(res => res.json())
@@ -79,13 +88,14 @@ function registerEvents(){
 openSearchButton.addEventListener('click', openSearch);
 closeSearchButton.addEventListener('click', closeSearch);
 
-searchField.addEventListener('keyup', function() {
-  if( searchField.value.length ) {
+
+searchField.addEventListener('keyup', debounce(() => {
+	if( searchField.value.length ) {
     writeMatches( search( searchField.value ));
   } else {
     clearSearchResults();
   }
-});
+}, 300));
 
 searchField.addEventListener('search', function(){
   setTimeout(function(){
