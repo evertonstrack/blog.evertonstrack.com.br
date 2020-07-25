@@ -1,0 +1,27 @@
+<section id="search" class="search" aria-labelledby="search">
+  <div class="wrapper">
+    <button class="close-search">
+      <svg class="icon icon-close">
+        <title>Fechar</title>
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="hidden">Pesquisar</h2>
+    <label for="search-field">O que você procura?</label>
+    <input type="search" class="search-field" autocomplete="off" id="search-field" placeholder="ex: javascript, css, html..." />
+
+    <div class="search-suggestion">
+      <strong>Pesquisar por: </strong>
+      <div class="search-suggestion__container">
+        {% for tags in site.tags %}
+          <button type="button" class="search-suggestion__button" data-search="{{tags | first}}">{{tags | first}}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="search__results">
+      <div class="search__results-list">
+      </div>
+    </div>
+  </div>
+</section>
