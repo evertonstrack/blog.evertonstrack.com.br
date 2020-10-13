@@ -60,8 +60,6 @@
     return localStorage.getItem(item)
   }
 
-  console.log('showPwaInstallPrompt', showPwaInstallPrompt);
-
   if( getLocalStorageItem('show-pwa-install-prompt') !== 'no-more' ) {
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
