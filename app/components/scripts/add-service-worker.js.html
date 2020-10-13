@@ -3,7 +3,7 @@
   // make the whole serviceworker process into a promise so later on we can
   // listen to it and in case new content is available a toast will be shown
   window.isUpdateAvailable = new Promise(function (resolve, reject) {
-    if ("serviceWorker" in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
+    if ("serviceWorker" in navigator ) { //&& ['localhost', '127'].indexOf(location.hostname) === -1
       navigator.serviceWorker.register("/service-worker.js")
         .then(function (registration) {
           console.info("Service Worker registration successful with scope: ", registration.scope);
@@ -30,5 +30,67 @@
         });
     }
   });
+
+
+</script>
+
+<div class="bottom-window bottom-window--install">
+  <div class="bottom-window__content">
+    <h3>Instalar evertonstrack.dev</h3>
+    <p class="bottom-window__text">Instale para ter acesso as funcionalidades:</p>
+    <ul>
+      <li>Experiência rápida e segura</li>
+      <li>Experiência semelhante a um aplicativo nativo</li>
+      <li>Acesso offline aos posts</li>
+    </ul>
+  </div>
+
+  <div class="bottom-window__actions">
+    <button type="button" class="bottom-window__dismiss">Dispensar</button>
+    <button type="button" class="bottom-window__install">Instalar</button>
+  </div>
+</div>
+
+<script>
+  const installButton = document.querySelector('.bottom-window__install');
+  const dismissButton = document.querySelector('.bottom-window__dismiss');
+  const showPwaInstallPrompt = localStorage.getItem('show-pwa-install-prompt');
+
+  function getLocalStorageItem(item) {
+    return localStorage.getItem(item)
+  }
+
+  console.log('showPwaInstallPrompt', showPwaInstallPrompt);
+
+  if( getLocalStorageItem('show-pwa-install-prompt') !== 'no-more' ) {
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if( getLocalStorageItem('show-pwa-install-prompt') !== 'no-more' ) {
+        document.querySelector('.bottom-window').classList.add('bottom-window--open');
+      }
+    });
+
+    dismissButton.addEventListener('click', (e) => {
+      document.querySelector('.bottom-window').classList.remove('bottom-window--open');
+      localStorage.setItem('show-pwa-install-prompt', 'no-more');
+    });
+
+    installButton.addEventListener('click', (e) => {
+      document.querySelector('.bottom-window').classList.remove('bottom-window--open');
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the install prompt');
+          localStorage.setItem('show-pwa-install-prompt', 'no-more');
+        } else {
+          console.log('User dismissed the install prompt');
+          localStorage.setItem('show-pwa-install-prompt', 'no-more');
+        }
+      });
+    });
+  }
+
 
 </script>

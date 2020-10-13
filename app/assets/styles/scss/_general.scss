@@ -286,6 +286,62 @@ a{
     color: var(--text);
   }
 }
+
+.bottom-window{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 0 15px 1px rgba(#000, 0.3);
+  background-color: #fff;
+
+  padding: 20px;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  bottom: -100%;
+
+  &.bottom-window--open{
+    visibility: visible;
+    bottom: 0;
+  }
+
+  .bottom-window__content{
+    h3{
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p{
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.bottom-window__actions{
+  display: flex;
+  justify-content: space-between;
+
+  button{
+    width: 47%;
+    height: 42px;
+    line-height: 37px;
+    font-size: 16px;
+    border: 1px solid rgb(66, 133, 244);
+
+    &.bottom-window__dismiss{
+      color: rgb(66, 133, 244);
+      background-color: transparent;
+    }
+    &.bottom-window__install{
+      background-color: rgb(66, 133, 244);
+      color: #FFF;
+    }
+  }
+}
+
 @media (min-width: 641px) {
 
   .post-content a:hover{
