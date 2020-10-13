@@ -310,12 +310,13 @@ a{
 .bottom-window{
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  right: 20px;
   width: 100%;
+  max-width: 600px;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 0 15px 1px rgba(#000, 0.3);
-  background-color: #fff;
+  border: 1px solid var(--text);
+  border-bottom: none;
+  background-color: var(--background);
 
   padding: 20px;
   z-index: 10;
@@ -349,7 +350,9 @@ a{
     height: 42px;
     line-height: 37px;
     font-size: 16px;
+    border-radius: 8px;
     border: 1px solid rgb(66, 133, 244);
+    cursor: pointer;
 
     &.bottom-window__dismiss{
       color: rgb(66, 133, 244);
@@ -357,7 +360,7 @@ a{
     }
     &.bottom-window__install{
       background-color: rgb(66, 133, 244);
-      color: #FFF;
+      color: var(--text);
     }
   }
 }
@@ -386,6 +389,13 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+
+  .bottom-window{
+    left: 0;
+    right: 0;
+    max-width: auto;
+  }
+
   .wrapper {
     padding-right: 20px;
     padding-left: 20px;
