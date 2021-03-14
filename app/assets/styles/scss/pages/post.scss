@@ -6,6 +6,10 @@
   font-weight: 700;
 }
 
+.posts .site-header{
+  background-color: var(--background_alt);
+}
+
 .post-detail{
   .post-category{
     text-transform: uppercase;
@@ -57,13 +61,12 @@
   }
 
   .post-header{
-    // min-height: 40vh;
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    margin-bottom: 70px;
     align-items: center;
     text-align: center;
+    background-color: var(--background_alt);
+    margin: 0 -30px 70px;
+    padding: 50px 30px 30px;
 
     .wrapper{
       flex: 1;
