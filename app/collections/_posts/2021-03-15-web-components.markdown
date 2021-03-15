@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Introdução a Web components"
-description: "A plataforma web vem evoluindo e muitas tecnologias vão atingindo grande maturidade e hoje vamos ver algumas dessa tecnologias com Web Components."
+description: "A plataforma web vem evoluindo, muitas tecnologias já atingiram uma grande maturidade e hoje vamos ver algumas dessa tecnologias com Web Components."
 date: 2021-03-15 10:00:00 -0300
 bodyClass:
-tags: ['web components']
+tags: ['web components', 'web api']
 image: "/assets/images/posts/web-components/web-components.jpg"
 ---
 
