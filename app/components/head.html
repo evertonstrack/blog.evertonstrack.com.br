@@ -20,10 +20,13 @@
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="@evertonstrack">
   {% if page.image %}
-  <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+  <meta name="twitter:image" content="{{ site.url }}{{page.image }}">
+  <meta name="twitter:image:alt" content="{{page.title}}">
   {% else %}
-  <meta property="twitter:image:src" content="{{ "/assets/images/share-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:image" content="{{ "/assets/images/share-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:image:alt" content="{{site.title}}">
   {% endif %}
+
 
   <!-- Google+ Schema.org  -->
   <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
