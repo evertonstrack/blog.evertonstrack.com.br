@@ -10,7 +10,7 @@ image: "/assets/images/posts/web-components/web-components.jpg"
 
 A plataforma web vem evoluindo a todo vapor faz algum tempo já, muitas tecnologias vão atingindo uma maturidade bacana e começam a ser adotadas por mais e mais pessoas.
 
-Hoje vamos falar sobre Web components, e mergulhar mais fundo no que a web tem para nos oferecer.
+Hoje vamos falar sobre **Web components**, e mergulhar mais fundo no que a web tem para nos oferecer.
 
 ## O que são os Web Components?
 
@@ -150,11 +150,11 @@ Observe que neste exemplo criamos um modelo `<template id = "users-template">` s
 
 ## Conclusão
 
-Os web componets estão ai para ficar, e se você ainda não conhecia ou não havia testado e brincado com eles, eu sugiro colocar isso na sua lista de tecnologias a testar agora mesmo.
+Os **Web Components** estão ai para ficar, e se você ainda não conhecia ou não havia testado e brincado com eles, eu sugiro colocar isso na sua lista de tecnologias a testar agora mesmo.
 
 As especificações dos Web Components são um conjunto de APIs de baixo nível que continuarão a crescer e evoluir conforme nossas necessidades como desenvolvedores evoluírem.
 
-No próximo post, vamos falar sobre uma ferramenta bem bacana que pode nos ajudar a criar web componentes reutilizáveis,  nossa própria biblioteca de componentes, ou até mesmo um Design System escalável.
+No próximo post, vamos falar sobre uma ferramenta bem bacana que pode nos ajudar a criar web components reutilizáveis,  nossa própria biblioteca de componentes, ou até mesmo um Design System escalável.
 
 ### Links
 
