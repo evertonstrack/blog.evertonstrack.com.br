@@ -8,10 +8,6 @@ tags: ['web components', 'web api']
 image: "/assets/images/posts/web-components/web-components.jpg"
 ---
 
-Os web components permitem a criação de elementos customizados reutilizáveis
-
-<!-- Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pankaj Patel</a> on <a href="/s/photos/webcomponent?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-
 A plataforma web vem evoluindo a todo vapor faz algum tempo já, muitas tecnologias vão atingindo uma maturidade bacana e começam a ser adotadas por mais e mais pessoas.
 
 Hoje vamos falar sobre Web components, e mergulhar mais fundo no que a web tem para nos oferecer.
