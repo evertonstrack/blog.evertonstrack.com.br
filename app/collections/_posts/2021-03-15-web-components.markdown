@@ -8,13 +8,13 @@ tags: ['web components', 'web api']
 image: "/assets/images/posts/web-components/web-components.jpg"
 ---
 
-A plataforma web vem evoluindo a todo vapor faz algum tempo já, muitas tecnologias vão atingindo uma maturidade bacana e começam a ser adotadas por mais e mais pessoas.
+A plataforma web vem evoluindo a todo vapor já faz algum tempo, muitas tecnologias vão atingindo uma maturidade bacana e começam a ser adotadas por mais e mais pessoas.
 
-Hoje vamos falar sobre **Web components**, e mergulhar mais fundo no que a web tem para nos oferecer.
+Hoje vamos falar sobre **Web components** e mergulhar mais fundo no que a web tem para nos oferecer.
 
 ## O que são os Web Components?
 
-Web components são um conjunto de três tecnologias separadas que são usadas em conjunto que permitem a criação de elementos customizados reutilizáveis.
+Web components são três tecnologias separadas que são usadas em conjunto e permitem a criação de elementos customizados reutilizáveis.
 
 As três tecnologias são:
 
@@ -25,7 +25,7 @@ As três tecnologias são:
 
 ### Custom elements
 
-Um dos principais recursos dos Web components, é a capacidade de criarmos elementos personalizados onde nossa funcionalidade fica encapsulada.
+Um dos principais recursos dos Web components é a capacidade de criarmos elementos personalizados onde nossa funcionalidade fica encapsulada.
 
 Como o nome já entrega, custom elements são elementos HTML, como `<div>`, `<section>` ou `<article>`, porém são elementos que podemos nomear e que são definidos por meio de uma API do navegador, ou seja, uma Web API.
 
@@ -41,15 +41,15 @@ class MeuComponente extends HTMLElement {
 customElements.define('meu-componente', MeuComponente);
 {% endhighlight %}
 
-No exemplo acima, definimos `<meu-componente>`,  a seu próprio elemento HTML. Não parece muito útil por enquanto, pois é só uma tag que renderiza um texto qualquer, mas vamos evoluir a ideia logo mais. Todos custom elements devem estender `HTMLElement` de alguma maneira para que possam ser registrados no navegador.
+No exemplo acima, definimos `<meu-componente>` e seu próprio elemento HTML. Não parece muito útil por enquanto, pois é só uma tag que renderiza um texto qualquer, mas vamos evoluir a ideia logo mais. Todos os custom elements devem estender `HTMLElement` de alguma maneira para que possam ser registrados no navegador.
 
-Os custom elements existem sem o uso de frameworks e os navegadores se dedicam a retrocompatibilidade da específicação, o que quase garante que os componentes que foram criados com base na especificação não sofreram de  *breaking API changes*.
+Os custom elements existem sem o uso de frameworks, e os navegadores se dedicam a retrocompatibilidade da específicação, o que quase garante que os componentes que foram criados com base na especificação não sofreram de  *breaking API changes*.
 
 Outra coisa bacana é que esses componentes geralmente [estão prontos para uso](https://custom-elements-everywhere.com/){:target="_blank"}{:rel="noopener"} com praticamente todos as libs e frameworks mais populares atualmente, como Angular, React e Vue.
 
 ### Shadow DOM
 
-O Shadow DOM é uma versão encapsulada do DOM. Isso permite que fragmentos do DOM sejam isoladas umas das outras, incluindo qualquer coisa que possa ser usado como um seletor CSS. Com o Shadow DOM, você é capaz de isolar o CSS e JavaScript do seu web component.
+O Shadow DOM é uma versão encapsulada do DOM. Isso permite que fragmentos do DOM sejam isolados uns dos outros, incluindo qualquer coisa que possa ser usada como um seletor CSS. Com o Shadow DOM, você é capaz de isolar o CSS e JavaScript do seu web component.
 
 Geralmente, qualquer conteúdo dentro do document é referenciado como **light DOM**, e qualquer conteúdo encapsulado é referenciado como **shadow DOM**.
 
@@ -105,9 +105,9 @@ O resultado no navegador seria esse:
 
 ### HTML Templates
 
-Modelos definidos pelo usuário em HTML que não são renderizados até que sejam solicitados.
+São modelos definidos pelo usuário em HTML que não são renderizados até que sejam solicitados.
 
-Quando precisamos reutilizar uma estrutura HTML, faz sentido ter um template para evitarmos de escrever várias vezes o mesmo código. Isso já era possível fazer antes, porém agora como o HTML template, ficou muito mais fácil.
+Quando precisamos reutilizar uma estrutura HTML, faz sentido ter um template para evitarmos de escrever várias vezes o mesmo código. Isso já era possível fazer antes, porém agora com o HTML template, ficou muito mais fácil.
 
 Este elemento e seu conteúdo não são renderizados no DOM, mas ainda podem ser referenciados usando JavaScript.
 
@@ -150,7 +150,7 @@ Observe que neste exemplo criamos um modelo `<template id = "users-template">` s
 
 ## Conclusão
 
-Os **Web Components** estão ai para ficar, e se você ainda não conhecia ou não havia testado e brincado com eles, eu sugiro colocar isso na sua lista de tecnologias a testar agora mesmo.
+Os **Web Components** estão aí para ficar, e se você ainda não conhecia ou não havia testado e brincado com eles, eu sugiro colocar isso na sua lista de tecnologias a testar agora mesmo.
 
 As especificações dos Web Components são um conjunto de APIs de baixo nível que continuarão a crescer e evoluir conforme nossas necessidades como desenvolvedores evoluírem.
 
