@@ -8,18 +8,21 @@ image: /assets/images/evertonstrack.jpg
 ---
 
 <!-- breadcrumb - rich snippts -->
-<div class="breadcrumb hide">
-    <div id="a" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemref="b">
-        <a href="http://evertonstrack.com.br/" itemprop="url">
-            <span itemprop="title">evertonstrack.com.br</span>
-        </a> ›
-    </div>
-    <div id="b" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
-        <a href="http://evertonstrack.com.br/sobre/" itemprop="url">
-            <span itemprop="title">Sobre</span>
-        </a> ›
-    </div>
-</div>
+<ol class="breadcrumb hide" vocab="https://schema.org/" typeof="BreadcrumbList">
+  <li property="itemListElement" typeof="ListItem">
+    <a href="http://evertonstrack.com.br/" property="item" typeof="WebPage">
+      <span property="name">evertonstrack.com.br</span>
+    </a>  ›
+    <meta property="position" content="1">
+  </li>
+  <li property="itemListElement" typeof="ListItem">
+    <a href="http://evertonstrack.com.br/sobre/" property="item" typeof="WebPage">
+      <span property="name">Sobre</span>
+    </a>
+    <meta property="position" content="3">
+  </li>
+</ol>
+
 <!-- /breadcrumb - rich snippts -->
 
 <!-- section gretings -->
