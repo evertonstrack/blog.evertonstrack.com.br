@@ -144,6 +144,12 @@
           margin-bottom: 20px;
           display: block;
         }
+
+        figure{
+          img{
+            border-radius: 8px;
+          }
+        }
       }
     }
 
@@ -155,6 +161,12 @@
 
     .post-item:first-child{
       max-width: 100%;
+
+      figure{
+        img{
+          border-radius: 8px 0 0 8px;
+        }
+      }
 
 
       .post-link{
