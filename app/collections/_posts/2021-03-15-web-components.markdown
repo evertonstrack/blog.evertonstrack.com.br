@@ -27,7 +27,7 @@ As três tecnologias são:
 
 Um dos principais recursos dos Web components, é a capacidade de criarmos elementos personalizados onde nossa funcionalidade fica encapsulada.
 
-Como o nome já entrega, custom elements são elementos HTML, como `<div>`, `<section>` ou `<article>`, porém são elementos que podemos nomear e que são definidos por meio de uma API do navegador.
+Como o nome já entrega, custom elements são elementos HTML, como `<div>`, `<section>` ou `<article>`, porém são elementos que podemos nomear e que são definidos por meio de uma API do navegador, ou seja, uma Web API.
 
 Os custom elements contêm suas próprias semânticas, comportamentos e marcações e podem ser compartilhados entre estruturas e navegadores.
 
@@ -41,7 +41,7 @@ class MeuComponente extends HTMLElement {
 customElements.define('meu-componente', MeuComponente);
 {% endhighlight %}
 
-No exemplo acima, definimos `<meu-componente>`,  a seu próprio elemento HTML. Não parece muito útil, pois é só uma tag que renderiza um texto qualquer. Todos custom elements devem estender `HTMLElement` de alguma maneira para que possam ser registrados no navegador.
+No exemplo acima, definimos `<meu-componente>`,  a seu próprio elemento HTML. Não parece muito útil por enquanto, pois é só uma tag que renderiza um texto qualquer, mas vamos evoluir a ideia logo mais. Todos custom elements devem estender `HTMLElement` de alguma maneira para que possam ser registrados no navegador.
 
 Os custom elements existem sem o uso de frameworks e os navegadores se dedicam a retrocompatibilidade da específicação, o que quase garante que os componentes que foram criados com base na especificação não sofreram de  *breaking API changes*.
 
@@ -51,11 +51,11 @@ Outra coisa bacana é que esses componentes geralmente [estão prontos para uso]
 
 O Shadow DOM é uma versão encapsulada do DOM. Isso permite que fragmentos do DOM sejam isoladas umas das outras, incluindo qualquer coisa que possa ser usado como um seletor CSS. Com o Shadow DOM, você é capaz de isolar o CSS e JavaScript do seu web component.
 
-Geralmente, qualquer conteúdo dentro do document é referenciado como light DOM, e qualquer conteúdo encapsulado é referenciado como shadow DOM.
+Geralmente, qualquer conteúdo dentro do document é referenciado como **light DOM**, e qualquer conteúdo encapsulado é referenciado como **shadow DOM**.
 
 Normalmente, estamos usando o light DOM e podemos selecionar um elemento simplesmente fazendo `document.querySelector('.meu-seletor')`.
 
-Já a shadow DOM funciona semelhante a um iframe , onde o conteúdo é cortado do resto do document. No entanto, quando criamos uma raiz de sombra, ainda temos controle total sobre esse fragmento da nossa página, mas com escopo para um contexto. Isso é o que chamamos de encapsulamento.
+Já a shadow DOM funciona semelhante a um `iframe`, onde o conteúdo é separado do resto do document. No entanto, quando criamos um shadow DOM, ainda temos controle total sobre esse fragmento da nossa página, mas com escopo específico. Isso é o que chamamos de encapsulamento.
 
 Vamos a um exemplo:
 
@@ -81,7 +81,7 @@ shadowRoot.innerHTML = `<style>
 <button id="button"><slot></slot> tomato</button>`;
 {% endhighlight %}
 
-O shadow root pode incluir conteúdo do seu document, usando o elemento <slot>.  Usar um slot removerá o conteúdo do document externo e o colocará em um local determinado pela tag <slot> dentro do shadow root.
+O shadow root pode incluir conteúdo do seu document, usando o elemento `<slot>`.  Usar um slot removerá o conteúdo do document externo e o colocará em um local determinado pela tag `<slot>` dentro do shadow root.
 
 O resultado no navegador seria esse:
 
@@ -154,7 +154,7 @@ Os **Web Components** estão ai para ficar, e se você ainda não conhecia ou n�
 
 As especificações dos Web Components são um conjunto de APIs de baixo nível que continuarão a crescer e evoluir conforme nossas necessidades como desenvolvedores evoluírem.
 
-No próximo post, vamos falar sobre uma ferramenta bem bacana que pode nos ajudar a criar web components reutilizáveis,  nossa própria biblioteca de componentes, ou até mesmo um Design System escalável.
+Em um post futuro, vamos falar sobre uma ferramenta bem bacana que pode nos ajudar a criar web components reutilizáveis,  nossa própria biblioteca de componentes, ou até mesmo um Design System escalável.
 
 ### Links
 
