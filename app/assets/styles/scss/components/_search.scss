@@ -97,16 +97,28 @@
         display: flex;
         flex-direction: column;
 
-        .search__results-item{
-          margin-bottom: 10px;
+        .search-results-item{
+          margin-bottom: 20px;
           padding: 15px 20px;
-          font-size: 18px;
           background-color: var(--background_alt);
           border-radius: 8px;
+
+          .search-results-item__title{
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+          .search-results-item__desc{
+            font-size: 14px;
+            margin-bottom: 0;
+          }
         }
       }
     }
+
 }
+
+
 
 .search-suggestion{
   margin: 20px 0 10px;
@@ -133,6 +145,7 @@
     padding: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    white-space: nowrap;
   }
 }
 
@@ -166,6 +179,16 @@
       overflow-x: auto;
       flex-wrap: nowrap;
       padding: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .search__results{
+    .search__results-list{
+      .search-results-item{
+        margin-bottom: 10px;
+      }
     }
   }
 }

@@ -1,8 +1,8 @@
 <script>
-  const settings = {
+const settings = {
   posts: '/content.json',
   properties: ['title', 'tags'],
-  limit: '10',
+  limit: '20',
   noResults: '<p>Ops!<br/><small>Nenhum resultado encontrado. :(</small></p>',
   resultsTitle: '<h3>Resultados encontrados</h3>'
 };
@@ -34,7 +34,6 @@ function clearSearchResults(){
   searchResultsList.innerHTML = '';
 }
 
-
 function search(searchQuery){
   const matches = [];
   const { properties } = settings;
@@ -54,14 +53,20 @@ function search(searchQuery){
   return matches;
 }
 
+function getTemplate(post) {
+  return `<a class="search-results-item" href="${post.url}">
+            <h4 class="search-results-item__title">${post.title}</h4>
+            <p class="search-results-item__desc">${post.description}</p>
+          </a>`;
+}
+
 function writeMatches(results) {
   clearSearchResults();
 
-  if(results.length){
-    const template = results.map((result) => {
-      return`<a class="search__results-item" href="${result.url}">${result.title}</a>`;
-    }).join('');
+  console.log('results', results);
 
+  if(results.length){
+    const template = results.map((result) => getTemplate(result)).join('');
     searchResultsList.innerHTML = `${settings.resultsTitle}${template}`;
   }else{
     searchResultsList.innerHTML =  settings.noResults;
@@ -84,30 +89,28 @@ function closeSearch() {
 }
 
 function registerEvents(){
+  openSearchButton.addEventListener('click', openSearch);
+  closeSearchButton.addEventListener('click', closeSearch);
 
-openSearchButton.addEventListener('click', openSearch);
-closeSearchButton.addEventListener('click', closeSearch);
-
-
-searchField.addEventListener('keyup', debounce(() => {
-	if( searchField.value.length ) {
-    writeMatches( search( searchField.value ));
-  } else {
-    clearSearchResults();
-  }
-}, 300));
-
-searchField.addEventListener('search', function(){
-  setTimeout(function(){
-    if( !searchField.value.length ) {
-      clearSearchResults()
+  searchField.addEventListener('keyup', debounce(() => {
+    if( searchField.value.length ) {
+      writeMatches( search( searchField.value ));
     } else {
-      searchField.blur();
+      clearSearchResults();
     }
-  }, 100);
-});
+  }, 300));
 
-sugestionButtons.forEach(suggestion => {
+  searchField.addEventListener('search', function(){
+    setTimeout(function(){
+      if( !searchField.value.length ) {
+        clearSearchResults()
+      } else {
+        searchField.blur();
+      }
+    }, 100);
+  });
+
+  sugestionButtons.forEach(suggestion => {
     suggestion.addEventListener('click', () => {
       searchField.value = suggestion.dataset.search;
       searchField.dispatchEvent(new Event('focus'));
