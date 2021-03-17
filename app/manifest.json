@@ -12,15 +12,6 @@ layout: null
 	"lang": "pt-BR",
   "orientation": "any",
   "shortcuts": [
-    {% for post in site.posts limit: 3 %}
-    {
-      "name": "{{post.title | truncate: 29, ".."}}",
-      "short_name": "Últimos posts",
-      "description": "{{post.title}}",
-      "url": "{{post.url}}",
-      "icons": [{ "src": "/assets/images/favicons/favicon-192x192.png", "sizes": "192x192" }]
-    },
-    {% endfor %}
     {
       "name": "Sobre Everton Strack",
       "short_name": "Sobre",
