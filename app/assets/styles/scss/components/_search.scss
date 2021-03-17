@@ -100,10 +100,8 @@
         .search-results-item{
           margin-bottom: 20px;
           padding: 15px 20px;
-
           background-color: var(--background_alt);
           border-radius: 8px;
-          display: flex;
 
           .search-results-item__title{
             font-size: 18px;
@@ -113,19 +111,6 @@
           .search-results-item__desc{
             font-size: 14px;
             margin-bottom: 0;
-          }
-
-          .search-results-item__image {
-            border-radius: 8px 0 0 8px;
-            -o-object-fit: cover;
-            object-fit: cover;
-            height: 220px;
-            width: 300px;
-            margin-top: -15px;
-            margin-bottom: -15px;
-            margin-left: -20px;
-            margin-right: 30px;
-
           }
         }
       }
@@ -203,9 +188,6 @@
     .search__results-list{
       .search-results-item{
         margin-bottom: 10px;
-        .search-results-item__image{
-          display: none;
-        }
       }
     }
   }

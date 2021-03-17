@@ -15,10 +15,6 @@ const openSearchButton = document.querySelector('.open-search');
 const closeSearchButton = document.querySelector('.close-search');
 const sugestionButtons = document.querySelectorAll('.search-suggestion__button');
 
-function isSmallScreen() {
-  return window.innerWidth < 641;
-}
-
 function debounce(callback, wait) {
   let timeout;
   return (...args) => {
@@ -59,14 +55,8 @@ function search(searchQuery){
 
 function getTemplate(post) {
   return `<a class="search-results-item" href="${post.url}">
-            ${!isSmallScreen()
-                ? `<img class="search-results-item__image" src="${post.image}" alt="${post.title}"/>`
-                : ''
-            }
-            <div>
-              <h4 class="search-results-item__title">${post.title}</h4>
-              <p class="search-results-item__desc">${post.description}</p>
-            </div>
+            <h4 class="search-results-item__title">${post.title}</h4>
+            <p class="search-results-item__desc">${post.description}</p>
           </a>`;
 }
 
