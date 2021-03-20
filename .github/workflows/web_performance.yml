@@ -3,32 +3,50 @@ name: Web Performance
 on: [pull_request]
 
 jobs:
-  audit:
+  strategy:
+    max-parallel: 1
+  build:
+    name: Wait for Netlify build preview
     runs-on: ubuntu-latest
+    outputs:
+      deploy_url: ${{ steps.wait-for-netflify-preview.outputs.deploy_url }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
       - name: Wait for Netlify
         uses: JakePartusch/wait-for-netlify-action@v1.2
         id: wait-for-netflify-preview
         with:
           site_name: "evertonstrack"
           max_timeout: "120"
-      # - uses: actions/checkout@v1
+        run: echo "::set-output name=deploy_url::${{ steps.wait-for-netflify-preview.outputs.url }}
+  performance_audit:
+    name: Performance Audit
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          url: ${{ steps.wait-for-netflify-preview.outputs.url }}
+          url: ${{ needs.build.deploy_url }}
           wptConnectionSpeed: threegfast
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
         with:
           name: lighthouse-artifacts
           path: './results'
-      - name: Lighthouse CI
+
+  lighthouseci:
+    name: Lighthouse Audit
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Lighthouse CI - Setup
+      - name: Lighthouse CI - Audit
         run: |
             npm install -g @lhci/cli@0.6.x
-            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
+            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ needs.build.deploy_url }} || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
