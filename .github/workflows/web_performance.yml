@@ -1,0 +1,26 @@
+name: Audit Web Performance
+
+on: [pull_request]
+
+jobs:
+  perf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Netlify
+        uses: JakePartusch/wait-for-netlify-action@v1.2
+        id: wait-for-netflify-preview
+        with:
+          site_name: "evertonstrack"
+          max_timeout: "120"
+      - uses: actions/checkout@v1
+      - name: Generate Lighthouse Report
+        uses: justinribeiro/lighthouse-action@master
+        with:
+          secret: ${{ secrets.GITHUB_TOKEN }}
+          url: ${{ steps.wait-for-netflify-preview.outputs.url }}
+          wptConnectionSpeed: threegfast
+      - name: Saving Lighthouse Audit Artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: lighthouse-artifacts
+          path: './results'

@@ -21,16 +21,3 @@ jobs:
             lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-
-  lighthouseci:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Lighthouse CI
-        uses: actions/setup-node@v1
-      - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.6.x
-      - name: Run Lighthouse CI
-        run: lhci autorun --upload.target=temporary-public-storage --collect.url=${{ needs.build.deploy_url }} || echo "LHCI failed!"
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
