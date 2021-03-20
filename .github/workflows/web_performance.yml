@@ -7,6 +7,7 @@ jobs:
     name: Wait for Netlify build preview
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Wait for Netlify
         uses: JakePartusch/wait-for-netlify-action@v1.2
         id: wait-for-netflify-preview
@@ -18,7 +19,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
