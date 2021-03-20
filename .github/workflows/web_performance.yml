@@ -3,48 +3,33 @@ name: Web Performance
 on: [pull_request]
 
 jobs:
-  build:
+  audit:
     name: Wait for Netlify build preview
     runs-on: ubuntu-latest
-    outputs:
-        deploy_url: ${{ steps.wait-for-netflify-preview.outputs.deploy_url }}
     steps:
-      - name: Wait for Netlify
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Wait for Netlify Deploy preview
         uses: JakePartusch/wait-for-netlify-action@v1.2
         id: wait-for-netflify-preview
         with:
           site_name: "evertonstrack"
           max_timeout: "120"
-      - name: Wait for Netlify - Set URL
-        run: echo "::set-output name=deploy_url::${{ steps.wait-for-netflify-preview.outputs.url }}"
-  performance_audit:
-    name: Performance Audit
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v1
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          url: ${{ needs.build.deploy_url }}
+          url: ${{ steps.wait-for-netflify-preview.outputs.url }}
           wptConnectionSpeed: threegfast
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
         with:
           name: lighthouse-artifacts
           path: './results'
-
-  lighthouseci:
-    name: Lighthouse Audit
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - name: Lighthouse CI - Audit
+      - name: Lighthouse CI Audit
         run: |
             npm install -g @lhci/cli@0.6.x
-            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ needs.build.deploy_url }} || echo "LHCI failed!"
+            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
