@@ -9,9 +9,8 @@ jobs:
     outputs:
         deploy_url: ${{ steps.wait-for-netflify-preview.outputs.deploy_url }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: JakePartusch/wait-for-netlify-action@v1.2
       - name: Wait for Netlify
-        uses: JakePartusch/wait-for-netlify-action@v1.2
         id: wait-for-netflify-preview
         with:
           site_name: "evertonstrack"
