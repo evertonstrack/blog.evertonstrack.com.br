@@ -4,23 +4,25 @@ on: [pull_request]
 
 jobs:
   audit:
-    name: Wait for Netlify build preview
+    name: Audit Performance on Netlify preview url
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - name: Wait for Netlify Deploy preview
-        uses: JakePartusch/wait-for-netlify-action@v1.2
-        id: wait-for-netflify-preview
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+      - name: Wait for Netlify Deploy
+        uses: probablyup/wait-for-netlify-action@3.2.0
+        id: waitForDeployment
         with:
-          site_name: "evertonstrack"
-          max_timeout: "120"
+          site_id: 'evertonstrack' # See Settings > Site Details > General in the Netlify UI
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
       - uses: actions/checkout@v1
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          url: ${{ steps.wait-for-netflify-preview.outputs.url }}
+          url: ${{ steps.waitForDeployment.outputs.url }}
           wptConnectionSpeed: threegfast
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
@@ -30,6 +32,7 @@ jobs:
       - name: Lighthouse CI Audit
         run: |
             npm install -g @lhci/cli@0.6.x
-            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
+            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitForDeployment.outputs.url }} || echo "LHCI failed!"
+            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitForDeployment.outputs.url }}/sobre || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
