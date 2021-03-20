@@ -15,16 +15,14 @@ jobs:
           site_name: "evertonstrack"
           max_timeout: "120"
         run: echo "::set-output name=deploy_url::${{ steps.wait-for-netflify-preview.outputs.url }}
-
-
   lighthouseci:
     runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - uses: actions/setup-node@v1
-         - name: Lighthouse CI
-        run: |
-            npm install -g @lhci/cli@0.6.x
-            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ needs.build.deploy_url }} || echo "LHCI failed!"
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        - name: Lighthouse CI
+          run: |
+              npm install -g @lhci/cli@0.6.x
+              lhci autorun --upload.target=temporary-public-storage --collect.url=${{ needs.build.deploy_url }} || echo "LHCI failed!"
+          env:
+            LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
