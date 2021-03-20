@@ -15,7 +15,6 @@ jobs:
           max_timeout: "120"
       - name: Lighthouse CI
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
         run: |
             npm install -g @lhci/cli@0.6.x
             lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
