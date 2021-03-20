@@ -24,7 +24,7 @@ jobs:
         uses: justinribeiro/lighthouse-action@master
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          url: ${{ jobs.build.steps.wait-for-netflify-preview.outputs.url }}
+          url: ${{ build.steps.wait-for-netflify-preview.outputs.url }}
           wptConnectionSpeed: threegfast
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
@@ -42,6 +42,6 @@ jobs:
       - name: Lighthouse CI - Audit
         run: |
             npm install -g @lhci/cli@0.6.x
-            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ jobs.build.steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
+            lhci autorun --upload.target=temporary-public-storage --collect.url=${{ build.steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
