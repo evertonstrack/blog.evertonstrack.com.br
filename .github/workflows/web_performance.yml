@@ -1,12 +1,12 @@
-name: Audit Web Performance
+name: Web Performance
 
 on: [pull_request]
 
 jobs:
-  perf:
+  audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - name: Wait for Netlify
         uses: JakePartusch/wait-for-netlify-action@v1.2
@@ -14,7 +14,7 @@ jobs:
         with:
           site_name: "evertonstrack"
           max_timeout: "120"
-      - uses: actions/checkout@v1
+      # - uses: actions/checkout@v1
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
