@@ -19,5 +19,5 @@ jobs:
       - run: |
             npm install -g @lhci/cli@0.6.x
             lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.wait-for-netflify-preview.outputs.url }} || echo "LHCI failed!"
-       -env:
+      - env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
