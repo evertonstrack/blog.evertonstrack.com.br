@@ -8,7 +8,7 @@ tags: ['performance', 'ferramentas', 'google lighthouse']
 image: "/assets/images/posts/google-lighthouse/logotipo-google-lighthouse.jpg"
 ---
 
-A Performance é uma funcionalidade e deveria ser tratada como tal, porém não é o que vemos no dia-a-dia, onde os sites e as aplicações web tem cada vez mais dependências e entregam um caminhão de javascript para o usuário, mesmo que ele não precise disso.
+A Performance é uma funcionalidade e deveria ser tratada como tal, porém não é o que vemos no dia-a-dia, onde os sites e as aplicações web têm cada vez mais dependências e entregam um caminhão de javascript para o usuário, mesmo que ele não precise disso.
 
 > Performance é importante, performance é funcionalidade.
 
@@ -16,13 +16,15 @@ Hoje vamos falar um pouco sobre performance e sobre uma ferramenta que vai te aj
 
 ## Por que a performance é importante?
 
-A performance sempre foi um ponto importante para as aplicações web. Antigamente existia um impacto na performance em virtude das velocidades de internet lentas, principalmente em países subdesenvolvidos, já atualmente, como o mundo é mobile, o número de pessoas como um smartphone nas mãos cresce a cada dia, e com isso os problemas de performance começam a surgir.
+A performance sempre foi um ponto importante para as aplicações web. Antigamente existia um impacto na performance em virtude das velocidades de internet lentas, principalmente em países subdesenvolvidos.
 
-Existem algumas coisas importantes que precisamos nos atentar quando estamos desenvolvendo nossas aplicações, as principais são:
+Já atualmente, como o mundo é mobile, o número de pessoas como um smartphone nas mãos cresce a cada dia e, com isso, os problemas de performance começam a surgir.
+
+Existem algumas coisas importantes que precisamos nos atentar quando estamos desenvolvendo nossas aplicações. As principais são:
 
 - Quem é nosso público alvo?
-- Quais os tipos de dispositivos ele usa?
-- Quais os tipos de conexão com internet ele usa?
+- Quais tipos de dispositivos ele usa?
+- Quais tipos de conexão com internet ele usa?
 
 Esses são as perguntas iniciais que precisamos responder, pois elas vão basear o quão importante a funcionalidade **performance** vai ser na sua lista de prioridades.
 
@@ -30,7 +32,7 @@ Esses são as perguntas iniciais que precisamos responder, pois elas vão basear
 
 Existem diversas formas de medir a performance das nossas aplicações, mas eu gosto de fazer um mistos de algumas sempre que possível.
 
-- **Testar no dispositivo mais utilizado pelo publico alvo:** Esse ponto pode ser mais difícil de fazer, mas sempre que possível gosto de ter o dispositivo em mãos e testar no uso mesmo os tempos de carregamentos, e as interações. Existem também, serviços que você consegue realizar esses testes online,  como o AWS Device Farm da Amazon.
+- **Testar no dispositivo mais utilizado pelo público alvo:** Esse ponto pode ser mais difícil de fazer, mas sempre que possível gosto de ter o dispositivo em mãos e testar no uso mesmo os tempos de carregamentos e as interações. Existem também, serviços que você consegue realizar esses testes online,  como o AWS Device Farm da Amazon.
 - **Testar usando ferramentas de benchmark:** A ferramenta que eu mais uso para esse tipo de testes é o Lighthouse da Google.
 
 
@@ -58,26 +60,28 @@ Esses quesitos são divididos em 5 categorias diferentes:
 
 ### Performance
 
-Este é o principal item que vamos nos atentar aqui, ele mede o tempo que leva para a "primeira pintura com conteúdo" aparecer na tela, o tempo que leva para que o usuário consiga interagir com sua aplicação, se existem deslocamentos de layout, dentre outros itens.
+Este é o principal item que vamos nos atentar aqui. Ele mede o tempo que leva para a "primeira pintura com conteúdo" aparecer na tela, o tempo que leva para que o usuário consiga interagir com sua aplicação, se existem deslocamentos de layout, dentre outros itens.
 
 ### Acessibilidade
 
-As verificações de acessibilidade, destacam oportunidades para melhorar a acessibilidade de seu aplicativo da web, são problemas comuns de acessibilidade que podem ser detectados automaticamente.
+As verificações de acessibilidade destacam oportunidades para melhorar a acessibilidade de seu aplicativo da web, detectando automaticamente problemas comuns de acessibilidade
 
 ### Melhores práticas
 
-O nome é autoexplicativo, ele testa diversas melhores práticas consolidadas, como uso de HTTPS, erros de javascript no console, charset, imagens com proporções corretas, dentre muitos outros.
+O nome é autoexplicativo. Ele testa diversas melhores práticas consolidadas, como uso de HTTPS, erros de javascript no console, charset, imagens com proporções corretas, dentre muitos outros.
 
 ### SEO
 
-As verificações de SEO (Otimização para mecanismos de busca), garantem que sua página seja otimizada para a classificação dos resultados do mecanismo de pesquisa. Neste ponto, as verificações são básicas, para otimizar sua página para os mecanismos de busca, não se baseie só nesse relatório, mas é um bom ponto de partida.
+As verificações de SEO (Otimização para mecanismos de busca) garantem que sua página seja otimizada para a classificação dos resultados do mecanismo de pesquisa.
+
+Neste ponto, as verificações são básicas. Para otimizar sua página para os mecanismos de busca, não se baseie só nesse relatório, mas é um bom ponto de partida.
 
 ### PWA
 
-As verificações de [PWA (Progressive Web App)](https://evertonstrack.com.br/como-transformar-seu-site-em-um-progressive-web-app/), validam os aspectos de um Progressive Web App.
+As verificações de [PWA (Progressive Web App)](https://evertonstrack.com.br/como-transformar-seu-site-em-um-progressive-web-app/) validam os aspectos de um Progressive Web App.
 
 
-Como vimos, ele aborda vários aspectos de uma aplicação, talvez nem todas façam sentido para seu contexto e tudo bem.
+Como vimos, ele aborda vários aspectos de uma aplicação. Talvez nem todas façam sentido para seu contexto e tudo bem.
 
 
 ## Como usar o Lighthouse
@@ -85,7 +89,7 @@ Como vimos, ele aborda vários aspectos de uma aplicação, talvez nem todas fa�
 
 O Lighthouse pode ser utilizado via uma [extensão para o Google Chrome do Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?utm_source=chrome-ntp-icon){:target="_blank"}{:rel="noopener"} ou via linha de comando. Aqui vamos abordar a opção via extensão.
 
-Você pode acessar a Chrome Web Store e instalar como você instalaria qualquer outra extensão. Após instalada, você pode acessar clicando no ícone do farol, que vai aparecer nas extensões e depois em "Generate report".
+Você pode acessar a Chrome Web Store e instalar como você instalaria qualquer outra extensão. Após instalada, você pode acessar clicando no ícone do farol, que vai aparecer nas extensões, e depois em "Generate report".
 
 <figure>
   <picture>
@@ -97,7 +101,7 @@ Você pode acessar a Chrome Web Store e instalar como você instalaria qualquer 
 </figure>
 
 
-Ela vai analisar todos os aspectos que comentamos acima, e depois vai exibir uma pontuação para cada um dos itens que abordamos acima, além do detalhamento de cada um dos itens que foram analisados.
+Ela vai analisar todos os aspectos que comentamos acima e, depois, vai exibir uma pontuação para cada um dos itens que abordamos acima, além do detalhamento de cada um dos itens que foram analisados.
 
 <figure>
   <picture>
