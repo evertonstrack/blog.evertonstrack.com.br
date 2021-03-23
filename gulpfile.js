@@ -112,5 +112,6 @@ function watch(done) {
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
+exports.images = gulp.series(convertWebp);
 exports.build = gulp.series(styles, convertWebp, jekyllBuild);
 exports.default = gulp.series(styles, convertWebp, jekyllBuild, syncBrowser, watch);

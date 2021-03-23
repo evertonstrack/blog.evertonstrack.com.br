@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introdução a Web components"
-description: "A plataforma web vem evoluindo, muitas tecnologias já atingiram uma grande maturidade e hoje vamos ver algumas dessa tecnologias com Web Components."
+description: "Web components permitem a criação de componentes reutilizáveis em aplicações web agnósticos aos frameworks e libs. A plataforma web segue evoluindo e os Web Components estão ai para ficar."
 date: 2021-03-15 10:00:00 -0300
 bodyClass:
 tags: ['web components', 'web api']
