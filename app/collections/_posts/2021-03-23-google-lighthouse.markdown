@@ -50,6 +50,7 @@ Existem diversas formas de medir a performance das nossas aplicações, mas eu g
 O Lighthouse é uma ferramenta automatizada de código aberto criada pela Google, para medir a qualidade das páginas da web.
 
 Pode ser executado em qualquer página da web, pública ou exigindo autenticação. O Lighthouse avalia as páginas da sua aplicação levando em consideração diversos quesitos e padrões web consolidados das suas aplicações web.
+
 Esses quesitos são divididos em 5 categorias diferentes:
 
 - Performance
@@ -64,7 +65,7 @@ Este é o principal item que vamos nos atentar aqui. Ele mede o tempo que leva p
 
 ### Acessibilidade
 
-As verificações de acessibilidade destacam oportunidades para melhorar a acessibilidade de seu aplicativo da web, detectando automaticamente problemas comuns de acessibilidade
+As verificações de acessibilidade destacam oportunidades para melhorar a acessibilidade de seu aplicativo da web, detectando automaticamente problemas comuns de acessibilidade.
 
 ### Melhores práticas
 
