@@ -188,9 +188,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
           padding: 80px;
-          text-align: center;
         }
       }
     }
@@ -287,10 +285,6 @@
             text-decoration: none;
           }
 
-          .post-date{
-            display: block;
-          }
-
           figure{
             img{
               height: 150px;
@@ -332,14 +326,14 @@
 
             img{
               display: block;
-              height: 250px;
+              height: 150px;
               border-radius: 8px 8px 0 0;
             }
           }
 
           .post-item__content{
             width: 100%;
-            padding: 20px;
+            padding: 0 20px 20px;
 
             p{
               display: block;

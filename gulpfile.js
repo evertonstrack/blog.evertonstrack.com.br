@@ -85,9 +85,10 @@ function syncBrowser(done) {
  */
 function styles(done) {
   gulp.src(pageStyles, { allowEmpty: true })
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(prefix(prefixerOptions))
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(stylesDest))
     .pipe(browserSync.reload({
       stream: true
