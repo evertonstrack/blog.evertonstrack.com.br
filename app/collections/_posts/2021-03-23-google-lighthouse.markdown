@@ -4,7 +4,7 @@ title: "Testando a performance das páginas web com o Lighthouse"
 description: "Usando o Google Lighthouse para testar nossas páginas web. Pois afinal, performance é importante, performance é funcionalidade."
 date: 2021-03-23 09:00:00 -0300
 bodyClass:
-tags: ['performance', 'ferramentas', 'google lighthhouse']
+tags: ['performance', 'ferramentas', 'google lighthouse']
 image: "/assets/images/posts/google-lighthouse/logotipo-google-lighthouse.jpg"
 ---
 
