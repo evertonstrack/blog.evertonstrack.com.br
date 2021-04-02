@@ -8,16 +8,16 @@ tags: ['performance', 'web api', 'javascript']
 image: "/assets/images/posts/network-information-api/velocidade-da-conexao-de-internet.jpg"
 ---
 
-Frequentemente usamos largura e altura da tela do usuário para exibir ou não conteúdos diferentes.  E se pudéssemos saber a qualidade do conexão usada pelo usuário e otimizar a performance da nossa aplicação para a conexão dele?
+Frequentemente usamos largura e altura da tela do usuário para exibir ou não conteúdos diferentes.  E se pudéssemos saber a qualidade da conexão usada pelo usuário e otimizar a performance da nossa aplicação para a conexão dele?
 
-Vou te contar como é possível e é mais simples do que parece.
+Vou te contar como é possível, e é mais simples do que parece.
 
-## O que é a API de informações da rede (Network Information API)?
+## O que é a Network Information API?
 
 
-A **Network Information API** é uma Web Api que como o nome já diz, nos fornece dados sobre a conexão do usuário, como largura de banda, tipo de conexão, dentre outros.
+A **Network Information API** (API de informações da rede) é uma Web Api, que como o nome já diz, nos fornece dados sobre a conexão do usuário, como largura de banda, tipo de conexão, dentre outros.
 
-Ainda é uma API experimental, e a [especificação está na fase de rascunho](https://wicg.github.io/netinfo/){:target="_blank"}{:rel="noopener"}, ou seja, nem todos os navegadores tem suporte e sua interface ainda pode mudar conforme a sua especificação evolua. Mas isso não nos impede de usufruir da Network Information API nos navegadores que já suportam.
+Ainda é uma API experimental e a [especificação está na fase de rascunho](https://wicg.github.io/netinfo/){:target="_blank"}{:rel="noopener"}, ou seja, nem todos os navegadores tem suporte e sua interface ainda pode mudar conforme a sua especificação evoluir. Mas isso não nos impede de usufruir da Network Information API nos navegadores que já suportam.
 
 ### Como acessar os dados da conexão do usuário?
 
@@ -44,20 +44,20 @@ Com esse objeto connection  temos acesso as seguintes informações:
 ### Casos de uso da Network Information API
 
 
-Um ótimo exemplo de uso que podemos citar, seria fazer ou não o pré carregamento de um vídeo com base na conexão do usuário, então poderíamos implementar algo assim:
+Um ótimo exemplo de uso que podemos citar, seria fazer ou não o pré-carregamento de um vídeo com base na conexão do usuário.  Então poderíamos implementar algo assim:
 
 {% highlight javascript %}
 let preloadVideo = true;
 let connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 if (connection) {
   if (connection.effectiveType !== '4g') {
-    // Se o effectiveType for "slow-2g", "2g" ou "3g", não faz o pre carregamento do vídeo
+    // Se o effectiveType for "slow-2g", "2g" ou "3g", não faz o pré-carregamento do vídeo
     preloadVideo = false;
   }
 }
 {% endhighlight %}
 
-No exemplo acima, temos uma variável preloadVideo que inicia com o valor true após, verificamos a conexão do usuário, caso o  effectiveType  seja diferente de 4g , mudamos o valor da variável para false    e consequentemente, não fazermos o pré carregamento do vídeo.
+No exemplo acima, temos uma variável `preloadVideo` que inicia com o valor `true`. Após, verificamos a conexão do usuário. Caso o `effectiveType` seja diferente de `4g`, mudamos o valor da variável para `false` e, consequentemente, não fazemos o pré-carregamento do vídeo.
 
 ### Escutando mudanças no tipo de conexão
 
@@ -77,7 +77,7 @@ connection.addEventListener('change', updateConnectionStatus);
 
 ### Bônus
 
-Para garantir que nosso código não vai quebrar nossa aplicação, caso o navegador não tenha suporte, podemos facilmente testar se o navegador tem o suporte a Network Information API da seguinte forma:
+Para garantir que nosso código não vai quebrar nossa aplicação, caso o navegador não tenha suporte, podemos facilmente testar se o navegador tem suporte a Network Information API da seguinte forma:
 
 {% highlight javascript %}
 if( "connection" in navigator ) {
@@ -93,7 +93,7 @@ if( "connection" in navigator || "mozConnection" in navigator || "webkitConnecti
 }
 {% endhighlight %}
 
-Aplicando isso ao nosso exemplo, de fazer o pré carregamento do vídeo, nosso código ficaria assim:
+Aplicando isso ao nosso exemplo, de fazer o pré-carregamento do vídeo, nosso código ficaria assim:
 
 {% highlight javascript %}
 let preloadVideo = true;
@@ -110,11 +110,11 @@ if( "connection" in navigator || "mozConnection" in navigator || "webkitConnecti
 }
 {% endhighlight %}
 
-Simples e direto! Assim garantimos que nosso código continue funcionando caso o navegador não suporte a funcionalidade ou caso a interface mude no futuro.
+Simples e direto! Assim garantimos que nosso código continue funcionando mesmo que o navegador não suporte a funcionalidade ou caso a interface mude no futuro.
 
 ## Conclusão
 
-Apesar da especificação da **Network Information API** ainda ser um rascunho, ela já está implementada em alguns navegadores e já pode ser usada. Podemos usá-la nos navegadores que a suportam, sem que tenha problemas como os outros navegadores e sem que quebre nossa aplicação, caso a interface dela venha mudar posteriormente.
+Apesar da especificação da **Network Information API** ainda ser um rascunho, ela já está implementada em alguns navegadores e já pode ser usada. Podemos usá-la nos navegadores que a suportam, sem que tenha problemas com os outros navegadores e sem que quebre nossa aplicação, caso a interface dela venha mudar posteriormente.
 
 Mais uma forma de otimizarmos nossas aplicações para o nosso usuário.
 
