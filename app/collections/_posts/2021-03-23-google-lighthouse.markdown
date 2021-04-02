@@ -117,7 +117,7 @@ Ela vai analisar todos os aspectos que comentamos acima e, depois, vai exibir um
 ## Conclusão
 
 
-A performance deve ser uma funcionalidade e não um "plus" das suas aplicações. Nós, quanto desenvolvedores, precisamos levar mais a sério e pensar mais em como podemos melhorar a performance das nossas aplicações. Seja não instalando aquela dependência que pesa 500kb para usar uma funcionalidade dela, ou adicionando imagens em 4K sendo que elas são exibidas no tamanho de 1200x800 pixels.
+A **performance deve ser uma funcionalidade** e não um "plus" das suas aplicações. Nós, quanto desenvolvedores, precisamos levar mais a sério e pensar mais em como podemos melhorar a performance das nossas aplicações. Seja não instalando aquela dependência que pesa 500kb para usar uma funcionalidade dela, ou adicionando imagens em 4K sendo que elas são exibidas no tamanho de 1200x800 pixels.
 
 **Performance é importante, performance é funcionalidade.**
 
