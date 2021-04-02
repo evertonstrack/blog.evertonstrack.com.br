@@ -44,28 +44,15 @@ this.addEventListener('activate', event => {
 });
 
 // Serve from Cache
-// this.addEventListener("fetch", event => {
-//   event.respondWith(
-//     caches.match(event.request)
-//       .then(response => {
-//         return response || fetch(event.request);
-//       })
-//       .catch(() => {
-//         // return caches.match('/offline/index.html');
-//         return '<h2>Você está Offline</h2>';
-//       })
-//   )
-// });
-
-self.addEventListener('fetch', function(event){
-  event.respondWith(async function () {
-     let cache = await caches.open(staticCacheName);
-     const cachedResponsePromise = await cache.match(event.request);
-     const networkResponsePromise = fetch(event.request);
-     event.waitUntil(async function () {
-        const networkResponse = await networkResponsePromise;
-        await cache.put(event.request, networkResponse.clone());
-     }());
-     return cachedResponsePromise || networkResponsePromise;
-   }());
+this.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
+      .catch(() => {
+        // return caches.match('/offline/index.html');
+        return '<h2>Você está Offline</h2>';
+      })
+  )
 });
