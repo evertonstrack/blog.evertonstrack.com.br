@@ -68,7 +68,7 @@ Podemos ainda adicionar uma escuta de evento para saber quando há uma mudança 
 const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 let type = connection.effectiveType;
 function updateConnectionStatus() {
-  console.log("Conexão alterada de " + type + " para " + connection.effectiveType);
+  console.log(`Conexão alterada de ${type} para ${connection.effectiveType}`);
   type = connection.effectiveType;
 }
 connection.addEventListener('change', updateConnectionStatus);
