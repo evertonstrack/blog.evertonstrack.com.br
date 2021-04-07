@@ -68,7 +68,7 @@ prefersColorScheme.addListener(function(event) {
 
 Assim, toda vez que o tema do sistema for alterado, o tema no nosso site será alterado também, seguindo o estilo de cores que você definir no seu tema.
 
-**Melhorando nossa implementação**
+### Melhorando nossa implementação
 
 Se você notar, o código que testa qual é o tema ficou repetido, e geralmente quando temos código repetido, é por que deveríamos isolar o código em um outro método.
 
@@ -99,6 +99,7 @@ A web é livre e acessível — não tão acessível quando falamos de acesso a 
 
 Agora você pode [implementar o dark mode](https://evertonstrack.com.br/blog/como-implementar-dark-mode/) e ainda deixar seu site usar o tema que o seu usuário gosta e está acostumado, não é demais?
 
+### Links
 Aqui alguns links com documentações de algumas coisas que falamos aqui, e o post anterior também:
 
 - [CSS Media Features - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features){:target="_blank"}{:rel="noopener"}
