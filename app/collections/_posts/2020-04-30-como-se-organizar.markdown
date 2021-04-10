@@ -4,7 +4,7 @@ title:  "Como se organizar na vida pessoal e profissional"
 description: "Com tudo que tem acontecido no mundo ultimamente, o home office tem ganhado muita força em muitas empresas. Hoje vou trazer algumas da práticas, métodos, fluxos e aplicativos que uso no meu fluxo de trabalho e na minha vida pessoal."
 date:   2020-04-30 13:00:00 -0300
 bodyClass: post-produtividade
-tags: ['produtividade', 'organização']
+tags: ['produtividade', 'organização', 'vida']
 image: /assets/images/posts/como-se-organizar/todoist.jpg
 ---
 
@@ -49,6 +49,7 @@ A etapa de captura é uma das mais importantes do processo. Precisamos livrar no
 
 Foi-se o tempo, no qual precisávamos lembrar tudo de cabeça ou anotar em um papel que nunca mais encontraríamos. A evolução da tecnologia trouxe com ela muitas ferramentas que fazem esse trabalho muito melhor do que nós o faríamos, e ainda com o benefício de tirar de nós mesmos essa carga de lembrar das coisas.
 
+
 Para capturar as ideias, tarefas e compromissos utilizo basicamente 3 aplicativos diferentes.
 
 - Todoist
@@ -80,7 +81,7 @@ Alguns exemplos de tarefas:
 - Pesquisar sobre produtividade
 - Assistir o vídeo novo do Átila Iamarino
 
-Acesse o site [todoist.com](https://todoist.com/pt-BR){:target="_blank"}{:rel="noopener"} para saber mais sobre e criar a sua conta. ;) O Todois está disponível para Web, Mac, Windows, Android e iOS.
+Acesse o site [todoist.com](https://todoist.com/pt-BR){:target="_blank"}{:rel="noopener"} para saber mais sobre e criar a sua conta. ;) O Todoist está disponível para Web, Mac, Windows, Android e iOS.
 
 > **Dica:** Para testar todas as funcionalidades do Todoist Premium, é só se cadastrar por [esse link](https://todoist.com/r/everton_strack_kdtqxh){:target="_blank"}{:rel="noopener"} e ter 2 meses grátis.
 
