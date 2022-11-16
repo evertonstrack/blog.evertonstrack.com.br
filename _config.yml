@@ -23,7 +23,7 @@ includes_dir        : components
 
 # Build settings
 markdown: kramdown
-google_analytics: UA-50129966-1
+google_analytics: G-2E96DCYFGD
 permalink: /:title/
 theme: minima
 # plugins: [jekyll-feed]
